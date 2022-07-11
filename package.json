@@ -3,17 +3,30 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@babel/cli": "^7.17.10",
+    "@babel/core": "^7.17.10",
+    "@babel/node": "^7.17.10",
+    "@babel/plugin-syntax-flow": "^7.14.5",
+    "@babel/plugin-transform-react-jsx": "^7.14.9",
+    "@babel/preset-env": "^7.18.2",
+    "@babel/runtime": "^7.17.9",
     "@testing-library/jest-dom": "^5.16.4",
     "@testing-library/react": "^13.3.0",
     "@testing-library/user-event": "^13.5.0",
+    "icosa": "hivdb/icosa#76c0675",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-scripts": "5.0.1",
     "web-vitals": "^2.1.4"
   },
+  "exports": {
+    "./": "./dist/"
+  },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
+    "start": "PORT=3013 react-scripts start",
+    "dist": "rm -rf dist/ && NODE_ENV=production npx babel src --out-dir dist --copy-files",
+    "build": "yarn dist",
+    "postinstall": "yarn dist",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
@@ -33,6 +46,17 @@
       "last 1 chrome version",
       "last 1 firefox version",
       "last 1 safari version"
+    ]
+  },
+  "babel": {
+    "presets": [
+      [
+        "react-app",
+        {
+          "# reason": "https://stackoverflow.com/a/58851078/2644759",
+          "absoluteRuntime": false
+        }
+      ]
     ]
   }
 }
