@@ -1,0 +1,64 @@
+buildscript {
+    repositories {
+        maven { url uri('https://jitpack.io') }
+    }
+    dependencies {
+        classpath 'com.github.i-net-software:jwebassembly-gradle:master-SNAPSHOT'
+    }
+}
+
+plugins {
+    id 'java-library'
+}
+
+apply plugin: 'de.inetsoftware.jwebassembly'
+
+group = 'edu.stanford.hivdb.asiwasm'
+version = '1.5.0.1'
+
+// sourceCompatibility = 1.8
+// targetCompatibility = 1.8
+
+description = 'WebAssembly version of ASI (Algorithm Specification Interface) Interpreter'
+
+repositories {
+    mavenCentral()
+    maven { url 'https://jitpack.io' }
+}
+
+dependencies {
+
+    implementation 'com.github.i-net-software:jwebassembly-api:master-SNAPSHOT'
+
+    implementation 'com.github.hivdb:asi_interpreter:1.5.0.1_gradle-SNAPSHOT'
+
+    // https://github.com/i-net-software/JWebAssembly/issues/40#issuecomment-1140116677
+    implementation 'com.google.code.findbugs:jsr305:3.0.2'
+
+    // https://mvnrepository.com/artifact/junit/junit
+    testImplementation 'junit:junit:4.12'
+}
+
+sourceSets {
+    main {
+        java {
+            srcDir 'src/main/java'
+        }
+        resources {
+            srcDir 'src/main/resources'
+        }
+    }
+    test {
+        java {
+            srcDir 'src/test/java'
+        }
+        resources {
+            srcDir 'src/test/resources'
+        }
+    }
+}
+
+wasm {
+    format = 'text'
+    debugNames = true
+}
