@@ -65,7 +65,28 @@ gwt {
     minHeapSize = "1G"
     modules 'edu.stanford.hivdb.asijs.ASIJs'
 
+    compiler {
+        style = "PRETTY"
+    }
+
     jsInteropExports {
         shouldGenerate = true
     }
 }
+
+import org.apache.tools.ant.filters.*
+
+task afterCompileGwt(type: Copy) {
+    inputs.files 'build/gwt/out/asijs/asijs.nocache.js'
+    inputs.files 'src/main/resources/provide.js'
+    inputs.files 'src/main/resources/exports.js'
+    from 'build/gwt/out/asijs/asijs.nocache.js'
+    into '../src/'
+    rename { String fileName -> 'asi-js.js' }
+    filter { line -> line.replaceAll('function provide\\(', 'function dontprovide(') }
+    filter { line -> line.replaceAll('\\bcomputeScriptBase\\(\\);', '// $0') }
+    filter(ConcatFilter, prepend: file('src/main/resources/provide.js'))
+    filter(ConcatFilter, append: file('src/main/resources/exports.js'))
+}
+
+compileGwt.finalizedBy(afterCompileGwt)

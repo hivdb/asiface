@@ -15,11 +15,14 @@ import org.fstrf.stanfordAsiInterpreter.resistance.grammar.MutationComparator;
 import org.fstrf.stanfordAsiInterpreter.resistance.grammar.StringMutationComparator;
 import org.fstrf.stanfordAsiInterpreter.resistance.xml.XmlAsiTransformer;
 
+import com.google.common.base.Strings;
+
 import elemental2.core.JsArray;
+import jsinterop.annotations.JsPackage;
 import jsinterop.annotations.JsProperty;
 import jsinterop.annotations.JsType;
 
-@JsType
+@JsType(name = "default", namespace = JsPackage.GLOBAL)
 public class ASIJs {
 
     private final String xmlString;
@@ -54,9 +57,9 @@ public class ASIJs {
 
         MutationComparator<String> mutationComparator = new StringMutationComparator(false);
         if (!mutationComparator.areMutationsValid(mutList)) {
-            /* throw new RuntimeException(
-                String.format("Invalid list of mutations: %s",
-                    mutations.toString())); */
+            throw new RuntimeException(
+                Strings.lenientFormat("Invalid list of mutations: %s",
+                    mutations.toString()));
         }
         EvaluatedGene evalGene = gene.evaluate(mutList, mutationComparator);
         return evalGene.toString();
