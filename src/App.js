@@ -1,7 +1,11 @@
 import logo from './logo.svg';
+import ASIJs from './asi-js';
 import './App.css';
 
 function App() {
+  console.log(ASIJs);
+  window.$ASIJs = ASIJs;
+
   return (
     <div className="App">
       <header className="App-header">

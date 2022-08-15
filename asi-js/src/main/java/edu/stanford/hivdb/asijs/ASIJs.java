@@ -1,15 +1,11 @@
 package edu.stanford.hivdb.asijs;
 
-import java.util.Collection;
 import java.util.List;
 import java.util.Map;
 
 import org.fstrf.stanfordAsiInterpreter.resistance.ASIEvaluationException;
 import org.fstrf.stanfordAsiInterpreter.resistance.ASIParsingException;
 import org.fstrf.stanfordAsiInterpreter.resistance.definition.Gene;
-import org.fstrf.stanfordAsiInterpreter.resistance.definition.LevelDefinition;
-import org.fstrf.stanfordAsiInterpreter.resistance.evaluate.EvaluatedDrug;
-import org.fstrf.stanfordAsiInterpreter.resistance.evaluate.EvaluatedDrugClass;
 import org.fstrf.stanfordAsiInterpreter.resistance.evaluate.EvaluatedGene;
 import org.fstrf.stanfordAsiInterpreter.resistance.grammar.MutationComparator;
 import org.fstrf.stanfordAsiInterpreter.resistance.grammar.StringMutationComparator;
@@ -47,11 +43,10 @@ public class ASIJs {
     }
 
     public Object getAlgorithmInfo() {
-        return JsObjectify.toJavascript(algorithmInfo);
-        // return JsObject.create(getAlgorithmInfo());
+        return JsObjectify.of(algorithmInfo);
     }
-
-    public String evaluateGene(String geneName, JsArray<String> mutations) throws ASIEvaluationException {
+    
+    public Object evaluateGene(String geneName, JsArray<String> mutations) throws ASIEvaluationException {
         List<String> mutList = mutations.asList();
         Gene gene = genes.get(geneName);
 
@@ -62,15 +57,7 @@ public class ASIJs {
                     mutations.toString()));
         }
         EvaluatedGene evalGene = gene.evaluate(mutList, mutationComparator);
-        return evalGene.toString();
-        // Collection<EvaluatedDrugClass> evalDCs = evalGene.getEvaluatedDrugClasses();
-        // for (EvaluatedDrugClass evalDC : evalDCs) {
-        //     Collection<EvaluatedDrug> evalDrugs = evalDC.getEvaluatedDrugs();
-        //     for (EvaluatedDrug evalDrug : evalDrugs) {
-        //         LevelDefinition level = evalDrug.getHighestLevelDefinition();
-        //         level.getOrder()
-        //     }
-        // }
+        return JsObjectify.of(evalGene);
     }
 
 }
