@@ -208,8 +208,8 @@ function asijs(){
   processMetas();
   try {
     var strongName;
-    unflattenKeylistIntoAnswers(['gecko1_8'], '163FB054AA152B6270F611FF81E0152C');
-    unflattenKeylistIntoAnswers(['safari'], '163FB054AA152B6270F611FF81E0152C' + ':1');
+    unflattenKeylistIntoAnswers(['gecko1_8'], '8E77508E0D502F525BE89F15D6A8145E');
+    unflattenKeylistIntoAnswers(['safari'], '8E77508E0D502F525BE89F15D6A8145E' + ':1');
     strongName = answers[computePropValue('user.agent')];
     var idx = strongName.indexOf(':');
     if (idx != -1) {
@@ -248,7 +248,7 @@ function asijs(){
 }
 
 asijs();
-(function () {var $gwt_version = "2.10.0";var $wnd = window;var $doc = $wnd.document;var $moduleName, $moduleBase;var $stats = $wnd.__gwtStatsEvent ? function(a) {$wnd.__gwtStatsEvent(a)} : null;var $strongName = '163FB054AA152B6270F611FF81E0152C';var $intern_0 = {3:1, 6:1}, $intern_1 = {3:1, 17:1, 11:1}, $intern_2 = {3:1, 17:1, 13:1, 11:1}, $intern_3 = {18:1, 38:1}, $intern_4 = 4194303, $intern_5 = 17592186044416, $intern_6 = 4194304, $intern_7 = {3:1, 50:1, 11:1}, $intern_8 = {3:1}, $intern_9 = {18:1, 19:1}, $intern_10 = {3:1, 18:1, 19:1}, $intern_11 = {3:1, 18:1, 38:1}, $intern_12 = {3:1, 39:1, 43:1, 48:1}, $intern_13 = {3:1, 6:1, 258:1}, $intern_14 = -Infinity, $intern_15 = {169:1, 3:1, 6:1, 89:1}, $intern_16 = {7:1, 3:1, 6:1}, $intern_17 = {4:1, 3:1}, $intern_18 = {10:1}, $intern_19 = {10:1, 68:1}, $intern_20 = {10:1, 65:1}, $intern_21 = {10:1, 66:1}, $intern_22 = {10:1, 52:1}, $intern_23 = {10:1, 126:1}, $intern_24 = {10:1, 85:1}, $intern_25 = {10:1, 70:1}, $intern_26 = {10:1, 105:1}, $intern_27 = {10:1, 71:1}, $intern_28 = {10:1, 49:1}, $intern_29 = {10:1, 131:1}, $intern_30 = {10:1, 72:1}, $intern_31 = {10:1, 111:1}, $intern_32 = {10:1, 69:1}, $intern_33 = {10:1, 128:1};
+(function () {var $gwt_version = "2.10.0";var $wnd = window;var $doc = $wnd.document;var $moduleName, $moduleBase;var $stats = $wnd.__gwtStatsEvent ? function(a) {$wnd.__gwtStatsEvent(a)} : null;var $strongName = '8E77508E0D502F525BE89F15D6A8145E';var $intern_0 = {3:1, 6:1}, $intern_1 = {3:1, 17:1, 11:1}, $intern_2 = {3:1, 17:1, 13:1, 11:1}, $intern_3 = {18:1, 38:1}, $intern_4 = 4194303, $intern_5 = 17592186044416, $intern_6 = 4194304, $intern_7 = {3:1, 50:1, 11:1}, $intern_8 = {3:1}, $intern_9 = {18:1, 19:1}, $intern_10 = {3:1, 18:1, 19:1}, $intern_11 = {3:1, 18:1, 38:1}, $intern_12 = {3:1, 39:1, 43:1, 48:1}, $intern_13 = {3:1, 6:1, 258:1}, $intern_14 = -Infinity, $intern_15 = {169:1, 3:1, 6:1, 89:1}, $intern_16 = {7:1, 3:1, 6:1}, $intern_17 = {4:1, 3:1}, $intern_18 = {10:1}, $intern_19 = {10:1, 68:1}, $intern_20 = {10:1, 65:1}, $intern_21 = {10:1, 66:1}, $intern_22 = {10:1, 52:1}, $intern_23 = {10:1, 126:1}, $intern_24 = {10:1, 85:1}, $intern_25 = {10:1, 70:1}, $intern_26 = {10:1, 105:1}, $intern_27 = {10:1, 71:1}, $intern_28 = {10:1, 49:1}, $intern_29 = {10:1, 131:1}, $intern_30 = {10:1, 72:1}, $intern_31 = {10:1, 111:1}, $intern_32 = {10:1, 69:1}, $intern_33 = {10:1, 128:1};
 var _, prototypesByTypeId_0, initFnList_0, permutationId = -1;
 function create_com_google_gwt_useragent_client_UserAgent(){
   if (permutationId == 0) {
@@ -2367,8 +2367,8 @@ function toJsPropertyMap_0(cmt){
   var cmtResult;
   cmtResult = {};
   cmtResult['id'] = cmt.id_0;
-  cmtResult['text'] = cmt.text_0;
   cmtResult['sort'] = cmt.sort_0.value_0;
+  cmtResult['text'] = cmt.text_0;
   return cmtResult;
 }
 
@@ -2381,7 +2381,6 @@ function toJsPropertyMap_1(def){
 function toJsPropertyMap_2(level){
   var levelResult;
   levelResult = {};
-  levelResult['resistance'] = level.text_0;
   levelResult['order'] = level.order.value_0;
   levelResult['SIR'] = level.sir;
   levelResult['text'] = level.text_0;
@@ -2425,7 +2424,7 @@ function toJsPropertyMap_6(evalGene){
   geneResult = {};
   geneResult['geneName'] = evalGene.gene.name_0;
   geneResult['drugClasses'] = new ($wnd.Array.bind.apply($wnd.Array, [null].concat(ensureNotNull((collected0 = castTo($collect($map(new StreamImpl(null, new Spliterators$IteratorSpliterator(evalGene.evaluatedDrugClasses, 16)), new JsObjectify$lambda$0$Type), of_1(new Collectors$21methodref$ctor$Type, new Collectors$20methodref$add$Type, new Collectors$lambda$42$Type, stampJavaTypeInfo(getClassLiteralForArray(Ljava_util_stream_Collector$Characteristics_2_classLit, 1), $intern_0, 23, 0, [($clinit_Collector$Characteristics() , IDENTITY_FINISH)]))), 19) , collected0.toArray_0(initUnidimensionalArray(Ljava_lang_Object_2_classLit, $intern_0, 1, collected0.size(), 5, 1)))))));
-  geneResult['comments'] = new ($wnd.Array.bind.apply($wnd.Array, [null].concat(ensureNotNull((collected1 = castTo($collect($map(new StreamImpl(null, new Spliterators$IteratorSpliterator(evalGene.geneCommentDefinitions, 1)), new JsObjectify$lambda$0$Type), of_1(new Collectors$21methodref$ctor$Type, new Collectors$20methodref$add$Type, new Collectors$lambda$42$Type, stampJavaTypeInfo(getClassLiteralForArray(Ljava_util_stream_Collector$Characteristics_2_classLit, 1), $intern_0, 23, 0, [IDENTITY_FINISH]))), 19) , collected1.toArray_0(initUnidimensionalArray(Ljava_lang_Object_2_classLit, $intern_0, 1, collected1.size(), 5, 1)))))));
+  geneResult['mutationComments'] = new ($wnd.Array.bind.apply($wnd.Array, [null].concat(ensureNotNull((collected1 = castTo($collect($map(new StreamImpl(null, new Spliterators$IteratorSpliterator(evalGene.geneCommentDefinitions, 1)), new JsObjectify$lambda$0$Type), of_1(new Collectors$21methodref$ctor$Type, new Collectors$20methodref$add$Type, new Collectors$lambda$42$Type, stampJavaTypeInfo(getClassLiteralForArray(Ljava_util_stream_Collector$Characteristics_2_classLit, 1), $intern_0, 23, 0, [IDENTITY_FINISH]))), 19) , collected1.toArray_0(initUnidimensionalArray(Ljava_lang_Object_2_classLit, $intern_0, 1, collected1.size(), 5, 1)))))));
   geneResult['resultComments'] = new ($wnd.Array.bind.apply($wnd.Array, [null].concat(ensureNotNull((collected2 = castTo($collect($map(new StreamImpl(null, new Spliterators$IteratorSpliterator(evalGene.evaluatedResultCommentRules, 16)), new JsObjectify$lambda$0$Type), of_1(new Collectors$21methodref$ctor$Type, new Collectors$20methodref$add$Type, new Collectors$lambda$42$Type, stampJavaTypeInfo(getClassLiteralForArray(Ljava_util_stream_Collector$Characteristics_2_classLit, 1), $intern_0, 23, 0, [IDENTITY_FINISH]))), 19) , collected2.toArray_0(initUnidimensionalArray(Ljava_lang_Object_2_classLit, $intern_0, 1, collected2.size(), 5, 1)))))));
   geneResult['scoredMutations'] = new ($wnd.Array.bind.apply($wnd.Array, [null].concat(ensureNotNull((collected = castTo($collect($map(new StreamImpl(null, new Spliterators$IteratorSpliterator(evalGene.geneScoredMutations, 1)), new JsObjectify$lambda$0$Type), of_1(new Collectors$21methodref$ctor$Type, new Collectors$20methodref$add$Type, new Collectors$lambda$42$Type, stampJavaTypeInfo(getClassLiteralForArray(Ljava_util_stream_Collector$Characteristics_2_classLit, 1), $intern_0, 23, 0, [IDENTITY_FINISH]))), 19) , collected.toArray_0(initUnidimensionalArray(Ljava_lang_Object_2_classLit, $intern_0, 1, collected.size(), 5, 1)))))));
   return geneResult;

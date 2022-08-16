@@ -24,6 +24,7 @@
     "./": "./dist/"
   },
   "scripts": {
+    "build-asijs": "cd asi-js && ./gradlew compileGwt",
     "start": "PORT=3013 react-scripts start",
     "dist": "rm -rf dist/ && NODE_ENV=production npx babel src --out-dir dist --copy-files",
     "build": "yarn dist",

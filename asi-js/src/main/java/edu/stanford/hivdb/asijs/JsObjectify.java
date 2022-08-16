@@ -96,7 +96,6 @@ public class JsObjectify {
 
     private final static JsPropertyMap<Object> toJsPropertyMap(LevelDefinition level) {
         JsPropertyMap<Object> levelResult = JsPropertyMap.of();
-        levelResult.set("resistance", level.getResistance());
         levelResult.set("order", level.getOrder().doubleValue());
         levelResult.set("SIR", level.getSir());
         levelResult.set("text", level.getText());
@@ -106,8 +105,8 @@ public class JsObjectify {
     private final static JsPropertyMap< Object> toJsPropertyMap(CommentDefinition cmt) {
         JsPropertyMap<Object> cmtResult = JsPropertyMap.of();
         cmtResult.set("id", cmt.getId());
-        cmtResult.set("text", cmt.getText());
         cmtResult.set("sort", cmt.getSort().doubleValue());
+        cmtResult.set("text", cmt.getText());
         return cmtResult;
     }
     

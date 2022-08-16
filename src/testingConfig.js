@@ -28,7 +28,7 @@ const config = {
       )
     }
   ],
-  mutations: 'RT:184V'
+  mutations: 'RT:65E, RT:69i, RT:184V'
 };
 
 export default config;
