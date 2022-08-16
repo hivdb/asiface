@@ -1,0 +1,87 @@
+@import "icosa/styles/colors";
+@import "icosa/styles/select";
+
+$grid-gap: .5rem;
+
+.asiface-grid {
+  display: grid;
+  height: var(--height);
+  grid-template-rows: 3rem $grid-gap 30% $grid-gap 1fr;
+  grid-template-columns: 70% .5rem 1fr;
+}
+
+.asiface-cell-preload-selector {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 1;
+  grid-row-end: 2;
+}
+
+.asiface-gap-vertical {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 6;
+  padding: 0 calc(($grid-gap - 2px) / 2);
+  margin: calc((2px - $grid-gap) / 2) 0;
+  cursor: col-resize;
+}
+
+.asiface-gap-horizontal {
+  grid-column-start: 3;
+  grid-column-end: 4;
+  grid-row-start: 4;
+  grid-row-end: 5;
+  padding: calc(($grid-gap - 2px) / 2) 0;
+  margin: 0 calc((2px - $grid-gap) / 2);
+  cursor: row-resize;
+}
+
+.asiface-gap-vertical, .asiface-gap-horizontal {
+  background-color: color(dividing-line);
+  background-clip: content-box;
+}
+
+.asi-preload-dropdown {
+  @include select('asi-preload-dropdown');
+
+  max-width: 20rem;
+}
+
+.asiface-cell-xml-editor {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 3;
+  grid-row-end: 6;
+}
+
+.asiface-cell-mutation-editor {
+  grid-column-start: 3;
+  grid-column-end: 4;
+  grid-row-start: 1;
+  grid-row-end: 4;
+
+  > textarea {
+    margin: 1rem;
+    resize: vertical;
+    width: calc(100% - 2rem);
+    height: calc(100% - 2rem);
+  }
+}
+
+.asiface-cell-evaluator {
+  grid-column-start: 3;
+  grid-column-end: 4;
+  grid-row-start: 5;
+  grid-row-end: 6;
+  max-height: 100%;
+  overflow-y: scroll;
+  position: relative;
+
+  .evaluate-button {
+    position: fixed;
+    bottom: 1rem;
+    right: 1rem;
+  }
+}
+
