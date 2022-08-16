@@ -2,6 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import Select from 'icosa/components/select';
 
+import {ReactComponent as Logo} from './logo.svg';
 import style from './style.module.scss';
 
 export function useFetchAndSet(setValue) {
@@ -77,6 +78,7 @@ export default function PreloadSelector({preloads, onChange}) {
 
   return (
     <div className={style['asiface-cell-preload-selector']}>
+      <Logo />
       <Select
        isSearchable
        options={grouppedOptions}

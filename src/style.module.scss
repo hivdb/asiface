@@ -6,8 +6,8 @@ $grid-gap: .5rem;
 .asiface-grid {
   display: grid;
   height: var(--height);
-  grid-template-rows: 3rem $grid-gap 30% $grid-gap 1fr;
-  grid-template-columns: 70% .5rem 1fr;
+  grid-template-rows: 3rem $grid-gap min(80%, max(7rem, calc(var(--vertical-pcnt) - 3rem - $grid-gap))) $grid-gap 1fr;
+  grid-template-columns: min(90%, max(50rem, var(--horizontal-pcnt)) ).5rem 1fr;
 }
 
 .asiface-cell-preload-selector {
@@ -15,38 +15,51 @@ $grid-gap: .5rem;
   grid-column-end: 2;
   grid-row-start: 1;
   grid-row-end: 2;
+  line-height: 1.5rem;
+  padding-top: .5rem;
+
+  > svg {
+    height: 1.5em;
+    color: color(type-main);
+    margin-left: 1rem;
+    display: inline-block;
+    vertical-align: middle;
+  }
+
+  > .asi-preload-dropdown {
+    @include select('asi-preload-dropdown');
+  
+    display: inline-block;
+    margin: 0 1rem;
+    max-width: 20rem;
+  }
+
 }
 
 .asiface-gap-vertical {
-  grid-column-start: 2;
-  grid-column-end: 3;
-  grid-row-start: 1;
-  grid-row-end: 6;
-  padding: 0 calc(($grid-gap - 2px) / 2);
-  margin: calc((2px - $grid-gap) / 2) 0;
-  cursor: col-resize;
 }
 
-.asiface-gap-horizontal {
-  grid-column-start: 3;
-  grid-column-end: 4;
-  grid-row-start: 4;
-  grid-row-end: 5;
-  padding: calc(($grid-gap - 2px) / 2) 0;
-  margin: 0 calc((2px - $grid-gap) / 2);
-  cursor: row-resize;
-}
-
-.asiface-gap-vertical, .asiface-gap-horizontal {
+.asiface-resize-bar {
   background-color: color(dividing-line);
   background-clip: content-box;
-}
-
-.asi-preload-dropdown {
-  @include select('asi-preload-dropdown');
-
-  margin: 1rem;
-  max-width: 20rem;
+  &[data-direction="vertical"] {
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 4;
+    grid-row-end: 5;
+    padding: calc(($grid-gap - 2px) / 2) 0;
+    margin: 0 .5rem;
+    cursor: row-resize;
+  }
+  &[data-direction="horizontal"] {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 6;
+    padding: 0 calc(($grid-gap - 2px) / 2);
+    margin: .5rem 0;
+    cursor: col-resize;
+  }
 }
 
 .asiface-cell-xml-editor {
@@ -78,6 +91,11 @@ $grid-gap: .5rem;
   max-height: 100%;
   overflow-y: scroll;
   position: relative;
+
+  .evaluator-error {
+    color: color(type-error);
+    font-family: monospace;
+  }
 
   .evaluate-button {
     position: fixed;

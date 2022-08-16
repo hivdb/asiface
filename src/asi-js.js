@@ -208,8 +208,8 @@ function asijs(){
   processMetas();
   try {
     var strongName;
-    unflattenKeylistIntoAnswers(['gecko1_8'], '8E77508E0D502F525BE89F15D6A8145E');
-    unflattenKeylistIntoAnswers(['safari'], '8E77508E0D502F525BE89F15D6A8145E' + ':1');
+    unflattenKeylistIntoAnswers(['gecko1_8'], '926B2165D3EDB3DC04AB75511340ADA8');
+    unflattenKeylistIntoAnswers(['safari'], '926B2165D3EDB3DC04AB75511340ADA8' + ':1');
     strongName = answers[computePropValue('user.agent')];
     var idx = strongName.indexOf(':');
     if (idx != -1) {
@@ -248,7 +248,7 @@ function asijs(){
 }
 
 asijs();
-(function () {var $gwt_version = "2.10.0";var $wnd = window;var $doc = $wnd.document;var $moduleName, $moduleBase;var $stats = $wnd.__gwtStatsEvent ? function(a) {$wnd.__gwtStatsEvent(a)} : null;var $strongName = '8E77508E0D502F525BE89F15D6A8145E';var $intern_0 = {3:1, 6:1}, $intern_1 = {3:1, 17:1, 11:1}, $intern_2 = {3:1, 17:1, 13:1, 11:1}, $intern_3 = {18:1, 38:1}, $intern_4 = 4194303, $intern_5 = 17592186044416, $intern_6 = 4194304, $intern_7 = {3:1, 50:1, 11:1}, $intern_8 = {3:1}, $intern_9 = {18:1, 19:1}, $intern_10 = {3:1, 18:1, 19:1}, $intern_11 = {3:1, 18:1, 38:1}, $intern_12 = {3:1, 39:1, 43:1, 48:1}, $intern_13 = {3:1, 6:1, 258:1}, $intern_14 = -Infinity, $intern_15 = {169:1, 3:1, 6:1, 89:1}, $intern_16 = {7:1, 3:1, 6:1}, $intern_17 = {4:1, 3:1}, $intern_18 = {10:1}, $intern_19 = {10:1, 68:1}, $intern_20 = {10:1, 65:1}, $intern_21 = {10:1, 66:1}, $intern_22 = {10:1, 52:1}, $intern_23 = {10:1, 126:1}, $intern_24 = {10:1, 85:1}, $intern_25 = {10:1, 70:1}, $intern_26 = {10:1, 105:1}, $intern_27 = {10:1, 71:1}, $intern_28 = {10:1, 49:1}, $intern_29 = {10:1, 131:1}, $intern_30 = {10:1, 72:1}, $intern_31 = {10:1, 111:1}, $intern_32 = {10:1, 69:1}, $intern_33 = {10:1, 128:1};
+(function () {var $gwt_version = "2.10.0";var $wnd = window;var $doc = $wnd.document;var $moduleName, $moduleBase;var $stats = $wnd.__gwtStatsEvent ? function(a) {$wnd.__gwtStatsEvent(a)} : null;var $strongName = '926B2165D3EDB3DC04AB75511340ADA8';var $intern_0 = {3:1, 6:1}, $intern_1 = {3:1, 17:1, 11:1}, $intern_2 = {3:1, 17:1, 14:1, 11:1}, $intern_3 = {3:1, 6:1, 93:1}, $intern_4 = {19:1, 37:1}, $intern_5 = 4194303, $intern_6 = 17592186044416, $intern_7 = 4194304, $intern_8 = {3:1, 51:1, 11:1}, $intern_9 = {3:1}, $intern_10 = {19:1, 18:1}, $intern_11 = {3:1, 19:1, 18:1}, $intern_12 = {3:1, 43:1}, $intern_13 = {3:1, 19:1, 37:1}, $intern_14 = {3:1, 39:1, 44:1, 49:1}, $intern_15 = {3:1, 6:1, 270:1}, $intern_16 = -Infinity, $intern_17 = {173:1, 3:1, 6:1, 91:1}, $intern_18 = {7:1, 3:1, 6:1}, $intern_19 = {4:1, 3:1}, $intern_20 = {10:1}, $intern_21 = {10:1, 70:1}, $intern_22 = {10:1, 67:1}, $intern_23 = {10:1, 68:1}, $intern_24 = {10:1, 53:1}, $intern_25 = {10:1, 132:1}, $intern_26 = {10:1, 87:1}, $intern_27 = {10:1, 72:1}, $intern_28 = {10:1, 107:1}, $intern_29 = {10:1, 73:1}, $intern_30 = {10:1, 50:1}, $intern_31 = {10:1, 137:1}, $intern_32 = {10:1, 74:1}, $intern_33 = {10:1, 113:1}, $intern_34 = {10:1, 71:1}, $intern_35 = {10:1, 134:1};
 var _, prototypesByTypeId_0, initFnList_0, permutationId = -1;
 function create_com_google_gwt_useragent_client_UserAgent(){
   if (permutationId == 0) {
@@ -414,12 +414,12 @@ function $clinit_StackTraceCreator(){
   var c, enforceLegacy;
   enforceLegacy = !supportsErrorStack();
   c = new StackTraceCreator$CollectorModernNoSourceMap;
-  collector_0 = enforceLegacy?new StackTraceCreator$CollectorLegacy:c;
+  collector_1 = enforceLegacy?new StackTraceCreator$CollectorLegacy:c;
 }
 
 function captureStackTrace(error){
   $clinit_StackTraceCreator();
-  collector_0.collect(error);
+  collector_1.collect(error);
 }
 
 function extractFunctionName(fnName){
@@ -436,12 +436,12 @@ function supportsErrorStack(){
   return 'stack' in new Error;
 }
 
-var collector_0;
-defineClass(274, 1, {});
+var collector_1;
+defineClass(286, 1, {});
 function StackTraceCreator$CollectorLegacy(){
 }
 
-defineClass(177, 274, {}, StackTraceCreator$CollectorLegacy);
+defineClass(182, 286, {}, StackTraceCreator$CollectorLegacy);
 _.collect = function collect(error){
   var seen = {}, name_1;
   var fnStack = [];
@@ -465,14 +465,14 @@ _.collect = function collect(error){
   }
 }
 ;
-defineClass(275, 274, {});
+defineClass(287, 286, {});
 _.collect = function collect_0(error){
 }
 ;
 function StackTraceCreator$CollectorModernNoSourceMap(){
 }
 
-defineClass(178, 275, {}, StackTraceCreator$CollectorModernNoSourceMap);
+defineClass(183, 287, {}, StackTraceCreator$CollectorModernNoSourceMap);
 function canSet(array, value_0){
   var elementTypeCategory;
   switch (getElementTypeCategory(array)) {
@@ -717,7 +717,7 @@ function compareTo_Ljava_lang_Object__I__devirtual$(this$static, other){
   return instanceOfString(this$static)?$compareTo_4(this$static, castToString(other)):instanceOfDouble(this$static)?$compareTo_1(this$static, castToDouble(other)):instanceOfBoolean(this$static)?$compareTo(this$static, castToBoolean(other)):this$static.compareTo_0(other);
 }
 
-booleanCastMap = {3:1, 174:1, 39:1};
+booleanCastMap = {3:1, 180:1, 39:1};
 var FALSE;
 function $isInstance_1(instance){
   if ($equals_1(typeof(instance), 'string')) {
@@ -838,7 +838,7 @@ function maybeSetClassLiteral(typeId, clazz){
   prototype_0.___clazz = clazz;
 }
 
-defineClass(140, 1, {}, Class);
+defineClass(146, 1, {}, Class);
 _.createClassLiteralForArray = function createClassLiteralForArray(dimensions){
   var clazz;
   clazz = new Class;
@@ -910,7 +910,7 @@ function __parseAndValidateInt(s){
   return toReturn;
 }
 
-defineClass(113, 1, {3:1, 113:1});
+defineClass(117, 1, {3:1, 117:1});
 var floatRegex;
 function $compareTo_1(this$static, b){
   return compare_1((checkCriticalNotNull(this$static) , this$static), (checkCriticalNotNull(b) , b));
@@ -953,7 +953,7 @@ function compare_1(x_0, y_0){
   return isNaN(x_0)?isNaN(y_0)?0:1:-1;
 }
 
-doubleCastMap = {3:1, 39:1, 173:1, 113:1};
+doubleCastMap = {3:1, 39:1, 179:1, 117:1};
 function $fillInStackTrace(this$static){
   this$static.writableStackTrace && this$static.backingJsObject !== '__noinit__' && this$static.initializeBackingError();
   return this$static;
@@ -1068,12 +1068,12 @@ function RuntimeException_0(message){
   Exception.call(this, message);
 }
 
-defineClass(13, 17, $intern_2, RuntimeException_0);
+defineClass(14, 17, $intern_2, RuntimeException_0);
 function IndexOutOfBoundsException(message){
   RuntimeException_0.call(this, message);
 }
 
-defineClass(45, 13, $intern_2, IndexOutOfBoundsException);
+defineClass(46, 14, $intern_2, IndexOutOfBoundsException);
 function JsException(backingJsObject){
   $fillInStackTrace(this);
   this.backingJsObject = backingJsObject;
@@ -1081,7 +1081,7 @@ function JsException(backingJsObject){
   this.detailMessage = backingJsObject == null?'null':toString_3(backingJsObject);
 }
 
-defineClass(74, 13, $intern_2, JsException);
+defineClass(76, 14, $intern_2, JsException);
 function NullPointerException(){
   RuntimeException.call(this);
 }
@@ -1094,7 +1094,7 @@ function NullPointerException_1(message){
   RuntimeException_0.call(this, message);
 }
 
-defineClass(58, 74, {3:1, 17:1, 58:1, 13:1, 11:1}, NullPointerException, NullPointerException_0, NullPointerException_1);
+defineClass(60, 76, {3:1, 17:1, 60:1, 14:1, 11:1}, NullPointerException, NullPointerException_0, NullPointerException_1);
 _.createError = function createError_0(msg){
   return new TypeError(msg);
 }
@@ -1138,16 +1138,16 @@ function $lastIndexOf(this$static, str){
   return this$static.lastIndexOf(str);
 }
 
-function $split(this$static, regex){
+function $split(this$static, regex, maxMatch){
   var compiled, count, lastNonEmpty, lastTrail, matchIndex, matchObj, out, trail;
   compiled = new RegExp(regex, 'g');
-  out = initUnidimensionalArray(Ljava_lang_String_2_classLit, $intern_0, 2, 0, 6, 1);
+  out = initUnidimensionalArray(Ljava_lang_String_2_classLit, $intern_3, 2, 0, 6, 1);
   count = 0;
   trail = this$static;
   lastTrail = null;
   while (true) {
     matchObj = compiled.exec(trail);
-    if (matchObj == null || trail == '') {
+    if (matchObj == null || trail == '' || count == maxMatch - 1 && maxMatch > 0) {
       out[count] = trail;
       break;
     }
@@ -1164,7 +1164,7 @@ function $split(this$static, regex){
       ++count;
     }
   }
-  if (this$static.length > 0) {
+  if (maxMatch == 0 && this$static.length > 0) {
     lastNonEmpty = out.length;
     while (lastNonEmpty > 0 && out[lastNonEmpty - 1] == '') {
       --lastNonEmpty;
@@ -1202,6 +1202,17 @@ function fromCharCode(array){
   return String.fromCharCode.apply(null, array);
 }
 
+function join_1(elements){
+  var e, e$iterator, joiner;
+  joiner = new StringJoiner;
+  for (e$iterator = new ArrayList$1(elements); e$iterator.i < e$iterator.this$01.array.length;) {
+    e = castTo($next_1(e$iterator), 115);
+    !joiner.builder?(joiner.builder = new StringBuilder_0(joiner.prefix)):$append_4(joiner.builder, joiner.delimiter);
+    $append_1(joiner.builder, e);
+  }
+  return !joiner.builder?joiner.emptyValue:joiner.suffix.length == 0?joiner.builder.string:joiner.builder.string + ('' + joiner.suffix);
+}
+
 function valueOf_1(x_0){
   return valueOf_2(x_0, x_0.length);
 }
@@ -1219,12 +1230,12 @@ function valueOf_2(x_0, count){
   return s;
 }
 
-stringCastMap = {3:1, 141:1, 39:1, 2:1};
+stringCastMap = {3:1, 115:1, 39:1, 2:1};
 function StringIndexOutOfBoundsException(message){
   IndexOutOfBoundsException.call(this, message);
 }
 
-defineClass(148, 45, $intern_2, StringIndexOutOfBoundsException);
+defineClass(151, 46, $intern_2, StringIndexOutOfBoundsException);
 function clone(array){
   var result;
   result = array.slice();
@@ -1268,7 +1279,7 @@ function removeFrom(array, index_0, deleteCount){
   array.splice(index_0, deleteCount);
 }
 
-defineClass(353, 1, {});
+defineClass(366, 1, {});
 function HashCodes(){
 }
 
@@ -1292,7 +1303,7 @@ function getObjectIdentityHashCode(o){
   return o.$H || (o.$H = ++nextHash);
 }
 
-defineClass(272, 1, {}, HashCodes);
+defineClass(284, 1, {}, HashCodes);
 var nextHash = 0;
 function checkCriticalArgument(expression, errorMessage){
   if (!expression) {
@@ -1383,27 +1394,27 @@ function toDoubleFromUnsignedInt(value_0){
   return value_0 >>> 0;
 }
 
-defineClass(273, 1, {});
+defineClass(285, 1, {});
 var Ljava_lang_Object_2_classLit = createForClass('java.lang', 'Object', 1);
 var Lcom_google_gwt_core_client_JavaScriptObject_2_classLit = createForClass('com.google.gwt.core.client', 'JavaScriptObject$', 0);
-var Lcom_google_gwt_core_client_impl_StackTraceCreator$Collector_2_classLit = createForClass('com.google.gwt.core.client.impl', 'StackTraceCreator/Collector', 274);
-var Lcom_google_gwt_core_client_impl_StackTraceCreator$CollectorLegacy_2_classLit = createForClass('com.google.gwt.core.client.impl', 'StackTraceCreator/CollectorLegacy', 177);
-var Lcom_google_gwt_core_client_impl_StackTraceCreator$CollectorModern_2_classLit = createForClass('com.google.gwt.core.client.impl', 'StackTraceCreator/CollectorModern', 275);
-var Lcom_google_gwt_core_client_impl_StackTraceCreator$CollectorModernNoSourceMap_2_classLit = createForClass('com.google.gwt.core.client.impl', 'StackTraceCreator/CollectorModernNoSourceMap', 178);
-var Ljava_lang_Boolean_2_classLit = createForClass('java.lang', 'Boolean', 174);
-var Ljava_lang_Class_2_classLit = createForClass('java.lang', 'Class', 140);
-var Ljava_lang_Number_2_classLit = createForClass('java.lang', 'Number', 113);
-var Ljava_lang_Double_2_classLit = createForClass('java.lang', 'Double', 173);
+var Lcom_google_gwt_core_client_impl_StackTraceCreator$Collector_2_classLit = createForClass('com.google.gwt.core.client.impl', 'StackTraceCreator/Collector', 286);
+var Lcom_google_gwt_core_client_impl_StackTraceCreator$CollectorLegacy_2_classLit = createForClass('com.google.gwt.core.client.impl', 'StackTraceCreator/CollectorLegacy', 182);
+var Lcom_google_gwt_core_client_impl_StackTraceCreator$CollectorModern_2_classLit = createForClass('com.google.gwt.core.client.impl', 'StackTraceCreator/CollectorModern', 287);
+var Lcom_google_gwt_core_client_impl_StackTraceCreator$CollectorModernNoSourceMap_2_classLit = createForClass('com.google.gwt.core.client.impl', 'StackTraceCreator/CollectorModernNoSourceMap', 183);
+var Ljava_lang_Boolean_2_classLit = createForClass('java.lang', 'Boolean', 180);
+var Ljava_lang_Class_2_classLit = createForClass('java.lang', 'Class', 146);
+var Ljava_lang_Number_2_classLit = createForClass('java.lang', 'Number', 117);
+var Ljava_lang_Double_2_classLit = createForClass('java.lang', 'Double', 179);
 var Ljava_lang_Throwable_2_classLit = createForClass('java.lang', 'Throwable', 11);
 var Ljava_lang_Exception_2_classLit = createForClass('java.lang', 'Exception', 17);
-var Ljava_lang_RuntimeException_2_classLit = createForClass('java.lang', 'RuntimeException', 13);
-var Ljava_lang_IndexOutOfBoundsException_2_classLit = createForClass('java.lang', 'IndexOutOfBoundsException', 45);
-var Ljava_lang_JsException_2_classLit = createForClass('java.lang', 'JsException', 74);
-var Ljava_lang_NullPointerException_2_classLit = createForClass('java.lang', 'NullPointerException', 58);
+var Ljava_lang_RuntimeException_2_classLit = createForClass('java.lang', 'RuntimeException', 14);
+var Ljava_lang_IndexOutOfBoundsException_2_classLit = createForClass('java.lang', 'IndexOutOfBoundsException', 46);
+var Ljava_lang_JsException_2_classLit = createForClass('java.lang', 'JsException', 76);
+var Ljava_lang_NullPointerException_2_classLit = createForClass('java.lang', 'NullPointerException', 60);
 var Ljava_lang_String_2_classLit = createForClass('java.lang', 'String', 2);
-var Ljava_lang_StringIndexOutOfBoundsException_2_classLit = createForClass('java.lang', 'StringIndexOutOfBoundsException', 148);
-var Ljavaemul_internal_HashCodes_2_classLit = createForClass('javaemul.internal', 'HashCodes', 272);
-var Ljavaemul_internal_JsUtils_2_classLit = createForClass('javaemul.internal', 'JsUtils', 273);
+var Ljava_lang_StringIndexOutOfBoundsException_2_classLit = createForClass('java.lang', 'StringIndexOutOfBoundsException', 151);
+var Ljavaemul_internal_HashCodes_2_classLit = createForClass('javaemul.internal', 'HashCodes', 284);
+var Ljavaemul_internal_JsUtils_2_classLit = createForClass('javaemul.internal', 'JsUtils', 285);
 function emptyToNull(string){
   return string || null;
 }
@@ -1416,8 +1427,8 @@ function stringIsNullOrEmpty(string){
   return !string;
 }
 
-defineClass(261, 1, {});
-var Lcom_google_common_base_Platform_2_classLit = createForClass('com.google.common.base', 'Platform', 261);
+defineClass(273, 1, {});
+var Lcom_google_common_base_Platform_2_classLit = createForClass('com.google.common.base', 'Platform', 273);
 function checkNotNull(reference, errorMessage){
   if (!reference) {
     throw toJs(new NullPointerException_1(errorMessage));
@@ -1490,7 +1501,7 @@ function $forEachRemaining(this$static, consumer){
   }
 }
 
-defineClass(280, 1, {});
+defineClass(292, 1, {});
 _.forEachRemaining = function forEachRemaining(consumer){
   $forEachRemaining(this, consumer);
 }
@@ -1499,7 +1510,7 @@ _.remove_0 = function remove_0(){
   throw toJs(new UnsupportedOperationException);
 }
 ;
-var Lcom_google_common_collect_UnmodifiableIterator_2_classLit = createForClass('com.google.common.collect', 'UnmodifiableIterator', 280);
+var Lcom_google_common_collect_UnmodifiableIterator_2_classLit = createForClass('com.google.common.collect', 'UnmodifiableIterator', 292);
 function $hasNext(this$static){
   checkState(this$static.state != 3);
   switch (this$static.state) {
@@ -1532,7 +1543,7 @@ function $tryToComputeNext(this$static){
   return false;
 }
 
-defineClass(149, 280, {});
+defineClass(152, 292, {});
 _.hasNext_0 = function hasNext(){
   return $hasNext(this);
 }
@@ -1542,7 +1553,7 @@ _.next_1 = function next_0(){
 }
 ;
 _.state = 1;
-var Lcom_google_common_collect_AbstractIterator_2_classLit = createForClass('com.google.common.collect', 'AbstractIterator', 149);
+var Lcom_google_common_collect_AbstractIterator_2_classLit = createForClass('com.google.common.collect', 'AbstractIterator', 152);
 function difference(set1, set2){
   checkNotNull(set1, 'set1');
   checkNotNull(set2, 'set2');
@@ -1610,7 +1621,7 @@ function $toArray(this$static){
 
 function $toString(this$static){
   var e, e$iterator, joiner;
-  joiner = new StringJoiner('[', ']');
+  joiner = new StringJoiner_0('[', ']');
   for (e$iterator = this$static.iterator_0(); e$iterator.hasNext_0();) {
     e = e$iterator.next_1();
     $add_4(joiner, maskUndefined(e) === maskUndefined(this$static)?'(this Collection)':e == null?'null':toString_3(e));
@@ -1618,7 +1629,7 @@ function $toString(this$static){
   return !joiner.builder?joiner.emptyValue:joiner.suffix.length == 0?joiner.builder.string:joiner.builder.string + ('' + joiner.suffix);
 }
 
-defineClass(276, 1, {18:1});
+defineClass(288, 1, {19:1});
 _.spliterator_0 = function spliterator_0(){
   return new Spliterators$IteratorSpliterator(this, 0);
 }
@@ -1698,8 +1709,8 @@ _.toString_0 = function toString_1(){
   return $toString(this);
 }
 ;
-var Ljava_util_AbstractCollection_2_classLit = createForClass('java.util', 'AbstractCollection', 276);
-defineClass(278, 276, $intern_3);
+var Ljava_util_AbstractCollection_2_classLit = createForClass('java.util', 'AbstractCollection', 288);
+defineClass(290, 288, $intern_4);
 _.spliterator_0 = function spliterator_1(){
   return new Spliterators$IteratorSpliterator(this, 1);
 }
@@ -1709,10 +1720,10 @@ _.equals_0 = function equals_0(o){
   if (o === this) {
     return true;
   }
-  if (!instanceOf(o, 38)) {
+  if (!instanceOf(o, 37)) {
     return false;
   }
-  other = castTo(o, 38);
+  other = castTo(o, 37);
   if (other.size() != this.size()) {
     return false;
   }
@@ -1742,8 +1753,8 @@ _.removeAll = function removeAll_0(c){
   return size_0 != this.size();
 }
 ;
-var Ljava_util_AbstractSet_2_classLit = createForClass('java.util', 'AbstractSet', 278);
-defineClass(279, 278, $intern_3);
+var Ljava_util_AbstractSet_2_classLit = createForClass('java.util', 'AbstractSet', 290);
+defineClass(291, 290, $intern_4);
 _.iterator_0 = function iterator_0(){
   return this.iterator_1();
 }
@@ -1772,7 +1783,7 @@ _.retainAll = function retainAll_0(elementsToKeep){
   throw toJs(new UnsupportedOperationException);
 }
 ;
-var Lcom_google_common_collect_Sets$SetView_2_classLit = createForClass('com.google.common.collect', 'Sets/SetView', 279);
+var Lcom_google_common_collect_Sets$SetView_2_classLit = createForClass('com.google.common.collect', 'Sets/SetView', 291);
 function $size(this$static){
   var e, e$iterator, size_0;
   size_0 = 0;
@@ -1788,7 +1799,7 @@ function Sets$2(val$set1, val$set2){
   this.val$set22 = val$set2;
 }
 
-defineClass(182, 279, $intern_3, Sets$2);
+defineClass(192, 291, $intern_4, Sets$2);
 _.iterator_0 = function iterator_2(){
   return new Sets$2$1(this.val$set11, this.val$set22);
 }
@@ -1817,24 +1828,24 @@ _.stream = function stream_0(){
   return $filter(this.val$set11.stream(), new Sets$2$0methodref$contains$Type(this.val$set22));
 }
 ;
-var Lcom_google_common_collect_Sets$2_2_classLit = createForClass('com.google.common.collect', 'Sets/2', 182);
+var Lcom_google_common_collect_Sets$2_2_classLit = createForClass('com.google.common.collect', 'Sets/2', 192);
 function Sets$2$0methodref$contains$Type($$outer_0){
   this.$$outer_0 = $$outer_0;
 }
 
-defineClass(183, 1, {}, Sets$2$0methodref$contains$Type);
+defineClass(193, 1, {}, Sets$2$0methodref$contains$Type);
 _.test_0 = function test_0(arg0){
   return this.$$outer_0.contains(arg0);
 }
 ;
-var Lcom_google_common_collect_Sets$2$0methodref$contains$Type_2_classLit = createForClass('com.google.common.collect', 'Sets/2/0methodref$contains$Type', 183);
+var Lcom_google_common_collect_Sets$2$0methodref$contains$Type_2_classLit = createForClass('com.google.common.collect', 'Sets/2/0methodref$contains$Type', 193);
 function Sets$2$1(val$set1, val$set2){
   this.val$set12 = val$set1;
   this.val$set23 = val$set2;
   this.itr = this.val$set12.iterator_0();
 }
 
-defineClass(150, 149, {}, Sets$2$1);
+defineClass(153, 152, {}, Sets$2$1);
 _.computeNext = function computeNext(){
   var e;
   while (this.itr.hasNext_0()) {
@@ -1846,19 +1857,19 @@ _.computeNext = function computeNext(){
   return this.state = 2 , null;
 }
 ;
-var Lcom_google_common_collect_Sets$2$1_2_classLit = createForClass('com.google.common.collect', 'Sets/2/1', 150);
+var Lcom_google_common_collect_Sets$2$1_2_classLit = createForClass('com.google.common.collect', 'Sets/2/1', 153);
 function Sets$3(val$set1, val$set2){
   this.val$set11 = val$set1;
   this.val$set22 = val$set2;
 }
 
-defineClass(184, 279, $intern_3, Sets$3);
+defineClass(194, 291, $intern_4, Sets$3);
 _.iterator_0 = function iterator_4(){
   return new Sets$3$1(this.val$set11, this.val$set22);
 }
 ;
 _.contains = function contains_1(element){
-  return $contains_2(this.val$set11, element) && !$contains_2(this.val$set22, element);
+  return $contains_3(this.val$set11, element) && !$contains_3(this.val$set22, element);
 }
 ;
 _.isEmpty = function isEmpty_1(){
@@ -1874,7 +1885,7 @@ _.size = function size_2(){
   size_0 = 0;
   for (e$iterator = (entryIterator = new TreeMap$EntryIterator((new TreeMap$EntrySet((new AbstractNavigableMap$NavigableKeySet(this.val$set11.map_0)).map_0)).this$01_0) , new AbstractNavigableMap$NavigableKeySet$1(entryIterator)); $hasNext_0(e$iterator.val$entryIterator2.iter);) {
     e = (entry = $next_3(e$iterator.val$entryIterator2) , entry.getKey());
-    $contains_2(this.val$set22, e) || ++size_0;
+    $contains_3(this.val$set22, e) || ++size_0;
   }
   return size_0;
 }
@@ -1883,7 +1894,7 @@ _.stream = function stream_1(){
   return $filter(new StreamImpl(null, new SortedSet$1(this.val$set11)), new Sets$3$lambda$0$Type(this.val$set22));
 }
 ;
-var Lcom_google_common_collect_Sets$3_2_classLit = createForClass('com.google.common.collect', 'Sets/3', 184);
+var Lcom_google_common_collect_Sets$3_2_classLit = createForClass('com.google.common.collect', 'Sets/3', 194);
 function Sets$3$1(val$set1, val$set2){
   var entryIterator;
   this.val$set12 = val$set1;
@@ -1891,31 +1902,31 @@ function Sets$3$1(val$set1, val$set2){
   this.itr = (entryIterator = new TreeMap$EntryIterator((new TreeMap$EntrySet((new AbstractNavigableMap$NavigableKeySet(this.val$set12.map_0)).map_0)).this$01_0) , new AbstractNavigableMap$NavigableKeySet$1(entryIterator));
 }
 
-defineClass(115, 149, {}, Sets$3$1);
+defineClass(120, 152, {}, Sets$3$1);
 _.computeNext = function computeNext_0(){
   var e, entry;
   while ($hasNext_0(this.itr.val$entryIterator2.iter)) {
     e = (entry = $next_3(this.itr.val$entryIterator2) , entry.getKey());
-    if (!$contains_2(this.val$set23, e)) {
+    if (!$contains_3(this.val$set23, e)) {
       return e;
     }
   }
   return this.state = 2 , null;
 }
 ;
-var Lcom_google_common_collect_Sets$3$1_2_classLit = createForClass('com.google.common.collect', 'Sets/3/1', 115);
+var Lcom_google_common_collect_Sets$3$1_2_classLit = createForClass('com.google.common.collect', 'Sets/3/1', 120);
 function Sets$3$lambda$0$Type(set2_0){
   this.set2_0 = set2_0;
 }
 
-defineClass(185, 1, {}, Sets$3$lambda$0$Type);
+defineClass(195, 1, {}, Sets$3$lambda$0$Type);
 _.test_0 = function test_1(arg0){
-  return !$contains_2(this.set2_0, arg0);
+  return !$contains_3(this.set2_0, arg0);
 }
 ;
-var Lcom_google_common_collect_Sets$3$lambda$0$Type_2_classLit = createForClass('com.google.common.collect', 'Sets/3/lambda$0$Type', 185);
-defineClass(181, 74, $intern_2);
-var Lcom_google_gwt_core_client_impl_JavaScriptExceptionBase_2_classLit = createForClass('com.google.gwt.core.client.impl', 'JavaScriptExceptionBase', 181);
+var Lcom_google_common_collect_Sets$3$lambda$0$Type_2_classLit = createForClass('com.google.common.collect', 'Sets/3/lambda$0$Type', 195);
+defineClass(191, 76, $intern_2);
+var Lcom_google_gwt_core_client_impl_JavaScriptExceptionBase_2_classLit = createForClass('com.google.gwt.core.client.impl', 'JavaScriptExceptionBase', 191);
 function $clinit_JavaScriptException(){
   $clinit_JavaScriptException = emptyMethod;
   NOT_SET = new Object_0;
@@ -1947,7 +1958,7 @@ function getExceptionName0(e){
   return e == null?null:e.name;
 }
 
-defineClass(76, 181, {76:1, 3:1, 17:1, 13:1, 11:1}, JavaScriptException);
+defineClass(78, 191, {78:1, 3:1, 17:1, 14:1, 11:1}, JavaScriptException);
 _.getMessage = function getMessage_0(){
   $ensureInit(this);
   return this.message_0;
@@ -1958,12 +1969,12 @@ _.getThrown = function getThrown(){
 }
 ;
 var NOT_SET;
-var Lcom_google_gwt_core_client_JavaScriptException_2_classLit = createForClass('com.google.gwt.core.client', 'JavaScriptException', 76);
-defineClass(259, 1, {});
-var Lcom_google_gwt_core_client_Scheduler_2_classLit = createForClass('com.google.gwt.core.client', 'Scheduler', 259);
+var Lcom_google_gwt_core_client_JavaScriptException_2_classLit = createForClass('com.google.gwt.core.client', 'JavaScriptException', 78);
+defineClass(271, 1, {});
+var Lcom_google_gwt_core_client_Scheduler_2_classLit = createForClass('com.google.gwt.core.client', 'Scheduler', 271);
 function $clinit_Impl(){
   $clinit_Impl = emptyMethod;
-  !!($clinit_StackTraceCreator() , collector_0);
+  !!($clinit_StackTraceCreator() , collector_1);
 }
 
 function apply_0(jsFunction, thisObj, args){
@@ -2090,7 +2101,7 @@ function runScheduledTasks(tasks, rescheduled){
       if (instanceOf($e0, 11)) {
         e = $e0;
         $clinit_Impl();
-        reportToBrowser(instanceOf(e, 76)?castTo(e, 76).getThrown():e);
+        reportToBrowser(instanceOf(e, 78)?castTo(e, 78).getThrown():e);
       }
        else 
         throw toJs($e0);
@@ -2099,13 +2110,13 @@ function runScheduledTasks(tasks, rescheduled){
   return rescheduled;
 }
 
-defineClass(204, 259, {}, SchedulerImpl);
+defineClass(223, 271, {}, SchedulerImpl);
 var INSTANCE;
-var Lcom_google_gwt_core_client_impl_SchedulerImpl_2_classLit = createForClass('com.google.gwt.core.client.impl', 'SchedulerImpl', 204);
+var Lcom_google_gwt_core_client_impl_SchedulerImpl_2_classLit = createForClass('com.google.gwt.core.client.impl', 'SchedulerImpl', 223);
 function create(value_0){
   var a0, a1, a2;
-  a0 = value_0 & $intern_4;
-  a1 = value_0 >> 22 & $intern_4;
+  a0 = value_0 & $intern_5;
+  a1 = value_0 >> 22 & $intern_5;
   a2 = value_0 < 0?1048575:0;
   return create0(a0, a1, a2);
 }
@@ -2131,24 +2142,24 @@ function fromDouble(value_0){
     value_0 = -value_0;
   }
   a2 = 0;
-  if (value_0 >= $intern_5) {
-    a2 = round_int(value_0 / $intern_5);
-    value_0 -= a2 * $intern_5;
+  if (value_0 >= $intern_6) {
+    a2 = round_int(value_0 / $intern_6);
+    value_0 -= a2 * $intern_6;
   }
   a1 = 0;
-  if (value_0 >= $intern_6) {
-    a1 = round_int(value_0 / $intern_6);
-    value_0 -= a1 * $intern_6;
+  if (value_0 >= $intern_7) {
+    a1 = round_int(value_0 / $intern_7);
+    value_0 -= a1 * $intern_7;
   }
   a0 = round_int(value_0);
   result = create0(a0, a1, a2);
-  negative && (neg0 = ~result.l + 1 & $intern_4 , neg1 = ~result.m + (neg0 == 0?1:0) & $intern_4 , neg2 = ~result.h + (neg0 == 0 && neg1 == 0?1:0) & 1048575 , result.l = neg0 , result.m = neg1 , result.h = neg2 , undefined);
+  negative && (neg0 = ~result.l + 1 & $intern_5 , neg1 = ~result.m + (neg0 == 0?1:0) & $intern_5 , neg2 = ~result.h + (neg0 == 0 && neg1 == 0?1:0) & 1048575 , result.l = neg0 , result.m = neg1 , result.h = neg2 , undefined);
   return result;
 }
 
 function $clinit_BigLongLib$Const(){
   $clinit_BigLongLib$Const = emptyMethod;
-  MAX_VALUE = create0($intern_4, $intern_4, 524287);
+  MAX_VALUE = create0($intern_5, $intern_5, 524287);
   MIN_VALUE = create0(0, 0, 524288);
   create(1);
   create(2);
@@ -2160,16 +2171,16 @@ function createLongEmul(big_0){
   var a2;
   a2 = big_0.h;
   if (a2 == 0) {
-    return big_0.l + big_0.m * $intern_6;
+    return big_0.l + big_0.m * $intern_7;
   }
   if (a2 == 1048575) {
-    return big_0.l + big_0.m * $intern_6 - $intern_5;
+    return big_0.l + big_0.m * $intern_7 - $intern_6;
   }
   return big_0;
 }
 
 function fromDouble_0(value_0){
-  if (-17592186044416 < value_0 && value_0 < $intern_5) {
+  if (-17592186044416 < value_0 && value_0 < $intern_6) {
     return value_0 < 0?$wnd.Math.ceil(value_0):$wnd.Math.floor(value_0);
   }
   return createLongEmul(fromDouble(value_0));
@@ -2187,7 +2198,7 @@ function $exec(this$static, input_0){
 function $onModuleLoad(){
   var allowedModes, currentMode, i;
   currentMode = $doc.compatMode;
-  allowedModes = stampJavaTypeInfo(getClassLiteralForArray(Ljava_lang_String_2_classLit, 1), $intern_0, 2, 6, ['CSS1Compat']);
+  allowedModes = stampJavaTypeInfo(getClassLiteralForArray(Ljava_lang_String_2_classLit, 1), $intern_3, 2, 6, ['CSS1Compat']);
   for (i = 0; i < allowedModes.length; i++) {
     if ($equals_1(allowedModes[i], currentMode)) {
       return;
@@ -2198,7 +2209,7 @@ function $onModuleLoad(){
 
 function assertCompileTimeUserAgent(){
   var compileTimeValue, impl, runtimeValue;
-  impl = castTo(create_com_google_gwt_useragent_client_UserAgent(), 170);
+  impl = castTo(create_com_google_gwt_useragent_client_UserAgent(), 174);
   compileTimeValue = impl.getCompileTimeValue();
   runtimeValue = impl.getRuntimeValue();
   if (!$equals_1(compileTimeValue, runtimeValue)) {
@@ -2213,20 +2224,20 @@ function Error_0(message, cause){
   this.initializeBackingError();
 }
 
-defineClass(50, 11, $intern_7);
-var Ljava_lang_Error_2_classLit = createForClass('java.lang', 'Error', 50);
-defineClass(27, 50, $intern_7);
-var Ljava_lang_AssertionError_2_classLit = createForClass('java.lang', 'AssertionError', 27);
+defineClass(51, 11, $intern_8);
+var Ljava_lang_Error_2_classLit = createForClass('java.lang', 'Error', 51);
+defineClass(30, 51, $intern_8);
+var Ljava_lang_AssertionError_2_classLit = createForClass('java.lang', 'AssertionError', 30);
 function UserAgentAsserter$UserAgentAssertionError(compileTimeValue, runtimeValue){
   Error_0.call(this, 'Possible problem with your *.gwt.xml module file.\nThe compile time user.agent value (' + compileTimeValue + ') ' + 'does not match the runtime user.agent value (' + runtimeValue + ').\n' + 'Expect more errors.' == null?'null':toString_3('Possible problem with your *.gwt.xml module file.\nThe compile time user.agent value (' + compileTimeValue + ') ' + 'does not match the runtime user.agent value (' + runtimeValue + ').\n' + 'Expect more errors.'), instanceOf('Possible problem with your *.gwt.xml module file.\nThe compile time user.agent value (' + compileTimeValue + ') ' + 'does not match the runtime user.agent value (' + runtimeValue + ').\n' + 'Expect more errors.', 11)?castTo('Possible problem with your *.gwt.xml module file.\nThe compile time user.agent value (' + compileTimeValue + ') ' + 'does not match the runtime user.agent value (' + runtimeValue + ').\n' + 'Expect more errors.', 11):null);
 }
 
-defineClass(171, 27, $intern_7, UserAgentAsserter$UserAgentAssertionError);
-var Lcom_google_gwt_useragent_client_UserAgentAsserter$UserAgentAssertionError_2_classLit = createForClass('com.google.gwt.useragent.client', 'UserAgentAsserter/UserAgentAssertionError', 171);
+defineClass(175, 30, $intern_8, UserAgentAsserter$UserAgentAssertionError);
+var Lcom_google_gwt_useragent_client_UserAgentAsserter$UserAgentAssertionError_2_classLit = createForClass('com.google.gwt.useragent.client', 'UserAgentAsserter/UserAgentAssertionError', 175);
 function UserAgentImplGecko1_8(){
 }
 
-defineClass(214, 1, {170:1}, UserAgentImplGecko1_8);
+defineClass(225, 1, {174:1}, UserAgentImplGecko1_8);
 _.getCompileTimeValue = function getCompileTimeValue(){
   return 'gecko1_8';
 }
@@ -2247,11 +2258,11 @@ _.getRuntimeValue = function getRuntimeValue(){
   return 'unknown';
 }
 ;
-var Lcom_google_gwt_useragent_client_UserAgentImplGecko1_18_2_classLit = createForClass('com.google.gwt.useragent.client', 'UserAgentImplGecko1_8', 214);
+var Lcom_google_gwt_useragent_client_UserAgentImplGecko1_18_2_classLit = createForClass('com.google.gwt.useragent.client', 'UserAgentImplGecko1_8', 225);
 function UserAgentImplSafari(){
 }
 
-defineClass(213, 1, {170:1}, UserAgentImplSafari);
+defineClass(224, 1, {174:1}, UserAgentImplSafari);
 _.getCompileTimeValue = function getCompileTimeValue_0(){
   return 'safari';
 }
@@ -2272,26 +2283,42 @@ _.getRuntimeValue = function getRuntimeValue_0(){
   return 'unknown';
 }
 ;
-var Lcom_google_gwt_useragent_client_UserAgentImplSafari_2_classLit = createForClass('com.google.gwt.useragent.client', 'UserAgentImplSafari', 213);
+var Lcom_google_gwt_useragent_client_UserAgentImplSafari_2_classLit = createForClass('com.google.gwt.useragent.client', 'UserAgentImplSafari', 224);
 function ASIJs(xmlString){
   var doc, map_0, algNameVersionDate, lowestLevelDefinition, lowestLevelOriginalSir, drugAndFullNames, drugClassAndDrugs, geneAndDrugClasses, algInfo, algName, nodes0, algVersion, nodes1, algDate, dateNode, nodes;
   this.xmlString = xmlString;
   $clinit_XmlAsiTransformer();
   this.genes = $transform(xmlString);
-  this.algorithmInfo = (doc = $parseXml(xmlString) , map_0 = new HashMap , algNameVersionDate = (algInfo = new HashMap , algName = $trim((nodes0 = $queryNodes(doc, 'ALGORITHM/ALGNAME') , nodes0.array.length == 0?null:(checkCriticalElementIndex(0, nodes0.array.length) , castToNative(nodes0.array[0], $wnd.Node))).textContent) , algVersion = $trim((nodes1 = $queryNodes(doc, 'ALGORITHM/ALGVERSION') , nodes1.array.length == 0?null:(checkCriticalElementIndex(0, nodes1.array.length) , castToNative(nodes1.array[0], $wnd.Node))).textContent) , algDate = 'NA' , dateNode = (nodes = $queryNodes(doc, 'ALGORITHM/ALGDATE') , nodes.array.length == 0?null:(checkCriticalElementIndex(0, nodes.array.length) , castToNative(nodes.array[0], $wnd.Node))) , dateNode != null && (algDate = $trim(dateNode.textContent)) , $put_1(algInfo.stringMap, 'ALGNAME', algName) , $put_1(algInfo.stringMap, 'ALGVERSION', algVersion) , $put_1(algInfo.stringMap, 'ALGDATE', algDate) , algInfo) , $put_1(map_0.stringMap, 'ALGNAME_ALGVERSION_ALGDATE', algNameVersionDate) , $put_1(map_0.stringMap, 'ALGNAME_ALGVERSION', algNameVersionDate) , lowestLevelDefinition = castTo($getStringValue($createLevelMap(doc), '1'), 22) , lowestLevelOriginalSir = new HashMap , $putStringValue(lowestLevelOriginalSir, 'ORIGINAL', lowestLevelDefinition.text_0) , $putStringValue(lowestLevelOriginalSir, 'SIR', lowestLevelDefinition.sir) , $put_1(map_0.stringMap, 'ORDER1_ORIGINAL_SIR', lowestLevelOriginalSir) , drugAndFullNames = $parseForDrugAndFullNames(doc) , $put_1(map_0.stringMap, 'DRUG_FULLNAME', drugAndFullNames) , drugClassAndDrugs = $parseForDrugClassesAndDrugs(doc, drugAndFullNames) , $put_1(map_0.stringMap, 'DRUGCLASS_DRUGLIST', drugClassAndDrugs) , geneAndDrugClasses = $parseForGeneAndDrugClasses(doc, drugClassAndDrugs) , $put_1(map_0.stringMap, 'GENE_DRUGCLASSLIST', geneAndDrugClasses) , map_0);
+  this.algorithmInfo = (doc = $parseXml(xmlString) , map_0 = new HashMap , algNameVersionDate = (algInfo = new HashMap , algName = $trim((nodes0 = $queryNodes(doc, 'ALGORITHM/ALGNAME') , nodes0.array.length == 0?null:(checkCriticalElementIndex(0, nodes0.array.length) , castToNative(nodes0.array[0], $wnd.Node))).textContent) , algVersion = $trim((nodes1 = $queryNodes(doc, 'ALGORITHM/ALGVERSION') , nodes1.array.length == 0?null:(checkCriticalElementIndex(0, nodes1.array.length) , castToNative(nodes1.array[0], $wnd.Node))).textContent) , algDate = 'NA' , dateNode = (nodes = $queryNodes(doc, 'ALGORITHM/ALGDATE') , nodes.array.length == 0?null:(checkCriticalElementIndex(0, nodes.array.length) , castToNative(nodes.array[0], $wnd.Node))) , dateNode != null && (algDate = $trim(dateNode.textContent)) , $put_1(algInfo.stringMap, 'ALGNAME', algName) , $put_1(algInfo.stringMap, 'ALGVERSION', algVersion) , $put_1(algInfo.stringMap, 'ALGDATE', algDate) , algInfo) , $put_1(map_0.stringMap, 'ALGNAME_ALGVERSION_ALGDATE', algNameVersionDate) , $put_1(map_0.stringMap, 'ALGNAME_ALGVERSION', algNameVersionDate) , lowestLevelDefinition = castTo($getStringValue($createLevelMap(doc), '1'), 25) , lowestLevelOriginalSir = new HashMap , $putStringValue(lowestLevelOriginalSir, 'ORIGINAL', lowestLevelDefinition.text_0) , $putStringValue(lowestLevelOriginalSir, 'SIR', lowestLevelDefinition.sir) , $put_1(map_0.stringMap, 'ORDER1_ORIGINAL_SIR', lowestLevelOriginalSir) , drugAndFullNames = $parseForDrugAndFullNames(doc) , $put_1(map_0.stringMap, 'DRUG_FULLNAME', drugAndFullNames) , drugClassAndDrugs = $parseForDrugClassesAndDrugs(doc, drugAndFullNames) , $put_1(map_0.stringMap, 'DRUGCLASS_DRUGLIST', drugClassAndDrugs) , geneAndDrugClasses = $parseForGeneAndDrugClasses(doc, drugClassAndDrugs) , $put_1(map_0.stringMap, 'GENE_DRUGCLASSLIST', geneAndDrugClasses) , map_0);
 }
 
-defineClass(271, 1, {}, ASIJs);
-_.evaluateGene = function evaluateGene(geneName, mutations){
-  var evalGene, gene, mutList, mutationComparator, asArray;
+function lambda$3(mut_0){
+  return mut_0.length > 1?mut_0[1]:'';
+}
+
+defineClass(283, 1, {}, ASIJs);
+_.evaluate = function evaluate(mutations){
+  var entry, entry$iterator, gene, geneMuts, geneName, geneResults, invalidMutations, mut, mut$iterator, mutList, mutationComparator, mutsByGene, asArray;
   mutList = (asArray = mutations , new Arrays$ArrayList(asArray));
-  gene = castTo($getStringValue(this.genes, geneName), 35);
+  mutsByGene = castTo($collect($map(new StreamImpl(null, new Spliterators$IteratorSpliterator(mutList, 16)), new ASIJs$lambda$0$Type), groupingBy(mapping(of_2(new Collectors$21methodref$ctor$Type, new Collectors$20methodref$add$Type, new Collectors$lambda$42$Type, stampJavaTypeInfo(getClassLiteralForArray(Ljava_util_stream_Collector$Characteristics_2_classLit, 1), $intern_0, 20, 0, [($clinit_Collector$Characteristics() , IDENTITY_FINISH)]))))), 43);
+  geneResults = new ArrayList;
+  invalidMutations = new ArrayList;
   mutationComparator = new StringMutationComparator;
-  if (!$areMutationsValid(mutList)) {
-    throw toJs(new RuntimeException_0(lenientFormat('Invalid list of mutations: %s', stampJavaTypeInfo(getClassLiteralForArray(Ljava_lang_Object_2_classLit, 1), $intern_0, 1, 5, [toString_3(mutations)]))));
+  for (entry$iterator = mutsByGene.entrySet().iterator_0(); entry$iterator.hasNext_0();) {
+    entry = castTo(entry$iterator.next_1(), 13);
+    geneName = castToString(entry.getKey());
+    geneMuts = castTo(entry.getValue(), 18);
+    gene = castTo($getStringValue(this.genes, geneName), 35);
+    for (mut$iterator = geneMuts.iterator_0(); mut$iterator.hasNext_0();) {
+      mut = castToString(mut$iterator.next_1());
+      (!gene || !$booleanValue($matches($matcher(($clinit_StringMutationComparator() , MUTATION_PATTERN), (checkCriticalNotNull(mut) , mut))))) && (push_1(invalidMutations.array, "'" + geneName + (mut == ''?'':':' + mut) + "'") , true);
+    }
+    !!gene && invalidMutations.array.length == 0 && $add_1(geneResults, $evaluate_2(gene, geneMuts, mutationComparator));
   }
-  evalGene = $evaluate_2(gene, mutList, mutationComparator);
-  return of_0(evalGene);
+  if (invalidMutations.array.length != 0) {
+    throw toJs(new ASIEvaluationException(lenientFormat('Invalid mutations: %s', stampJavaTypeInfo(getClassLiteralForArray(Ljava_lang_Object_2_classLit, 1), $intern_0, 1, 5, [join_1(invalidMutations)]))));
+  }
+  return of_0(geneResults);
 }
 ;
 _.getAlgorithmInfo = function getAlgorithmInfo(){
@@ -2306,47 +2333,56 @@ _.getXMLString = function getXMLString(){
   return this.xmlString;
 }
 ;
-var Ledu_stanford_hivdb_asijs_ASIJs_2_classLit = createForClass('edu.stanford.hivdb.asijs', 'ASIJs', 271);
+var Ledu_stanford_hivdb_asijs_ASIJs_2_classLit = createForClass('edu.stanford.hivdb.asijs', 'ASIJs', 283);
+function ASIJs$lambda$0$Type(){
+}
+
+defineClass(177, 1, {}, ASIJs$lambda$0$Type);
+_.apply_0 = function apply_1(arg0){
+  return $split(castToString(arg0), ':', 2);
+}
+;
+var Ledu_stanford_hivdb_asijs_ASIJs$lambda$0$Type_2_classLit = createForClass('edu.stanford.hivdb.asijs', 'ASIJs/lambda$0$Type', 177);
 function of_0(input_0){
   var collected;
-  if (instanceOf(input_0, 57)) {
-    return toJsPropertyMap(castTo(input_0, 57));
+  if (instanceOf(input_0, 43)) {
+    return toJsPropertyMap(castTo(input_0, 43));
   }
-   else if (instanceOf(input_0, 18)) {
-    return new ($wnd.Array.bind.apply($wnd.Array, [null].concat(ensureNotNull((collected = castTo($collect($map(castTo(input_0, 18).stream(), new JsObjectify$lambda$0$Type), of_1(new Collectors$21methodref$ctor$Type, new Collectors$20methodref$add$Type, new Collectors$lambda$42$Type, stampJavaTypeInfo(getClassLiteralForArray(Ljava_util_stream_Collector$Characteristics_2_classLit, 1), $intern_0, 23, 0, [($clinit_Collector$Characteristics() , IDENTITY_FINISH)]))), 19) , collected.toArray_0(initUnidimensionalArray(Ljava_lang_Object_2_classLit, $intern_0, 1, collected.size(), 5, 1)))))));
+   else if (instanceOf(input_0, 19)) {
+    return new ($wnd.Array.bind.apply($wnd.Array, [null].concat(ensureNotNull((collected = castTo($collect($map(castTo(input_0, 19).stream(), new JsObjectify$lambda$0$Type), of_2(new Collectors$21methodref$ctor$Type, new Collectors$20methodref$add$Type, new Collectors$lambda$42$Type, stampJavaTypeInfo(getClassLiteralForArray(Ljava_util_stream_Collector$Characteristics_2_classLit, 1), $intern_0, 20, 0, [($clinit_Collector$Characteristics() , IDENTITY_FINISH)]))), 18) , collected.toArray_0(initUnidimensionalArray(Ljava_lang_Object_2_classLit, $intern_0, 1, collected.size(), 5, 1)))))));
   }
-   else if (instanceOf(input_0, 44)) {
-    return castTo(input_0, 44).value_0;
+   else if (instanceOf(input_0, 45)) {
+    return castTo(input_0, 45).value_0;
   }
    else if (instanceOfDouble(input_0)) {
     return $doubleValue(castToDouble(input_0));
   }
-   else if (instanceOf(input_0, 22)) {
-    return toJsPropertyMap_2(castTo(input_0, 22));
+   else if (instanceOf(input_0, 25)) {
+    return toJsPropertyMap_2(castTo(input_0, 25));
   }
    else if (instanceOf(input_0, 40)) {
     return toJsPropertyMap_0(castTo(input_0, 40));
   }
-   else if (instanceOf(input_0, 86)) {
-    return toJsPropertyMap_1(castTo(input_0, 86));
+   else if (instanceOf(input_0, 88)) {
+    return toJsPropertyMap_1(castTo(input_0, 88));
   }
-   else if (instanceOf(input_0, 78)) {
-    return toJsPropertyMap_4(castTo(input_0, 78));
+   else if (instanceOf(input_0, 80)) {
+    return toJsPropertyMap_4(castTo(input_0, 80));
   }
-   else if (instanceOf(input_0, 79)) {
-    return toJsPropertyMap_5(castTo(input_0, 79));
+   else if (instanceOf(input_0, 81)) {
+    return toJsPropertyMap_5(castTo(input_0, 81));
+  }
+   else if (instanceOf(input_0, 96)) {
+    return toJsPropertyMap_8(castTo(input_0, 96));
+  }
+   else if (instanceOf(input_0, 62)) {
+    return toJsPropertyMap_3(castTo(input_0, 62));
   }
    else if (instanceOf(input_0, 94)) {
-    return toJsPropertyMap_8(castTo(input_0, 94));
+    return toJsPropertyMap_6(castTo(input_0, 94));
   }
-   else if (instanceOf(input_0, 60)) {
-    return toJsPropertyMap_3(castTo(input_0, 60));
-  }
-   else if (instanceOf(input_0, 91)) {
-    return toJsPropertyMap_6(castTo(input_0, 91));
-  }
-   else if (instanceOf(input_0, 95)) {
-    return toJsPropertyMap_7(castTo(input_0, 95));
+   else if (instanceOf(input_0, 97)) {
+    return toJsPropertyMap_7(castTo(input_0, 97));
   }
   return input_0;
 }
@@ -2355,7 +2391,7 @@ function toJsPropertyMap(input_0){
   var entry, entry$iterator, jsmap, key, val;
   jsmap = {};
   for (entry$iterator = input_0.entrySet().iterator_0(); entry$iterator.hasNext_0();) {
-    entry = castTo(entry$iterator.next_1(), 15);
+    entry = castTo(entry$iterator.next_1(), 13);
     key = toString_3(entry.getKey());
     val = of_0(entry.getValue());
     jsmap[key] = val;
@@ -2365,6 +2401,9 @@ function toJsPropertyMap(input_0){
 
 function toJsPropertyMap_0(cmt){
   var cmtResult;
+  if (!cmt) {
+    return null;
+  }
   cmtResult = {};
   cmtResult['id'] = cmt.id_0;
   cmtResult['sort'] = cmt.sort_0.value_0;
@@ -2374,12 +2413,18 @@ function toJsPropertyMap_0(cmt){
 
 function toJsPropertyMap_1(def){
   var defResult;
-  instanceOf(def, 22)?(defResult = toJsPropertyMap_2(castTo(def, 22))):instanceOf(def, 40)?(defResult = toJsPropertyMap_0(castTo(def, 40))):(defResult = {});
+  if (!def) {
+    return null;
+  }
+  instanceOf(def, 25)?(defResult = toJsPropertyMap_2(castTo(def, 25))):instanceOf(def, 40)?(defResult = toJsPropertyMap_0(castTo(def, 40))):(defResult = {});
   return defResult;
 }
 
 function toJsPropertyMap_2(level){
   var levelResult;
+  if (!level) {
+    return null;
+  }
   levelResult = {};
   levelResult['order'] = level.order.value_0;
   levelResult['SIR'] = level.sir;
@@ -2389,61 +2434,79 @@ function toJsPropertyMap_2(level){
 
 function toJsPropertyMap_3(evalCond){
   var collected, collected0, collected1, condResult, evaluator, score;
+  if (!evalCond) {
+    return null;
+  }
   condResult = {};
   evaluator = evalCond.evaluator;
   condResult['result'] = (score = castToDouble($peek(evaluator.stack_0)) , evaluator.isBooleanResult?($clinit_Boolean() , $equals_0(score, ($clinit_AsiGrammarAdapter() , TRUE_VALUE))?true:false):score);
   condResult['statement'] = evalCond.ruleCondition.statement;
-  condResult['scoredMutations'] = new ($wnd.Array.bind.apply($wnd.Array, [null].concat(ensureNotNull((collected0 = castTo($collect($map(new StreamImpl(null, new Spliterators$IteratorSpliterator(evaluator.allScoredMutations, 1)), new JsObjectify$lambda$0$Type), of_1(new Collectors$21methodref$ctor$Type, new Collectors$20methodref$add$Type, new Collectors$lambda$42$Type, stampJavaTypeInfo(getClassLiteralForArray(Ljava_util_stream_Collector$Characteristics_2_classLit, 1), $intern_0, 23, 0, [($clinit_Collector$Characteristics() , IDENTITY_FINISH)]))), 19) , collected0.toArray_0(initUnidimensionalArray(Ljava_lang_Object_2_classLit, $intern_0, 1, collected0.size(), 5, 1)))))));
-  condResult['scoredItems'] = new ($wnd.Array.bind.apply($wnd.Array, [null].concat(ensureNotNull((collected1 = castTo($collect($map(new StreamImpl(null, new Spliterators$IteratorSpliterator(evaluator.scoredItems, 16)), new JsObjectify$lambda$0$Type), of_1(new Collectors$21methodref$ctor$Type, new Collectors$20methodref$add$Type, new Collectors$lambda$42$Type, stampJavaTypeInfo(getClassLiteralForArray(Ljava_util_stream_Collector$Characteristics_2_classLit, 1), $intern_0, 23, 0, [IDENTITY_FINISH]))), 19) , collected1.toArray_0(initUnidimensionalArray(Ljava_lang_Object_2_classLit, $intern_0, 1, collected1.size(), 5, 1)))))));
-  condResult['definitions'] = new ($wnd.Array.bind.apply($wnd.Array, [null].concat(ensureNotNull((collected = castTo($collect($map(new StreamImpl(null, new Spliterators$IteratorSpliterator(evalCond.definitions, 1)), new JsObjectify$lambda$0$Type), of_1(new Collectors$21methodref$ctor$Type, new Collectors$20methodref$add$Type, new Collectors$lambda$42$Type, stampJavaTypeInfo(getClassLiteralForArray(Ljava_util_stream_Collector$Characteristics_2_classLit, 1), $intern_0, 23, 0, [IDENTITY_FINISH]))), 19) , collected.toArray_0(initUnidimensionalArray(Ljava_lang_Object_2_classLit, $intern_0, 1, collected.size(), 5, 1)))))));
+  condResult['scoredMutations'] = new ($wnd.Array.bind.apply($wnd.Array, [null].concat(ensureNotNull((collected0 = castTo($collect($map(new StreamImpl(null, new Spliterators$IteratorSpliterator(evaluator.allScoredMutations, 1)), new JsObjectify$lambda$0$Type), of_2(new Collectors$21methodref$ctor$Type, new Collectors$20methodref$add$Type, new Collectors$lambda$42$Type, stampJavaTypeInfo(getClassLiteralForArray(Ljava_util_stream_Collector$Characteristics_2_classLit, 1), $intern_0, 20, 0, [($clinit_Collector$Characteristics() , IDENTITY_FINISH)]))), 18) , collected0.toArray_0(initUnidimensionalArray(Ljava_lang_Object_2_classLit, $intern_0, 1, collected0.size(), 5, 1)))))));
+  condResult['scoredItems'] = new ($wnd.Array.bind.apply($wnd.Array, [null].concat(ensureNotNull((collected1 = castTo($collect($map(new StreamImpl(null, new Spliterators$IteratorSpliterator(evaluator.scoredItems, 16)), new JsObjectify$lambda$0$Type), of_2(new Collectors$21methodref$ctor$Type, new Collectors$20methodref$add$Type, new Collectors$lambda$42$Type, stampJavaTypeInfo(getClassLiteralForArray(Ljava_util_stream_Collector$Characteristics_2_classLit, 1), $intern_0, 20, 0, [IDENTITY_FINISH]))), 18) , collected1.toArray_0(initUnidimensionalArray(Ljava_lang_Object_2_classLit, $intern_0, 1, collected1.size(), 5, 1)))))));
+  condResult['definitions'] = new ($wnd.Array.bind.apply($wnd.Array, [null].concat(ensureNotNull((collected = castTo($collect($map(new StreamImpl(null, new Spliterators$IteratorSpliterator(evalCond.definitions, 1)), new JsObjectify$lambda$0$Type), of_2(new Collectors$21methodref$ctor$Type, new Collectors$20methodref$add$Type, new Collectors$lambda$42$Type, stampJavaTypeInfo(getClassLiteralForArray(Ljava_util_stream_Collector$Characteristics_2_classLit, 1), $intern_0, 20, 0, [IDENTITY_FINISH]))), 18) , collected.toArray_0(initUnidimensionalArray(Ljava_lang_Object_2_classLit, $intern_0, 1, collected.size(), 5, 1)))))));
   return condResult;
 }
 
 function toJsPropertyMap_4(evalDrug){
   var collected, collected0, drug, drugResult;
+  if (!evalDrug) {
+    return null;
+  }
   drugResult = {};
   drug = evalDrug.drug;
   drugResult['drugName'] = drug.name_0;
   drugResult['drugFullName'] = drug.fullName;
-  drugResult['highestLevel'] = toJsPropertyMap_2($size_0(evalDrug.levelDefinitions.map_0) > 0?castTo(max_1(evalDrug.levelDefinitions, new LevelDefinitionComparator), 22):null);
-  drugResult['levels'] = new ($wnd.Array.bind.apply($wnd.Array, [null].concat(ensureNotNull((collected0 = castTo($collect($map(new StreamImpl(null, new Spliterators$IteratorSpliterator(evalDrug.levelDefinitions, 1)), new JsObjectify$lambda$0$Type), of_1(new Collectors$21methodref$ctor$Type, new Collectors$20methodref$add$Type, new Collectors$lambda$42$Type, stampJavaTypeInfo(getClassLiteralForArray(Ljava_util_stream_Collector$Characteristics_2_classLit, 1), $intern_0, 23, 0, [($clinit_Collector$Characteristics() , IDENTITY_FINISH)]))), 19) , collected0.toArray_0(initUnidimensionalArray(Ljava_lang_Object_2_classLit, $intern_0, 1, collected0.size(), 5, 1)))))));
-  drugResult['conditions'] = new ($wnd.Array.bind.apply($wnd.Array, [null].concat(ensureNotNull((collected = castTo($collect($map(new StreamImpl(null, new Spliterators$IteratorSpliterator(evalDrug.evaluatedConditions, 16)), new JsObjectify$lambda$0$Type), of_1(new Collectors$21methodref$ctor$Type, new Collectors$20methodref$add$Type, new Collectors$lambda$42$Type, stampJavaTypeInfo(getClassLiteralForArray(Ljava_util_stream_Collector$Characteristics_2_classLit, 1), $intern_0, 23, 0, [IDENTITY_FINISH]))), 19) , collected.toArray_0(initUnidimensionalArray(Ljava_lang_Object_2_classLit, $intern_0, 1, collected.size(), 5, 1)))))));
+  drugResult['highestLevel'] = toJsPropertyMap_2($size_0(evalDrug.levelDefinitions.map_0) > 0?castTo(max_1(evalDrug.levelDefinitions, new LevelDefinitionComparator), 25):null);
+  drugResult['levels'] = new ($wnd.Array.bind.apply($wnd.Array, [null].concat(ensureNotNull((collected0 = castTo($collect($map(new StreamImpl(null, new Spliterators$IteratorSpliterator(evalDrug.levelDefinitions, 1)), new JsObjectify$lambda$0$Type), of_2(new Collectors$21methodref$ctor$Type, new Collectors$20methodref$add$Type, new Collectors$lambda$42$Type, stampJavaTypeInfo(getClassLiteralForArray(Ljava_util_stream_Collector$Characteristics_2_classLit, 1), $intern_0, 20, 0, [($clinit_Collector$Characteristics() , IDENTITY_FINISH)]))), 18) , collected0.toArray_0(initUnidimensionalArray(Ljava_lang_Object_2_classLit, $intern_0, 1, collected0.size(), 5, 1)))))));
+  drugResult['conditions'] = new ($wnd.Array.bind.apply($wnd.Array, [null].concat(ensureNotNull((collected = castTo($collect($map(new StreamImpl(null, new Spliterators$IteratorSpliterator(evalDrug.evaluatedConditions, 16)), new JsObjectify$lambda$0$Type), of_2(new Collectors$21methodref$ctor$Type, new Collectors$20methodref$add$Type, new Collectors$lambda$42$Type, stampJavaTypeInfo(getClassLiteralForArray(Ljava_util_stream_Collector$Characteristics_2_classLit, 1), $intern_0, 20, 0, [IDENTITY_FINISH]))), 18) , collected.toArray_0(initUnidimensionalArray(Ljava_lang_Object_2_classLit, $intern_0, 1, collected.size(), 5, 1)))))));
   return drugResult;
 }
 
 function toJsPropertyMap_5(evalDC){
   var collected, dcResult;
+  if (!evalDC) {
+    return null;
+  }
   dcResult = {};
   dcResult['drugClassName'] = evalDC.drugClass.name_0;
-  dcResult['drugs'] = new ($wnd.Array.bind.apply($wnd.Array, [null].concat(ensureNotNull((collected = castTo($collect($map(new StreamImpl(null, new Spliterators$IteratorSpliterator(evalDC.evaluatedDrugs, 16)), new JsObjectify$lambda$0$Type), of_1(new Collectors$21methodref$ctor$Type, new Collectors$20methodref$add$Type, new Collectors$lambda$42$Type, stampJavaTypeInfo(getClassLiteralForArray(Ljava_util_stream_Collector$Characteristics_2_classLit, 1), $intern_0, 23, 0, [($clinit_Collector$Characteristics() , IDENTITY_FINISH)]))), 19) , collected.toArray_0(initUnidimensionalArray(Ljava_lang_Object_2_classLit, $intern_0, 1, collected.size(), 5, 1)))))));
+  dcResult['drugs'] = new ($wnd.Array.bind.apply($wnd.Array, [null].concat(ensureNotNull((collected = castTo($collect($map(new StreamImpl(null, new Spliterators$IteratorSpliterator(evalDC.evaluatedDrugs, 16)), new JsObjectify$lambda$0$Type), of_2(new Collectors$21methodref$ctor$Type, new Collectors$20methodref$add$Type, new Collectors$lambda$42$Type, stampJavaTypeInfo(getClassLiteralForArray(Ljava_util_stream_Collector$Characteristics_2_classLit, 1), $intern_0, 20, 0, [($clinit_Collector$Characteristics() , IDENTITY_FINISH)]))), 18) , collected.toArray_0(initUnidimensionalArray(Ljava_lang_Object_2_classLit, $intern_0, 1, collected.size(), 5, 1)))))));
   return dcResult;
 }
 
 function toJsPropertyMap_6(evalGene){
   var collected, collected0, collected1, collected2, geneResult;
+  if (!evalGene) {
+    return null;
+  }
   geneResult = {};
   geneResult['geneName'] = evalGene.gene.name_0;
-  geneResult['drugClasses'] = new ($wnd.Array.bind.apply($wnd.Array, [null].concat(ensureNotNull((collected0 = castTo($collect($map(new StreamImpl(null, new Spliterators$IteratorSpliterator(evalGene.evaluatedDrugClasses, 16)), new JsObjectify$lambda$0$Type), of_1(new Collectors$21methodref$ctor$Type, new Collectors$20methodref$add$Type, new Collectors$lambda$42$Type, stampJavaTypeInfo(getClassLiteralForArray(Ljava_util_stream_Collector$Characteristics_2_classLit, 1), $intern_0, 23, 0, [($clinit_Collector$Characteristics() , IDENTITY_FINISH)]))), 19) , collected0.toArray_0(initUnidimensionalArray(Ljava_lang_Object_2_classLit, $intern_0, 1, collected0.size(), 5, 1)))))));
-  geneResult['mutationComments'] = new ($wnd.Array.bind.apply($wnd.Array, [null].concat(ensureNotNull((collected1 = castTo($collect($map(new StreamImpl(null, new Spliterators$IteratorSpliterator(evalGene.geneCommentDefinitions, 1)), new JsObjectify$lambda$0$Type), of_1(new Collectors$21methodref$ctor$Type, new Collectors$20methodref$add$Type, new Collectors$lambda$42$Type, stampJavaTypeInfo(getClassLiteralForArray(Ljava_util_stream_Collector$Characteristics_2_classLit, 1), $intern_0, 23, 0, [IDENTITY_FINISH]))), 19) , collected1.toArray_0(initUnidimensionalArray(Ljava_lang_Object_2_classLit, $intern_0, 1, collected1.size(), 5, 1)))))));
-  geneResult['resultComments'] = new ($wnd.Array.bind.apply($wnd.Array, [null].concat(ensureNotNull((collected2 = castTo($collect($map(new StreamImpl(null, new Spliterators$IteratorSpliterator(evalGene.evaluatedResultCommentRules, 16)), new JsObjectify$lambda$0$Type), of_1(new Collectors$21methodref$ctor$Type, new Collectors$20methodref$add$Type, new Collectors$lambda$42$Type, stampJavaTypeInfo(getClassLiteralForArray(Ljava_util_stream_Collector$Characteristics_2_classLit, 1), $intern_0, 23, 0, [IDENTITY_FINISH]))), 19) , collected2.toArray_0(initUnidimensionalArray(Ljava_lang_Object_2_classLit, $intern_0, 1, collected2.size(), 5, 1)))))));
-  geneResult['scoredMutations'] = new ($wnd.Array.bind.apply($wnd.Array, [null].concat(ensureNotNull((collected = castTo($collect($map(new StreamImpl(null, new Spliterators$IteratorSpliterator(evalGene.geneScoredMutations, 1)), new JsObjectify$lambda$0$Type), of_1(new Collectors$21methodref$ctor$Type, new Collectors$20methodref$add$Type, new Collectors$lambda$42$Type, stampJavaTypeInfo(getClassLiteralForArray(Ljava_util_stream_Collector$Characteristics_2_classLit, 1), $intern_0, 23, 0, [IDENTITY_FINISH]))), 19) , collected.toArray_0(initUnidimensionalArray(Ljava_lang_Object_2_classLit, $intern_0, 1, collected.size(), 5, 1)))))));
+  geneResult['drugClasses'] = new ($wnd.Array.bind.apply($wnd.Array, [null].concat(ensureNotNull((collected0 = castTo($collect($map(new StreamImpl(null, new Spliterators$IteratorSpliterator(evalGene.evaluatedDrugClasses, 16)), new JsObjectify$lambda$0$Type), of_2(new Collectors$21methodref$ctor$Type, new Collectors$20methodref$add$Type, new Collectors$lambda$42$Type, stampJavaTypeInfo(getClassLiteralForArray(Ljava_util_stream_Collector$Characteristics_2_classLit, 1), $intern_0, 20, 0, [($clinit_Collector$Characteristics() , IDENTITY_FINISH)]))), 18) , collected0.toArray_0(initUnidimensionalArray(Ljava_lang_Object_2_classLit, $intern_0, 1, collected0.size(), 5, 1)))))));
+  geneResult['mutationComments'] = new ($wnd.Array.bind.apply($wnd.Array, [null].concat(ensureNotNull((collected1 = castTo($collect($map(new StreamImpl(null, new Spliterators$IteratorSpliterator(evalGene.geneCommentDefinitions, 1)), new JsObjectify$lambda$0$Type), of_2(new Collectors$21methodref$ctor$Type, new Collectors$20methodref$add$Type, new Collectors$lambda$42$Type, stampJavaTypeInfo(getClassLiteralForArray(Ljava_util_stream_Collector$Characteristics_2_classLit, 1), $intern_0, 20, 0, [IDENTITY_FINISH]))), 18) , collected1.toArray_0(initUnidimensionalArray(Ljava_lang_Object_2_classLit, $intern_0, 1, collected1.size(), 5, 1)))))));
+  geneResult['resultComments'] = new ($wnd.Array.bind.apply($wnd.Array, [null].concat(ensureNotNull((collected2 = castTo($collect($map(new StreamImpl(null, new Spliterators$IteratorSpliterator(evalGene.evaluatedResultCommentRules, 16)), new JsObjectify$lambda$0$Type), of_2(new Collectors$21methodref$ctor$Type, new Collectors$20methodref$add$Type, new Collectors$lambda$42$Type, stampJavaTypeInfo(getClassLiteralForArray(Ljava_util_stream_Collector$Characteristics_2_classLit, 1), $intern_0, 20, 0, [IDENTITY_FINISH]))), 18) , collected2.toArray_0(initUnidimensionalArray(Ljava_lang_Object_2_classLit, $intern_0, 1, collected2.size(), 5, 1)))))));
+  geneResult['scoredMutations'] = new ($wnd.Array.bind.apply($wnd.Array, [null].concat(ensureNotNull((collected = castTo($collect($map(new StreamImpl(null, new Spliterators$IteratorSpliterator(evalGene.geneScoredMutations, 1)), new JsObjectify$lambda$0$Type), of_2(new Collectors$21methodref$ctor$Type, new Collectors$20methodref$add$Type, new Collectors$lambda$42$Type, stampJavaTypeInfo(getClassLiteralForArray(Ljava_util_stream_Collector$Characteristics_2_classLit, 1), $intern_0, 20, 0, [IDENTITY_FINISH]))), 18) , collected.toArray_0(initUnidimensionalArray(Ljava_lang_Object_2_classLit, $intern_0, 1, collected.size(), 5, 1)))))));
   return geneResult;
 }
 
 function toJsPropertyMap_7(resultComment){
   var cmtResult, collected, collected0, rule;
+  if (!resultComment) {
+    return null;
+  }
   cmtResult = {};
   cmtResult['result'] = resultComment.evaluationResult;
-  cmtResult['definitions'] = new ($wnd.Array.bind.apply($wnd.Array, [null].concat(ensureNotNull((collected0 = castTo($collect($map(new StreamImpl(null, new Spliterators$IteratorSpliterator(resultComment.definitions, 1)), new JsObjectify$lambda$0$Type), of_1(new Collectors$21methodref$ctor$Type, new Collectors$20methodref$add$Type, new Collectors$lambda$42$Type, stampJavaTypeInfo(getClassLiteralForArray(Ljava_util_stream_Collector$Characteristics_2_classLit, 1), $intern_0, 23, 0, [($clinit_Collector$Characteristics() , IDENTITY_FINISH)]))), 19) , collected0.toArray_0(initUnidimensionalArray(Ljava_lang_Object_2_classLit, $intern_0, 1, collected0.size(), 5, 1)))))));
+  cmtResult['definitions'] = new ($wnd.Array.bind.apply($wnd.Array, [null].concat(ensureNotNull((collected0 = castTo($collect($map(new StreamImpl(null, new Spliterators$IteratorSpliterator(resultComment.definitions, 1)), new JsObjectify$lambda$0$Type), of_2(new Collectors$21methodref$ctor$Type, new Collectors$20methodref$add$Type, new Collectors$lambda$42$Type, stampJavaTypeInfo(getClassLiteralForArray(Ljava_util_stream_Collector$Characteristics_2_classLit, 1), $intern_0, 20, 0, [($clinit_Collector$Characteristics() , IDENTITY_FINISH)]))), 18) , collected0.toArray_0(initUnidimensionalArray(Ljava_lang_Object_2_classLit, $intern_0, 1, collected0.size(), 5, 1)))))));
   rule = resultComment.resultCommentRule;
-  cmtResult['levelConditions'] = new ($wnd.Array.bind.apply($wnd.Array, [null].concat(ensureNotNull((collected = castTo($collect($map(castTo($collect($map(new StreamImpl(null, new Spliterators$IteratorSpliterator(rule.levelConditions, 16)), new JsObjectify$lambda$1$Type), of_1(new Collectors$21methodref$ctor$Type, new Collectors$20methodref$add$Type, new Collectors$lambda$42$Type, stampJavaTypeInfo(getClassLiteralForArray(Ljava_util_stream_Collector$Characteristics_2_classLit, 1), $intern_0, 23, 0, [IDENTITY_FINISH]))), 18).stream(), new JsObjectify$lambda$0$Type), of_1(new Collectors$21methodref$ctor$Type, new Collectors$20methodref$add$Type, new Collectors$lambda$42$Type, stampJavaTypeInfo(getClassLiteralForArray(Ljava_util_stream_Collector$Characteristics_2_classLit, 1), $intern_0, 23, 0, [IDENTITY_FINISH]))), 19) , collected.toArray_0(initUnidimensionalArray(Ljava_lang_Object_2_classLit, $intern_0, 1, collected.size(), 5, 1)))))));
+  cmtResult['levelConditions'] = new ($wnd.Array.bind.apply($wnd.Array, [null].concat(ensureNotNull((collected = castTo($collect($map(castTo($collect($map(new StreamImpl(null, new Spliterators$IteratorSpliterator(rule.levelConditions, 16)), new JsObjectify$lambda$1$Type), of_2(new Collectors$21methodref$ctor$Type, new Collectors$20methodref$add$Type, new Collectors$lambda$42$Type, stampJavaTypeInfo(getClassLiteralForArray(Ljava_util_stream_Collector$Characteristics_2_classLit, 1), $intern_0, 20, 0, [IDENTITY_FINISH]))), 19).stream(), new JsObjectify$lambda$0$Type), of_2(new Collectors$21methodref$ctor$Type, new Collectors$20methodref$add$Type, new Collectors$lambda$42$Type, stampJavaTypeInfo(getClassLiteralForArray(Ljava_util_stream_Collector$Characteristics_2_classLit, 1), $intern_0, 20, 0, [IDENTITY_FINISH]))), 18) , collected.toArray_0(initUnidimensionalArray(Ljava_lang_Object_2_classLit, $intern_0, 1, collected.size(), 5, 1)))))));
   return cmtResult;
 }
 
 function toJsPropertyMap_8(item_0){
   var collected, itemResult;
+  if (!item_0) {
+    return null;
+  }
   itemResult = {};
-  itemResult['mutations'] = new ($wnd.Array.bind.apply($wnd.Array, [null].concat(ensureNotNull((collected = castTo($collect($map(new StreamImpl(null, new Spliterators$IteratorSpliterator(item_0.mutations, 1)), new JsObjectify$lambda$0$Type), of_1(new Collectors$21methodref$ctor$Type, new Collectors$20methodref$add$Type, new Collectors$lambda$42$Type, stampJavaTypeInfo(getClassLiteralForArray(Ljava_util_stream_Collector$Characteristics_2_classLit, 1), $intern_0, 23, 0, [($clinit_Collector$Characteristics() , IDENTITY_FINISH)]))), 19) , collected.toArray_0(initUnidimensionalArray(Ljava_lang_Object_2_classLit, $intern_0, 1, collected.size(), 5, 1)))))));
+  itemResult['mutations'] = new ($wnd.Array.bind.apply($wnd.Array, [null].concat(ensureNotNull((collected = castTo($collect($map(new StreamImpl(null, new Spliterators$IteratorSpliterator(item_0.mutations, 1)), new JsObjectify$lambda$0$Type), of_2(new Collectors$21methodref$ctor$Type, new Collectors$20methodref$add$Type, new Collectors$lambda$42$Type, stampJavaTypeInfo(getClassLiteralForArray(Ljava_util_stream_Collector$Characteristics_2_classLit, 1), $intern_0, 20, 0, [($clinit_Collector$Characteristics() , IDENTITY_FINISH)]))), 18) , collected.toArray_0(initUnidimensionalArray(Ljava_lang_Object_2_classLit, $intern_0, 1, collected.size(), 5, 1)))))));
   itemResult['value'] = item_0.value_0;
   itemResult['score'] = item_0.score;
   return itemResult;
@@ -2453,7 +2516,7 @@ function JsObjectify$lambda$0$Type(){
 }
 
 defineClass(31, 1, {}, JsObjectify$lambda$0$Type);
-_.apply_0 = function apply_1(arg0){
+_.apply_0 = function apply_2(arg0){
   return of_0(arg0);
 }
 ;
@@ -2461,12 +2524,12 @@ var Ledu_stanford_hivdb_asijs_JsObjectify$lambda$0$Type_2_classLit = createForCl
 function JsObjectify$lambda$1$Type(){
 }
 
-defineClass(179, 1, {}, JsObjectify$lambda$1$Type);
-_.apply_0 = function apply_2(arg0){
-  return $toString_3(castTo(arg0, 98));
+defineClass(184, 1, {}, JsObjectify$lambda$1$Type);
+_.apply_0 = function apply_3(arg0){
+  return $toString_3(castTo(arg0, 100));
 }
 ;
-var Ledu_stanford_hivdb_asijs_JsObjectify$lambda$1$Type_2_classLit = createForClass('edu.stanford.hivdb.asijs', 'JsObjectify/lambda$1$Type', 179);
+var Ledu_stanford_hivdb_asijs_JsObjectify$lambda$1$Type_2_classLit = createForClass('edu.stanford.hivdb.asijs', 'JsObjectify/lambda$1$Type', 184);
 function $charAt(this$static, index_0){
   return $charAt_0(this$static.string, index_0);
 }
@@ -2474,19 +2537,19 @@ function $charAt(this$static, index_0){
 function $setLength(this$static){
   var oldLength;
   oldLength = this$static.string.length;
-  0 < oldLength?(this$static.string = $substring_0(this$static.string, 0, 0)):0 > oldLength && (this$static.string += valueOf_1(initUnidimensionalArray(C_classLit, $intern_8, 5, -oldLength, 15, 1)));
+  0 < oldLength?(this$static.string = $substring_0(this$static.string, 0, 0)):0 > oldLength && (this$static.string += valueOf_1(initUnidimensionalArray(C_classLit, $intern_9, 5, -oldLength, 15, 1)));
 }
 
 function AbstractStringBuilder(string){
   this.string = string;
 }
 
-defineClass(75, 1, {141:1});
+defineClass(77, 1, {115:1});
 _.toString_0 = function toString_4(){
   return this.string;
 }
 ;
-var Ljava_lang_AbstractStringBuilder_2_classLit = createForClass('java.lang', 'AbstractStringBuilder', 75);
+var Ljava_lang_AbstractStringBuilder_2_classLit = createForClass('java.lang', 'AbstractStringBuilder', 77);
 function ArrayIndexOutOfBoundsException(){
   RuntimeException.call(this);
 }
@@ -2495,14 +2558,14 @@ function ArrayIndexOutOfBoundsException_0(msg){
   IndexOutOfBoundsException.call(this, msg);
 }
 
-defineClass(168, 45, $intern_2, ArrayIndexOutOfBoundsException, ArrayIndexOutOfBoundsException_0);
-var Ljava_lang_ArrayIndexOutOfBoundsException_2_classLit = createForClass('java.lang', 'ArrayIndexOutOfBoundsException', 168);
+defineClass(172, 46, $intern_2, ArrayIndexOutOfBoundsException, ArrayIndexOutOfBoundsException_0);
+var Ljava_lang_ArrayIndexOutOfBoundsException_2_classLit = createForClass('java.lang', 'ArrayIndexOutOfBoundsException', 172);
 function ArrayStoreException(){
   RuntimeException.call(this);
 }
 
-defineClass(194, 13, $intern_2, ArrayStoreException);
-var Ljava_lang_ArrayStoreException_2_classLit = createForClass('java.lang', 'ArrayStoreException', 194);
+defineClass(213, 14, $intern_2, ArrayStoreException);
+var Ljava_lang_ArrayStoreException_2_classLit = createForClass('java.lang', 'ArrayStoreException', 213);
 function $compareTo_0(this$static, c){
   return this$static.value_0 - c.value_0;
 }
@@ -2532,13 +2595,13 @@ function valueOf(c){
   return new Character(c);
 }
 
-defineClass(51, 1, {3:1, 51:1, 39:1}, Character);
+defineClass(52, 1, {3:1, 52:1, 39:1}, Character);
 _.compareTo_0 = function compareTo(c){
-  return $compareTo_0(this, castTo(c, 51));
+  return $compareTo_0(this, castTo(c, 52));
 }
 ;
 _.equals_0 = function equals_1(o){
-  return instanceOf(o, 51) && castTo(o, 51).value_0 == this.value_0;
+  return instanceOf(o, 52) && castTo(o, 52).value_0 == this.value_0;
 }
 ;
 _.hashCode_0 = function hashCode_2(){
@@ -2550,10 +2613,10 @@ _.toString_0 = function toString_5(){
 }
 ;
 _.value_0 = 0;
-var Ljava_lang_Character_2_classLit = createForClass('java.lang', 'Character', 51);
+var Ljava_lang_Character_2_classLit = createForClass('java.lang', 'Character', 52);
 function $clinit_Character$BoxedValues(){
   $clinit_Character$BoxedValues = emptyMethod;
-  boxedValues = initUnidimensionalArray(Ljava_lang_Character_2_classLit, $intern_0, 51, 128, 0, 1);
+  boxedValues = initUnidimensionalArray(Ljava_lang_Character_2_classLit, $intern_0, 52, 128, 0, 1);
 }
 
 var boxedValues;
@@ -2561,8 +2624,8 @@ function ClassCastException(){
   RuntimeException_0.call(this, null);
 }
 
-defineClass(175, 13, $intern_2, ClassCastException);
-var Ljava_lang_ClassCastException_2_classLit = createForClass('java.lang', 'ClassCastException', 175);
+defineClass(181, 14, $intern_2, ClassCastException);
+var Ljava_lang_ClassCastException_2_classLit = createForClass('java.lang', 'ClassCastException', 181);
 function $isInstance_2(instance){
   if (instance == null) {
     return false;
@@ -2579,9 +2642,9 @@ function Enum(name_0, ordinal){
   this.ordinal_0 = ordinal;
 }
 
-defineClass(43, 1, {3:1, 39:1, 43:1});
+defineClass(44, 1, {3:1, 39:1, 44:1});
 _.compareTo_0 = function compareTo_1(other){
-  return $compareTo_2(this, castTo(other, 43));
+  return $compareTo_2(this, castTo(other, 44));
 }
 ;
 _.compareTo = function compareTo_0(other){
@@ -2621,13 +2684,13 @@ _.toString_0 = function(){
 }
 ;
 _.ordinal_0 = 0;
-var Ljava_lang_Enum_2_classLit = createForClass('java.lang', 'Enum', 43);
+var Ljava_lang_Enum_2_classLit = createForClass('java.lang', 'Enum', 44);
 function IllegalArgumentException(message){
   RuntimeException_0.call(this, message);
 }
 
-defineClass(59, 13, $intern_2, IllegalArgumentException);
-var Ljava_lang_IllegalArgumentException_2_classLit = createForClass('java.lang', 'IllegalArgumentException', 59);
+defineClass(61, 14, $intern_2, IllegalArgumentException);
+var Ljava_lang_IllegalArgumentException_2_classLit = createForClass('java.lang', 'IllegalArgumentException', 61);
 function IllegalStateException(){
   RuntimeException.call(this);
 }
@@ -2636,8 +2699,8 @@ function IllegalStateException_0(){
   RuntimeException_0.call(this, "Stream already terminated, can't be modified or used");
 }
 
-defineClass(114, 13, $intern_2, IllegalStateException, IllegalStateException_0);
-var Ljava_lang_IllegalStateException_2_classLit = createForClass('java.lang', 'IllegalStateException', 114);
+defineClass(119, 14, $intern_2, IllegalStateException, IllegalStateException_0);
+var Ljava_lang_IllegalStateException_2_classLit = createForClass('java.lang', 'IllegalStateException', 119);
 function $compareTo_3(this$static, b){
   return compare_2(this$static.value_0, b.value_0);
 }
@@ -2658,13 +2721,13 @@ function valueOf_0(i){
   return new Integer(i);
 }
 
-defineClass(44, 113, {3:1, 39:1, 44:1, 113:1}, Integer);
+defineClass(45, 117, {3:1, 39:1, 45:1, 117:1}, Integer);
 _.compareTo_0 = function compareTo_2(b){
-  return $compareTo_3(this, castTo(b, 44));
+  return $compareTo_3(this, castTo(b, 45));
 }
 ;
 _.equals_0 = function equals_3(o){
-  return instanceOf(o, 44) && castTo(o, 44).value_0 == this.value_0;
+  return instanceOf(o, 45) && castTo(o, 45).value_0 == this.value_0;
 }
 ;
 _.hashCode_0 = function hashCode_4(){
@@ -2676,20 +2739,20 @@ _.toString_0 = function toString_8(){
 }
 ;
 _.value_0 = 0;
-var Ljava_lang_Integer_2_classLit = createForClass('java.lang', 'Integer', 44);
+var Ljava_lang_Integer_2_classLit = createForClass('java.lang', 'Integer', 45);
 function $clinit_Integer$BoxedValues(){
   $clinit_Integer$BoxedValues = emptyMethod;
-  boxedValues_0 = initUnidimensionalArray(Ljava_lang_Integer_2_classLit, $intern_0, 44, 256, 0, 1);
+  boxedValues_0 = initUnidimensionalArray(Ljava_lang_Integer_2_classLit, $intern_0, 45, 256, 0, 1);
 }
 
 var boxedValues_0;
-defineClass(357, 1, {});
+defineClass(369, 1, {});
 function NumberFormatException(message){
   IllegalArgumentException.call(this, message);
 }
 
-defineClass(55, 59, {3:1, 17:1, 55:1, 13:1, 11:1}, NumberFormatException);
-var Ljava_lang_NumberFormatException_2_classLit = createForClass('java.lang', 'NumberFormatException', 55);
+defineClass(56, 61, {3:1, 17:1, 56:1, 14:1, 11:1}, NumberFormatException);
+var Ljava_lang_NumberFormatException_2_classLit = createForClass('java.lang', 'NumberFormatException', 56);
 function $append(this$static, x_0){
   this$static.string += String.fromCharCode(x_0);
   return this$static;
@@ -2712,8 +2775,8 @@ function StringBuffer_1(s){
   AbstractStringBuilder.call(this, (checkCriticalNotNull(s) , s));
 }
 
-defineClass(54, 75, {141:1}, StringBuffer, StringBuffer_0, StringBuffer_1);
-var Ljava_lang_StringBuffer_2_classLit = createForClass('java.lang', 'StringBuffer', 54);
+defineClass(55, 77, {115:1}, StringBuffer, StringBuffer_0, StringBuffer_1);
+var Ljava_lang_StringBuffer_2_classLit = createForClass('java.lang', 'StringBuffer', 55);
 function $append_1(this$static, x_0){
   this$static.string += '' + x_0;
   return this$static;
@@ -2742,9 +2805,9 @@ function StringBuilder_0(s){
   AbstractStringBuilder.call(this, (checkCriticalNotNull(s) , s));
 }
 
-defineClass(143, 75, {141:1}, StringBuilder, StringBuilder_0);
-var Ljava_lang_StringBuilder_2_classLit = createForClass('java.lang', 'StringBuilder', 143);
-defineClass(359, 1, {});
+defineClass(116, 77, {115:1}, StringBuilder, StringBuilder_0);
+var Ljava_lang_StringBuilder_2_classLit = createForClass('java.lang', 'StringBuilder', 116);
+defineClass(371, 1, {});
 function UnsupportedOperationException(){
   RuntimeException.call(this);
 }
@@ -2753,7 +2816,7 @@ function UnsupportedOperationException_0(message){
   RuntimeException_0.call(this, message);
 }
 
-defineClass(34, 13, $intern_2, UnsupportedOperationException, UnsupportedOperationException_0);
+defineClass(34, 14, $intern_2, UnsupportedOperationException, UnsupportedOperationException_0);
 var Ljava_lang_UnsupportedOperationException_2_classLit = createForClass('java.lang', 'UnsupportedOperationException', 34);
 function $containsEntry(this$static, entry){
   var key, ourValue, value_0;
@@ -2772,7 +2835,7 @@ function $containsEntry(this$static, entry){
 function $implFindEntry(this$static, key, remove){
   var entry, iter, k;
   for (iter = this$static.entrySet().iterator_0(); iter.hasNext_0();) {
-    entry = castTo(iter.next_1(), 15);
+    entry = castTo(iter.next_1(), 13);
     k = entry.getKey();
     if (maskUndefined(key) === maskUndefined(k) || key != null && equals_Ljava_lang_Object__Z__devirtual$(key, k)) {
       if (remove) {
@@ -2793,7 +2856,7 @@ function getEntryValueOrNull(entry){
   return !entry?null:entry.getValue();
 }
 
-defineClass(281, 1, {57:1});
+defineClass(293, 1, {43:1});
 _.getOrDefault = function getOrDefault(key, defaultValue){
   var currentValue;
   return currentValue = this.get(key) , currentValue == null && !this.containsKey(key)?defaultValue:currentValue;
@@ -2823,7 +2886,7 @@ _.containsKey = function containsKey(key){
 _.containsValue = function containsValue(value_0){
   var entry, entry$iterator, v;
   for (entry$iterator = this.entrySet().iterator_0(); entry$iterator.hasNext_0();) {
-    entry = castTo(entry$iterator.next_1(), 15);
+    entry = castTo(entry$iterator.next_1(), 13);
     v = entry.getValue();
     if (maskUndefined(value_0) === maskUndefined(v) || value_0 != null && equals_Ljava_lang_Object__Z__devirtual$(value_0, v)) {
       return true;
@@ -2837,15 +2900,15 @@ _.equals_0 = function equals_4(obj){
   if (obj === this) {
     return true;
   }
-  if (!instanceOf(obj, 57)) {
+  if (!instanceOf(obj, 43)) {
     return false;
   }
-  otherMap = castTo(obj, 57);
+  otherMap = castTo(obj, 43);
   if (this.size() != otherMap.size()) {
     return false;
   }
   for (entry$iterator = otherMap.entrySet().iterator_0(); entry$iterator.hasNext_0();) {
-    entry = castTo(entry$iterator.next_1(), 15);
+    entry = castTo(entry$iterator.next_1(), 13);
     if (!this.containsEntry(entry)) {
       return false;
     }
@@ -2877,7 +2940,7 @@ _.putAll = function putAll(map_0){
   var e, e$iterator;
   checkCriticalNotNull(map_0);
   for (e$iterator = map_0.entrySet().iterator_0(); e$iterator.hasNext_0();) {
-    e = castTo(e$iterator.next_1(), 15);
+    e = castTo(e$iterator.next_1(), 13);
     this.put(e.getKey(), e.getValue());
   }
 }
@@ -2892,9 +2955,9 @@ _.size = function size_3(){
 ;
 _.toString_0 = function toString_9(){
   var entry, entry$iterator, joiner;
-  joiner = new StringJoiner('{', '}');
+  joiner = new StringJoiner_0('{', '}');
   for (entry$iterator = this.entrySet().iterator_0(); entry$iterator.hasNext_0();) {
-    entry = castTo(entry$iterator.next_1(), 15);
+    entry = castTo(entry$iterator.next_1(), 13);
     $add_4(joiner, $toString_2(this, entry.getKey()) + '=' + $toString_2(this, entry.getValue()));
   }
   return !joiner.builder?joiner.emptyValue:joiner.suffix.length == 0?joiner.builder.string:joiner.builder.string + ('' + joiner.suffix);
@@ -2904,24 +2967,28 @@ _.values = function values_0(){
   return new AbstractMap$2(this);
 }
 ;
-var Ljava_util_AbstractMap_2_classLit = createForClass('java.util', 'AbstractMap', 281);
+var Ljava_util_AbstractMap_2_classLit = createForClass('java.util', 'AbstractMap', 293);
 function $containsKey(this$static, key){
   return instanceOfString(key)?key == null?!!$getEntry(this$static.hashCodeMap, null):$contains_1(this$static.stringMap, key):!!$getEntry(this$static.hashCodeMap, key);
 }
 
-function $containsValue(value_0, entries){
+function $containsValue(this$static, value_0, entries){
   var entry, entry$iterator;
   for (entry$iterator = entries.iterator_0(); entry$iterator.hasNext_0();) {
-    entry = castTo(entry$iterator.next_1(), 15);
-    if ($equals_2(value_0, entry.getValue())) {
+    entry = castTo(entry$iterator.next_1(), 13);
+    if (this$static.equals_1(value_0, entry.getValue())) {
       return true;
     }
   }
   return false;
 }
 
+function $get(this$static, key){
+  return instanceOfString(key)?$getStringValue(this$static, key):getEntryValueOrNull($getEntry(this$static.hashCodeMap, key));
+}
+
 function $getStringValue(this$static, key){
-  return key == null?getEntryValueOrNull($getEntry(this$static.hashCodeMap, null)):$get_0(this$static.stringMap, key);
+  return key == null?getEntryValueOrNull($getEntry(this$static.hashCodeMap, null)):$get_1(this$static.stringMap, key);
 }
 
 function $put(this$static, key, value_0){
@@ -2950,7 +3017,7 @@ function $size_0(this$static){
   return this$static.hashCodeMap.size_0 + this$static.stringMap.size_0;
 }
 
-defineClass(116, 281, {57:1});
+defineClass(121, 293, {43:1});
 _.clear = function clear_3(){
   $reset(this);
 }
@@ -2960,7 +3027,7 @@ _.containsKey = function containsKey_0(key){
 }
 ;
 _.containsValue = function containsValue_0(value_0){
-  return $containsValue(value_0, this.stringMap) || $containsValue(value_0, this.hashCodeMap);
+  return $containsValue(this, value_0, this.stringMap) || $containsValue(this, value_0, this.hashCodeMap);
 }
 ;
 _.entrySet = function entrySet(){
@@ -2968,7 +3035,7 @@ _.entrySet = function entrySet(){
 }
 ;
 _.get = function get_1(key){
-  return instanceOfString(key)?$getStringValue(this, key):getEntryValueOrNull($getEntry(this.hashCodeMap, key));
+  return $get(this, key);
 }
 ;
 _.put = function put_0(key, value_0){
@@ -2984,10 +3051,10 @@ _.size = function size_4(){
 }
 ;
 _.modCount = 0;
-var Ljava_util_AbstractHashMap_2_classLit = createForClass('java.util', 'AbstractHashMap', 116);
+var Ljava_util_AbstractHashMap_2_classLit = createForClass('java.util', 'AbstractHashMap', 121);
 function $contains(this$static, o){
-  if (instanceOf(o, 15)) {
-    return $containsEntry(this$static.this$01, castTo(o, 15));
+  if (instanceOf(o, 13)) {
+    return $containsEntry(this$static.this$01, castTo(o, 13));
   }
   return false;
 }
@@ -2996,9 +3063,9 @@ function AbstractHashMap$EntrySet(this$0){
   this.this$01 = this$0;
 }
 
-defineClass(186, 278, $intern_3, AbstractHashMap$EntrySet);
+defineClass(196, 290, $intern_4, AbstractHashMap$EntrySet);
 _.clear = function clear_4(){
-  $reset(this.this$01);
+  this.this$01.clear();
 }
 ;
 _.contains = function contains_2(o){
@@ -3012,18 +3079,18 @@ _.iterator_0 = function iterator_5(){
 _.remove = function remove_5(entry){
   var key;
   if ($contains(this, entry)) {
-    key = castTo(entry, 15).getKey();
-    $remove(this.this$01, key);
+    key = castTo(entry, 13).getKey();
+    this.this$01.remove(key);
     return true;
   }
   return false;
 }
 ;
 _.size = function size_5(){
-  return $size_0(this.this$01);
+  return this.this$01.size();
 }
 ;
-var Ljava_util_AbstractHashMap$EntrySet_2_classLit = createForClass('java.util', 'AbstractHashMap/EntrySet', 186);
+var Ljava_util_AbstractHashMap$EntrySet_2_classLit = createForClass('java.util', 'AbstractHashMap/EntrySet', 196);
 function $computeHasNext(this$static){
   if (this$static.current.hasNext_0()) {
     return true;
@@ -3043,14 +3110,14 @@ function AbstractHashMap$EntrySetIterator(this$0){
   this.lastModCount = this.this$01.modCount;
 }
 
-defineClass(187, 1, {}, AbstractHashMap$EntrySetIterator);
+defineClass(197, 1, {}, AbstractHashMap$EntrySetIterator);
 _.forEachRemaining = function forEachRemaining_0(consumer){
   $forEachRemaining(this, consumer);
 }
 ;
 _.next_1 = function next_1(){
   var rv;
-  return checkCriticalConcurrentModification(this.this$01.modCount, this.lastModCount) , checkCriticalElement(this.hasNext) , this.last = this.current , rv = castTo(this.current.next_1(), 15) , this.hasNext = $computeHasNext(this) , rv;
+  return checkCriticalConcurrentModification(this.this$01.modCount, this.lastModCount) , checkCriticalElement(this.hasNext) , this.last = this.current , rv = castTo(this.current.next_1(), 13) , this.hasNext = $computeHasNext(this) , rv;
 }
 ;
 _.hasNext_0 = function hasNext_0(){
@@ -3068,7 +3135,7 @@ _.remove_0 = function remove_6(){
 ;
 _.hasNext = false;
 _.lastModCount = 0;
-var Ljava_util_AbstractHashMap$EntrySetIterator_2_classLit = createForClass('java.util', 'AbstractHashMap/EntrySetIterator', 187);
+var Ljava_util_AbstractHashMap$EntrySetIterator_2_classLit = createForClass('java.util', 'AbstractHashMap/EntrySetIterator', 197);
 function $sort_0(this$static, c){
   var a, i;
   a = this$static.toArray();
@@ -3081,14 +3148,14 @@ function $sort_0(this$static, c){
 function $indexOf(this$static, toFind){
   var i, n;
   for (i = 0 , n = this$static.size(); i < n; ++i) {
-    if (equals_9(toFind, this$static.getAtIndex(i))) {
+    if (equals_10(toFind, this$static.getAtIndex(i))) {
       return i;
     }
   }
   return -1;
 }
 
-defineClass(277, 276, $intern_9);
+defineClass(289, 288, $intern_10);
 _.sort_1 = function sort_1(c){
   $sort_0(this, c);
 }
@@ -3127,10 +3194,10 @@ _.equals_0 = function equals_5(o){
   if (o === this) {
     return true;
   }
-  if (!instanceOf(o, 19)) {
+  if (!instanceOf(o, 18)) {
     return false;
   }
-  other = castTo(o, 19);
+  other = castTo(o, 18);
   if (this.size() != other.size()) {
     return false;
   }
@@ -3160,7 +3227,7 @@ _.iterator_0 = function iterator_6(){
 _.lastIndexOf = function lastIndexOf(toFind){
   var i;
   for (i = this.size() - 1; i > -1; --i) {
-    if (equals_9(toFind, this.getAtIndex(i))) {
+    if (equals_10(toFind, this.getAtIndex(i))) {
       return i;
     }
   }
@@ -3192,7 +3259,7 @@ _.subList = function subList(fromIndex, toIndex){
   return new AbstractList$SubList(this, fromIndex, toIndex);
 }
 ;
-var Ljava_util_AbstractList_2_classLit = createForClass('java.util', 'AbstractList', 277);
+var Ljava_util_AbstractList_2_classLit = createForClass('java.util', 'AbstractList', 289);
 function $hasNext_0(this$static){
   return this$static.i < this$static.this$01_0.size();
 }
@@ -3213,7 +3280,7 @@ function AbstractList$IteratorImpl(this$0){
   this.this$01_0 = this$0;
 }
 
-defineClass(90, 1, {}, AbstractList$IteratorImpl);
+defineClass(148, 1, {}, AbstractList$IteratorImpl);
 _.forEachRemaining = function forEachRemaining_1(consumer){
   $forEachRemaining(this, consumer);
 }
@@ -3232,7 +3299,7 @@ _.remove_0 = function remove_8(){
 ;
 _.i = 0;
 _.last = -1;
-var Ljava_util_AbstractList$IteratorImpl_2_classLit = createForClass('java.util', 'AbstractList/IteratorImpl', 90);
+var Ljava_util_AbstractList$IteratorImpl_2_classLit = createForClass('java.util', 'AbstractList/IteratorImpl', 148);
 function AbstractList$ListIteratorImpl(this$0, start_0){
   this.this$01 = this$0;
   AbstractList$IteratorImpl.call(this, this$0);
@@ -3240,7 +3307,7 @@ function AbstractList$ListIteratorImpl(this$0, start_0){
   this.i = start_0;
 }
 
-defineClass(146, 90, {}, AbstractList$ListIteratorImpl);
+defineClass(149, 148, {}, AbstractList$ListIteratorImpl);
 _.remove_0 = function remove_9(){
   $remove_0(this);
 }
@@ -3256,7 +3323,7 @@ _.set_0 = function set_2(o){
   this.this$01.setAtIndex(this.last, o);
 }
 ;
-var Ljava_util_AbstractList$ListIteratorImpl_2_classLit = createForClass('java.util', 'AbstractList/ListIteratorImpl', 146);
+var Ljava_util_AbstractList$ListIteratorImpl_2_classLit = createForClass('java.util', 'AbstractList/ListIteratorImpl', 149);
 function AbstractList$SubList(wrapped, fromIndex, toIndex){
   checkCriticalPositionIndexes(fromIndex, toIndex, wrapped.size());
   this.wrapped = wrapped;
@@ -3264,7 +3331,7 @@ function AbstractList$SubList(wrapped, fromIndex, toIndex){
   this.size_0 = toIndex - fromIndex;
 }
 
-defineClass(147, 277, $intern_9, AbstractList$SubList);
+defineClass(150, 289, $intern_10, AbstractList$SubList);
 _.addAtIndex = function add_5(index_0, element){
   checkCriticalPositionIndex(index_0, this.size_0);
   this.wrapped.addAtIndex(this.fromIndex + index_0, element);
@@ -3295,12 +3362,12 @@ _.size = function size_6(){
 ;
 _.fromIndex = 0;
 _.size_0 = 0;
-var Ljava_util_AbstractList$SubList_2_classLit = createForClass('java.util', 'AbstractList/SubList', 147);
+var Ljava_util_AbstractList$SubList_2_classLit = createForClass('java.util', 'AbstractList/SubList', 150);
 function AbstractMap$1(this$0){
   this.this$01 = this$0;
 }
 
-defineClass(36, 278, $intern_3, AbstractMap$1);
+defineClass(36, 290, $intern_4, AbstractMap$1);
 _.clear = function clear_6(){
   this.this$01.clear();
 }
@@ -3331,7 +3398,7 @@ function AbstractMap$1$1(val$outerIter){
   this.val$outerIter2 = val$outerIter;
 }
 
-defineClass(46, 1, {}, AbstractMap$1$1);
+defineClass(47, 1, {}, AbstractMap$1$1);
 _.forEachRemaining = function forEachRemaining_2(consumer){
   $forEachRemaining(this, consumer);
 }
@@ -3342,19 +3409,19 @@ _.hasNext_0 = function hasNext_2(){
 ;
 _.next_1 = function next_3(){
   var entry;
-  return entry = castTo(this.val$outerIter2.next_1(), 15) , entry.getKey();
+  return entry = castTo(this.val$outerIter2.next_1(), 13) , entry.getKey();
 }
 ;
 _.remove_0 = function remove_12(){
   this.val$outerIter2.remove_0();
 }
 ;
-var Ljava_util_AbstractMap$1$1_2_classLit = createForClass('java.util', 'AbstractMap/1/1', 46);
+var Ljava_util_AbstractMap$1$1_2_classLit = createForClass('java.util', 'AbstractMap/1/1', 47);
 function AbstractMap$2(this$0){
   this.this$01 = this$0;
 }
 
-defineClass(151, 276, {18:1}, AbstractMap$2);
+defineClass(154, 288, {19:1}, AbstractMap$2);
 _.clear = function clear_7(){
   this.this$01.clear();
 }
@@ -3372,12 +3439,12 @@ _.size = function size_8(){
   return this.this$01.size();
 }
 ;
-var Ljava_util_AbstractMap$2_2_classLit = createForClass('java.util', 'AbstractMap/2', 151);
+var Ljava_util_AbstractMap$2_2_classLit = createForClass('java.util', 'AbstractMap/2', 154);
 function AbstractMap$2$1(val$outerIter){
   this.val$outerIter2 = val$outerIter;
 }
 
-defineClass(152, 1, {}, AbstractMap$2$1);
+defineClass(155, 1, {}, AbstractMap$2$1);
 _.forEachRemaining = function forEachRemaining_3(consumer){
   $forEachRemaining(this, consumer);
 }
@@ -3388,14 +3455,14 @@ _.hasNext_0 = function hasNext_3(){
 ;
 _.next_1 = function next_4(){
   var entry;
-  return entry = castTo(this.val$outerIter2.next_1(), 15) , entry.getValue();
+  return entry = castTo(this.val$outerIter2.next_1(), 13) , entry.getValue();
 }
 ;
 _.remove_0 = function remove_13(){
   this.val$outerIter2.remove_0();
 }
 ;
-var Ljava_util_AbstractMap$2$1_2_classLit = createForClass('java.util', 'AbstractMap/2/1', 152);
+var Ljava_util_AbstractMap$2$1_2_classLit = createForClass('java.util', 'AbstractMap/2/1', 155);
 function $setValue(this$static, value_0){
   var oldValue;
   oldValue = this$static.value_0;
@@ -3403,14 +3470,14 @@ function $setValue(this$static, value_0){
   return oldValue;
 }
 
-defineClass(93, 1, {93:1, 15:1});
+defineClass(79, 1, {79:1, 13:1});
 _.equals_0 = function equals_6(other){
   var entry;
-  if (!instanceOf(other, 15)) {
+  if (!instanceOf(other, 13)) {
     return false;
   }
-  entry = castTo(other, 15);
-  return equals_9(this.key, entry.getKey()) && equals_9(this.value_0, entry.getValue());
+  entry = castTo(other, 13);
+  return equals_10(this.key, entry.getKey()) && equals_10(this.value_0, entry.getValue());
 }
 ;
 _.getKey = function getKey(){
@@ -3433,22 +3500,22 @@ _.toString_0 = function toString_10(){
   return this.key + '=' + this.value_0;
 }
 ;
-var Ljava_util_AbstractMap$AbstractEntry_2_classLit = createForClass('java.util', 'AbstractMap/AbstractEntry', 93);
+var Ljava_util_AbstractMap$AbstractEntry_2_classLit = createForClass('java.util', 'AbstractMap/AbstractEntry', 79);
 function AbstractMap$SimpleEntry(key, value_0){
   this.key = key;
   this.value_0 = value_0;
 }
 
-defineClass(77, 93, {93:1, 77:1, 15:1}, AbstractMap$SimpleEntry);
-var Ljava_util_AbstractMap$SimpleEntry_2_classLit = createForClass('java.util', 'AbstractMap/SimpleEntry', 77);
-defineClass(284, 1, {15:1});
+defineClass(57, 79, {79:1, 57:1, 13:1}, AbstractMap$SimpleEntry);
+var Ljava_util_AbstractMap$SimpleEntry_2_classLit = createForClass('java.util', 'AbstractMap/SimpleEntry', 57);
+defineClass(296, 1, {13:1});
 _.equals_0 = function equals_7(other){
   var entry;
-  if (!instanceOf(other, 15)) {
+  if (!instanceOf(other, 13)) {
     return false;
   }
-  entry = castTo(other, 15);
-  return equals_9(this.val$entry2.value[0], entry.getKey()) && equals_9($getValue(this), entry.getValue());
+  entry = castTo(other, 13);
+  return equals_10(this.val$entry2.value[0], entry.getKey()) && equals_10($getValue(this), entry.getValue());
 }
 ;
 _.hashCode_0 = function hashCode_8(){
@@ -3459,12 +3526,12 @@ _.toString_0 = function toString_11(){
   return this.val$entry2.value[0] + '=' + $getValue(this);
 }
 ;
-var Ljava_util_AbstractMapEntry_2_classLit = createForClass('java.util', 'AbstractMapEntry', 284);
+var Ljava_util_AbstractMapEntry_2_classLit = createForClass('java.util', 'AbstractMapEntry', 296);
 function $containsEntry_0(this$static, entry){
   var key, lookupEntry;
   key = entry.getKey();
   lookupEntry = $getEntry_0(this$static, key);
-  return !!lookupEntry && equals_9(lookupEntry.value_0, entry.getValue());
+  return !!lookupEntry && equals_10(lookupEntry.value_0, entry.getValue());
 }
 
 function $containsKey_0(this$static, k){
@@ -3473,7 +3540,7 @@ function $containsKey_0(this$static, k){
   return !!$getEntry_0(this$static, key);
 }
 
-defineClass(285, 281, {57:1});
+defineClass(297, 293, {43:1});
 _.containsEntry = function containsEntry_0(entry){
   return $containsEntry_0(this, entry);
 }
@@ -3496,14 +3563,14 @@ _.keySet = function keySet_0(){
   return new AbstractNavigableMap$NavigableKeySet(this);
 }
 ;
-var Ljava_util_AbstractNavigableMap_2_classLit = createForClass('java.util', 'AbstractNavigableMap', 285);
+var Ljava_util_AbstractNavigableMap_2_classLit = createForClass('java.util', 'AbstractNavigableMap', 297);
 function AbstractNavigableMap$EntrySet(this$0){
   this.this$01_0 = this$0;
 }
 
-defineClass(156, 278, $intern_3, AbstractNavigableMap$EntrySet);
+defineClass(159, 290, $intern_4, AbstractNavigableMap$EntrySet);
 _.contains = function contains_5(o){
-  return instanceOf(o, 15) && $containsEntry_0(this.this$01_0, castTo(o, 15));
+  return instanceOf(o, 13) && $containsEntry_0(this.this$01_0, castTo(o, 13));
 }
 ;
 _.iterator_0 = function iterator_9(){
@@ -3512,8 +3579,8 @@ _.iterator_0 = function iterator_9(){
 ;
 _.remove = function remove_14(o){
   var entry;
-  if (instanceOf(o, 15)) {
-    entry = castTo(o, 15);
+  if (instanceOf(o, 13)) {
+    entry = castTo(o, 13);
     return $removeEntry(this.this$01_0, entry);
   }
   return false;
@@ -3523,18 +3590,18 @@ _.size = function size_9(){
   return this.this$01_0.size_0;
 }
 ;
-var Ljava_util_AbstractNavigableMap$EntrySet_2_classLit = createForClass('java.util', 'AbstractNavigableMap/EntrySet', 156);
+var Ljava_util_AbstractNavigableMap$EntrySet_2_classLit = createForClass('java.util', 'AbstractNavigableMap/EntrySet', 159);
 function AbstractNavigableMap$NavigableKeySet(map_0){
   this.map_0 = map_0;
 }
 
-defineClass(103, 278, $intern_3, AbstractNavigableMap$NavigableKeySet);
+defineClass(105, 290, $intern_4, AbstractNavigableMap$NavigableKeySet);
 _.spliterator_0 = function spliterator_3(){
   return new SortedSet$1(this);
 }
 ;
 _.clear = function clear_8(){
-  $clear(this.map_0);
+  $clear_0(this.map_0);
 }
 ;
 _.contains = function contains_6(o){
@@ -3548,7 +3615,7 @@ _.iterator_0 = function iterator_10(){
 ;
 _.remove = function remove_15(o){
   if ($containsKey_0(this.map_0, o)) {
-    $remove_6(this.map_0, o);
+    $remove_8(this.map_0, o);
     return true;
   }
   return false;
@@ -3558,12 +3625,12 @@ _.size = function size_10(){
   return this.map_0.size_0;
 }
 ;
-var Ljava_util_AbstractNavigableMap$NavigableKeySet_2_classLit = createForClass('java.util', 'AbstractNavigableMap/NavigableKeySet', 103);
+var Ljava_util_AbstractNavigableMap$NavigableKeySet_2_classLit = createForClass('java.util', 'AbstractNavigableMap/NavigableKeySet', 105);
 function AbstractNavigableMap$NavigableKeySet$1(val$entryIterator){
   this.val$entryIterator2 = val$entryIterator;
 }
 
-defineClass(104, 1, {}, AbstractNavigableMap$NavigableKeySet$1);
+defineClass(106, 1, {}, AbstractNavigableMap$NavigableKeySet$1);
 _.forEachRemaining = function forEachRemaining_4(consumer){
   $forEachRemaining(this, consumer);
 }
@@ -3578,17 +3645,17 @@ _.next_1 = function next_5(){
 }
 ;
 _.remove_0 = function remove_16(){
-  $remove_7(this.val$entryIterator2);
+  $remove_9(this.val$entryIterator2);
 }
 ;
-var Ljava_util_AbstractNavigableMap$NavigableKeySet$1_2_classLit = createForClass('java.util', 'AbstractNavigableMap/NavigableKeySet/1', 104);
+var Ljava_util_AbstractNavigableMap$NavigableKeySet$1_2_classLit = createForClass('java.util', 'AbstractNavigableMap/NavigableKeySet/1', 106);
 function $add(this$static, index_0, element){
   var iter;
   iter = this$static.listIterator(index_0);
   iter.add_0(element);
 }
 
-defineClass(287, 277, $intern_9);
+defineClass(299, 289, $intern_10);
 _.addAtIndex = function add_6(index_0, element){
   $add(this, index_0, element);
 }
@@ -3614,7 +3681,7 @@ _.getAtIndex = function get_4(index_0){
   }
    catch ($e0) {
     $e0 = toJava($e0);
-    if (instanceOf($e0, 64)) {
+    if (instanceOf($e0, 66)) {
       throw toJs(new IndexOutOfBoundsException("Can't get element " + index_0));
     }
      else 
@@ -3636,7 +3703,7 @@ _.removeAtIndex = function remove_17(index_0){
   }
    catch ($e0) {
     $e0 = toJava($e0);
-    if (instanceOf($e0, 64)) {
+    if (instanceOf($e0, 66)) {
       throw toJs(new IndexOutOfBoundsException("Can't remove element " + index_0));
     }
      else 
@@ -3654,7 +3721,7 @@ _.setAtIndex = function set_4(index_0, element){
   }
    catch ($e0) {
     $e0 = toJava($e0);
-    if (instanceOf($e0, 64)) {
+    if (instanceOf($e0, 66)) {
       throw toJs(new IndexOutOfBoundsException("Can't set element " + index_0));
     }
      else 
@@ -3662,7 +3729,7 @@ _.setAtIndex = function set_4(index_0, element){
   }
 }
 ;
-var Ljava_util_AbstractSequentialList_2_classLit = createForClass('java.util', 'AbstractSequentialList', 287);
+var Ljava_util_AbstractSequentialList_2_classLit = createForClass('java.util', 'AbstractSequentialList', 299);
 function $$init(this$static){
   this$static.array = initUnidimensionalArray(Ljava_lang_Object_2_classLit, $intern_0, 1, 0, 5, 1);
 }
@@ -3700,14 +3767,14 @@ function $addAll_1(this$static, c){
   return true;
 }
 
-function $get(this$static, index_0){
+function $get_0(this$static, index_0){
   checkCriticalElementIndex(index_0, this$static.array.length);
   return this$static.array[index_0];
 }
 
 function $indexOf_0(this$static, o, index_0){
   for (; index_0 < this$static.array.length; ++index_0) {
-    if (equals_9(o, this$static.array[index_0])) {
+    if (equals_10(o, this$static.array[index_0])) {
       return index_0;
     }
   }
@@ -3720,7 +3787,7 @@ function $lastIndexOf_0(this$static, o){
 
 function $lastIndexOf_1(this$static, o, index_0){
   for (; index_0 >= 0; --index_0) {
-    if (equals_9(o, this$static.array[index_0])) {
+    if (equals_10(o, this$static.array[index_0])) {
       return index_0;
     }
   }
@@ -3772,7 +3839,7 @@ function ArrayList_0(c){
   insertTo_0(this.array, 0, clone(c.array));
 }
 
-defineClass(9, 277, $intern_10, ArrayList, ArrayList_0);
+defineClass(9, 289, $intern_11, ArrayList, ArrayList_0);
 _.addAtIndex = function add_7(index_0, o){
   $add_0(this, index_0, o);
 }
@@ -3798,7 +3865,7 @@ _.contains = function contains_7(o){
 }
 ;
 _.getAtIndex = function get_5(index_0){
-  return $get(this, index_0);
+  return $get_0(this, index_0);
 }
 ;
 _.indexOf = function indexOf_0(o){
@@ -3957,7 +4024,7 @@ function Arrays$ArrayList(array){
   this.array = array;
 }
 
-defineClass(25, 277, $intern_10, Arrays$ArrayList);
+defineClass(26, 289, $intern_11, Arrays$ArrayList);
 _.contains = function contains_8(o){
   return $indexOf(this, o) != -1;
 }
@@ -3989,7 +4056,7 @@ _.toArray_0 = function toArray_4(out){
   return $toArray_1(this, out);
 }
 ;
-var Ljava_util_Arrays$ArrayList_2_classLit = createForClass('java.util', 'Arrays/ArrayList', 25);
+var Ljava_util_Arrays$ArrayList_2_classLit = createForClass('java.util', 'Arrays/ArrayList', 26);
 function binarySearch(sortedList, key, comparator){
   var compareResult, high, low, mid, midVal;
   comparator = ($clinit_Comparators() , !comparator?INTERNAL_NATURAL_ORDER:comparator);
@@ -4055,9 +4122,9 @@ function max_1(coll, comp){
   var entry, entry0, it, max_0, outerIter, t;
   comp = ($clinit_Comparators() , !comp?INTERNAL_NATURAL_ORDER:comp);
   it = (outerIter = (new AbstractMap$1(coll.map_0)).this$01.entrySet().iterator_0() , new AbstractMap$1$1(outerIter));
-  max_0 = (entry0 = castTo(it.val$outerIter2.next_1(), 15) , entry0.getKey());
+  max_0 = (entry0 = castTo(it.val$outerIter2.next_1(), 13) , entry0.getKey());
   while (it.val$outerIter2.hasNext_0()) {
-    t = (entry = castTo(it.val$outerIter2.next_1(), 15) , entry.getKey());
+    t = (entry = castTo(it.val$outerIter2.next_1(), 13) , entry.getKey());
     comp.compare(t, max_0) > 0 && (max_0 = t);
   }
   return max_0;
@@ -4080,7 +4147,7 @@ function $compare_0(a, b){
 function Comparators$NaturalOrderComparator(){
 }
 
-defineClass(203, 1, $intern_8, Comparators$NaturalOrderComparator);
+defineClass(221, 1, $intern_9, Comparators$NaturalOrderComparator);
 _.compare = function compare_3(a, b){
   return $compare_0(a, b);
 }
@@ -4089,32 +4156,19 @@ _.equals_0 = function equals_8(other){
   return this === other;
 }
 ;
-var Ljava_util_Comparators$NaturalOrderComparator_2_classLit = createForClass('java.util', 'Comparators/NaturalOrderComparator', 203);
+var Ljava_util_Comparators$NaturalOrderComparator_2_classLit = createForClass('java.util', 'Comparators/NaturalOrderComparator', 221);
 function ConcurrentModificationException(){
   RuntimeException.call(this);
 }
 
-defineClass(255, 13, $intern_2, ConcurrentModificationException);
-var Ljava_util_ConcurrentModificationException_2_classLit = createForClass('java.util', 'ConcurrentModificationException', 255);
+defineClass(267, 14, $intern_2, ConcurrentModificationException);
+var Ljava_util_ConcurrentModificationException_2_classLit = createForClass('java.util', 'ConcurrentModificationException', 267);
 function EmptyStackException(){
   RuntimeException.call(this);
 }
 
-defineClass(167, 13, $intern_2, EmptyStackException);
-var Ljava_util_EmptyStackException_2_classLit = createForClass('java.util', 'EmptyStackException', 167);
-function $equals_2(value1, value2){
-  return maskUndefined(value1) === maskUndefined(value2) || value1 != null && equals_Ljava_lang_Object__Z__devirtual$(value1, value2);
-}
-
-function $getHashCode(key){
-  var hashCode;
-  if (key == null) {
-    return 0;
-  }
-  hashCode = hashCode__I__devirtual$(key);
-  return hashCode | 0;
-}
-
+defineClass(171, 14, $intern_2, EmptyStackException);
+var Ljava_util_EmptyStackException_2_classLit = createForClass('java.util', 'EmptyStackException', 171);
 function HashMap(){
   $reset(this);
 }
@@ -4125,8 +4179,21 @@ function HashMap_0(ignored){
   $reset(this);
 }
 
-defineClass(26, 116, {3:1, 57:1}, HashMap, HashMap_0);
-var Ljava_util_HashMap_2_classLit = createForClass('java.util', 'HashMap', 26);
+defineClass(24, 121, $intern_12, HashMap, HashMap_0);
+_.equals_1 = function equals_9(value1, value2){
+  return maskUndefined(value1) === maskUndefined(value2) || value1 != null && equals_Ljava_lang_Object__Z__devirtual$(value1, value2);
+}
+;
+_.getHashCode = function getHashCode(key){
+  var hashCode;
+  if (key == null) {
+    return 0;
+  }
+  hashCode = hashCode__I__devirtual$(key);
+  return hashCode | 0;
+}
+;
+var Ljava_util_HashMap_2_classLit = createForClass('java.util', 'HashMap', 24);
 function $add_2(this$static, o){
   var old;
   old = $put(this$static.map_0, o, this$static);
@@ -4150,7 +4217,7 @@ function HashSet_0(c){
   $addAll(this, c);
 }
 
-defineClass(21, 278, $intern_11, HashSet, HashSet_0);
+defineClass(23, 290, $intern_13, HashSet, HashSet_0);
 _.add = function add_9(o){
   return $add_2(this, o);
 }
@@ -4180,12 +4247,12 @@ _.size = function size_13(){
   return $size_0(this.map_0);
 }
 ;
-var Ljava_util_HashSet_2_classLit = createForClass('java.util', 'HashSet', 21);
-function $findEntryInChain(key, chain){
+var Ljava_util_HashSet_2_classLit = createForClass('java.util', 'HashSet', 23);
+function $findEntryInChain(this$static, key, chain){
   var entry, entry$array, entry$index, entry$max;
   for (entry$array = chain , entry$index = 0 , entry$max = entry$array.length; entry$index < entry$max; ++entry$index) {
     entry = entry$array[entry$index];
-    if ($equals_2(key, entry.getKey())) {
+    if (this$static.host.equals_1(key, entry.getKey())) {
       return entry;
     }
   }
@@ -4199,18 +4266,18 @@ function $getChainOrEmpty(this$static, hashCode){
 }
 
 function $getEntry(this$static, key){
-  return $findEntryInChain(key, $getChainOrEmpty(this$static, $getHashCode(key)));
+  return $findEntryInChain(this$static, key, $getChainOrEmpty(this$static, this$static.host.getHashCode(key)));
 }
 
 function $put_0(this$static, key, value_0){
   var chain, chain0, entry, hashCode;
-  hashCode = $getHashCode(key);
+  hashCode = this$static.host.getHashCode(key);
   chain0 = (chain = this$static.backingMap.get(hashCode) , chain == null?initUnidimensionalArray(Ljava_lang_Object_2_classLit, $intern_0, 1, 0, 5, 1):chain);
   if (chain0.length == 0) {
     this$static.backingMap.set(hashCode, chain0);
   }
    else {
-    entry = $findEntryInChain(key, chain0);
+    entry = $findEntryInChain(this$static, key, chain0);
     if (entry) {
       return entry.setValue(value_0);
     }
@@ -4223,11 +4290,11 @@ function $put_0(this$static, key, value_0){
 
 function $remove_3(this$static, key){
   var chain, chain0, entry, hashCode, i;
-  hashCode = $getHashCode(key);
+  hashCode = this$static.host.getHashCode(key);
   chain0 = (chain = this$static.backingMap.get(hashCode) , chain == null?initUnidimensionalArray(Ljava_lang_Object_2_classLit, $intern_0, 1, 0, 5, 1):chain);
   for (i = 0; i < chain0.length; i++) {
     entry = chain0[i];
-    if ($equals_2(key, entry.getKey())) {
+    if (this$static.host.equals_1(key, entry.getKey())) {
       if (chain0.length == 1) {
         chain0.length = 0;
         $delete(this$static.backingMap, hashCode);
@@ -4248,20 +4315,20 @@ function InternalHashCodeMap(host){
   this.host = host;
 }
 
-defineClass(199, 1, {}, InternalHashCodeMap);
+defineClass(218, 1, {}, InternalHashCodeMap);
 _.iterator_0 = function iterator_14(){
   return new InternalHashCodeMap$1(this);
 }
 ;
 _.size_0 = 0;
-var Ljava_util_InternalHashCodeMap_2_classLit = createForClass('java.util', 'InternalHashCodeMap', 199);
+var Ljava_util_InternalHashCodeMap_2_classLit = createForClass('java.util', 'InternalHashCodeMap', 218);
 function InternalHashCodeMap$1(this$0){
   this.this$01 = this$0;
   this.chains = this.this$01.backingMap.entries();
   this.chain = initUnidimensionalArray(Ljava_lang_Object_2_classLit, $intern_0, 1, 0, 5, 1);
 }
 
-defineClass(154, 1, {}, InternalHashCodeMap$1);
+defineClass(157, 1, {}, InternalHashCodeMap$1);
 _.forEachRemaining = function forEachRemaining_6(consumer){
   $forEachRemaining(this, consumer);
 }
@@ -4291,7 +4358,7 @@ _.remove_0 = function remove_22(){
 ;
 _.itemIndex = 0;
 _.lastEntry = null;
-var Ljava_util_InternalHashCodeMap$1_2_classLit = createForClass('java.util', 'InternalHashCodeMap/1', 154);
+var Ljava_util_InternalHashCodeMap$1_2_classLit = createForClass('java.util', 'InternalHashCodeMap/1', 157);
 function $delete(this$static, key){
   var fn;
   fn = this$static['delete'];
@@ -4428,7 +4495,7 @@ function $contains_1(this$static, key){
   return !(this$static.backingMap.get(key) === undefined);
 }
 
-function $get_0(this$static, key){
+function $get_1(this$static, key){
   return this$static.backingMap.get(key);
 }
 
@@ -4465,21 +4532,21 @@ function InternalStringMap(host){
   this.host = host;
 }
 
-defineClass(197, 1, {}, InternalStringMap);
+defineClass(216, 1, {}, InternalStringMap);
 _.iterator_0 = function iterator_15(){
   return new InternalStringMap$1(this);
 }
 ;
 _.size_0 = 0;
 _.valueMod = 0;
-var Ljava_util_InternalStringMap_2_classLit = createForClass('java.util', 'InternalStringMap', 197);
+var Ljava_util_InternalStringMap_2_classLit = createForClass('java.util', 'InternalStringMap', 216);
 function InternalStringMap$1(this$0){
   this.this$01 = this$0;
   this.entries_0 = this.this$01.backingMap.entries();
   this.current = this.entries_0.next();
 }
 
-defineClass(153, 1, {}, InternalStringMap$1);
+defineClass(156, 1, {}, InternalStringMap$1);
 _.forEachRemaining = function forEachRemaining_7(consumer){
   $forEachRemaining(this, consumer);
 }
@@ -4496,10 +4563,10 @@ _.remove_0 = function remove_23(){
   $remove_4(this.this$01, this.last.value[0]);
 }
 ;
-var Ljava_util_InternalStringMap$1_2_classLit = createForClass('java.util', 'InternalStringMap/1', 153);
+var Ljava_util_InternalStringMap$1_2_classLit = createForClass('java.util', 'InternalStringMap/1', 156);
 function $getValue(this$static){
   if (this$static.this$01.valueMod != this$static.val$lastValueMod3) {
-    return $get_0(this$static.this$01, this$static.val$entry2.value[0]);
+    return $get_1(this$static.this$01, this$static.val$entry2.value[0]);
   }
   return this$static.val$entry2.value[1];
 }
@@ -4510,7 +4577,7 @@ function InternalStringMap$2(this$0, val$entry, val$lastValueMod){
   this.val$lastValueMod3 = val$lastValueMod;
 }
 
-defineClass(198, 284, {15:1}, InternalStringMap$2);
+defineClass(217, 296, {13:1}, InternalStringMap$2);
 _.getKey = function getKey_0(){
   return this.val$entry2.value[0];
 }
@@ -4524,7 +4591,197 @@ _.setValue = function setValue_0(object){
 }
 ;
 _.val$lastValueMod3 = 0;
-var Ljava_util_InternalStringMap$2_2_classLit = createForClass('java.util', 'InternalStringMap/2', 198);
+var Ljava_util_InternalStringMap$2_2_classLit = createForClass('java.util', 'InternalStringMap/2', 217);
+function $clear(this$static){
+  $reset(this$static.map_0);
+  this$static.head.prev = this$static.head;
+  this$static.head.next_0 = this$static.head;
+}
+
+function $put_2(this$static, key, value_0){
+  var newEntry, old, oldValue;
+  old = castTo($get(this$static.map_0, key), 58);
+  if (!old) {
+    newEntry = new LinkedHashMap$ChainEntry_0(this$static, key, value_0);
+    $put(this$static.map_0, key, newEntry);
+    $addToEnd(newEntry);
+    return null;
+  }
+   else {
+    oldValue = $setValue(old, value_0);
+    $recordAccess(this$static, old);
+    return oldValue;
+  }
+}
+
+function $recordAccess(this$static, entry){
+  if (this$static.accessOrder) {
+    $remove_6(entry);
+    $addToEnd(entry);
+  }
+}
+
+function $remove_5(this$static, key){
+  var entry;
+  entry = castTo($remove(this$static.map_0, key), 58);
+  if (entry) {
+    $remove_6(entry);
+    return entry.value_0;
+  }
+  return null;
+}
+
+function LinkedHashMap(){
+  $reset(this);
+  this.head = new LinkedHashMap$ChainEntry(this);
+  this.map_0 = new HashMap;
+  this.head.prev = this.head;
+  this.head.next_0 = this.head;
+}
+
+defineClass(162, 24, $intern_12, LinkedHashMap);
+_.clear = function clear_11(){
+  $clear(this);
+}
+;
+_.containsKey = function containsKey_2(key){
+  return $containsKey(this.map_0, key);
+}
+;
+_.containsValue = function containsValue_1(value_0){
+  var node;
+  node = this.head.next_0;
+  while (node != this.head) {
+    if (equals_10(node.value_0, value_0)) {
+      return true;
+    }
+    node = node.next_0;
+  }
+  return false;
+}
+;
+_.entrySet = function entrySet_1(){
+  return new LinkedHashMap$EntrySet(this);
+}
+;
+_.get = function get_7(key){
+  var entry;
+  entry = castTo($get(this.map_0, key), 58);
+  if (entry) {
+    $recordAccess(this, entry);
+    return entry.value_0;
+  }
+  return null;
+}
+;
+_.put = function put_1(key, value_0){
+  return $put_2(this, key, value_0);
+}
+;
+_.remove = function remove_24(key){
+  return $remove_5(this, key);
+}
+;
+_.size = function size_14(){
+  return $size_0(this.map_0);
+}
+;
+_.accessOrder = false;
+var Ljava_util_LinkedHashMap_2_classLit = createForClass('java.util', 'LinkedHashMap', 162);
+function $addToEnd(this$static){
+  var tail;
+  tail = this$static.this$01.head.prev;
+  this$static.prev = tail;
+  this$static.next_0 = this$static.this$01.head;
+  tail.next_0 = this$static.this$01.head.prev = this$static;
+}
+
+function $remove_6(this$static){
+  this$static.next_0.prev = this$static.prev;
+  this$static.prev.next_0 = this$static.next_0;
+  this$static.next_0 = this$static.prev = null;
+}
+
+function LinkedHashMap$ChainEntry(this$0){
+  LinkedHashMap$ChainEntry_0.call(this, this$0, null, null);
+}
+
+function LinkedHashMap$ChainEntry_0(this$0, key, value_0){
+  this.this$01 = this$0;
+  AbstractMap$SimpleEntry.call(this, key, value_0);
+}
+
+defineClass(58, 57, {79:1, 57:1, 58:1, 13:1}, LinkedHashMap$ChainEntry, LinkedHashMap$ChainEntry_0);
+var Ljava_util_LinkedHashMap$ChainEntry_2_classLit = createForClass('java.util', 'LinkedHashMap/ChainEntry', 58);
+function $contains_2(this$static, o){
+  if (instanceOf(o, 13)) {
+    return $containsEntry(this$static.this$01, castTo(o, 13));
+  }
+  return false;
+}
+
+function LinkedHashMap$EntrySet(this$0){
+  this.this$01 = this$0;
+}
+
+defineClass(238, 290, $intern_4, LinkedHashMap$EntrySet);
+_.clear = function clear_12(){
+  $clear(this.this$01);
+}
+;
+_.contains = function contains_10(o){
+  return $contains_2(this, o);
+}
+;
+_.iterator_0 = function iterator_16(){
+  return new LinkedHashMap$EntrySet$EntryIterator(this);
+}
+;
+_.remove = function remove_25(entry){
+  var key;
+  if ($contains_2(this, entry)) {
+    key = castTo(entry, 13).getKey();
+    $remove_5(this.this$01, key);
+    return true;
+  }
+  return false;
+}
+;
+_.size = function size_15(){
+  return $size_0(this.this$01.map_0);
+}
+;
+var Ljava_util_LinkedHashMap$EntrySet_2_classLit = createForClass('java.util', 'LinkedHashMap/EntrySet', 238);
+function LinkedHashMap$EntrySet$EntryIterator(this$1){
+  this.this$11 = this$1;
+  this.next_0 = this$1.this$01.head.next_0;
+  this.lastModCount = this$1.this$01.map_0.modCount;
+}
+
+defineClass(239, 1, {}, LinkedHashMap$EntrySet$EntryIterator);
+_.forEachRemaining = function forEachRemaining_8(consumer){
+  $forEachRemaining(this, consumer);
+}
+;
+_.next_1 = function next_9(){
+  return checkCriticalConcurrentModification(this.this$11.this$01.map_0.modCount, this.lastModCount) , checkCriticalElement(this.next_0 != this.this$11.this$01.head) , this.last = this.next_0 , this.next_0 = this.next_0.next_0 , this.last;
+}
+;
+_.hasNext_0 = function hasNext_8(){
+  return this.next_0 != this.this$11.this$01.head;
+}
+;
+_.remove_0 = function remove_26(){
+  checkCriticalState(!!this.last);
+  checkCriticalConcurrentModification(this.this$11.this$01.map_0.modCount, this.lastModCount);
+  $remove_6(this.last);
+  $remove(this.this$11.this$01.map_0, this.last.key);
+  this.lastModCount = this.this$11.this$01.map_0.modCount;
+  this.last = null;
+}
+;
+_.lastModCount = 0;
+var Ljava_util_LinkedHashMap$EntrySet$EntryIterator_2_classLit = createForClass('java.util', 'LinkedHashMap/EntrySet/EntryIterator', 239);
 function $addLast(this$static, o){
   $addNode(this$static, o, this$static.tail.prev, this$static.tail);
 }
@@ -4581,7 +4838,7 @@ function LinkedList(){
   $reset_0(this);
 }
 
-defineClass(122, 287, $intern_10, LinkedList);
+defineClass(128, 299, $intern_11, LinkedList);
 _.add = function add_10(o){
   return this.addLast(o) , true;
 }
@@ -4590,7 +4847,7 @@ _.addLast = function addLast(o){
   $addLast(this, o);
 }
 ;
-_.clear = function clear_11(){
+_.clear = function clear_13(){
   $reset_0(this);
 }
 ;
@@ -4598,12 +4855,12 @@ _.listIterator = function listIterator_0(index_0){
   return $listIterator(this, index_0);
 }
 ;
-_.size = function size_14(){
+_.size = function size_16(){
   return this.size_0;
 }
 ;
 _.size_0 = 0;
-var Ljava_util_LinkedList_2_classLit = createForClass('java.util', 'LinkedList', 122);
+var Ljava_util_LinkedList_2_classLit = createForClass('java.util', 'LinkedList', 128);
 function $add_3(this$static, o){
   $addNode(this$static.this$01, o, this$static.currentNode_0.prev, this$static.currentNode_0);
   ++this$static.currentIndex;
@@ -4629,7 +4886,7 @@ function $previous(this$static){
   return this$static.lastNode.value_0;
 }
 
-function $remove_5(this$static){
+function $remove_7(this$static){
   var nextNode;
   checkCriticalState(!!this$static.lastNode);
   nextNode = this$static.lastNode.next_0;
@@ -4649,8 +4906,8 @@ function LinkedList$ListIteratorImpl(this$0, index_0, startNode){
   this.currentIndex = index_0;
 }
 
-defineClass(226, 1, {}, LinkedList$ListIteratorImpl);
-_.forEachRemaining = function forEachRemaining_8(consumer){
+defineClass(237, 1, {}, LinkedList$ListIteratorImpl);
+_.forEachRemaining = function forEachRemaining_9(consumer){
   $forEachRemaining(this, consumer);
 }
 ;
@@ -4658,16 +4915,16 @@ _.add_0 = function add_11(o){
   $add_3(this, o);
 }
 ;
-_.hasNext_0 = function hasNext_8(){
+_.hasNext_0 = function hasNext_9(){
   return $hasNext_1(this);
 }
 ;
-_.next_1 = function next_9(){
+_.next_1 = function next_10(){
   return $next_2(this);
 }
 ;
-_.remove_0 = function remove_24(){
-  $remove_5(this);
+_.remove_0 = function remove_27(){
+  $remove_7(this);
 }
 ;
 _.set_0 = function set_7(o){
@@ -4676,19 +4933,19 @@ _.set_0 = function set_7(o){
 ;
 _.currentIndex = 0;
 _.lastNode = null;
-var Ljava_util_LinkedList$ListIteratorImpl_2_classLit = createForClass('java.util', 'LinkedList/ListIteratorImpl', 226);
+var Ljava_util_LinkedList$ListIteratorImpl_2_classLit = createForClass('java.util', 'LinkedList/ListIteratorImpl', 237);
 function LinkedList$Node(){
 }
 
-defineClass(123, 1, {}, LinkedList$Node);
-var Ljava_util_LinkedList$Node_2_classLit = createForClass('java.util', 'LinkedList/Node', 123);
+defineClass(129, 1, {}, LinkedList$Node);
+var Ljava_util_LinkedList$Node_2_classLit = createForClass('java.util', 'LinkedList/Node', 129);
 function NoSuchElementException(){
   RuntimeException.call(this);
 }
 
-defineClass(64, 13, {3:1, 17:1, 13:1, 11:1, 64:1}, NoSuchElementException);
-var Ljava_util_NoSuchElementException_2_classLit = createForClass('java.util', 'NoSuchElementException', 64);
-function equals_9(a, b){
+defineClass(66, 14, {3:1, 17:1, 14:1, 11:1, 66:1}, NoSuchElementException);
+var Ljava_util_NoSuchElementException_2_classLit = createForClass('java.util', 'NoSuchElementException', 66);
+function equals_10(a, b){
   return maskUndefined(a) === maskUndefined(b) || a != null && equals_Ljava_lang_Object__Z__devirtual$(a, b);
 }
 
@@ -4713,7 +4970,7 @@ function Spliterators$IteratorSpliterator(collection, characteristics){
   this.characteristics = (characteristics & 4096) == 0?characteristics | 64 | 16384:characteristics;
 }
 
-defineClass(20, 1, {}, Spliterators$IteratorSpliterator);
+defineClass(21, 1, {}, Spliterators$IteratorSpliterator);
 _.characteristics_0 = function characteristics_0(){
   return this.characteristics;
 }
@@ -4723,7 +4980,7 @@ _.estimateSize_0 = function estimateSize(){
   return this.estimateSize;
 }
 ;
-_.forEachRemaining = function forEachRemaining_9(consumer){
+_.forEachRemaining = function forEachRemaining_10(consumer){
   $initIterator(this);
   this.it.forEachRemaining(consumer);
 }
@@ -4732,7 +4989,7 @@ _.tryAdvance = function tryAdvance(consumer){
   checkCriticalNotNull(consumer);
   $initIterator(this);
   if (this.it.hasNext_0()) {
-    consumer.accept(this.it.next_1());
+    consumer.accept_0(this.it.next_1());
     return true;
   }
   return false;
@@ -4740,15 +4997,15 @@ _.tryAdvance = function tryAdvance(consumer){
 ;
 _.characteristics = 0;
 _.estimateSize = 0;
-var Ljava_util_Spliterators$IteratorSpliterator_2_classLit = createForClass('java.util', 'Spliterators/IteratorSpliterator', 20);
+var Ljava_util_Spliterators$IteratorSpliterator_2_classLit = createForClass('java.util', 'Spliterators/IteratorSpliterator', 21);
 function SortedSet$1($anonymous0){
   Spliterators$IteratorSpliterator.call(this, $anonymous0, 21);
 }
 
-defineClass(92, 20, {}, SortedSet$1);
-var Ljava_util_SortedSet$1_2_classLit = createForClass('java.util', 'SortedSet/1', 92);
-defineClass(172, 1, {});
-_.forEachRemaining = function forEachRemaining_10(consumer){
+defineClass(95, 21, {}, SortedSet$1);
+var Ljava_util_SortedSet$1_2_classLit = createForClass('java.util', 'SortedSet/1', 95);
+defineClass(176, 1, {});
+_.forEachRemaining = function forEachRemaining_11(consumer){
   $forEachRemaining_0(this, consumer);
 }
 ;
@@ -4762,21 +5019,21 @@ _.estimateSize_0 = function estimateSize_0(){
 ;
 _.characteristics = 0;
 _.sizeEstimate = 0;
-var Ljava_util_Spliterators$BaseSpliterator_2_classLit = createForClass('java.util', 'Spliterators/BaseSpliterator', 172);
+var Ljava_util_Spliterators$BaseSpliterator_2_classLit = createForClass('java.util', 'Spliterators/BaseSpliterator', 176);
 function Spliterators$AbstractSpliterator(size_0, characteristics){
   this.sizeEstimate = size_0;
   this.characteristics = (characteristics & 64) != 0?characteristics | 16384:characteristics;
 }
 
-defineClass(142, 172, {});
-var Ljava_util_Spliterators$AbstractSpliterator_2_classLit = createForClass('java.util', 'Spliterators/AbstractSpliterator', 142);
+defineClass(147, 176, {});
+var Ljava_util_Spliterators$AbstractSpliterator_2_classLit = createForClass('java.util', 'Spliterators/AbstractSpliterator', 147);
 function checkArrayElementIndex(index_0, size_0){
   if (index_0 < 0 || index_0 >= size_0) {
     throw toJs(new ArrayIndexOutOfBoundsException);
   }
 }
 
-defineClass(224, 277, $intern_10);
+defineClass(234, 289, $intern_11);
 _.addAtIndex = function add_12(index_0, o){
   checkArrayElementIndex(index_0, this.arrayList.array.length + 1);
   $add_0(this.arrayList, index_0, o);
@@ -4795,11 +5052,11 @@ _.addAll = function addAll_6(c){
   return $addAll_1(this.arrayList, c);
 }
 ;
-_.clear = function clear_12(){
+_.clear = function clear_14(){
   this.arrayList.array.length = 0;
 }
 ;
-_.contains = function contains_10(elem){
+_.contains = function contains_11(elem){
   return $indexOf_0(this.arrayList, elem, 0) != -1;
 }
 ;
@@ -4807,8 +5064,8 @@ _.containsAll = function containsAll_1(c){
   return $containsAll(this.arrayList, c);
 }
 ;
-_.getAtIndex = function get_7(index_0){
-  return checkArrayElementIndex(index_0, this.arrayList.array.length) , $get(this.arrayList, index_0);
+_.getAtIndex = function get_8(index_0){
+  return checkArrayElementIndex(index_0, this.arrayList.array.length) , $get_0(this.arrayList, index_0);
 }
 ;
 _.indexOf = function indexOf_1(elem){
@@ -4819,7 +5076,7 @@ _.isEmpty = function isEmpty_5(){
   return this.arrayList.array.length == 0;
 }
 ;
-_.iterator_0 = function iterator_16(){
+_.iterator_0 = function iterator_17(){
   return new ArrayList$1(this.arrayList);
 }
 ;
@@ -4827,7 +5084,7 @@ _.lastIndexOf = function lastIndexOf_1(o){
   return $lastIndexOf_0(this.arrayList, o);
 }
 ;
-_.removeAtIndex = function remove_25(index_0){
+_.removeAtIndex = function remove_28(index_0){
   return checkArrayElementIndex(index_0, this.arrayList.array.length) , $remove_1(this.arrayList, index_0);
 }
 ;
@@ -4844,7 +5101,7 @@ _.setAtIndex = function set_8(index_0, elem){
   return $set(this.arrayList, index_0, elem);
 }
 ;
-_.size = function size_15(){
+_.size = function size_17(){
   return this.arrayList.array.length;
 }
 ;
@@ -4868,12 +5125,12 @@ _.toString_0 = function toString_12(){
   return $toString(this.arrayList);
 }
 ;
-var Ljava_util_Vector_2_classLit = createForClass('java.util', 'Vector', 224);
+var Ljava_util_Vector_2_classLit = createForClass('java.util', 'Vector', 234);
 function $peek(this$static){
   var sz;
   sz = this$static.arrayList.array.length;
   if (sz > 0) {
-    return checkArrayElementIndex(sz - 1, this$static.arrayList.array.length) , $get(this$static.arrayList, sz - 1);
+    return checkArrayElementIndex(sz - 1, this$static.arrayList.array.length) , $get_0(this$static.arrayList, sz - 1);
   }
    else {
     throw toJs(new EmptyStackException);
@@ -4900,28 +5157,32 @@ function Stack(){
   this.arrayList = new ArrayList;
 }
 
-defineClass(225, 224, $intern_10, Stack);
-var Ljava_util_Stack_2_classLit = createForClass('java.util', 'Stack', 225);
+defineClass(235, 234, $intern_11, Stack);
+var Ljava_util_Stack_2_classLit = createForClass('java.util', 'Stack', 235);
 function $add_4(this$static, newElement){
   !this$static.builder?(this$static.builder = new StringBuilder_0(this$static.prefix)):$append_4(this$static.builder, this$static.delimiter);
   $append_1(this$static.builder, newElement);
   return this$static;
 }
 
-function StringJoiner(prefix, suffix){
+function StringJoiner(){
+  StringJoiner_0.call(this, '', '');
+}
+
+function StringJoiner_0(prefix, suffix){
   this.delimiter = ', ';
   this.prefix = prefix;
   this.suffix = suffix;
   this.emptyValue = this.prefix + ('' + this.suffix);
 }
 
-defineClass(145, 1, {}, StringJoiner);
+defineClass(92, 1, {}, StringJoiner, StringJoiner_0);
 _.toString_0 = function toString_13(){
   return !this.builder?this.emptyValue:this.suffix.length == 0?this.builder.string:this.builder.string + ('' + this.suffix);
 }
 ;
-var Ljava_util_StringJoiner_2_classLit = createForClass('java.util', 'StringJoiner', 145);
-function $clear(this$static){
+var Ljava_util_StringJoiner_2_classLit = createForClass('java.util', 'StringJoiner', 92);
+function $clear_0(this$static){
   this$static.root_0 = null;
   this$static.size_0 = 0;
 }
@@ -4995,7 +5256,7 @@ function $isRed(node){
   return !!node && node.isRed;
 }
 
-function $put_2(this$static, key, value_0){
+function $put_3(this$static, key, value_0){
   var node, state;
   node = new TreeMap$Node(key, value_0);
   state = new TreeMap$State;
@@ -5005,7 +5266,7 @@ function $put_2(this$static, key, value_0){
   return state.value_0;
 }
 
-function $remove_6(this$static, k){
+function $remove_8(this$static, k){
   var key, state;
   key = k;
   state = new TreeMap$State;
@@ -5039,7 +5300,7 @@ function $removeWithState(this$static, key, state){
     node = node.child[dir_0];
     c = $compare_0(key, node.key);
     dir_0 = c < 0?0:1;
-    c == 0 && (!state.matchValue || equals_9(node.value_0, state.value_0)) && (found = node);
+    c == 0 && (!state.matchValue || equals_10(node.value_0, state.value_0)) && (found = node);
     if (!(!!node && node.isRed) && !$isRed(node.child[dir_0])) {
       if ($isRed(node.child[1 - dir_0])) {
         parent_0 = parent_0.child[last] = $rotateSingle(node, dir_0);
@@ -5118,34 +5379,34 @@ function TreeMap(){
   this.cmp = ($clinit_Comparators() , $clinit_Comparators() , INTERNAL_NATURAL_ORDER);
 }
 
-defineClass(155, 285, {3:1, 57:1}, TreeMap);
-_.clear = function clear_13(){
-  $clear(this);
+defineClass(158, 297, $intern_12, TreeMap);
+_.clear = function clear_15(){
+  $clear_0(this);
 }
 ;
-_.entrySet = function entrySet_1(){
+_.entrySet = function entrySet_2(){
   return new TreeMap$EntrySet(this);
 }
 ;
-_.put = function put_1(key, value_0){
-  return $put_2(this, key, value_0);
+_.put = function put_2(key, value_0){
+  return $put_3(this, key, value_0);
 }
 ;
-_.remove = function remove_26(k){
-  return $remove_6(this, k);
+_.remove = function remove_29(k){
+  return $remove_8(this, k);
 }
 ;
-_.size = function size_16(){
+_.size = function size_18(){
   return this.size_0;
 }
 ;
 _.size_0 = 0;
-var Ljava_util_TreeMap_2_classLit = createForClass('java.util', 'TreeMap', 155);
+var Ljava_util_TreeMap_2_classLit = createForClass('java.util', 'TreeMap', 158);
 function $next_3(this$static){
-  return this$static.last = castTo($next_0(this$static.iter), 15);
+  return this$static.last = castTo($next_0(this$static.iter), 13);
 }
 
-function $remove_7(this$static){
+function $remove_9(this$static){
   $remove_0(this$static.iter);
   $removeEntry(this$static.this$01, this$static.last);
   this$static.last = null;
@@ -5163,48 +5424,48 @@ function TreeMap$EntryIterator_0(this$0, type_0){
   this.iter = new AbstractList$ListIteratorImpl(list, 0);
 }
 
-defineClass(62, 1, {}, TreeMap$EntryIterator);
-_.forEachRemaining = function forEachRemaining_11(consumer){
+defineClass(64, 1, {}, TreeMap$EntryIterator);
+_.forEachRemaining = function forEachRemaining_12(consumer){
   $forEachRemaining(this, consumer);
 }
 ;
-_.next_1 = function next_10(){
+_.next_1 = function next_11(){
   return $next_3(this);
 }
 ;
-_.hasNext_0 = function hasNext_9(){
+_.hasNext_0 = function hasNext_10(){
   return $hasNext_0(this.iter);
 }
 ;
-_.remove_0 = function remove_27(){
-  $remove_7(this);
+_.remove_0 = function remove_30(){
+  $remove_9(this);
 }
 ;
-var Ljava_util_TreeMap$EntryIterator_2_classLit = createForClass('java.util', 'TreeMap/EntryIterator', 62);
+var Ljava_util_TreeMap$EntryIterator_2_classLit = createForClass('java.util', 'TreeMap/EntryIterator', 64);
 function TreeMap$EntrySet(this$0){
   this.this$01 = this$0;
   AbstractNavigableMap$EntrySet.call(this, this$0);
 }
 
-defineClass(83, 156, $intern_3, TreeMap$EntrySet);
-_.clear = function clear_14(){
-  $clear(this.this$01);
+defineClass(85, 159, $intern_4, TreeMap$EntrySet);
+_.clear = function clear_16(){
+  $clear_0(this.this$01);
 }
 ;
-var Ljava_util_TreeMap$EntrySet_2_classLit = createForClass('java.util', 'TreeMap/EntrySet', 83);
+var Ljava_util_TreeMap$EntrySet_2_classLit = createForClass('java.util', 'TreeMap/EntrySet', 85);
 function TreeMap$Node(key, value_0){
   AbstractMap$SimpleEntry.call(this, key, value_0);
-  this.child = initUnidimensionalArray(Ljava_util_TreeMap$Node_2_classLit, $intern_0, 63, 2, 0, 1);
+  this.child = initUnidimensionalArray(Ljava_util_TreeMap$Node_2_classLit, $intern_0, 65, 2, 0, 1);
   this.isRed = true;
 }
 
-defineClass(63, 77, {93:1, 77:1, 15:1, 63:1}, TreeMap$Node);
+defineClass(65, 57, {79:1, 57:1, 13:1, 65:1}, TreeMap$Node);
 _.isRed = false;
-var Ljava_util_TreeMap$Node_2_classLit = createForClass('java.util', 'TreeMap/Node', 63);
+var Ljava_util_TreeMap$Node_2_classLit = createForClass('java.util', 'TreeMap/Node', 65);
 function TreeMap$State(){
 }
 
-defineClass(120, 1, {}, TreeMap$State);
+defineClass(126, 1, {}, TreeMap$State);
 _.toString_0 = function toString_14(){
   return 'State: mv=' + this.matchValue + ' value=' + this.value_0 + ' done=' + this.done_0 + ' found=' + this.found;
 }
@@ -5212,7 +5473,7 @@ _.toString_0 = function toString_14(){
 _.done_0 = false;
 _.found = false;
 _.matchValue = false;
-var Ljava_util_TreeMap$State_2_classLit = createForClass('java.util', 'TreeMap/State', 120);
+var Ljava_util_TreeMap$State_2_classLit = createForClass('java.util', 'TreeMap/State', 126);
 function $clinit_TreeMap$SubMapType(){
   $clinit_TreeMap$SubMapType = emptyMethod;
   All = new TreeMap$SubMapType('All', 0);
@@ -5227,10 +5488,10 @@ function TreeMap$SubMapType(enum$name, enum$ordinal){
 
 function values_1(){
   $clinit_TreeMap$SubMapType();
-  return stampJavaTypeInfo(getClassLiteralForArray(Ljava_util_TreeMap$SubMapType_2_classLit, 1), $intern_0, 48, 0, [All, Head, Range_0, Tail]);
+  return stampJavaTypeInfo(getClassLiteralForArray(Ljava_util_TreeMap$SubMapType_2_classLit, 1), $intern_0, 49, 0, [All, Head, Range_0, Tail]);
 }
 
-defineClass(48, 43, $intern_12, TreeMap$SubMapType);
+defineClass(49, 44, $intern_14, TreeMap$SubMapType);
 _.fromKeyValid = function fromKeyValid(){
   return false;
 }
@@ -5240,22 +5501,22 @@ _.toKeyValid = function toKeyValid(){
 }
 ;
 var All, Head, Range_0, Tail;
-var Ljava_util_TreeMap$SubMapType_2_classLit = createForEnum('java.util', 'TreeMap/SubMapType', 48, values_1);
+var Ljava_util_TreeMap$SubMapType_2_classLit = createForEnum('java.util', 'TreeMap/SubMapType', 49, values_1);
 function TreeMap$SubMapType$1(){
   TreeMap$SubMapType.call(this, 'Head', 1);
 }
 
-defineClass(220, 48, $intern_12, TreeMap$SubMapType$1);
+defineClass(231, 49, $intern_14, TreeMap$SubMapType$1);
 _.toKeyValid = function toKeyValid_0(){
   return true;
 }
 ;
-var Ljava_util_TreeMap$SubMapType$1_2_classLit = createForEnum('java.util', 'TreeMap/SubMapType/1', 220, null);
+var Ljava_util_TreeMap$SubMapType$1_2_classLit = createForEnum('java.util', 'TreeMap/SubMapType/1', 231, null);
 function TreeMap$SubMapType$2(){
   TreeMap$SubMapType.call(this, 'Range', 2);
 }
 
-defineClass(221, 48, $intern_12, TreeMap$SubMapType$2);
+defineClass(232, 49, $intern_14, TreeMap$SubMapType$2);
 _.fromKeyValid = function fromKeyValid_0(){
   return true;
 }
@@ -5264,22 +5525,22 @@ _.toKeyValid = function toKeyValid_1(){
   return true;
 }
 ;
-var Ljava_util_TreeMap$SubMapType$2_2_classLit = createForEnum('java.util', 'TreeMap/SubMapType/2', 221, null);
+var Ljava_util_TreeMap$SubMapType$2_2_classLit = createForEnum('java.util', 'TreeMap/SubMapType/2', 232, null);
 function TreeMap$SubMapType$3(){
   TreeMap$SubMapType.call(this, 'Tail', 3);
 }
 
-defineClass(222, 48, $intern_12, TreeMap$SubMapType$3);
+defineClass(233, 49, $intern_14, TreeMap$SubMapType$3);
 _.fromKeyValid = function fromKeyValid_1(){
   return true;
 }
 ;
-var Ljava_util_TreeMap$SubMapType$3_2_classLit = createForEnum('java.util', 'TreeMap/SubMapType/3', 222, null);
+var Ljava_util_TreeMap$SubMapType$3_2_classLit = createForEnum('java.util', 'TreeMap/SubMapType/3', 233, null);
 function $add_5(this$static, o){
-  return $put_2(this$static.map_0, o, ($clinit_Boolean() , FALSE)) == null;
+  return $put_3(this$static.map_0, o, ($clinit_Boolean() , FALSE)) == null;
 }
 
-function $contains_2(this$static, o){
+function $contains_3(this$static, o){
   return $containsKey_0(this$static.map_0, o);
 }
 
@@ -5287,7 +5548,7 @@ function TreeSet(){
   this.map_0 = new TreeMap;
 }
 
-defineClass(200, 278, $intern_11, TreeSet);
+defineClass(219, 290, $intern_13, TreeSet);
 _.spliterator_0 = function spliterator_4(){
   return new SortedSet$1(this);
 }
@@ -5296,45 +5557,45 @@ _.add = function add_14(o){
   return $add_5(this, o);
 }
 ;
-_.clear = function clear_15(){
-  $clear(this.map_0);
+_.clear = function clear_17(){
+  $clear_0(this.map_0);
 }
 ;
-_.contains = function contains_11(o){
-  return $contains_2(this, o);
+_.contains = function contains_12(o){
+  return $contains_3(this, o);
 }
 ;
-_.iterator_0 = function iterator_17(){
+_.iterator_0 = function iterator_18(){
   var entryIterator;
   return entryIterator = new TreeMap$EntryIterator((new TreeMap$EntrySet((new AbstractNavigableMap$NavigableKeySet(this.map_0)).map_0)).this$01_0) , new AbstractNavigableMap$NavigableKeySet$1(entryIterator);
 }
 ;
-_.remove = function remove_28(o){
-  return $remove_6(this.map_0, o) != null;
+_.remove = function remove_31(o){
+  return $remove_8(this.map_0, o) != null;
 }
 ;
-_.size = function size_17(){
+_.size = function size_19(){
   return this.map_0.size_0;
 }
 ;
-var Ljava_util_TreeSet_2_classLit = createForClass('java.util', 'TreeSet', 200);
+var Ljava_util_TreeSet_2_classLit = createForClass('java.util', 'TreeSet', 219);
 function Function$lambda$0$Type(){
 }
 
-defineClass(176, 1, {}, Function$lambda$0$Type);
-_.apply_0 = function apply_3(t){
+defineClass(178, 1, {}, Function$lambda$0$Type);
+_.apply_0 = function apply_4(t){
   return t;
 }
 ;
-var Ljava_util_function_Function$lambda$0$Type_2_classLit = createForClass('java.util.function', 'Function/lambda$0$Type', 176);
-defineClass(99, 1, {99:1});
-var Ljava_util_logging_Handler_2_classLit = createForClass('java.util.logging', 'Handler', 99);
+var Ljava_util_function_Function$lambda$0$Type_2_classLit = createForClass('java.util.function', 'Function/lambda$0$Type', 178);
+defineClass(104, 1, {104:1});
+var Ljava_util_logging_Handler_2_classLit = createForClass('java.util.logging', 'Handler', 104);
 function $clinit_Level(){
   $clinit_Level = emptyMethod;
   INFO = new Level$LevelInfo;
 }
 
-defineClass(283, 1, $intern_8);
+defineClass(295, 1, $intern_9);
 _.getName = function getName_0(){
   return 'DUMMY';
 }
@@ -5344,16 +5605,16 @@ _.toString_0 = function toString_15(){
 }
 ;
 var INFO;
-var Ljava_util_logging_Level_2_classLit = createForClass('java.util.logging', 'Level', 283);
+var Ljava_util_logging_Level_2_classLit = createForClass('java.util.logging', 'Level', 295);
 function Level$LevelInfo(){
 }
 
-defineClass(193, 283, $intern_8, Level$LevelInfo);
+defineClass(212, 295, $intern_9, Level$LevelInfo);
 _.getName = function getName_1(){
   return 'INFO';
 }
 ;
-var Ljava_util_logging_Level$LevelInfo_2_classLit = createForClass('java.util.logging', 'Level/LevelInfo', 193);
+var Ljava_util_logging_Level$LevelInfo_2_classLit = createForClass('java.util.logging', 'Level/LevelInfo', 212);
 function $addLoggerImpl(this$static, logger){
   (($clinit_Logger() , LOGGING_OFF)?null:logger.name_0).length == 0 && $addHandler(logger, new SimpleConsoleLogHandler);
   $putStringValue(this$static.loggerMap, LOGGING_OFF?null:logger.name_0, logger);
@@ -5361,7 +5622,7 @@ function $addLoggerImpl(this$static, logger){
 
 function $ensureLogger(this$static, name_0){
   var logger, newLogger, name_1, parentName;
-  logger = castTo($getStringValue(this$static.loggerMap, name_0), 82);
+  logger = castTo($getStringValue(this$static.loggerMap, name_0), 84);
   if (!logger) {
     newLogger = new Logger(name_0);
     name_1 = ($clinit_Logger() , LOGGING_OFF)?null:newLogger.name_0;
@@ -5389,17 +5650,17 @@ function getLogManager(){
   return singleton;
 }
 
-defineClass(201, 1, {}, LogManager);
+defineClass(222, 1, {}, LogManager);
 var singleton;
-var Ljava_util_logging_LogManager_2_classLit = createForClass('java.util.logging', 'LogManager', 201);
+var Ljava_util_logging_LogManager_2_classLit = createForClass('java.util.logging', 'LogManager', 222);
 function LogRecord(msg){
   this.msg = msg;
   fromDouble_0(Date.now());
 }
 
-defineClass(223, 1, $intern_8, LogRecord);
+defineClass(236, 1, $intern_9, LogRecord);
 _.thrown = null;
-var Ljava_util_logging_LogRecord_2_classLit = createForClass('java.util.logging', 'LogRecord', 223);
+var Ljava_util_logging_LogRecord_2_classLit = createForClass('java.util.logging', 'LogRecord', 236);
 function $clinit_Logger(){
   $clinit_Logger = emptyMethod;
   LOGGING_OFF = true;
@@ -5448,9 +5709,9 @@ function $getEffectiveLevel(this$static){
 
 function $getHandlers(this$static){
   if (LOGGING_OFF) {
-    return initUnidimensionalArray(Ljava_util_logging_Handler_2_classLit, $intern_13, 99, 0, 0, 1);
+    return initUnidimensionalArray(Ljava_util_logging_Handler_2_classLit, $intern_15, 104, 0, 0, 1);
   }
-  return castTo($toArray_0(this$static.handlers, initUnidimensionalArray(Ljava_util_logging_Handler_2_classLit, $intern_13, 99, this$static.handlers.array.length, 0, 1)), 258);
+  return castTo($toArray_0(this$static.handlers, initUnidimensionalArray(Ljava_util_logging_Handler_2_classLit, $intern_15, 104, this$static.handlers.array.length, 0, 1)), 270);
 }
 
 function $log(this$static, msg, thrown){
@@ -5490,10 +5751,10 @@ function getLogger(){
   return $ensureLogger(getLogManager(), 'com.google.common.base.Strings');
 }
 
-defineClass(82, 1, {82:1}, Logger);
+defineClass(84, 1, {84:1}, Logger);
 _.useParentHandlers = false;
 var ALL_ENABLED = false, INFO_ENABLED = false, LOGGING_OFF = false, SEVERE_ENABLED = false, WARNING_ENABLED = false;
-var Ljava_util_logging_Logger_2_classLit = createForClass('java.util.logging', 'Logger', 82);
+var Ljava_util_logging_Logger_2_classLit = createForClass('java.util.logging', 'Logger', 84);
 function $publish(record){
   var console_0, level, val;
   console_0 = $equals_1(typeof(console_0), 'undefined')?null:new ConsoleLogger;
@@ -5509,14 +5770,23 @@ function $publish(record){
 function SimpleConsoleLogHandler(){
 }
 
-defineClass(159, 99, {99:1}, SimpleConsoleLogHandler);
-var Ljava_util_logging_SimpleConsoleLogHandler_2_classLit = createForClass('java.util.logging', 'SimpleConsoleLogHandler', 159);
-function of_1(supplier, accumulator, combiner, characteristics){
+defineClass(163, 104, {104:1}, SimpleConsoleLogHandler);
+var Ljava_util_logging_SimpleConsoleLogHandler_2_classLit = createForClass('java.util.logging', 'SimpleConsoleLogHandler', 163);
+function of_1(supplier, accumulator, combiner, finisher, characteristics){
+  checkCriticalNotNull(supplier);
+  checkCriticalNotNull(accumulator);
+  checkCriticalNotNull(combiner);
+  checkCriticalNotNull(finisher);
+  checkCriticalNotNull(characteristics);
+  return new CollectorImpl(supplier, accumulator, combiner, finisher);
+}
+
+function of_2(supplier, accumulator, combiner, characteristics){
   checkCriticalNotNull(supplier);
   checkCriticalNotNull(accumulator);
   checkCriticalNotNull(combiner);
   checkCriticalNotNull(characteristics);
-  return new CollectorImpl(new Function$lambda$0$Type);
+  return new CollectorImpl(supplier, accumulator, combiner, new Function$lambda$0$Type);
 }
 
 function $clinit_Collector$Characteristics(){
@@ -5532,33 +5802,134 @@ function Collector$Characteristics(enum$name, enum$ordinal){
 
 function values_2(){
   $clinit_Collector$Characteristics();
-  return stampJavaTypeInfo(getClassLiteralForArray(Ljava_util_stream_Collector$Characteristics_2_classLit, 1), $intern_0, 23, 0, [CONCURRENT, IDENTITY_FINISH, UNORDERED]);
+  return stampJavaTypeInfo(getClassLiteralForArray(Ljava_util_stream_Collector$Characteristics_2_classLit, 1), $intern_0, 20, 0, [CONCURRENT, IDENTITY_FINISH, UNORDERED]);
 }
 
-defineClass(23, 43, {3:1, 39:1, 43:1, 23:1}, Collector$Characteristics);
+defineClass(20, 44, {3:1, 39:1, 44:1, 20:1}, Collector$Characteristics);
 var CONCURRENT, IDENTITY_FINISH, UNORDERED;
-var Ljava_util_stream_Collector$Characteristics_2_classLit = createForEnum('java.util.stream', 'Collector/Characteristics', 23, values_2);
-function CollectorImpl(finisher){
+var Ljava_util_stream_Collector$Characteristics_2_classLit = createForEnum('java.util.stream', 'Collector/Characteristics', 20, values_2);
+function CollectorImpl(supplier, accumulator, combiner, finisher){
+  this.supplier = supplier;
+  this.accumulator = accumulator;
+  this.combiner = combiner;
   this.finisher = finisher;
 }
 
-defineClass(227, 1, {}, CollectorImpl);
-var Ljava_util_stream_CollectorImpl_2_classLit = createForClass('java.util.stream', 'CollectorImpl', 227);
+defineClass(122, 1, {}, CollectorImpl);
+var Ljava_util_stream_CollectorImpl_2_classLit = createForClass('java.util.stream', 'CollectorImpl', 122);
+function groupingBy(downstream){
+  return groupingBy0(new Collectors$lambda$6$Type, downstream);
+}
+
+function groupingBy0(supplier, downstream){
+  return of_1(supplier, new Collectors$lambda$7$Type, new Collectors$lambda$8$Type, new Collectors$lambda$9$Type(downstream), stampJavaTypeInfo(getClassLiteralForArray(Ljava_util_stream_Collector$Characteristics_2_classLit, 1), $intern_0, 20, 0, []));
+}
+
+function lambda$19(downstream_0, a_2, t_3){
+  downstream_0.accumulator.accept(a_2, lambda$3(castTo(t_3, 93)));
+}
+
+function lambda$7(m_1, o_2){
+  var k, l;
+  k = castTo(o_2, 93)[0];
+  l = castTo(m_1.get(k), 18);
+  if (!l) {
+    l = new ArrayList;
+    m_1.put(k, l);
+  }
+  l.add(o_2);
+}
+
+function lambda$9(downstream_1, m_2){
+  var entry, entry$iterator, result;
+  result = new LinkedHashMap;
+  for (entry$iterator = m_2.entrySet().iterator_0(); entry$iterator.hasNext_0();) {
+    entry = castTo(entry$iterator.next_1(), 13);
+    $put_2(result, entry.getKey(), streamAndCollect(downstream_1, castTo(entry.getValue(), 18)));
+  }
+  return result;
+}
+
+function mapping(downstream){
+  return new CollectorImpl(downstream.supplier, new Collectors$lambda$19$Type(downstream), downstream.combiner, downstream.finisher);
+}
+
+function streamAndCollect(downstream, list){
+  var a, t, t$iterator;
+  a = downstream.supplier.get_0();
+  for (t$iterator = list.iterator_0(); t$iterator.hasNext_0();) {
+    t = t$iterator.next_1();
+    downstream.accumulator.accept(a, t);
+  }
+  return downstream.finisher.apply_0(a);
+}
+
 function Collectors$20methodref$add$Type(){
 }
 
-defineClass(28, 1, {}, Collectors$20methodref$add$Type);
-var Ljava_util_stream_Collectors$20methodref$add$Type_2_classLit = createForClass('java.util.stream', 'Collectors/20methodref$add$Type', 28);
+defineClass(27, 1, {}, Collectors$20methodref$add$Type);
+_.accept = function accept_0(arg0, arg1){
+  castTo(arg0, 19).add(arg1);
+}
+;
+var Ljava_util_stream_Collectors$20methodref$add$Type_2_classLit = createForClass('java.util.stream', 'Collectors/20methodref$add$Type', 27);
 function Collectors$21methodref$ctor$Type(){
 }
 
-defineClass(30, 1, {}, Collectors$21methodref$ctor$Type);
-var Ljava_util_stream_Collectors$21methodref$ctor$Type_2_classLit = createForClass('java.util.stream', 'Collectors/21methodref$ctor$Type', 30);
+defineClass(29, 1, {}, Collectors$21methodref$ctor$Type);
+_.get_0 = function get_9(){
+  return new ArrayList;
+}
+;
+var Ljava_util_stream_Collectors$21methodref$ctor$Type_2_classLit = createForClass('java.util.stream', 'Collectors/21methodref$ctor$Type', 29);
+function Collectors$lambda$19$Type(downstream_0){
+  this.downstream_0 = downstream_0;
+}
+
+defineClass(189, 1, {}, Collectors$lambda$19$Type);
+_.accept = function accept_1(arg0, arg1){
+  lambda$19(this.downstream_0, arg0, arg1);
+}
+;
+var Ljava_util_stream_Collectors$lambda$19$Type_2_classLit = createForClass('java.util.stream', 'Collectors/lambda$19$Type', 189);
 function Collectors$lambda$42$Type(){
 }
 
-defineClass(29, 1, {}, Collectors$lambda$42$Type);
-var Ljava_util_stream_Collectors$lambda$42$Type_2_classLit = createForClass('java.util.stream', 'Collectors/lambda$42$Type', 29);
+defineClass(28, 1, {}, Collectors$lambda$42$Type);
+var Ljava_util_stream_Collectors$lambda$42$Type_2_classLit = createForClass('java.util.stream', 'Collectors/lambda$42$Type', 28);
+function Collectors$lambda$6$Type(){
+}
+
+defineClass(185, 1, {}, Collectors$lambda$6$Type);
+_.get_0 = function get_10(){
+  return new LinkedHashMap;
+}
+;
+var Ljava_util_stream_Collectors$lambda$6$Type_2_classLit = createForClass('java.util.stream', 'Collectors/lambda$6$Type', 185);
+function Collectors$lambda$7$Type(){
+}
+
+defineClass(186, 1, {}, Collectors$lambda$7$Type);
+_.accept = function accept_2(arg0, arg1){
+  lambda$7(castTo(arg0, 43), arg1);
+}
+;
+var Ljava_util_stream_Collectors$lambda$7$Type_2_classLit = createForClass('java.util.stream', 'Collectors/lambda$7$Type', 186);
+function Collectors$lambda$8$Type(){
+}
+
+defineClass(187, 1, {}, Collectors$lambda$8$Type);
+var Ljava_util_stream_Collectors$lambda$8$Type_2_classLit = createForClass('java.util.stream', 'Collectors/lambda$8$Type', 187);
+function Collectors$lambda$9$Type(downstream_1){
+  this.downstream_1 = downstream_1;
+}
+
+defineClass(188, 1, {}, Collectors$lambda$9$Type);
+_.apply_0 = function apply_5(arg0){
+  return lambda$9(this.downstream_1, castTo(arg0, 43));
+}
+;
+var Ljava_util_stream_Collectors$lambda$9$Type_2_classLit = createForClass('java.util.stream', 'Collectors/lambda$9$Type', 188);
 function $terminate(this$static){
   if (!this$static.root_0) {
     $throwIfTerminated(this$static);
@@ -5588,12 +5959,12 @@ function TerminatableStream(previous){
   }
 }
 
-defineClass(205, 1, {});
+defineClass(203, 1, {});
 _.terminated = false;
-var Ljava_util_stream_TerminatableStream_2_classLit = createForClass('java.util.stream', 'TerminatableStream', 205);
+var Ljava_util_stream_TerminatableStream_2_classLit = createForClass('java.util.stream', 'TerminatableStream', 203);
 function $collect(this$static, collector){
   var lastArg;
-  return $reduce(this$static, (lastArg = new ArrayList , lastArg));
+  return collector.finisher.apply_0($reduce(this$static, collector.supplier.get_0(), (lastArg = new StreamImpl$lambda$4$Type(collector) , lastArg)));
 }
 
 function $filter(this$static, predicate){
@@ -5606,12 +5977,12 @@ function $map(this$static, mapper){
   return new StreamImpl(this$static, new StreamImpl$MapToObjSpliterator(mapper, this$static.spliterator));
 }
 
-function $reduce(this$static, identity){
+function $reduce(this$static, identity, accumulator){
   var consumer;
   $terminate(this$static);
   consumer = new StreamImpl$ValueConsumer;
   consumer.value_0 = identity;
-  this$static.spliterator.forEachRemaining(new StreamImpl$lambda$5$Type(consumer));
+  this$static.spliterator.forEachRemaining(new StreamImpl$lambda$5$Type(consumer, accumulator));
   return consumer.value_0;
 }
 
@@ -5620,21 +5991,21 @@ function StreamImpl(prev, spliterator){
   this.spliterator = spliterator;
 }
 
-function lambda$4(a_1, t_2){
-  castTo(a_1, 18).add(t_2);
+function lambda$4(collector_0, a_1, t_2){
+  collector_0.accumulator.accept(a_1, t_2);
   return a_1;
 }
 
-function lambda$5(consumer_0, item_2){
-  $accept(consumer_0, lambda$4(consumer_0.value_0, item_2));
+function lambda$5(consumer_0, accumulator_1, item_2){
+  $accept(consumer_0, $apply(accumulator_1, consumer_0.value_0, item_2));
 }
 
-defineClass(24, 205, {24:1}, StreamImpl);
-var Ljava_util_stream_StreamImpl_2_classLit = createForClass('java.util.stream', 'StreamImpl', 24);
+defineClass(22, 203, {22:1}, StreamImpl);
+var Ljava_util_stream_StreamImpl_2_classLit = createForClass('java.util.stream', 'StreamImpl', 22);
 function $lambda$0(this$static, action_1, item_1){
   if (this$static.filter_0.test_0(item_1)) {
     this$static.found = true;
-    action_1.accept(item_1);
+    action_1.accept_0(item_1);
   }
 }
 
@@ -5645,7 +6016,7 @@ function StreamImpl$FilterSpliterator(filter, original){
   this.original = original;
 }
 
-defineClass(207, 142, {}, StreamImpl$FilterSpliterator);
+defineClass(205, 147, {}, StreamImpl$FilterSpliterator);
 _.tryAdvance = function tryAdvance_0(action){
   this.found = false;
   while (!this.found && this.original.tryAdvance(new StreamImpl$FilterSpliterator$lambda$0$Type(this, action)))
@@ -5654,20 +6025,20 @@ _.tryAdvance = function tryAdvance_0(action){
 }
 ;
 _.found = false;
-var Ljava_util_stream_StreamImpl$FilterSpliterator_2_classLit = createForClass('java.util.stream', 'StreamImpl/FilterSpliterator', 207);
+var Ljava_util_stream_StreamImpl$FilterSpliterator_2_classLit = createForClass('java.util.stream', 'StreamImpl/FilterSpliterator', 205);
 function StreamImpl$FilterSpliterator$lambda$0$Type($$outer_0, action_1){
   this.$$outer_0 = $$outer_0;
   this.action_1 = action_1;
 }
 
-defineClass(210, 1, {}, StreamImpl$FilterSpliterator$lambda$0$Type);
-_.accept = function accept_0(arg0){
+defineClass(208, 1, {}, StreamImpl$FilterSpliterator$lambda$0$Type);
+_.accept_0 = function accept_3(arg0){
   $lambda$0(this.$$outer_0, this.action_1, arg0);
 }
 ;
-var Ljava_util_stream_StreamImpl$FilterSpliterator$lambda$0$Type_2_classLit = createForClass('java.util.stream', 'StreamImpl/FilterSpliterator/lambda$0$Type', 210);
+var Ljava_util_stream_StreamImpl$FilterSpliterator$lambda$0$Type_2_classLit = createForClass('java.util.stream', 'StreamImpl/FilterSpliterator/lambda$0$Type', 208);
 function $lambda$0_0(this$static, action_1, u_1){
-  action_1.accept(this$static.map_0.apply_0(u_1));
+  action_1.accept_0(this$static.map_0.apply_0(u_1));
 }
 
 function StreamImpl$MapToObjSpliterator(map_0, original){
@@ -5677,23 +6048,23 @@ function StreamImpl$MapToObjSpliterator(map_0, original){
   this.original = original;
 }
 
-defineClass(206, 142, {}, StreamImpl$MapToObjSpliterator);
+defineClass(204, 147, {}, StreamImpl$MapToObjSpliterator);
 _.tryAdvance = function tryAdvance_1(action){
   return this.original.tryAdvance(new StreamImpl$MapToObjSpliterator$lambda$0$Type(this, action));
 }
 ;
-var Ljava_util_stream_StreamImpl$MapToObjSpliterator_2_classLit = createForClass('java.util.stream', 'StreamImpl/MapToObjSpliterator', 206);
+var Ljava_util_stream_StreamImpl$MapToObjSpliterator_2_classLit = createForClass('java.util.stream', 'StreamImpl/MapToObjSpliterator', 204);
 function StreamImpl$MapToObjSpliterator$lambda$0$Type($$outer_0, action_1){
   this.$$outer_0 = $$outer_0;
   this.action_1 = action_1;
 }
 
-defineClass(209, 1, {}, StreamImpl$MapToObjSpliterator$lambda$0$Type);
-_.accept = function accept_1(arg0){
+defineClass(207, 1, {}, StreamImpl$MapToObjSpliterator$lambda$0$Type);
+_.accept_0 = function accept_4(arg0){
   $lambda$0_0(this.$$outer_0, this.action_1, arg0);
 }
 ;
-var Ljava_util_stream_StreamImpl$MapToObjSpliterator$lambda$0$Type_2_classLit = createForClass('java.util.stream', 'StreamImpl/MapToObjSpliterator/lambda$0$Type', 209);
+var Ljava_util_stream_StreamImpl$MapToObjSpliterator$lambda$0$Type_2_classLit = createForClass('java.util.stream', 'StreamImpl/MapToObjSpliterator/lambda$0$Type', 207);
 function $accept(this$static, value_0){
   this$static.value_0 = value_0;
 }
@@ -5701,26 +6072,37 @@ function $accept(this$static, value_0){
 function StreamImpl$ValueConsumer(){
 }
 
-defineClass(208, 1, {}, StreamImpl$ValueConsumer);
-_.accept = function accept_2(value_0){
+defineClass(206, 1, {}, StreamImpl$ValueConsumer);
+_.accept_0 = function accept_5(value_0){
   $accept(this, value_0);
 }
 ;
-var Ljava_util_stream_StreamImpl$ValueConsumer_2_classLit = createForClass('java.util.stream', 'StreamImpl/ValueConsumer', 208);
+var Ljava_util_stream_StreamImpl$ValueConsumer_2_classLit = createForClass('java.util.stream', 'StreamImpl/ValueConsumer', 206);
+function $apply(this$static, arg0, arg1){
+  return lambda$4(this$static.collector_0, arg0, arg1);
+}
+
+function StreamImpl$lambda$4$Type(collector_0){
+  this.collector_0 = collector_0;
+}
+
+defineClass(209, 1, {}, StreamImpl$lambda$4$Type);
+var Ljava_util_stream_StreamImpl$lambda$4$Type_2_classLit = createForClass('java.util.stream', 'StreamImpl/lambda$4$Type', 209);
 function $accept_0(this$static, arg0){
-  lambda$5(this$static.consumer_0, arg0);
+  lambda$5(this$static.consumer_0, this$static.accumulator_1, arg0);
 }
 
-function StreamImpl$lambda$5$Type(consumer_0){
+function StreamImpl$lambda$5$Type(consumer_0, accumulator_1){
   this.consumer_0 = consumer_0;
+  this.accumulator_1 = accumulator_1;
 }
 
-defineClass(211, 1, {}, StreamImpl$lambda$5$Type);
-_.accept = function accept_3(arg0){
+defineClass(210, 1, {}, StreamImpl$lambda$5$Type);
+_.accept_0 = function accept_6(arg0){
   $accept_0(this, arg0);
 }
 ;
-var Ljava_util_stream_StreamImpl$lambda$5$Type_2_classLit = createForClass('java.util.stream', 'StreamImpl/lambda$5$Type', 211);
+var Ljava_util_stream_StreamImpl$lambda$5$Type_2_classLit = createForClass('java.util.stream', 'StreamImpl/lambda$5$Type', 210);
 function stampJavaTypeInfo_1(array, referenceType){
   return stampJavaTypeInfo_0(array, referenceType);
 }
@@ -5763,27 +6145,27 @@ function getBackingErrorStack(t){
   return backingError && (backingError.stack || stringify(t['fnStack']));
 }
 
-defineClass(254, 1, {}, ConsoleLogger);
-var Ljavaemul_internal_ConsoleLogger_2_classLit = createForClass('javaemul.internal', 'ConsoleLogger', 254);
-defineClass(360, 1, {});
+defineClass(266, 1, {}, ConsoleLogger);
+var Ljavaemul_internal_ConsoleLogger_2_classLit = createForClass('javaemul.internal', 'ConsoleLogger', 266);
+defineClass(372, 1, {});
 function ASIEvaluationException(message){
   Exception.call(this, message);
 }
 
-defineClass(144, 17, $intern_1, ASIEvaluationException);
-var Lorg_fstrf_stanfordAsiInterpreter_resistance_ASIEvaluationException_2_classLit = createForClass('org.fstrf.stanfordAsiInterpreter.resistance', 'ASIEvaluationException', 144);
+defineClass(118, 17, $intern_1, ASIEvaluationException);
+var Lorg_fstrf_stanfordAsiInterpreter_resistance_ASIEvaluationException_2_classLit = createForClass('org.fstrf.stanfordAsiInterpreter.resistance', 'ASIEvaluationException', 118);
 function ASIParsingException(message){
   Exception.call(this, message);
 }
 
-defineClass(14, 17, $intern_1, ASIParsingException);
-var Lorg_fstrf_stanfordAsiInterpreter_resistance_ASIParsingException_2_classLit = createForClass('org.fstrf.stanfordAsiInterpreter.resistance', 'ASIParsingException', 14);
+defineClass(15, 17, $intern_1, ASIParsingException);
+var Lorg_fstrf_stanfordAsiInterpreter_resistance_ASIParsingException_2_classLit = createForClass('org.fstrf.stanfordAsiInterpreter.resistance', 'ASIParsingException', 15);
 function CommentAction(comment){
   this.comment = comment;
 }
 
-defineClass(102, 1, {102:1, 139:1}, CommentAction);
-_.evaluate_0 = function evaluate(result){
+defineClass(103, 1, {103:1, 145:1}, CommentAction);
+_.evaluate_0 = function evaluate_0(result){
   var reslt;
   return reslt = castToBoolean(result) , (checkCriticalNotNull(reslt) , reslt)?this.comment:null;
 }
@@ -5792,7 +6174,7 @@ _.supports_0 = function supports(resultType){
   return resultType == Ljava_lang_Boolean_2_classLit;
 }
 ;
-var Lorg_fstrf_stanfordAsiInterpreter_resistance_definition_CommentAction_2_classLit = createForClass('org.fstrf.stanfordAsiInterpreter.resistance.definition', 'CommentAction', 102);
+var Lorg_fstrf_stanfordAsiInterpreter_resistance_definition_CommentAction_2_classLit = createForClass('org.fstrf.stanfordAsiInterpreter.resistance.definition', 'CommentAction', 103);
 function CommentDefinition(id_0, text_0){
   this.id_0 = id_0;
   this.text_0 = text_0;
@@ -5804,7 +6186,7 @@ function CommentDefinition_0(id_0, text_0, sort_0){
   this.sort_0 = sort_0;
 }
 
-defineClass(40, 1, {40:1, 86:1}, CommentDefinition, CommentDefinition_0);
+defineClass(40, 1, {40:1, 88:1}, CommentDefinition, CommentDefinition_0);
 _.toString_0 = function toString_16(){
   return lenientFormat('{id: %s, text: %s, sort: %s}', stampJavaTypeInfo(getClassLiteralForArray(Ljava_lang_Object_2_classLit, 1), $intern_0, 1, 5, [this.id_0, this.text_0, this.sort_0]));
 }
@@ -5814,13 +6196,13 @@ function $evaluate(this$static, mutations, comparator){
   var evaluatedConditions, evaluatedMutationTypes, evaluatedMutations, m, m$iterator, mt, mutationType, mutationType$iterator, rule, rule$iterator;
   evaluatedConditions = new ArrayList;
   for (rule$iterator = new ArrayList$1(this$static.drugRules); rule$iterator.i < rule$iterator.this$01.array.length;) {
-    rule = castTo($next_1(rule$iterator), 96);
+    rule = castTo($next_1(rule$iterator), 98);
     $add_1(evaluatedConditions, $evaluate_5(rule, mutations, comparator));
   }
   evaluatedMutationTypes = new ArrayList;
   if (this$static.mutationTypes) {
     for (mutationType$iterator = new ArrayList$1(this$static.mutationTypes); mutationType$iterator.i < mutationType$iterator.this$01.array.length;) {
-      mutationType = castTo($next_1(mutationType$iterator), 97);
+      mutationType = castTo($next_1(mutationType$iterator), 99);
       evaluatedMutations = new ArrayList;
       for (m$iterator = mutations.iterator_0(); m$iterator.hasNext_0();) {
         m = m$iterator.next_1();
@@ -5842,18 +6224,18 @@ function Drug(drugName, drugFullName, drugRules, mutationTypes, defaultLevel){
   this.defaultLevel = defaultLevel;
 }
 
-defineClass(81, 1, {81:1}, Drug);
+defineClass(83, 1, {83:1}, Drug);
 _.toString_0 = function toString_17(){
   return this.name_0;
 }
 ;
 _.defaultLevel = 0;
-var Lorg_fstrf_stanfordAsiInterpreter_resistance_definition_Drug_2_classLit = createForClass('org.fstrf.stanfordAsiInterpreter.resistance.definition', 'Drug', 81);
+var Lorg_fstrf_stanfordAsiInterpreter_resistance_definition_Drug_2_classLit = createForClass('org.fstrf.stanfordAsiInterpreter.resistance.definition', 'Drug', 83);
 function $evaluate_0(this$static, mutations, comparator){
   var drug, drug$iterator, entry, evaluatedDrugs, outerIter;
   evaluatedDrugs = new ArrayList;
   for (drug$iterator = (outerIter = (new AbstractMap$1(this$static.drugs.map_0)).this$01.entrySet().iterator_0() , new AbstractMap$1$1(outerIter)); drug$iterator.val$outerIter2.hasNext_0();) {
-    drug = (entry = castTo(drug$iterator.val$outerIter2.next_1(), 15) , castTo(entry.getKey(), 81));
+    drug = (entry = castTo(drug$iterator.val$outerIter2.next_1(), 13) , castTo(entry.getKey(), 83));
     $add_1(evaluatedDrugs, $evaluate(drug, mutations, comparator));
   }
   return new EvaluatedDrugClass(this$static, evaluatedDrugs);
@@ -5864,17 +6246,17 @@ function DrugClass(name_0, drugs){
   this.drugs = drugs;
 }
 
-defineClass(80, 1, {80:1}, DrugClass);
+defineClass(82, 1, {82:1}, DrugClass);
 _.toString_0 = function toString_18(){
   return this.name_0;
 }
 ;
-var Lorg_fstrf_stanfordAsiInterpreter_resistance_definition_DrugClass_2_classLit = createForClass('org.fstrf.stanfordAsiInterpreter.resistance.definition', 'DrugClass', 80);
+var Lorg_fstrf_stanfordAsiInterpreter_resistance_definition_DrugClass_2_classLit = createForClass('org.fstrf.stanfordAsiInterpreter.resistance.definition', 'DrugClass', 82);
 function $evaluate_1(this$static, drugToCompare, level){
   var comparison, comparison$iterator, result;
   result = $equals_1(drugToCompare, this$static.drugName) && this$static.comparisons.array.length > 0;
   for (comparison$iterator = new ArrayList$1(this$static.comparisons); comparison$iterator.i < comparison$iterator.this$01.array.length;) {
-    comparison = castTo($next_1(comparison$iterator), 47);
+    comparison = castTo($next_1(comparison$iterator), 48);
     result = result && $evaluate_3(comparison, level);
   }
   return new EvaluatedDrugLevelCondition(this$static, result, level, drugToCompare);
@@ -5886,7 +6268,7 @@ function $toString_3(this$static){
   delim = '';
   $append_0(buffer, this$static.drugName + ' {');
   for (comparison$iterator = new ArrayList$1(this$static.comparisons); comparison$iterator.i < comparison$iterator.this$01.array.length;) {
-    comparison = castTo($next_1(comparison$iterator), 47);
+    comparison = castTo($next_1(comparison$iterator), 48);
     buffer.string += delim;
     $append_0(buffer, comparison.operator + ' ' + comparison.levelOrder);
     delim = ' AND ';
@@ -5900,39 +6282,39 @@ function DrugLevelCondition(drugName){
   this.comparisons = new ArrayList;
 }
 
-defineClass(98, 1, {98:1}, DrugLevelCondition);
+defineClass(100, 1, {100:1}, DrugLevelCondition);
 _.toString_0 = function toString_19(){
   return $toString_3(this);
 }
 ;
-var Lorg_fstrf_stanfordAsiInterpreter_resistance_definition_DrugLevelCondition_2_classLit = createForClass('org.fstrf.stanfordAsiInterpreter.resistance.definition', 'DrugLevelCondition', 98);
+var Lorg_fstrf_stanfordAsiInterpreter_resistance_definition_DrugLevelCondition_2_classLit = createForClass('org.fstrf.stanfordAsiInterpreter.resistance.definition', 'DrugLevelCondition', 100);
 function $evaluate_2(this$static, mutations, comparator){
   var drugClass, drugClass$iterator, drugLevelResults, evaluatedDrug, evaluatedDrugClass, evaluatedDrugClassObj, evaluatedDrugClassObj$iterator, evaluatedDrugClasses, evaluatedDrugObj, evaluatedDrugObj$iterator, evaluatedGeneRules, evaluatedResultComments, finalLevel, geneRule, geneRule$iterator, resultCommentRule, resultCommentRule$iterator, updatedMutations;
   updatedMutations = this$static.indelRange?replaceMutationsInRange(mutations, this$static.indelRange):mutations;
   evaluatedGeneRules = new ArrayList;
   for (geneRule$iterator = this$static.geneRules.iterator_0(); geneRule$iterator.hasNext_0();) {
-    geneRule = castTo(geneRule$iterator.next_1(), 96);
+    geneRule = castTo(geneRule$iterator.next_1(), 98);
     $add_1(evaluatedGeneRules, $evaluate_5(geneRule, updatedMutations, comparator));
   }
   evaluatedDrugClasses = new ArrayList;
   for (drugClass$iterator = this$static.drugClasses.iterator_0(); drugClass$iterator.hasNext_0();) {
-    drugClass = castTo(drugClass$iterator.next_1(), 80);
+    drugClass = castTo(drugClass$iterator.next_1(), 82);
     $add_1(evaluatedDrugClasses, $evaluate_0(drugClass, updatedMutations, comparator));
   }
   drugLevelResults = new HashMap;
   for (evaluatedDrugClassObj$iterator = new ArrayList$1(evaluatedDrugClasses); evaluatedDrugClassObj$iterator.i < evaluatedDrugClassObj$iterator.this$01.array.length;) {
     evaluatedDrugClassObj = $next_1(evaluatedDrugClassObj$iterator);
-    evaluatedDrugClass = castTo(evaluatedDrugClassObj, 79);
+    evaluatedDrugClass = castTo(evaluatedDrugClassObj, 81);
     for (evaluatedDrugObj$iterator = new ArrayList$1(evaluatedDrugClass.evaluatedDrugs); evaluatedDrugObj$iterator.i < evaluatedDrugObj$iterator.this$01.array.length;) {
       evaluatedDrugObj = $next_1(evaluatedDrugObj$iterator);
-      evaluatedDrug = castTo(evaluatedDrugObj, 78);
-      finalLevel = ($size_0(evaluatedDrug.levelDefinitions.map_0) > 0?castTo(max_1(evaluatedDrug.levelDefinitions, new LevelDefinitionComparator), 22):null)?$size_0(evaluatedDrug.levelDefinitions.map_0) > 0?castTo(max_1(evaluatedDrug.levelDefinitions, new LevelDefinitionComparator), 22):null:new LevelDefinition(valueOf_0(evaluatedDrug.drug.defaultLevel), '', '');
+      evaluatedDrug = castTo(evaluatedDrugObj, 80);
+      finalLevel = ($size_0(evaluatedDrug.levelDefinitions.map_0) > 0?castTo(max_1(evaluatedDrug.levelDefinitions, new LevelDefinitionComparator), 25):null)?$size_0(evaluatedDrug.levelDefinitions.map_0) > 0?castTo(max_1(evaluatedDrug.levelDefinitions, new LevelDefinitionComparator), 25):null:new LevelDefinition(valueOf_0(evaluatedDrug.drug.defaultLevel), '', '');
       $putStringValue(drugLevelResults, evaluatedDrug.drug.name_0, finalLevel);
     }
   }
   evaluatedResultComments = new ArrayList;
   for (resultCommentRule$iterator = new ArrayList$1(this$static.resultCommentRules); resultCommentRule$iterator.i < resultCommentRule$iterator.this$01.array.length;) {
-    resultCommentRule = castTo($next_1(resultCommentRule$iterator), 117);
+    resultCommentRule = castTo($next_1(resultCommentRule$iterator), 123);
     $add_1(evaluatedResultComments, $evaluate_4(resultCommentRule, drugLevelResults));
   }
   return new EvaluatedGene(this$static, evaluatedGeneRules, evaluatedDrugClasses, evaluatedResultComments);
@@ -5970,8 +6352,8 @@ function Gene_4(name_0, drugClasses, indelRange){
 function replaceMutationsInRange(mutationList, indelRange){
   var mut, o, o$iterator, res;
   res = new ArrayList;
-  for (o$iterator = new AbstractList$IteratorImpl(mutationList); o$iterator.i < o$iterator.this$01_0.size();) {
-    o = (checkCriticalElement(o$iterator.i < o$iterator.this$01_0.size()) , o$iterator.this$01_0.getAtIndex(o$iterator.last = o$iterator.i++));
+  for (o$iterator = mutationList.iterator_0(); o$iterator.hasNext_0();) {
+    o = o$iterator.next_1();
     mut = toString_3(o);
     $indexOf(indelRange.input_0, mut) != -1?$add_1(res, indelRange.output):(push_1(res.array, mut) , true);
   }
@@ -5990,14 +6372,14 @@ function IndelRangeDefinition(input_0, output){
   this.output = output;
 }
 
-defineClass(188, 1, {}, IndelRangeDefinition);
-var Lorg_fstrf_stanfordAsiInterpreter_resistance_definition_IndelRangeDefinition_2_classLit = createForClass('org.fstrf.stanfordAsiInterpreter.resistance.definition', 'IndelRangeDefinition', 188);
+defineClass(198, 1, {}, IndelRangeDefinition);
+var Lorg_fstrf_stanfordAsiInterpreter_resistance_definition_IndelRangeDefinition_2_classLit = createForClass('org.fstrf.stanfordAsiInterpreter.resistance.definition', 'IndelRangeDefinition', 198);
 function LevelAction(level){
   this.level = level;
 }
 
-defineClass(196, 1, {139:1}, LevelAction);
-_.evaluate_0 = function evaluate_0(result){
+defineClass(215, 1, {145:1}, LevelAction);
+_.evaluate_0 = function evaluate_1(result){
   var reslt;
   return reslt = castToBoolean(result) , (checkCriticalNotNull(reslt) , reslt)?this.level:null;
 }
@@ -6006,7 +6388,7 @@ _.supports_0 = function supports_0(resultType){
   return resultType == Ljava_lang_Boolean_2_classLit;
 }
 ;
-var Lorg_fstrf_stanfordAsiInterpreter_resistance_definition_LevelAction_2_classLit = createForClass('org.fstrf.stanfordAsiInterpreter.resistance.definition', 'LevelAction', 196);
+var Lorg_fstrf_stanfordAsiInterpreter_resistance_definition_LevelAction_2_classLit = createForClass('org.fstrf.stanfordAsiInterpreter.resistance.definition', 'LevelAction', 215);
 function $clinit_LevelConditionComparison(){
   $clinit_LevelConditionComparison = emptyMethod;
   LTE = 'LTE';
@@ -6015,7 +6397,7 @@ function $clinit_LevelConditionComparison(){
   GT = 'GT';
   EQ = 'EQ';
   NEQ = 'NEQ';
-  possibleOperators = new HashSet_0(new Arrays$ArrayList(stampJavaTypeInfo(getClassLiteralForArray(Ljava_lang_String_2_classLit, 1), $intern_0, 2, 6, [LTE, GTE, LT, GT, EQ, NEQ])));
+  possibleOperators = new HashSet_0(new Arrays$ArrayList(stampJavaTypeInfo(getClassLiteralForArray(Ljava_lang_String_2_classLit, 1), $intern_3, 2, 6, [LTE, GTE, LT, GT, EQ, NEQ])));
 }
 
 function $evaluate_3(this$static, level){
@@ -6054,13 +6436,13 @@ function LevelConditionComparison(levelOrder, operator){
   this.operator = operator;
 }
 
-defineClass(47, 1, {47:1}, LevelConditionComparison);
+defineClass(48, 1, {48:1}, LevelConditionComparison);
 _.toString_0 = function toString_21(){
   return this.operator + ' ' + this.levelOrder;
 }
 ;
 var EQ, GT, GTE, LT, LTE, NEQ, possibleOperators;
-var Lorg_fstrf_stanfordAsiInterpreter_resistance_definition_LevelConditionComparison_2_classLit = createForClass('org.fstrf.stanfordAsiInterpreter.resistance.definition', 'LevelConditionComparison', 47);
+var Lorg_fstrf_stanfordAsiInterpreter_resistance_definition_LevelConditionComparison_2_classLit = createForClass('org.fstrf.stanfordAsiInterpreter.resistance.definition', 'LevelConditionComparison', 48);
 function $toString_4(this$static){
   return lenientFormat('{order: %s, text: %s, sir: %s}', stampJavaTypeInfo(getClassLiteralForArray(Ljava_lang_Object_2_classLit, 1), $intern_0, 1, 5, [this$static.order, this$static.text_0, this$static.sir]));
 }
@@ -6071,12 +6453,12 @@ function LevelDefinition(order, text_0, sir){
   this.sir = sir;
 }
 
-defineClass(22, 1, {86:1, 22:1}, LevelDefinition);
+defineClass(25, 1, {88:1, 25:1}, LevelDefinition);
 _.toString_0 = function toString_22(){
   return $toString_4(this);
 }
 ;
-var Lorg_fstrf_stanfordAsiInterpreter_resistance_definition_LevelDefinition_2_classLit = createForClass('org.fstrf.stanfordAsiInterpreter.resistance.definition', 'LevelDefinition', 22);
+var Lorg_fstrf_stanfordAsiInterpreter_resistance_definition_LevelDefinition_2_classLit = createForClass('org.fstrf.stanfordAsiInterpreter.resistance.definition', 'LevelDefinition', 25);
 function $compare_1(level1, level2){
   return $compareTo_3(level1.order, level2.order);
 }
@@ -6084,23 +6466,23 @@ function $compare_1(level1, level2){
 function LevelDefinitionComparator(){
 }
 
-defineClass(100, 1, {}, LevelDefinitionComparator);
+defineClass(101, 1, {}, LevelDefinitionComparator);
 _.compare = function compare_4(level1, level2){
-  return $compare_1(castTo(level1, 22), castTo(level2, 22));
+  return $compare_1(castTo(level1, 25), castTo(level2, 25));
 }
 ;
-_.equals_0 = function equals_10(other){
+_.equals_0 = function equals_11(other){
   return this === other;
 }
 ;
-var Lorg_fstrf_stanfordAsiInterpreter_resistance_definition_LevelDefinitionComparator_2_classLit = createForClass('org.fstrf.stanfordAsiInterpreter.resistance.definition', 'LevelDefinitionComparator', 100);
+var Lorg_fstrf_stanfordAsiInterpreter_resistance_definition_LevelDefinitionComparator_2_classLit = createForClass('org.fstrf.stanfordAsiInterpreter.resistance.definition', 'LevelDefinitionComparator', 101);
 function MutationType(name_0, mutations){
   this.name_0 = name_0;
   this.mutations = mutations;
 }
 
-defineClass(97, 1, {97:1}, MutationType);
-var Lorg_fstrf_stanfordAsiInterpreter_resistance_definition_MutationType_2_classLit = createForClass('org.fstrf.stanfordAsiInterpreter.resistance.definition', 'MutationType', 97);
+defineClass(99, 1, {99:1}, MutationType);
+var Lorg_fstrf_stanfordAsiInterpreter_resistance_definition_MutationType_2_classLit = createForClass('org.fstrf.stanfordAsiInterpreter.resistance.definition', 'MutationType', 99);
 function $withinRange(this$static, score){
   return score >= this$static.min_0 && score <= this$static.max_0;
 }
@@ -6111,33 +6493,33 @@ function RangeValue(min_0, max_0, level){
   this.level = level;
 }
 
-defineClass(61, 1, {61:1}, RangeValue);
+defineClass(63, 1, {63:1}, RangeValue);
 _.toString_0 = function toString_23(){
   return this.min_0 + ' to ' + this.max_0 + ' => ' + this.level.order;
 }
 ;
 _.max_0 = 0;
 _.min_0 = 0;
-var Lorg_fstrf_stanfordAsiInterpreter_resistance_definition_RangeValue_2_classLit = createForClass('org.fstrf.stanfordAsiInterpreter.resistance.definition', 'RangeValue', 61);
+var Lorg_fstrf_stanfordAsiInterpreter_resistance_definition_RangeValue_2_classLit = createForClass('org.fstrf.stanfordAsiInterpreter.resistance.definition', 'RangeValue', 63);
 function $evaluate_4(this$static, drugResultLevels){
   var action, action$iterator, drugLevelCondition, drugLevelCondition$iterator, drugName, drugResultLevel, evaluatedDrugLevelCondition, evaluatedDrugLevelCondition$iterator, evaluatedDrugLevelConditions, evaluatedResultCommentRule, reslt, result;
   evaluatedDrugLevelConditions = new ArrayList;
   for (drugLevelCondition$iterator = new ArrayList$1(this$static.levelConditions); drugLevelCondition$iterator.i < drugLevelCondition$iterator.this$01.array.length;) {
-    drugLevelCondition = castTo($next_1(drugLevelCondition$iterator), 98);
+    drugLevelCondition = castTo($next_1(drugLevelCondition$iterator), 100);
     drugName = drugLevelCondition.drugName;
     if (drugName == null?!!$getEntry(drugResultLevels.hashCodeMap, null):$contains_1(drugResultLevels.stringMap, drugName)) {
-      drugResultLevel = castTo(drugName == null?getEntryValueOrNull($getEntry(drugResultLevels.hashCodeMap, null)):$get_0(drugResultLevels.stringMap, drugName), 22);
+      drugResultLevel = castTo(drugName == null?getEntryValueOrNull($getEntry(drugResultLevels.hashCodeMap, null)):$get_1(drugResultLevels.stringMap, drugName), 25);
       $add_1(evaluatedDrugLevelConditions, $evaluate_1(drugLevelCondition, drugName, drugResultLevel));
     }
   }
   result = ($clinit_Boolean() , evaluatedDrugLevelConditions.array.length > 0?true:false);
   for (evaluatedDrugLevelCondition$iterator = new ArrayList$1(evaluatedDrugLevelConditions); evaluatedDrugLevelCondition$iterator.i < evaluatedDrugLevelCondition$iterator.this$01.array.length;) {
-    evaluatedDrugLevelCondition = castTo($next_1(evaluatedDrugLevelCondition$iterator), 101);
+    evaluatedDrugLevelCondition = castTo($next_1(evaluatedDrugLevelCondition$iterator), 102);
     result = (checkCriticalNotNull(result) , result) && $booleanValue(evaluatedDrugLevelCondition.evaluationResult)?true:false;
   }
   evaluatedResultCommentRule = new EvaluatedResultCommentRule(this$static, (checkCriticalNotNull(result) , result), evaluatedDrugLevelConditions);
   for (action$iterator = new ArrayList$1(this$static.levelActions); action$iterator.i < action$iterator.this$01.array.length;) {
-    action = castTo($next_1(action$iterator), 102);
+    action = castTo($next_1(action$iterator), 103);
     $addDefinition_0(evaluatedResultCommentRule, (reslt = result , (checkCriticalNotNull(reslt) , reslt)?action.comment:null));
   }
   return evaluatedResultCommentRule;
@@ -6148,14 +6530,14 @@ function ResultCommentRule(conditions, actions){
   this.levelActions = actions;
 }
 
-defineClass(117, 1, {117:1}, ResultCommentRule);
-var Lorg_fstrf_stanfordAsiInterpreter_resistance_definition_ResultCommentRule_2_classLit = createForClass('org.fstrf.stanfordAsiInterpreter.resistance.definition', 'ResultCommentRule', 117);
+defineClass(123, 1, {123:1}, ResultCommentRule);
+var Lorg_fstrf_stanfordAsiInterpreter_resistance_definition_ResultCommentRule_2_classLit = createForClass('org.fstrf.stanfordAsiInterpreter.resistance.definition', 'ResultCommentRule', 123);
 function $evaluate_5(this$static, mutations, comparator){
   var action, action$iterator, evaluatedCondition, evaluator, score, score0, score1;
   evaluatedCondition = $evaluate_6(this$static.condition, mutations, comparator);
   evaluator = evaluatedCondition.evaluator;
   for (action$iterator = new ArrayList$1(this$static.actions_0); action$iterator.i < action$iterator.this$01.array.length;) {
-    action = castTo($next_1(action$iterator), 139);
+    action = castTo($next_1(action$iterator), 145);
     if (!action.supports_0((score0 = castToDouble($peek(evaluator.stack_0)) , getClass__Ljava_lang_Class___devirtual$(evaluator.isBooleanResult?($clinit_Boolean() , $equals_0(score0, ($clinit_AsiGrammarAdapter() , TRUE_VALUE))?true:false):score0)))) {
       throw toJs(new ASIEvaluationException('Action: ' + action + '; does not support a result of type: ' + (score1 = castToDouble($peek(evaluator.stack_0)) , getClass__Ljava_lang_Class___devirtual$(evaluator.isBooleanResult?($clinit_Boolean() , $equals_0(score1, ($clinit_AsiGrammarAdapter() , TRUE_VALUE))?true:false):score1))));
     }
@@ -6168,8 +6550,8 @@ function $moreThanOneScoreRange(actions){
   var action, action$iterator, scoreRangeActionCount;
   scoreRangeActionCount = 0;
   for (action$iterator = new ArrayList$1(actions); action$iterator.i < action$iterator.this$01.array.length;) {
-    action = castTo($next_1(action$iterator), 139);
-    instanceOf(action, 119) && (scoreRangeActionCount += 1);
+    action = castTo($next_1(action$iterator), 145);
+    instanceOf(action, 125) && (scoreRangeActionCount += 1);
   }
   return scoreRangeActionCount > 1;
 }
@@ -6185,16 +6567,16 @@ function Rule(condition, actions){
   this.actions_0 = actions;
 }
 
-defineClass(96, 1, {96:1}, Rule);
+defineClass(98, 1, {98:1}, Rule);
 _.toString_0 = function toString_24(){
   return this.condition.statement;
 }
 ;
-var Lorg_fstrf_stanfordAsiInterpreter_resistance_definition_Rule_2_classLit = createForClass('org.fstrf.stanfordAsiInterpreter.resistance.definition', 'Rule', 96);
+var Lorg_fstrf_stanfordAsiInterpreter_resistance_definition_Rule_2_classLit = createForClass('org.fstrf.stanfordAsiInterpreter.resistance.definition', 'Rule', 98);
 function $evaluate_6(this$static, mutations, comparator){
   var adapter;
   adapter = new AsiGrammarAdapter(mutations, comparator);
-  $apply_6(this$static.conditionTree, adapter);
+  $apply_7(this$static.conditionTree, adapter);
   return new EvaluatedCondition(this$static, adapter);
 }
 
@@ -6216,18 +6598,18 @@ function RuleCondition(statement){
   }
 }
 
-defineClass(192, 1, {}, RuleCondition);
+defineClass(202, 1, {}, RuleCondition);
 _.toString_0 = function toString_25(){
   return this.statement;
 }
 ;
-var Lorg_fstrf_stanfordAsiInterpreter_resistance_definition_RuleCondition_2_classLit = createForClass('org.fstrf.stanfordAsiInterpreter.resistance.definition', 'RuleCondition', 192);
+var Lorg_fstrf_stanfordAsiInterpreter_resistance_definition_RuleCondition_2_classLit = createForClass('org.fstrf.stanfordAsiInterpreter.resistance.definition', 'RuleCondition', 202);
 function $checkForOverlappingRanges(rangeValues){
   var rangeValue1, rangeValue1$iterator, rangeValue2, rangeValue2$iterator;
   for (rangeValue1$iterator = new ArrayList$1(rangeValues); rangeValue1$iterator.i < rangeValue1$iterator.this$01.array.length;) {
-    rangeValue1 = castTo($next_1(rangeValue1$iterator), 61);
+    rangeValue1 = castTo($next_1(rangeValue1$iterator), 63);
     for (rangeValue2$iterator = new ArrayList$1(rangeValues); rangeValue2$iterator.i < rangeValue2$iterator.this$01.array.length;) {
-      rangeValue2 = castTo($next_1(rangeValue2$iterator), 61);
+      rangeValue2 = castTo($next_1(rangeValue2$iterator), 63);
       if (!equals_Ljava_lang_Object__Z__devirtual$(rangeValue1, rangeValue2) && (rangeValue1.min_0 <= rangeValue2.min_0 && rangeValue2.min_0 <= rangeValue1.max_0 || rangeValue2.min_0 <= rangeValue1.min_0 && rangeValue1.min_0 <= rangeValue2.max_0)) {
         throw toJs(new ASIParsingException('Score range values overlap: ' + rangeValue1 + ', ' + rangeValue2));
       }
@@ -6239,7 +6621,7 @@ function $evaluate_7(this$static, result){
   var rangeValue, rangeValue$iterator, reslt;
   reslt = castToDouble(result);
   for (rangeValue$iterator = new ArrayList$1(this$static.rangeValues); rangeValue$iterator.i < rangeValue$iterator.this$01.array.length;) {
-    rangeValue = castTo($next_1(rangeValue$iterator), 61);
+    rangeValue = castTo($next_1(rangeValue$iterator), 63);
     if ($withinRange(rangeValue, (checkCriticalNotNull(reslt) , reslt))) {
       return rangeValue.level;
     }
@@ -6252,8 +6634,8 @@ function ScoreRangeAction(rangeValues){
   this.rangeValues = rangeValues;
 }
 
-defineClass(119, 1, {139:1, 119:1}, ScoreRangeAction);
-_.evaluate_0 = function evaluate_1(result){
+defineClass(125, 1, {145:1, 125:1}, ScoreRangeAction);
+_.evaluate_0 = function evaluate_2(result){
   return $evaluate_7(this, result);
 }
 ;
@@ -6261,7 +6643,7 @@ _.supports_0 = function supports_1(resultType){
   return resultType == Ljava_lang_Double_2_classLit;
 }
 ;
-var Lorg_fstrf_stanfordAsiInterpreter_resistance_definition_ScoreRangeAction_2_classLit = createForClass('org.fstrf.stanfordAsiInterpreter.resistance.definition', 'ScoreRangeAction', 119);
+var Lorg_fstrf_stanfordAsiInterpreter_resistance_definition_ScoreRangeAction_2_classLit = createForClass('org.fstrf.stanfordAsiInterpreter.resistance.definition', 'ScoreRangeAction', 125);
 function $addDefinition(this$static, definition){
   !!definition && $add_2(this$static.definitions, definition);
 }
@@ -6272,22 +6654,22 @@ function EvaluatedCondition(ruleCondition, evaluator){
   this.definitions = new HashSet;
 }
 
-defineClass(60, 1, {60:1}, EvaluatedCondition);
+defineClass(62, 1, {62:1}, EvaluatedCondition);
 _.toString_0 = function toString_26(){
   return lenientFormat('\n\t\tstatement: %s,\n\t\tdefinitions: %s}', stampJavaTypeInfo(getClassLiteralForArray(Ljava_lang_Object_2_classLit, 1), $intern_0, 1, 5, [this.ruleCondition, this.definitions]));
 }
 ;
-var Lorg_fstrf_stanfordAsiInterpreter_resistance_evaluate_EvaluatedCondition_2_classLit = createForClass('org.fstrf.stanfordAsiInterpreter.resistance.evaluate', 'EvaluatedCondition', 60);
+var Lorg_fstrf_stanfordAsiInterpreter_resistance_evaluate_EvaluatedCondition_2_classLit = createForClass('org.fstrf.stanfordAsiInterpreter.resistance.evaluate', 'EvaluatedCondition', 62);
 function $parseEvaluatedConditions(this$static, evaluatedConditions){
   var definition, definition$iterator, definitions, entry, evaluatedCondition, evaluatedCondition$iterator, outerIter;
   this$static.evaluatedConditions = evaluatedConditions;
   for (evaluatedCondition$iterator = new ArrayList$1(evaluatedConditions); evaluatedCondition$iterator.i < evaluatedCondition$iterator.this$01.array.length;) {
-    evaluatedCondition = castTo($next_1(evaluatedCondition$iterator), 60);
+    evaluatedCondition = castTo($next_1(evaluatedCondition$iterator), 62);
     $addAll(this$static.scoredMutations, evaluatedCondition.evaluator.allScoredMutations);
     definitions = evaluatedCondition.definitions;
     for (definition$iterator = (outerIter = (new AbstractMap$1(definitions.map_0)).this$01.entrySet().iterator_0() , new AbstractMap$1$1(outerIter)); definition$iterator.val$outerIter2.hasNext_0();) {
-      definition = (entry = castTo(definition$iterator.val$outerIter2.next_1(), 15) , castTo(entry.getKey(), 86));
-      instanceOf(definition, 22) && $add_2(this$static.levelDefinitions, castTo(definition, 22));
+      definition = (entry = castTo(definition$iterator.val$outerIter2.next_1(), 13) , castTo(entry.getKey(), 88));
+      instanceOf(definition, 25) && $add_2(this$static.levelDefinitions, castTo(definition, 25));
       instanceOf(definition, 40) && $add_2(this$static.commentDefinitions, castTo(definition, 40));
     }
   }
@@ -6301,25 +6683,25 @@ function EvaluatedDrug(drug, evaluatedConditions){
   $parseEvaluatedConditions(this, evaluatedConditions);
 }
 
-defineClass(78, 1, {78:1}, EvaluatedDrug);
+defineClass(80, 1, {80:1}, EvaluatedDrug);
 _.toString_0 = function toString_27(){
   var highestLevelDefinition;
-  highestLevelDefinition = $size_0(this.levelDefinitions.map_0) > 0?castTo(max_1(this.levelDefinitions, new LevelDefinitionComparator), 22):null;
+  highestLevelDefinition = $size_0(this.levelDefinitions.map_0) > 0?castTo(max_1(this.levelDefinitions, new LevelDefinitionComparator), 25):null;
   return lenientFormat('{Drug: %s, Scored Mutations: %s, Level: %s, Comments: %s}', stampJavaTypeInfo(getClassLiteralForArray(Ljava_lang_Object_2_classLit, 1), $intern_0, 1, 5, [this.drug, this.scoredMutations, !highestLevelDefinition?'':lenientFormat('{order: %s, text: %s, sir: %s}', stampJavaTypeInfo(getClassLiteralForArray(Ljava_lang_Object_2_classLit, 1), $intern_0, 1, 5, [highestLevelDefinition.order, highestLevelDefinition.text_0, highestLevelDefinition.sir])), this.commentDefinitions]));
 }
 ;
-var Lorg_fstrf_stanfordAsiInterpreter_resistance_evaluate_EvaluatedDrug_2_classLit = createForClass('org.fstrf.stanfordAsiInterpreter.resistance.evaluate', 'EvaluatedDrug', 78);
+var Lorg_fstrf_stanfordAsiInterpreter_resistance_evaluate_EvaluatedDrug_2_classLit = createForClass('org.fstrf.stanfordAsiInterpreter.resistance.evaluate', 'EvaluatedDrug', 80);
 function EvaluatedDrugClass(drugClass, evaluatedDrugs){
   this.drugClass = drugClass;
   this.evaluatedDrugs = new ArrayList_0(evaluatedDrugs);
 }
 
-defineClass(79, 1, {79:1}, EvaluatedDrugClass);
+defineClass(81, 1, {81:1}, EvaluatedDrugClass);
 _.toString_0 = function toString_28(){
   return lenientFormat('{Drug Class: %s, Evaluated Drugs: %s}', stampJavaTypeInfo(getClassLiteralForArray(Ljava_lang_Object_2_classLit, 1), $intern_0, 1, 5, [this.drugClass, this.evaluatedDrugs]));
 }
 ;
-var Lorg_fstrf_stanfordAsiInterpreter_resistance_evaluate_EvaluatedDrugClass_2_classLit = createForClass('org.fstrf.stanfordAsiInterpreter.resistance.evaluate', 'EvaluatedDrugClass', 79);
+var Lorg_fstrf_stanfordAsiInterpreter_resistance_evaluate_EvaluatedDrugClass_2_classLit = createForClass('org.fstrf.stanfordAsiInterpreter.resistance.evaluate', 'EvaluatedDrugClass', 81);
 function EvaluatedDrugLevelCondition(drugLevelCondition, evaluationResult, level, drugName){
   this.drugLevelCondition = drugLevelCondition;
   this.evaluationResult = ($clinit_Boolean() , evaluationResult?true:false);
@@ -6327,16 +6709,16 @@ function EvaluatedDrugLevelCondition(drugLevelCondition, evaluationResult, level
   this.drugName = drugName;
 }
 
-defineClass(101, 1, {101:1}, EvaluatedDrugLevelCondition);
+defineClass(102, 1, {102:1}, EvaluatedDrugLevelCondition);
 _.toString_0 = function toString_29(){
   return lenientFormat('\n\t\tdrug: %s,\n\t\tlevel condition: %s,\n\t\tresult: %s,\n\t\tscored level: %s', stampJavaTypeInfo(getClassLiteralForArray(Ljava_lang_Object_2_classLit, 1), $intern_0, 1, 5, [this.drugName, this.drugLevelCondition, this.evaluationResult, this.scoredLevel]));
 }
 ;
-var Lorg_fstrf_stanfordAsiInterpreter_resistance_evaluate_EvaluatedDrugLevelCondition_2_classLit = createForClass('org.fstrf.stanfordAsiInterpreter.resistance.evaluate', 'EvaluatedDrugLevelCondition', 101);
+var Lorg_fstrf_stanfordAsiInterpreter_resistance_evaluate_EvaluatedDrugLevelCondition_2_classLit = createForClass('org.fstrf.stanfordAsiInterpreter.resistance.evaluate', 'EvaluatedDrugLevelCondition', 102);
 function $parseGeneCommentDefinitions(this$static, geneEvaluatedConditions){
   var evaluatedCondition, evaluatedCondition$iterator;
   for (evaluatedCondition$iterator = new ArrayList$1(geneEvaluatedConditions); evaluatedCondition$iterator.i < evaluatedCondition$iterator.this$01.array.length;) {
-    evaluatedCondition = castTo($next_1(evaluatedCondition$iterator), 60);
+    evaluatedCondition = castTo($next_1(evaluatedCondition$iterator), 62);
     $addAll(this$static.geneScoredMutations, evaluatedCondition.evaluator.allScoredMutations);
     $addAll(this$static.geneCommentDefinitions, evaluatedCondition.definitions);
   }
@@ -6351,12 +6733,12 @@ function EvaluatedGene(gene, geneEvaluatedConditions, evaluatedDrugClasses, eval
   this.evaluatedResultCommentRules = evaluatedResultCommentRules;
 }
 
-defineClass(91, 1, {91:1}, EvaluatedGene);
+defineClass(94, 1, {94:1}, EvaluatedGene);
 _.toString_0 = function toString_30(){
   return lenientFormat('{Gene: %s, Evaluated Drug Classes: %s, Gene Comments: %s}', stampJavaTypeInfo(getClassLiteralForArray(Ljava_lang_Object_2_classLit, 1), $intern_0, 1, 5, [this.gene, this.evaluatedDrugClasses, this.geneCommentDefinitions]));
 }
 ;
-var Lorg_fstrf_stanfordAsiInterpreter_resistance_evaluate_EvaluatedGene_2_classLit = createForClass('org.fstrf.stanfordAsiInterpreter.resistance.evaluate', 'EvaluatedGene', 91);
+var Lorg_fstrf_stanfordAsiInterpreter_resistance_evaluate_EvaluatedGene_2_classLit = createForClass('org.fstrf.stanfordAsiInterpreter.resistance.evaluate', 'EvaluatedGene', 94);
 function $addDefinition_0(this$static, definition){
   !!definition && $add_2(this$static.definitions, definition);
 }
@@ -6368,26 +6750,26 @@ function EvaluatedResultCommentRule(resultCommentRule, evaluationResult, evaluat
   this.definitions = new HashSet;
 }
 
-defineClass(95, 1, {95:1}, EvaluatedResultCommentRule);
+defineClass(97, 1, {97:1}, EvaluatedResultCommentRule);
 _.toString_0 = function toString_31(){
   var buffer, condition, condition$iterator, definition, definition$iterator, entry, outerIter;
   buffer = new StringBuffer;
   $append_0($append_0((buffer.string += '\t' , buffer), 'Drug Level Conditions:'), '\n');
   for (condition$iterator = new ArrayList$1(this.evaluatedDrugLevelConditions); condition$iterator.i < condition$iterator.this$01.array.length;) {
-    condition = castTo($next_1(condition$iterator), 101);
+    condition = castTo($next_1(condition$iterator), 102);
     $append_0($append_0((buffer.string += '\t\t' , buffer), 'Condition: ' + condition.drugLevelCondition), '\n');
     $append($append_0((buffer.string += '\t\t\t' , buffer), 'Scored Level for ' + condition.drugName + ': ' + $toString_4(condition.scoredLevel)), 10);
   }
   $append_0($append_0((buffer.string += '\t' , buffer), 'Definitions:'), '\n');
   for (definition$iterator = (outerIter = (new AbstractMap$1(this.definitions.map_0)).this$01.entrySet().iterator_0() , new AbstractMap$1$1(outerIter)); definition$iterator.val$outerIter2.hasNext_0();) {
-    definition = (entry = castTo(definition$iterator.val$outerIter2.next_1(), 15) , castTo(entry.getKey(), 86));
+    definition = (entry = castTo(definition$iterator.val$outerIter2.next_1(), 13) , castTo(entry.getKey(), 88));
     $append($append_0((buffer.string += '\t\t' , buffer), 'Comment: ' + toString_3(definition)), 10);
   }
   buffer.string += '\n';
   return buffer.string;
 }
 ;
-var Lorg_fstrf_stanfordAsiInterpreter_resistance_evaluate_EvaluatedResultCommentRule_2_classLit = createForClass('org.fstrf.stanfordAsiInterpreter.resistance.evaluate', 'EvaluatedResultCommentRule', 95);
+var Lorg_fstrf_stanfordAsiInterpreter_resistance_evaluate_EvaluatedResultCommentRule_2_classLit = createForClass('org.fstrf.stanfordAsiInterpreter.resistance.evaluate', 'EvaluatedResultCommentRule', 97);
 function $setIn(this$static, node, in_0){
   !this$static.in_0 && (this$static.in_0 = new HashMap_0(1));
   in_0?$put(this$static.in_0, node, in_0):$remove(this$static.in_0, node);
@@ -6396,7 +6778,7 @@ function $setIn(this$static, node, in_0){
 function AnalysisAdapter(){
 }
 
-defineClass(189, 1, {}, AnalysisAdapter);
+defineClass(199, 1, {}, AnalysisAdapter);
 _.caseAAndLogicsymbol = function caseAAndLogicsymbol(node){
 }
 ;
@@ -6544,77 +6926,77 @@ _.caseTScore = function caseTScore(node){
 _.caseTSelect = function caseTSelect(node){
 }
 ;
-var Lorg_fstrf_stanfordAsiInterpreter_resistance_grammar_analysis_AnalysisAdapter_2_classLit = createForClass('org.fstrf.stanfordAsiInterpreter.resistance.grammar.analysis', 'AnalysisAdapter', 189);
+var Lorg_fstrf_stanfordAsiInterpreter_resistance_grammar_analysis_AnalysisAdapter_2_classLit = createForClass('org.fstrf.stanfordAsiInterpreter.resistance.grammar.analysis', 'AnalysisAdapter', 199);
 function $caseAAtleastSelectstatement2(this$static, node){
-  !!node._atleast_ && $apply_9(node._atleast_, this$static);
-  !!node._integer_ && $apply_15(node._integer_, this$static);
-  !!node._from_ && $apply_14(node._from_, this$static);
-  !!node._lPar_ && $apply_16(node._lPar_, this$static);
-  !!node._selectlist_ && $apply_3(node._selectlist_, this$static);
-  !!node._rPar_ && $apply_23(node._rPar_, this$static);
+  !!node._atleast_ && $apply_10(node._atleast_, this$static);
+  !!node._integer_ && $apply_16(node._integer_, this$static);
+  !!node._from_ && $apply_15(node._from_, this$static);
+  !!node._lPar_ && $apply_17(node._lPar_, this$static);
+  !!node._selectlist_ && $apply_4(node._selectlist_, this$static);
+  !!node._rPar_ && $apply_24(node._rPar_, this$static);
 }
 
 function $caseAAtleastnotmorethanSelectstatement2(this$static, node){
-  !!node._atleast_ && $apply_9(node._atleast_, this$static);
-  !!node._atleastnumber_ && $apply_15(node._atleastnumber_, this$static);
+  !!node._atleast_ && $apply_10(node._atleast_, this$static);
+  !!node._atleastnumber_ && $apply_16(node._atleastnumber_, this$static);
   !!node._logicsymbol_ && node._logicsymbol_.apply_1(this$static);
-  !!node._notmorethan_ && $apply_21(node._notmorethan_, this$static);
-  !!node._notmorethannumber_ && $apply_15(node._notmorethannumber_, this$static);
-  !!node._from_ && $apply_14(node._from_, this$static);
-  !!node._lPar_ && $apply_16(node._lPar_, this$static);
-  !!node._selectlist_ && $apply_3(node._selectlist_, this$static);
-  !!node._rPar_ && $apply_23(node._rPar_, this$static);
+  !!node._notmorethan_ && $apply_22(node._notmorethan_, this$static);
+  !!node._notmorethannumber_ && $apply_16(node._notmorethannumber_, this$static);
+  !!node._from_ && $apply_15(node._from_, this$static);
+  !!node._lPar_ && $apply_17(node._lPar_, this$static);
+  !!node._selectlist_ && $apply_4(node._selectlist_, this$static);
+  !!node._rPar_ && $apply_24(node._rPar_, this$static);
 }
 
 function $caseAExactlySelectstatement2(this$static, node){
-  !!node._exactly_ && $apply_11(node._exactly_, this$static);
-  !!node._integer_ && $apply_15(node._integer_, this$static);
-  !!node._from_ && $apply_14(node._from_, this$static);
-  !!node._lPar_ && $apply_16(node._lPar_, this$static);
-  !!node._selectlist_ && $apply_3(node._selectlist_, this$static);
-  !!node._rPar_ && $apply_23(node._rPar_, this$static);
+  !!node._exactly_ && $apply_12(node._exactly_, this$static);
+  !!node._integer_ && $apply_16(node._integer_, this$static);
+  !!node._from_ && $apply_15(node._from_, this$static);
+  !!node._lPar_ && $apply_17(node._lPar_, this$static);
+  !!node._selectlist_ && $apply_4(node._selectlist_, this$static);
+  !!node._rPar_ && $apply_24(node._rPar_, this$static);
 }
 
 function $caseANotmorethanSelectstatement2(this$static, node){
-  !!node._notmorethan_ && $apply_21(node._notmorethan_, this$static);
-  !!node._integer_ && $apply_15(node._integer_, this$static);
-  !!node._from_ && $apply_14(node._from_, this$static);
-  !!node._lPar_ && $apply_16(node._lPar_, this$static);
-  !!node._selectlist_ && $apply_3(node._selectlist_, this$static);
-  !!node._rPar_ && $apply_23(node._rPar_, this$static);
+  !!node._notmorethan_ && $apply_22(node._notmorethan_, this$static);
+  !!node._integer_ && $apply_16(node._integer_, this$static);
+  !!node._from_ && $apply_15(node._from_, this$static);
+  !!node._lPar_ && $apply_17(node._lPar_, this$static);
+  !!node._selectlist_ && $apply_4(node._selectlist_, this$static);
+  !!node._rPar_ && $apply_24(node._rPar_, this$static);
 }
 
 function $caseAResidueResidue(this$static, node){
   var i, temp;
-  !!node._originalaminoacid_ && $apply_7(node._originalaminoacid_, this$static);
-  !!node._integer_ && $apply_15(node._integer_, this$static);
+  !!node._originalaminoacid_ && $apply_8(node._originalaminoacid_, this$static);
+  !!node._integer_ && $apply_16(node._integer_, this$static);
   temp = $toArray(node._mutatedaminoacid_);
   for (i = 0; i < temp.length; i++) {
-    $apply_7(castTo(temp[i], 33), this$static);
+    $apply_8(castTo(temp[i], 33), this$static);
   }
 }
 
 function $caseAResidueinvertResidue(this$static, node){
   var i, temp;
-  !!node._originalaminoacid_ && $apply_7(node._originalaminoacid_, this$static);
-  !!node._integer_ && $apply_15(node._integer_, this$static);
-  !!node._lPar_ && $apply_16(node._lPar_, this$static);
-  !!node._not_ && $apply_20(node._not_, this$static);
+  !!node._originalaminoacid_ && $apply_8(node._originalaminoacid_, this$static);
+  !!node._integer_ && $apply_16(node._integer_, this$static);
+  !!node._lPar_ && $apply_17(node._lPar_, this$static);
+  !!node._not_ && $apply_21(node._not_, this$static);
   temp = $toArray(node._mutatedaminoacid_);
   for (i = 0; i < temp.length; i++) {
-    $apply_7(castTo(temp[i], 33), this$static);
+    $apply_8(castTo(temp[i], 33), this$static);
   }
-  !!node._rPar_ && $apply_23(node._rPar_, this$static);
+  !!node._rPar_ && $apply_24(node._rPar_, this$static);
 }
 
 function $caseAResiduenotResidue(this$static, node){
   var i, temp;
-  !!node._not_ && $apply_20(node._not_, this$static);
-  !!node._originalaminoacid_ && $apply_7(node._originalaminoacid_, this$static);
-  !!node._integer_ && $apply_15(node._integer_, this$static);
+  !!node._not_ && $apply_21(node._not_, this$static);
+  !!node._originalaminoacid_ && $apply_8(node._originalaminoacid_, this$static);
+  !!node._integer_ && $apply_16(node._integer_, this$static);
   temp = $toArray(node._mutatedaminoacid_);
   for (i = 0; i < temp.length; i++) {
-    $apply_7(castTo(temp[i], 33), this$static);
+    $apply_8(castTo(temp[i], 33), this$static);
   }
 }
 
@@ -6623,7 +7005,7 @@ function $caseAScorelist(this$static, node){
   !!node._scoreitem_ && node._scoreitem_.apply_1(this$static);
   temp = $toArray(node._scoreitems_);
   for (i = 0; i < temp.length; i++) {
-    castTo(temp[i], 72).apply_1(this$static);
+    castTo(temp[i], 74).apply_1(this$static);
   }
 }
 
@@ -6632,20 +7014,20 @@ function $caseASelectlist(this$static, node){
   !!node._residue_ && node._residue_.apply_1(this$static);
   temp = $toArray(node._listitems_);
   for (i = 0; i < temp.length; i++) {
-    castTo(temp[i], 70).apply_1(this$static);
+    castTo(temp[i], 72).apply_1(this$static);
   }
 }
 
 function $caseAStatementScoreitem(this$static, node){
-  !!node._booleancondition_ && $apply(node._booleancondition_, this$static);
-  !!node._mapper_ && $apply_17(node._mapper_, this$static);
-  !!node._min_ && $apply_19(node._min_, this$static);
+  !!node._booleancondition_ && $apply_0(node._booleancondition_, this$static);
+  !!node._mapper_ && $apply_18(node._mapper_, this$static);
+  !!node._min_ && $apply_20(node._min_, this$static);
   !!node._number_ && node._number_.apply_1(this$static);
 }
 
-defineClass(282, 189, {});
+defineClass(294, 199, {});
 _.caseAAndLogicsymbol = function caseAAndLogicsymbol_0(node){
-  !!node._and_ && $apply_8(node._and_, this);
+  !!node._and_ && $apply_9(node._and_, this);
 }
 ;
 _.caseAAtleastSelectstatement2 = function caseAAtleastSelectstatement2_0(node){
@@ -6661,7 +7043,7 @@ _.caseABooleancondition = function caseABooleancondition_0(node){
   !!node._condition_ && node._condition_.apply_1(this);
   temp = $toArray(node._condition2_);
   for (i = 0; i < temp.length; i++) {
-    castTo(temp[i], 66).apply_1(this);
+    castTo(temp[i], 68).apply_1(this);
   }
 }
 ;
@@ -6675,36 +7057,36 @@ _.caseAExactlySelectstatement2 = function caseAExactlySelectstatement2_0(node){
 }
 ;
 _.caseAExcludeCondition = function caseAExcludeCondition_0(node){
-  !!node._excludestatement_ && $apply_0(node._excludestatement_, this);
+  !!node._excludestatement_ && $apply_1(node._excludestatement_, this);
 }
 ;
 _.caseAExcludestatement = function caseAExcludestatement_0(node){
-  !!node._exclude_ && $apply_12(node._exclude_, this);
+  !!node._exclude_ && $apply_13(node._exclude_, this);
   !!node._residue_ && node._residue_.apply_1(this);
 }
 ;
 _.caseAFloatNumber = function caseAFloatNumber_0(node){
-  !!node._float_ && $apply_13(node._float_, this);
+  !!node._float_ && $apply_14(node._float_, this);
 }
 ;
 _.caseAIntegerNumber = function caseAIntegerNumber_0(node){
-  !!node._integer_ && $apply_15(node._integer_, this);
+  !!node._integer_ && $apply_16(node._integer_, this);
 }
 ;
 _.caseAListitems = function caseAListitems_0(node){
-  !!node._comma_ && $apply_10(node._comma_, this);
+  !!node._comma_ && $apply_11(node._comma_, this);
   !!node._residue_ && node._residue_.apply_1(this);
 }
 ;
 _.caseALogicstatementStatement = function caseALogicstatementStatement_0(node){
-  !!node._booleancondition_ && $apply(node._booleancondition_, this);
+  !!node._booleancondition_ && $apply_0(node._booleancondition_, this);
 }
 ;
 _.caseAMaxScoreitem = function caseAMaxScoreitem_0(node){
-  !!node._max_ && $apply_18(node._max_, this);
-  !!node._lPar_ && $apply_16(node._lPar_, this);
-  !!node._scorelist_ && $apply_2(node._scorelist_, this);
-  !!node._rPar_ && $apply_23(node._rPar_, this);
+  !!node._max_ && $apply_19(node._max_, this);
+  !!node._lPar_ && $apply_17(node._lPar_, this);
+  !!node._scorelist_ && $apply_3(node._scorelist_, this);
+  !!node._rPar_ && $apply_24(node._rPar_, this);
 }
 ;
 _.caseANotmorethanSelectstatement2 = function caseANotmorethanSelectstatement2_0(node){
@@ -6712,7 +7094,7 @@ _.caseANotmorethanSelectstatement2 = function caseANotmorethanSelectstatement2_0
 }
 ;
 _.caseAOrLogicsymbol = function caseAOrLogicsymbol_0(node){
-  !!node._or_ && $apply_22(node._or_, this);
+  !!node._or_ && $apply_23(node._or_, this);
 }
 ;
 _.caseAResidueCondition = function caseAResidueCondition_0(node){
@@ -6732,19 +7114,19 @@ _.caseAResiduenotResidue = function caseAResiduenotResidue_0(node){
 }
 ;
 _.caseAScoreStatement = function caseAScoreStatement_0(node){
-  !!node._scorecondition_ && $apply_1(node._scorecondition_, this);
+  !!node._scorecondition_ && $apply_2(node._scorecondition_, this);
 }
 ;
 _.caseAScorecondition = function caseAScorecondition_0(node){
-  !!node._score_ && $apply_24(node._score_, this);
-  !!node._from_ && $apply_14(node._from_, this);
-  !!node._lPar_ && $apply_16(node._lPar_, this);
-  !!node._scorelist_ && $apply_2(node._scorelist_, this);
-  !!node._rPar_ && $apply_23(node._rPar_, this);
+  !!node._score_ && $apply_25(node._score_, this);
+  !!node._from_ && $apply_15(node._from_, this);
+  !!node._lPar_ && $apply_17(node._lPar_, this);
+  !!node._scorelist_ && $apply_3(node._scorelist_, this);
+  !!node._rPar_ && $apply_24(node._rPar_, this);
 }
 ;
 _.caseAScoreitems = function caseAScoreitems_0(node){
-  !!node._comma_ && $apply_10(node._comma_, this);
+  !!node._comma_ && $apply_11(node._comma_, this);
   !!node._scoreitem_ && node._scoreitem_.apply_1(this);
 }
 ;
@@ -6753,7 +7135,7 @@ _.caseAScorelist = function caseAScorelist_0(node){
 }
 ;
 _.caseASelectCondition = function caseASelectCondition_0(node){
-  !!node._selectstatement_ && $apply_4(node._selectstatement_, this);
+  !!node._selectstatement_ && $apply_5(node._selectstatement_, this);
 }
 ;
 _.caseASelectlist = function caseASelectlist_0(node){
@@ -6761,14 +7143,14 @@ _.caseASelectlist = function caseASelectlist_0(node){
 }
 ;
 _.caseASelectstatement = function caseASelectstatement_0(node){
-  !!node._select_ && $apply_25(node._select_, this);
+  !!node._select_ && $apply_26(node._select_, this);
   !!node._selectstatement2_ && node._selectstatement2_.apply_1(this);
 }
 ;
 _.caseAStatementCondition = function caseAStatementCondition_0(node){
-  !!node._lPar_ && $apply_16(node._lPar_, this);
-  !!node._booleancondition_ && $apply(node._booleancondition_, this);
-  !!node._rPar_ && $apply_23(node._rPar_, this);
+  !!node._lPar_ && $apply_17(node._lPar_, this);
+  !!node._booleancondition_ && $apply_0(node._booleancondition_, this);
+  !!node._rPar_ && $apply_24(node._rPar_, this);
 }
 ;
 _.caseAStatementScoreitem = function caseAStatementScoreitem_0(node){
@@ -6777,10 +7159,10 @@ _.caseAStatementScoreitem = function caseAStatementScoreitem_0(node){
 ;
 _.caseStart = function caseStart_0(node){
   node._pStatement_.apply_1(this);
-  $apply_5(node._eof_, this);
+  $apply_6(node._eof_, this);
 }
 ;
-var Lorg_fstrf_stanfordAsiInterpreter_resistance_grammar_analysis_DepthFirstAdapter_2_classLit = createForClass('org.fstrf.stanfordAsiInterpreter.resistance.grammar.analysis', 'DepthFirstAdapter', 282);
+var Lorg_fstrf_stanfordAsiInterpreter_resistance_grammar_analysis_DepthFirstAdapter_2_classLit = createForClass('org.fstrf.stanfordAsiInterpreter.resistance.grammar.analysis', 'DepthFirstAdapter', 294);
 function $clinit_AsiGrammarAdapter(){
   $clinit_AsiGrammarAdapter = emptyMethod;
   TRUE_VALUE = 1;
@@ -6790,12 +7172,12 @@ function $clinit_AsiGrammarAdapter(){
 
 function $maxValueFromStack(this$static, n){
   var i, max_0, value_0;
-  max_0 = $intern_14;
+  max_0 = $intern_16;
   for (i = 0; i < n; i++) {
     value_0 = __parseAndValidateDouble($toString_1(castToDouble($pop(this$static.stack_0))));
     !isNaN((checkCriticalNotNull(value_0) , value_0)) && (checkCriticalNotNull(value_0) , value_0) > max_0 && (max_0 = (checkCriticalNotNull(value_0) , value_0));
   }
-  return max_0 == $intern_14?0:max_0;
+  return max_0 == $intern_16?0:max_0;
 }
 
 function $sumValuesFromStack(this$static, n){
@@ -6820,7 +7202,7 @@ function AsiGrammarAdapter(mutationList, comparator){
   this.mutationList.sort_1(this.comparator);
 }
 
-defineClass(190, 282, {}, AsiGrammarAdapter);
+defineClass(200, 294, {}, AsiGrammarAdapter);
 _.caseAAtleastSelectstatement2 = function caseAAtleastSelectstatement2_1(node){
   $caseAAtleastSelectstatement2(this, node);
   $doubleValue(castToDouble($pop(this.stack_0))) >= __parseAndValidateDouble(node._integer_.text_0)?$push(this.stack_0, TRUE_VALUE):$push(this.stack_0, FALSE_VALUE);
@@ -6832,7 +7214,7 @@ _.caseAAtleastnotmorethanSelectstatement2 = function caseAAtleastnotmorethanSele
   count = $intValue(castToDouble($pop(this.stack_0)));
   isAtleast = count >= __parseAndValidateDouble(node._atleastnumber_.text_0);
   isNotmorethan = count <= __parseAndValidateDouble(node._notmorethannumber_.text_0);
-  instanceOf(node._logicsymbol_, 106) && isAtleast && isNotmorethan || instanceOf(node._logicsymbol_, 107) && (isAtleast || isNotmorethan)?$push(this.stack_0, TRUE_VALUE):$push(this.stack_0, FALSE_VALUE);
+  instanceOf(node._logicsymbol_, 108) && isAtleast && isNotmorethan || instanceOf(node._logicsymbol_, 109) && (isAtleast || isNotmorethan)?$push(this.stack_0, TRUE_VALUE):$push(this.stack_0, FALSE_VALUE);
 }
 ;
 _.caseACondition2 = function caseACondition2_1(node){
@@ -6841,10 +7223,10 @@ _.caseACondition2 = function caseACondition2_1(node){
   !!node._condition_ && node._condition_.apply_1(this);
   first = $intValue(castToDouble($pop(this.stack_0)));
   second = $intValue(castToDouble($pop(this.stack_0)));
-  if (instanceOf(node._logicsymbol_, 106)) {
+  if (instanceOf(node._logicsymbol_, 108)) {
     $push(this.stack_0, first & second);
   }
-   else if (instanceOf(node._logicsymbol_, 107)) {
+   else if (instanceOf(node._logicsymbol_, 109)) {
     $push(this.stack_0, first | second);
   }
    else {
@@ -6859,7 +7241,7 @@ _.caseAExactlySelectstatement2 = function caseAExactlySelectstatement2_1(node){
 ;
 _.caseAExcludestatement = function caseAExcludestatement_1(node){
   var inverted;
-  !!node._exclude_ && $apply_12(node._exclude_, this);
+  !!node._exclude_ && $apply_13(node._exclude_, this);
   !!node._residue_ && node._residue_.apply_1(this);
   inverted = $intValue(castToDouble($pop(this.stack_0))) ^ $intValue(TRUE_VALUE);
   $push(this.stack_0, inverted);
@@ -6936,7 +7318,7 @@ _.caseAScorelist = function caseAScorelist_1(node){
   $caseAScorelist(this, node);
   this.isBooleanResult = false;
   size_0 = node._scoreitems_.size_0 + 1;
-  value_0 = instanceOf(node.parent_0, 134)?$maxValueFromStack(this, size_0):$sumValuesFromStack(this, size_0);
+  value_0 = instanceOf(node.parent_0, 140)?$maxValueFromStack(this, size_0):$sumValuesFromStack(this, size_0);
   $push(this.stack_0, value_0);
 }
 ;
@@ -6963,34 +7345,24 @@ _.caseAStatementScoreitem = function caseAStatementScoreitem_1(node){
 ;
 _.isBooleanResult = false;
 var FALSE_VALUE, NOT_SCORED, TRUE_VALUE;
-var Lorg_fstrf_stanfordAsiInterpreter_resistance_grammar_AsiGrammarAdapter_2_classLit = createForClass('org.fstrf.stanfordAsiInterpreter.resistance.grammar', 'AsiGrammarAdapter', 190);
+var Lorg_fstrf_stanfordAsiInterpreter_resistance_grammar_AsiGrammarAdapter_2_classLit = createForClass('org.fstrf.stanfordAsiInterpreter.resistance.grammar', 'AsiGrammarAdapter', 200);
 function AsiGrammarAdapter$ScoredItem(value_0, mutations, score){
   this.value_0 = value_0;
   this.mutations = mutations;
   this.score = score;
 }
 
-defineClass(94, 1, {94:1}, AsiGrammarAdapter$ScoredItem);
+defineClass(96, 1, {96:1}, AsiGrammarAdapter$ScoredItem);
 _.toString_0 = function toString_32(){
   return this.value_0;
 }
 ;
-var Lorg_fstrf_stanfordAsiInterpreter_resistance_grammar_AsiGrammarAdapter$ScoredItem_2_classLit = createForClass('org.fstrf.stanfordAsiInterpreter.resistance.grammar', 'AsiGrammarAdapter/ScoredItem', 94);
+var Lorg_fstrf_stanfordAsiInterpreter_resistance_grammar_AsiGrammarAdapter$ScoredItem_2_classLit = createForClass('org.fstrf.stanfordAsiInterpreter.resistance.grammar', 'AsiGrammarAdapter/ScoredItem', 96);
 function $clinit_StringMutationComparator(){
   $clinit_StringMutationComparator = emptyMethod;
   AMINO_ACIDS = (checkCriticalNotNull('ACDEFGHIKLMNPQRSTVWYZdi') , 'ACDEFGHIKLMNPQRSTVWYZdi');
   AMINO_ACIDS_SET = stringToSortedCharacterSet(AMINO_ACIDS);
   MUTATION_PATTERN = new Pattern('(?:[A-Z]?)(\\d+)([' + AMINO_ACIDS + ']+)');
-}
-
-function $areMutationsValid(mutations){
-  var iterator;
-  for (iterator = new AbstractList$IteratorImpl(mutations); iterator.i < iterator.this$01_0.size();) {
-    if (!$isMutationValid((checkCriticalElement(iterator.i < iterator.this$01_0.size()) , castToString(iterator.this$01_0.getAtIndex(iterator.last = iterator.i++))))) {
-      return false;
-    }
-  }
-  return true;
 }
 
 function $compare_2(this$static, o1, o2){
@@ -7048,10 +7420,6 @@ function $invertMutation(mutation){
   return matcher.result[1] + ('' + collectionToString(notFoundAcids));
 }
 
-function $isMutationValid(mutation){
-  return $booleanValue($matches($matcher(MUTATION_PATTERN, (checkCriticalNotNull(mutation) , mutation))));
-}
-
 function StringMutationComparator(){
   $clinit_StringMutationComparator();
   this.strictComparision = false;
@@ -7061,7 +7429,7 @@ function collectionToString(col){
   var buffer, iter;
   buffer = new StringBuffer;
   for (iter = new Sets$3$1(col.val$set11, col.val$set22); $hasNext(iter);) {
-    $append_0(buffer, String.fromCharCode(castTo($next(iter), 51).value_0));
+    $append_0(buffer, String.fromCharCode(castTo($next(iter), 52).value_0));
   }
   return buffer.string;
 }
@@ -7075,22 +7443,22 @@ function stringToSortedCharacterSet(str){
   return set_0;
 }
 
-defineClass(180, 1, {}, StringMutationComparator);
+defineClass(190, 1, {}, StringMutationComparator);
 _.compare = function compare_5(o1, o2){
   return $compare_2(this, castToString(o1), castToString(o2));
 }
 ;
-_.equals_0 = function equals_11(other){
+_.equals_0 = function equals_12(other){
   return this === other;
 }
 ;
 _.strictComparision = false;
 var AMINO_ACIDS, AMINO_ACIDS_SET, MUTATION_PATTERN;
-var Lorg_fstrf_stanfordAsiInterpreter_resistance_grammar_StringMutationComparator_2_classLit = createForClass('org.fstrf.stanfordAsiInterpreter.resistance.grammar', 'StringMutationComparator', 180);
+var Lorg_fstrf_stanfordAsiInterpreter_resistance_grammar_StringMutationComparator_2_classLit = createForClass('org.fstrf.stanfordAsiInterpreter.resistance.grammar', 'StringMutationComparator', 190);
 function $clinit_Lexer(){
   $clinit_Lexer = emptyMethod;
-  gotoTable_0 = stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 4), {3:1, 6:1, 89:1}, 169, 0, [stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 3), $intern_15, 7, 0, [stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 2), $intern_16, 4, 0, [stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_17, 5, 15, [9, 9, 1]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_17, 5, 15, [10, 10, 2]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_17, 5, 15, [13, 13, 3]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_17, 5, 15, [32, 32, 4]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_17, 5, 15, [40, 40, 5]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_17, 5, 15, [41, 41, 6]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_17, 5, 15, [44, 44, 7]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_17, 5, 15, [45, 45, 8]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_17, 5, 15, [48, 57, 9]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_17, 5, 15, [61, 61, 10]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_17, 5, 15, [65, 65, 11]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_17, 5, 15, [67, 67, 12]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_17, 5, 15, [68, 68, 13]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_17, 5, 15, [69, 69, 14]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_17, 5, 15, [70, 70, 15]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_17, 5, 15, [71, 71, 16]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_17, 5, 15, [72, 72, 17]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_17, 5, 15, [73, 73, 18]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_17, 5, 15, [75, 75, 19]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_17, 5, 15, [76, 76, 20]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_17, 5, 15, [77, 77, 21]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_17, 5, 15, [78, 78, 22]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_17, 5, 15, [79, 79, 23]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_17, 5, 15, [80, 80, 24]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_17, 5, 15, [81, 81, 25]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_17, 5, 15, [82, 82, 26]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_17, 5, 15, [83, 83, 27]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_17, 5, 15, [84, 84, 28]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_17, 5, 15, [86, 86, 29]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_17, 5, 15, [87, 87, 30]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_17, 5, 15, [89, 89, 31]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_17, 5, 15, [90, 90, 32]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_17, 5, 15, [100, 100, 33]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_17, 5, 15, [105, 105, 34])]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 2), $intern_16, 4, 0, [stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_17, 5, 15, [9, 32, -2])]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 2), $intern_16, 4, 0, [stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_17, 5, 15, [9, 32, -2])]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 2), $intern_16, 4, 0, [stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_17, 5, 15, [9, 32, -2])]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 2), $intern_16, 4, 0, [stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_17, 5, 15, [9, 32, -2])]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 2), $intern_16, 4, 0, []), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 2), $intern_16, 4, 0, []), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 2), $intern_16, 4, 0, []), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 2), $intern_16, 4, 0, []), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 2), $intern_16, 4, 0, [stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_17, 5, 15, [46, 46, 35]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_17, 5, 15, [48, 57, 9])]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 2), $intern_16, 4, 0, [stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_17, 5, 15, [62, 62, 36])]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 2), $intern_16, 4, 0, [stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_17, 5, 15, [78, 78, 37]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_17, 5, 15, [84, 84, 38])]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 2), $intern_16, 4, 0, []), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 2), $intern_16, 4, 0, []), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 2), $intern_16, 4, 0, [stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_17, 5, 15, [88, 88, 39])]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 2), $intern_16, 4, 0, [stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_17, 5, 15, [82, 82, 40])]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 2), $intern_16, 4, 0, []), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 2), $intern_16, 4, 0, []), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 2), $intern_16, 4, 0, []), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 2), $intern_16, 4, 0, []), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 2), $intern_16, 4, 0, []), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 2), $intern_16, 4, 0, [stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_17, 5, 15, [65, 65, 41])]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 2), $intern_16, 4, 0, [stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_17, 5, 15, [79, 79, 42])]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 2), $intern_16, 4, 0, [stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_17, 5, 15, [82, 82, 43])]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 2), $intern_16, 4, 0, []), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 2), $intern_16, 4, 0, []), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 2), $intern_16, 4, 0, []), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 2), $intern_16, 4, 0, [stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_17, 5, 15, [67, 67, 44]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_17, 5, 15, [69, 69, 45])]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 2), $intern_16, 4, 0, []), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 2), $intern_16, 4, 0, []), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 2), $intern_16, 4, 0, []), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 2), $intern_16, 4, 0, []), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 2), $intern_16, 4, 0, []), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 2), $intern_16, 4, 0, []), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 2), $intern_16, 4, 0, []), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 2), $intern_16, 4, 0, [stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_17, 5, 15, [48, 57, 46])]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 2), $intern_16, 4, 0, []), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 2), $intern_16, 4, 0, [stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_17, 5, 15, [68, 68, 47])]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 2), $intern_16, 4, 0, [stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_17, 5, 15, [76, 76, 48])]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 2), $intern_16, 4, 0, [stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_17, 5, 15, [65, 65, 49]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_17, 5, 15, [67, 67, 50])]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 2), $intern_16, 4, 0, [stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_17, 5, 15, [79, 79, 51])]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 2), $intern_16, 4, 0, [stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_17, 5, 15, [88, 88, 52])]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 2), $intern_16, 4, 0, [stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_17, 5, 15, [84, 84, 53])]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 2), $intern_16, 4, 0, []), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 2), $intern_16, 4, 0, [stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_17, 5, 15, [79, 79, 54])]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 2), $intern_16, 4, 0, [stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_17, 5, 15, [76, 76, 55])]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 2), $intern_16, 4, 0, [stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_17, 5, 15, [48, 57, 46])]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 2), $intern_16, 4, 0, []), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 2), $intern_16, 4, 0, [stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_17, 5, 15, [69, 69, 56])]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 2), $intern_16, 4, 0, [stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_17, 5, 15, [67, 67, 57])]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 2), $intern_16, 4, 0, [stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_17, 5, 15, [76, 76, 58])]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 2), $intern_16, 4, 0, [stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_17, 5, 15, [77, 77, 59])]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 2), $intern_16, 4, 0, []), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 2), $intern_16, 4, 0, [stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_17, 5, 15, [77, 77, 60])]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 2), $intern_16, 4, 0, [stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_17, 5, 15, [82, 82, 61])]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 2), $intern_16, 4, 0, [stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_17, 5, 15, [69, 69, 62])]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 2), $intern_16, 4, 0, [stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_17, 5, 15, [65, 65, 63])]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 2), $intern_16, 4, 0, [stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_17, 5, 15, [84, 84, 64])]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 2), $intern_16, 4, 0, [stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_17, 5, 15, [85, 85, 65])]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 2), $intern_16, 4, 0, []), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 2), $intern_16, 4, 0, [stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_17, 5, 15, [79, 79, 66])]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 2), $intern_16, 4, 0, [stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_17, 5, 15, [69, 69, 67])]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 2), $intern_16, 4, 0, [stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_17, 5, 15, [67, 67, 68])]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 2), $intern_16, 4, 0, [stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_17, 5, 15, [83, 83, 69])]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 2), $intern_16, 4, 0, [stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_17, 5, 15, [76, 76, 70])]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 2), $intern_16, 4, 0, [stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_17, 5, 15, [68, 68, 71])]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 2), $intern_16, 4, 0, [stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_17, 5, 15, [82, 82, 72])]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 2), $intern_16, 4, 0, []), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 2), $intern_16, 4, 0, [stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_17, 5, 15, [84, 84, 73])]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 2), $intern_16, 4, 0, [stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_17, 5, 15, [84, 84, 74])]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 2), $intern_16, 4, 0, [stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_17, 5, 15, [89, 89, 75])]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 2), $intern_16, 4, 0, [stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_17, 5, 15, [69, 69, 76])]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 2), $intern_16, 4, 0, [stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_17, 5, 15, [69, 69, 77])]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 2), $intern_16, 4, 0, []), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 2), $intern_16, 4, 0, []), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 2), $intern_16, 4, 0, []), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 2), $intern_16, 4, 0, []), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 2), $intern_16, 4, 0, [stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_17, 5, 15, [84, 84, 78])]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 2), $intern_16, 4, 0, [stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_17, 5, 15, [72, 72, 79])]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 2), $intern_16, 4, 0, [stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_17, 5, 15, [65, 65, 80])]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 2), $intern_16, 4, 0, [stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_17, 5, 15, [78, 78, 81])]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 2), $intern_16, 4, 0, [])])]);
-  accept_4 = stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 2), $intern_16, 4, 0, [stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_17, 5, 15, [-1, 16, 16, 16, 16, 12, 13, 15, 0, 17, -1, 19, 19, 19, 19, 19, 19, 19, 19, 19, 19, 19, 19, -1, 19, 19, 19, 19, 19, 19, 19, 19, 19, 19, 19, -1, 14, -1, -1, -1, -1, -1, -1, 2, -1, -1, 18, 1, -1, -1, -1, -1, 11, 3, -1, -1, -1, -1, -1, 6, -1, -1, -1, -1, -1, -1, -1, 10, -1, -1, -1, -1, -1, 5, 7, 8, 4, -1, -1, -1, -1, 9])]);
+  gotoTable_0 = stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 4), {3:1, 6:1, 91:1}, 173, 0, [stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 3), $intern_17, 7, 0, [stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 2), $intern_18, 4, 0, [stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_19, 5, 15, [9, 9, 1]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_19, 5, 15, [10, 10, 2]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_19, 5, 15, [13, 13, 3]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_19, 5, 15, [32, 32, 4]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_19, 5, 15, [40, 40, 5]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_19, 5, 15, [41, 41, 6]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_19, 5, 15, [44, 44, 7]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_19, 5, 15, [45, 45, 8]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_19, 5, 15, [48, 57, 9]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_19, 5, 15, [61, 61, 10]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_19, 5, 15, [65, 65, 11]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_19, 5, 15, [67, 67, 12]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_19, 5, 15, [68, 68, 13]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_19, 5, 15, [69, 69, 14]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_19, 5, 15, [70, 70, 15]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_19, 5, 15, [71, 71, 16]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_19, 5, 15, [72, 72, 17]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_19, 5, 15, [73, 73, 18]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_19, 5, 15, [75, 75, 19]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_19, 5, 15, [76, 76, 20]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_19, 5, 15, [77, 77, 21]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_19, 5, 15, [78, 78, 22]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_19, 5, 15, [79, 79, 23]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_19, 5, 15, [80, 80, 24]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_19, 5, 15, [81, 81, 25]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_19, 5, 15, [82, 82, 26]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_19, 5, 15, [83, 83, 27]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_19, 5, 15, [84, 84, 28]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_19, 5, 15, [86, 86, 29]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_19, 5, 15, [87, 87, 30]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_19, 5, 15, [89, 89, 31]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_19, 5, 15, [90, 90, 32]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_19, 5, 15, [100, 100, 33]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_19, 5, 15, [105, 105, 34])]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 2), $intern_18, 4, 0, [stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_19, 5, 15, [9, 32, -2])]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 2), $intern_18, 4, 0, [stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_19, 5, 15, [9, 32, -2])]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 2), $intern_18, 4, 0, [stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_19, 5, 15, [9, 32, -2])]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 2), $intern_18, 4, 0, [stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_19, 5, 15, [9, 32, -2])]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 2), $intern_18, 4, 0, []), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 2), $intern_18, 4, 0, []), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 2), $intern_18, 4, 0, []), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 2), $intern_18, 4, 0, []), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 2), $intern_18, 4, 0, [stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_19, 5, 15, [46, 46, 35]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_19, 5, 15, [48, 57, 9])]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 2), $intern_18, 4, 0, [stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_19, 5, 15, [62, 62, 36])]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 2), $intern_18, 4, 0, [stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_19, 5, 15, [78, 78, 37]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_19, 5, 15, [84, 84, 38])]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 2), $intern_18, 4, 0, []), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 2), $intern_18, 4, 0, []), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 2), $intern_18, 4, 0, [stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_19, 5, 15, [88, 88, 39])]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 2), $intern_18, 4, 0, [stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_19, 5, 15, [82, 82, 40])]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 2), $intern_18, 4, 0, []), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 2), $intern_18, 4, 0, []), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 2), $intern_18, 4, 0, []), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 2), $intern_18, 4, 0, []), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 2), $intern_18, 4, 0, []), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 2), $intern_18, 4, 0, [stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_19, 5, 15, [65, 65, 41])]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 2), $intern_18, 4, 0, [stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_19, 5, 15, [79, 79, 42])]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 2), $intern_18, 4, 0, [stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_19, 5, 15, [82, 82, 43])]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 2), $intern_18, 4, 0, []), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 2), $intern_18, 4, 0, []), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 2), $intern_18, 4, 0, []), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 2), $intern_18, 4, 0, [stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_19, 5, 15, [67, 67, 44]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_19, 5, 15, [69, 69, 45])]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 2), $intern_18, 4, 0, []), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 2), $intern_18, 4, 0, []), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 2), $intern_18, 4, 0, []), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 2), $intern_18, 4, 0, []), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 2), $intern_18, 4, 0, []), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 2), $intern_18, 4, 0, []), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 2), $intern_18, 4, 0, []), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 2), $intern_18, 4, 0, [stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_19, 5, 15, [48, 57, 46])]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 2), $intern_18, 4, 0, []), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 2), $intern_18, 4, 0, [stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_19, 5, 15, [68, 68, 47])]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 2), $intern_18, 4, 0, [stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_19, 5, 15, [76, 76, 48])]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 2), $intern_18, 4, 0, [stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_19, 5, 15, [65, 65, 49]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_19, 5, 15, [67, 67, 50])]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 2), $intern_18, 4, 0, [stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_19, 5, 15, [79, 79, 51])]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 2), $intern_18, 4, 0, [stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_19, 5, 15, [88, 88, 52])]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 2), $intern_18, 4, 0, [stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_19, 5, 15, [84, 84, 53])]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 2), $intern_18, 4, 0, []), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 2), $intern_18, 4, 0, [stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_19, 5, 15, [79, 79, 54])]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 2), $intern_18, 4, 0, [stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_19, 5, 15, [76, 76, 55])]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 2), $intern_18, 4, 0, [stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_19, 5, 15, [48, 57, 46])]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 2), $intern_18, 4, 0, []), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 2), $intern_18, 4, 0, [stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_19, 5, 15, [69, 69, 56])]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 2), $intern_18, 4, 0, [stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_19, 5, 15, [67, 67, 57])]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 2), $intern_18, 4, 0, [stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_19, 5, 15, [76, 76, 58])]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 2), $intern_18, 4, 0, [stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_19, 5, 15, [77, 77, 59])]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 2), $intern_18, 4, 0, []), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 2), $intern_18, 4, 0, [stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_19, 5, 15, [77, 77, 60])]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 2), $intern_18, 4, 0, [stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_19, 5, 15, [82, 82, 61])]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 2), $intern_18, 4, 0, [stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_19, 5, 15, [69, 69, 62])]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 2), $intern_18, 4, 0, [stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_19, 5, 15, [65, 65, 63])]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 2), $intern_18, 4, 0, [stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_19, 5, 15, [84, 84, 64])]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 2), $intern_18, 4, 0, [stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_19, 5, 15, [85, 85, 65])]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 2), $intern_18, 4, 0, []), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 2), $intern_18, 4, 0, [stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_19, 5, 15, [79, 79, 66])]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 2), $intern_18, 4, 0, [stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_19, 5, 15, [69, 69, 67])]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 2), $intern_18, 4, 0, [stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_19, 5, 15, [67, 67, 68])]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 2), $intern_18, 4, 0, [stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_19, 5, 15, [83, 83, 69])]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 2), $intern_18, 4, 0, [stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_19, 5, 15, [76, 76, 70])]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 2), $intern_18, 4, 0, [stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_19, 5, 15, [68, 68, 71])]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 2), $intern_18, 4, 0, [stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_19, 5, 15, [82, 82, 72])]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 2), $intern_18, 4, 0, []), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 2), $intern_18, 4, 0, [stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_19, 5, 15, [84, 84, 73])]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 2), $intern_18, 4, 0, [stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_19, 5, 15, [84, 84, 74])]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 2), $intern_18, 4, 0, [stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_19, 5, 15, [89, 89, 75])]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 2), $intern_18, 4, 0, [stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_19, 5, 15, [69, 69, 76])]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 2), $intern_18, 4, 0, [stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_19, 5, 15, [69, 69, 77])]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 2), $intern_18, 4, 0, []), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 2), $intern_18, 4, 0, []), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 2), $intern_18, 4, 0, []), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 2), $intern_18, 4, 0, []), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 2), $intern_18, 4, 0, [stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_19, 5, 15, [84, 84, 78])]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 2), $intern_18, 4, 0, [stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_19, 5, 15, [72, 72, 79])]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 2), $intern_18, 4, 0, [stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_19, 5, 15, [65, 65, 80])]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 2), $intern_18, 4, 0, [stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_19, 5, 15, [78, 78, 81])]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 2), $intern_18, 4, 0, [])])]);
+  accept_7 = stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 2), $intern_18, 4, 0, [stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_19, 5, 15, [-1, 16, 16, 16, 16, 12, 13, 15, 0, 17, -1, 19, 19, 19, 19, 19, 19, 19, 19, 19, 19, 19, 19, -1, 19, 19, 19, 19, 19, 19, 19, 19, 19, 19, 19, -1, 14, -1, -1, -1, -1, -1, -1, 2, -1, -1, 18, 1, -1, -1, -1, -1, 11, 3, -1, -1, -1, -1, -1, 6, -1, -1, -1, -1, -1, -1, -1, 10, -1, -1, -1, -1, -1, 5, 7, 8, 4, -1, -1, -1, -1, 9])]);
 }
 
 function $getChar(this$static){
@@ -7126,7 +7494,7 @@ function $getToken(this$static){
   accept_pos = -1;
   accept_line = -1;
   gotoTable = gotoTable_0[this$static.state.id_0];
-  accept = accept_4[this$static.state.id_0];
+  accept = accept_7[this$static.state.id_0];
   $setLength(this$static.text_0);
   while (true) {
     c = $getChar(this$static);
@@ -7415,18 +7783,18 @@ function Lexer(in_0){
   $clinit_Lexer();
   this.state = ($clinit_Lexer$State() , INITIAL);
   this.text_0 = new StringBuffer;
-  this.in_0 = (n = in_0.length , charArr = initUnidimensionalArray(C_classLit, $intern_8, 5, n, 15, 1) , $getChars0(in_0, 0, n, charArr, 0) , charArr);
+  this.in_0 = (n = in_0.length , charArr = initUnidimensionalArray(C_classLit, $intern_9, 5, n, 15, 1) , $getChars0(in_0, 0, n, charArr, 0) , charArr);
   this.inPointer = 0;
 }
 
-defineClass(216, 1, {}, Lexer);
+defineClass(227, 1, {}, Lexer);
 _.cr = false;
 _.eof = false;
 _.inPointer = 0;
 _.line = 0;
 _.pos = 0;
-var accept_4, gotoTable_0;
-var Lorg_fstrf_stanfordAsiInterpreter_resistance_grammar_lexer_Lexer_2_classLit = createForClass('org.fstrf.stanfordAsiInterpreter.resistance.grammar.lexer', 'Lexer', 216);
+var accept_7, gotoTable_0;
+var Lorg_fstrf_stanfordAsiInterpreter_resistance_grammar_lexer_Lexer_2_classLit = createForClass('org.fstrf.stanfordAsiInterpreter.resistance.grammar.lexer', 'Lexer', 227);
 function $clinit_Lexer$State(){
   $clinit_Lexer$State = emptyMethod;
   INITIAL = new Lexer$State;
@@ -7436,16 +7804,16 @@ function Lexer$State(){
   this.id_0 = 0;
 }
 
-defineClass(217, 1, {}, Lexer$State);
+defineClass(228, 1, {}, Lexer$State);
 _.id_0 = 0;
 var INITIAL;
-var Lorg_fstrf_stanfordAsiInterpreter_resistance_grammar_lexer_Lexer$State_2_classLit = createForClass('org.fstrf.stanfordAsiInterpreter.resistance.grammar.lexer', 'Lexer/State', 217);
+var Lorg_fstrf_stanfordAsiInterpreter_resistance_grammar_lexer_Lexer$State_2_classLit = createForClass('org.fstrf.stanfordAsiInterpreter.resistance.grammar.lexer', 'Lexer/State', 228);
 function LexerException(message){
   Exception.call(this, message);
 }
 
-defineClass(219, 17, $intern_1, LexerException);
-var Lorg_fstrf_stanfordAsiInterpreter_resistance_grammar_lexer_LexerException_2_classLit = createForClass('org.fstrf.stanfordAsiInterpreter.resistance.grammar.lexer', 'LexerException', 219);
+defineClass(230, 17, $intern_1, LexerException);
+var Lorg_fstrf_stanfordAsiInterpreter_resistance_grammar_lexer_LexerException_2_classLit = createForClass('org.fstrf.stanfordAsiInterpreter.resistance.grammar.lexer', 'LexerException', 230);
 function $parent(this$static, parent_0){
   this$static.parent_0 = parent_0;
 }
@@ -7467,10 +7835,10 @@ function toString_34(node){
   return '';
 }
 
-defineClass(10, 1, $intern_18);
+defineClass(10, 1, $intern_20);
 var Lorg_fstrf_stanfordAsiInterpreter_resistance_grammar_node_Node_2_classLit = createForClass('org.fstrf.stanfordAsiInterpreter.resistance.grammar.node', 'Node', 10);
-defineClass(84, 10, {10:1, 84:1});
-var Lorg_fstrf_stanfordAsiInterpreter_resistance_grammar_node_PLogicsymbol_2_classLit = createForClass('org.fstrf.stanfordAsiInterpreter.resistance.grammar.node', 'PLogicsymbol', 84);
+defineClass(86, 10, {10:1, 86:1});
+var Lorg_fstrf_stanfordAsiInterpreter_resistance_grammar_node_PLogicsymbol_2_classLit = createForClass('org.fstrf.stanfordAsiInterpreter.resistance.grammar.node', 'PLogicsymbol', 86);
 function $setAnd(this$static, node){
   !!this$static._and_ && (this$static._and_.parent_0 = null , undefined);
   if (node) {
@@ -7484,8 +7852,8 @@ function AAndLogicsymbol(_and_){
   $setAnd(this, _and_);
 }
 
-defineClass(106, 84, {106:1, 10:1, 84:1}, AAndLogicsymbol);
-_.apply_1 = function apply_4(sw){
+defineClass(108, 86, {108:1, 10:1, 86:1}, AAndLogicsymbol);
+_.apply_1 = function apply_6(sw){
   sw.caseAAndLogicsymbol(this);
 }
 ;
@@ -7500,9 +7868,9 @@ _.toString_0 = function toString_35(){
   return '' + toString_34(this._and_);
 }
 ;
-var Lorg_fstrf_stanfordAsiInterpreter_resistance_grammar_node_AAndLogicsymbol_2_classLit = createForClass('org.fstrf.stanfordAsiInterpreter.resistance.grammar.node', 'AAndLogicsymbol', 106);
-defineClass(68, 10, $intern_19);
-var Lorg_fstrf_stanfordAsiInterpreter_resistance_grammar_node_PSelectstatement2_2_classLit = createForClass('org.fstrf.stanfordAsiInterpreter.resistance.grammar.node', 'PSelectstatement2', 68);
+var Lorg_fstrf_stanfordAsiInterpreter_resistance_grammar_node_AAndLogicsymbol_2_classLit = createForClass('org.fstrf.stanfordAsiInterpreter.resistance.grammar.node', 'AAndLogicsymbol', 108);
+defineClass(70, 10, $intern_21);
+var Lorg_fstrf_stanfordAsiInterpreter_resistance_grammar_node_PSelectstatement2_2_classLit = createForClass('org.fstrf.stanfordAsiInterpreter.resistance.grammar.node', 'PSelectstatement2', 70);
 function $setAtleast(this$static, node){
   !!this$static._atleast_ && (this$static._atleast_.parent_0 = null , undefined);
   if (node) {
@@ -7566,8 +7934,8 @@ function AAtleastSelectstatement2(_atleast_, _integer_, _from_, _lPar_, _selectl
   $setRPar(this, _rPar_);
 }
 
-defineClass(243, 68, $intern_19, AAtleastSelectstatement2);
-_.apply_1 = function apply_5(sw){
+defineClass(255, 70, $intern_21, AAtleastSelectstatement2);
+_.apply_1 = function apply_7(sw){
   sw.caseAAtleastSelectstatement2(this);
 }
 ;
@@ -7602,7 +7970,7 @@ _.toString_0 = function toString_36(){
   return '' + toString_34(this._atleast_) + toString_34(this._integer_) + toString_34(this._from_) + toString_34(this._lPar_) + toString_34(this._selectlist_) + toString_34(this._rPar_);
 }
 ;
-var Lorg_fstrf_stanfordAsiInterpreter_resistance_grammar_node_AAtleastSelectstatement2_2_classLit = createForClass('org.fstrf.stanfordAsiInterpreter.resistance.grammar.node', 'AAtleastSelectstatement2', 243);
+var Lorg_fstrf_stanfordAsiInterpreter_resistance_grammar_node_AAtleastSelectstatement2_2_classLit = createForClass('org.fstrf.stanfordAsiInterpreter.resistance.grammar.node', 'AAtleastSelectstatement2', 255);
 function $setAtleast_0(this$static, node){
   !!this$static._atleast_ && (this$static._atleast_.parent_0 = null , undefined);
   if (node) {
@@ -7696,8 +8064,8 @@ function AAtleastnotmorethanSelectstatement2(_atleast_, _atleastnumber_, _logics
   $setRPar_0(this, _rPar_);
 }
 
-defineClass(245, 68, $intern_19, AAtleastnotmorethanSelectstatement2);
-_.apply_1 = function apply_6(sw){
+defineClass(257, 70, $intern_21, AAtleastnotmorethanSelectstatement2);
+_.apply_1 = function apply_8(sw){
   sw.caseAAtleastnotmorethanSelectstatement2(this);
 }
 ;
@@ -7744,10 +8112,10 @@ _.toString_0 = function toString_37(){
   return '' + toString_34(this._atleast_) + toString_34(this._atleastnumber_) + toString_34(this._logicsymbol_) + toString_34(this._notmorethan_) + toString_34(this._notmorethannumber_) + toString_34(this._from_) + toString_34(this._lPar_) + toString_34(this._selectlist_) + toString_34(this._rPar_);
 }
 ;
-var Lorg_fstrf_stanfordAsiInterpreter_resistance_grammar_node_AAtleastnotmorethanSelectstatement2_2_classLit = createForClass('org.fstrf.stanfordAsiInterpreter.resistance.grammar.node', 'AAtleastnotmorethanSelectstatement2', 245);
-defineClass(65, 10, $intern_20);
-var Lorg_fstrf_stanfordAsiInterpreter_resistance_grammar_node_PBooleancondition_2_classLit = createForClass('org.fstrf.stanfordAsiInterpreter.resistance.grammar.node', 'PBooleancondition', 65);
-function $apply(this$static, sw){
+var Lorg_fstrf_stanfordAsiInterpreter_resistance_grammar_node_AAtleastnotmorethanSelectstatement2_2_classLit = createForClass('org.fstrf.stanfordAsiInterpreter.resistance.grammar.node', 'AAtleastnotmorethanSelectstatement2', 257);
+defineClass(67, 10, $intern_22);
+var Lorg_fstrf_stanfordAsiInterpreter_resistance_grammar_node_PBooleancondition_2_classLit = createForClass('org.fstrf.stanfordAsiInterpreter.resistance.grammar.node', 'PBooleancondition', 67);
+function $apply_0(this$static, sw){
   sw.caseABooleancondition(this$static);
 }
 
@@ -7767,9 +8135,9 @@ function ABooleancondition(_condition_, _condition2_){
   $addAll_2(this._condition2_, _condition2_);
 }
 
-defineClass(160, 65, $intern_20, ABooleancondition);
-_.apply_1 = function apply_7(sw){
-  $apply(this, sw);
+defineClass(164, 67, $intern_22, ABooleancondition);
+_.apply_1 = function apply_9(sw){
+  $apply_0(this, sw);
 }
 ;
 _.removeChild_0 = function removeChild_2(child){
@@ -7786,20 +8154,20 @@ _.toString_0 = function toString_38(){
   return '' + toString_34(this._condition_) + toString_33(this._condition2_);
 }
 ;
-var Lorg_fstrf_stanfordAsiInterpreter_resistance_grammar_node_ABooleancondition_2_classLit = createForClass('org.fstrf.stanfordAsiInterpreter.resistance.grammar.node', 'ABooleancondition', 160);
+var Lorg_fstrf_stanfordAsiInterpreter_resistance_grammar_node_ABooleancondition_2_classLit = createForClass('org.fstrf.stanfordAsiInterpreter.resistance.grammar.node', 'ABooleancondition', 164);
 function ABooleancondition$Condition2_Cast(this$0){
   this.this$01 = this$0;
 }
 
-defineClass(231, 1, {}, ABooleancondition$Condition2_Cast);
+defineClass(243, 1, {}, ABooleancondition$Condition2_Cast);
 _.cast_0 = function cast_0(o){
   var node;
-  return node = castTo(o, 66) , !!node.parent_0 && node.parent_0 != this.this$01 && node.parent_0.removeChild_0(node) , (!node.parent_0 || node.parent_0 != this.this$01) && $parent(node, this.this$01) , node;
+  return node = castTo(o, 68) , !!node.parent_0 && node.parent_0 != this.this$01 && node.parent_0.removeChild_0(node) , (!node.parent_0 || node.parent_0 != this.this$01) && $parent(node, this.this$01) , node;
 }
 ;
-var Lorg_fstrf_stanfordAsiInterpreter_resistance_grammar_node_ABooleancondition$Condition2_1Cast_2_classLit = createForClass('org.fstrf.stanfordAsiInterpreter.resistance.grammar.node', 'ABooleancondition/Condition2_Cast', 231);
-defineClass(66, 10, $intern_21);
-var Lorg_fstrf_stanfordAsiInterpreter_resistance_grammar_node_PCondition2_2_classLit = createForClass('org.fstrf.stanfordAsiInterpreter.resistance.grammar.node', 'PCondition2', 66);
+var Lorg_fstrf_stanfordAsiInterpreter_resistance_grammar_node_ABooleancondition$Condition2_1Cast_2_classLit = createForClass('org.fstrf.stanfordAsiInterpreter.resistance.grammar.node', 'ABooleancondition/Condition2_Cast', 243);
+defineClass(68, 10, $intern_23);
+var Lorg_fstrf_stanfordAsiInterpreter_resistance_grammar_node_PCondition2_2_classLit = createForClass('org.fstrf.stanfordAsiInterpreter.resistance.grammar.node', 'PCondition2', 68);
 function $setCondition_0(this$static, node){
   !!this$static._condition_ && (this$static._condition_.parent_0 = null , undefined);
   if (node) {
@@ -7823,8 +8191,8 @@ function ACondition2(_logicsymbol_, _condition_){
   $setCondition_0(this, _condition_);
 }
 
-defineClass(236, 66, $intern_21, ACondition2);
-_.apply_1 = function apply_8(sw){
+defineClass(248, 68, $intern_23, ACondition2);
+_.apply_1 = function apply_10(sw){
   sw.caseACondition2(this);
 }
 ;
@@ -7843,7 +8211,7 @@ _.toString_0 = function toString_39(){
   return '' + toString_34(this._logicsymbol_) + toString_34(this._condition_);
 }
 ;
-var Lorg_fstrf_stanfordAsiInterpreter_resistance_grammar_node_ACondition2_2_classLit = createForClass('org.fstrf.stanfordAsiInterpreter.resistance.grammar.node', 'ACondition2', 236);
+var Lorg_fstrf_stanfordAsiInterpreter_resistance_grammar_node_ACondition2_2_classLit = createForClass('org.fstrf.stanfordAsiInterpreter.resistance.grammar.node', 'ACondition2', 248);
 function $setExactly(this$static, node){
   !!this$static._exactly_ && (this$static._exactly_.parent_0 = null , undefined);
   if (node) {
@@ -7907,8 +8275,8 @@ function AExactlySelectstatement2(_exactly_, _integer_, _from_, _lPar_, _selectl
   $setRPar_1(this, _rPar_);
 }
 
-defineClass(242, 68, $intern_19, AExactlySelectstatement2);
-_.apply_1 = function apply_9(sw){
+defineClass(254, 70, $intern_21, AExactlySelectstatement2);
+_.apply_1 = function apply_11(sw){
   sw.caseAExactlySelectstatement2(this);
 }
 ;
@@ -7943,9 +8311,9 @@ _.toString_0 = function toString_40(){
   return '' + toString_34(this._exactly_) + toString_34(this._integer_) + toString_34(this._from_) + toString_34(this._lPar_) + toString_34(this._selectlist_) + toString_34(this._rPar_);
 }
 ;
-var Lorg_fstrf_stanfordAsiInterpreter_resistance_grammar_node_AExactlySelectstatement2_2_classLit = createForClass('org.fstrf.stanfordAsiInterpreter.resistance.grammar.node', 'AExactlySelectstatement2', 242);
-defineClass(52, 10, $intern_22);
-var Lorg_fstrf_stanfordAsiInterpreter_resistance_grammar_node_PCondition_2_classLit = createForClass('org.fstrf.stanfordAsiInterpreter.resistance.grammar.node', 'PCondition', 52);
+var Lorg_fstrf_stanfordAsiInterpreter_resistance_grammar_node_AExactlySelectstatement2_2_classLit = createForClass('org.fstrf.stanfordAsiInterpreter.resistance.grammar.node', 'AExactlySelectstatement2', 254);
+defineClass(53, 10, $intern_24);
+var Lorg_fstrf_stanfordAsiInterpreter_resistance_grammar_node_PCondition_2_classLit = createForClass('org.fstrf.stanfordAsiInterpreter.resistance.grammar.node', 'PCondition', 53);
 function $setExcludestatement(this$static, node){
   !!this$static._excludestatement_ && (this$static._excludestatement_.parent_0 = null , undefined);
   if (node) {
@@ -7959,8 +8327,8 @@ function AExcludeCondition(_excludestatement_){
   $setExcludestatement(this, _excludestatement_);
 }
 
-defineClass(234, 52, $intern_22, AExcludeCondition);
-_.apply_1 = function apply_10(sw){
+defineClass(246, 53, $intern_24, AExcludeCondition);
+_.apply_1 = function apply_12(sw){
   sw.caseAExcludeCondition(this);
 }
 ;
@@ -7975,10 +8343,10 @@ _.toString_0 = function toString_41(){
   return '' + toString_34(this._excludestatement_);
 }
 ;
-var Lorg_fstrf_stanfordAsiInterpreter_resistance_grammar_node_AExcludeCondition_2_classLit = createForClass('org.fstrf.stanfordAsiInterpreter.resistance.grammar.node', 'AExcludeCondition', 234);
-defineClass(126, 10, $intern_23);
-var Lorg_fstrf_stanfordAsiInterpreter_resistance_grammar_node_PExcludestatement_2_classLit = createForClass('org.fstrf.stanfordAsiInterpreter.resistance.grammar.node', 'PExcludestatement', 126);
-function $apply_0(this$static, sw){
+var Lorg_fstrf_stanfordAsiInterpreter_resistance_grammar_node_AExcludeCondition_2_classLit = createForClass('org.fstrf.stanfordAsiInterpreter.resistance.grammar.node', 'AExcludeCondition', 246);
+defineClass(132, 10, $intern_25);
+var Lorg_fstrf_stanfordAsiInterpreter_resistance_grammar_node_PExcludestatement_2_classLit = createForClass('org.fstrf.stanfordAsiInterpreter.resistance.grammar.node', 'PExcludestatement', 132);
+function $apply_1(this$static, sw){
   sw.caseAExcludestatement(this$static);
 }
 
@@ -8005,9 +8373,9 @@ function AExcludestatement(_exclude_, _residue_){
   $setResidue(this, _residue_);
 }
 
-defineClass(240, 126, $intern_23, AExcludestatement);
-_.apply_1 = function apply_11(sw){
-  $apply_0(this, sw);
+defineClass(252, 132, $intern_25, AExcludestatement);
+_.apply_1 = function apply_13(sw){
+  $apply_1(this, sw);
 }
 ;
 _.removeChild_0 = function removeChild_6(child){
@@ -8025,9 +8393,9 @@ _.toString_0 = function toString_42(){
   return '' + toString_34(this._exclude_) + toString_34(this._residue_);
 }
 ;
-var Lorg_fstrf_stanfordAsiInterpreter_resistance_grammar_node_AExcludestatement_2_classLit = createForClass('org.fstrf.stanfordAsiInterpreter.resistance.grammar.node', 'AExcludestatement', 240);
-defineClass(85, 10, $intern_24);
-var Lorg_fstrf_stanfordAsiInterpreter_resistance_grammar_node_PNumber_2_classLit = createForClass('org.fstrf.stanfordAsiInterpreter.resistance.grammar.node', 'PNumber', 85);
+var Lorg_fstrf_stanfordAsiInterpreter_resistance_grammar_node_AExcludestatement_2_classLit = createForClass('org.fstrf.stanfordAsiInterpreter.resistance.grammar.node', 'AExcludestatement', 252);
+defineClass(87, 10, $intern_26);
+var Lorg_fstrf_stanfordAsiInterpreter_resistance_grammar_node_PNumber_2_classLit = createForClass('org.fstrf.stanfordAsiInterpreter.resistance.grammar.node', 'PNumber', 87);
 function $setFloat(this$static, node){
   !!this$static._float_ && (this$static._float_.parent_0 = null , undefined);
   if (node) {
@@ -8041,8 +8409,8 @@ function AFloatNumber(_float_){
   $setFloat(this, _float_);
 }
 
-defineClass(252, 85, $intern_24, AFloatNumber);
-_.apply_1 = function apply_12(sw){
+defineClass(264, 87, $intern_26, AFloatNumber);
+_.apply_1 = function apply_14(sw){
   sw.caseAFloatNumber(this);
 }
 ;
@@ -8057,7 +8425,7 @@ _.toString_0 = function toString_43(){
   return '' + toString_34(this._float_);
 }
 ;
-var Lorg_fstrf_stanfordAsiInterpreter_resistance_grammar_node_AFloatNumber_2_classLit = createForClass('org.fstrf.stanfordAsiInterpreter.resistance.grammar.node', 'AFloatNumber', 252);
+var Lorg_fstrf_stanfordAsiInterpreter_resistance_grammar_node_AFloatNumber_2_classLit = createForClass('org.fstrf.stanfordAsiInterpreter.resistance.grammar.node', 'AFloatNumber', 264);
 function $setInteger_1(this$static, node){
   !!this$static._integer_ && (this$static._integer_.parent_0 = null , undefined);
   if (node) {
@@ -8071,8 +8439,8 @@ function AIntegerNumber(_integer_){
   $setInteger_1(this, _integer_);
 }
 
-defineClass(251, 85, $intern_24, AIntegerNumber);
-_.apply_1 = function apply_13(sw){
+defineClass(263, 87, $intern_26, AIntegerNumber);
+_.apply_1 = function apply_15(sw){
   sw.caseAIntegerNumber(this);
 }
 ;
@@ -8087,9 +8455,9 @@ _.toString_0 = function toString_44(){
   return '' + toString_34(this._integer_);
 }
 ;
-var Lorg_fstrf_stanfordAsiInterpreter_resistance_grammar_node_AIntegerNumber_2_classLit = createForClass('org.fstrf.stanfordAsiInterpreter.resistance.grammar.node', 'AIntegerNumber', 251);
-defineClass(70, 10, $intern_25);
-var Lorg_fstrf_stanfordAsiInterpreter_resistance_grammar_node_PListitems_2_classLit = createForClass('org.fstrf.stanfordAsiInterpreter.resistance.grammar.node', 'PListitems', 70);
+var Lorg_fstrf_stanfordAsiInterpreter_resistance_grammar_node_AIntegerNumber_2_classLit = createForClass('org.fstrf.stanfordAsiInterpreter.resistance.grammar.node', 'AIntegerNumber', 263);
+defineClass(72, 10, $intern_27);
+var Lorg_fstrf_stanfordAsiInterpreter_resistance_grammar_node_PListitems_2_classLit = createForClass('org.fstrf.stanfordAsiInterpreter.resistance.grammar.node', 'PListitems', 72);
 function $setComma(this$static, node){
   !!this$static._comma_ && (this$static._comma_.parent_0 = null , undefined);
   if (node) {
@@ -8113,8 +8481,8 @@ function AListitems(_comma_, _residue_){
   $setResidue_0(this, _residue_);
 }
 
-defineClass(247, 70, $intern_25, AListitems);
-_.apply_1 = function apply_14(sw){
+defineClass(259, 72, $intern_27, AListitems);
+_.apply_1 = function apply_16(sw){
   sw.caseAListitems(this);
 }
 ;
@@ -8133,9 +8501,9 @@ _.toString_0 = function toString_45(){
   return '' + toString_34(this._comma_) + toString_34(this._residue_);
 }
 ;
-var Lorg_fstrf_stanfordAsiInterpreter_resistance_grammar_node_AListitems_2_classLit = createForClass('org.fstrf.stanfordAsiInterpreter.resistance.grammar.node', 'AListitems', 247);
-defineClass(105, 10, $intern_26);
-var Lorg_fstrf_stanfordAsiInterpreter_resistance_grammar_node_PStatement_2_classLit = createForClass('org.fstrf.stanfordAsiInterpreter.resistance.grammar.node', 'PStatement', 105);
+var Lorg_fstrf_stanfordAsiInterpreter_resistance_grammar_node_AListitems_2_classLit = createForClass('org.fstrf.stanfordAsiInterpreter.resistance.grammar.node', 'AListitems', 259);
+defineClass(107, 10, $intern_28);
+var Lorg_fstrf_stanfordAsiInterpreter_resistance_grammar_node_PStatement_2_classLit = createForClass('org.fstrf.stanfordAsiInterpreter.resistance.grammar.node', 'PStatement', 107);
 function $setBooleancondition(this$static, node){
   !!this$static._booleancondition_ && (this$static._booleancondition_.parent_0 = null , undefined);
   if (node) {
@@ -8149,8 +8517,8 @@ function ALogicstatementStatement(_booleancondition_){
   $setBooleancondition(this, _booleancondition_);
 }
 
-defineClass(229, 105, $intern_26, ALogicstatementStatement);
-_.apply_1 = function apply_15(sw){
+defineClass(241, 107, $intern_28, ALogicstatementStatement);
+_.apply_1 = function apply_17(sw){
   sw.caseALogicstatementStatement(this);
 }
 ;
@@ -8165,9 +8533,9 @@ _.toString_0 = function toString_46(){
   return '' + toString_34(this._booleancondition_);
 }
 ;
-var Lorg_fstrf_stanfordAsiInterpreter_resistance_grammar_node_ALogicstatementStatement_2_classLit = createForClass('org.fstrf.stanfordAsiInterpreter.resistance.grammar.node', 'ALogicstatementStatement', 229);
-defineClass(71, 10, $intern_27);
-var Lorg_fstrf_stanfordAsiInterpreter_resistance_grammar_node_PScoreitem_2_classLit = createForClass('org.fstrf.stanfordAsiInterpreter.resistance.grammar.node', 'PScoreitem', 71);
+var Lorg_fstrf_stanfordAsiInterpreter_resistance_grammar_node_ALogicstatementStatement_2_classLit = createForClass('org.fstrf.stanfordAsiInterpreter.resistance.grammar.node', 'ALogicstatementStatement', 241);
+defineClass(73, 10, $intern_29);
+var Lorg_fstrf_stanfordAsiInterpreter_resistance_grammar_node_PScoreitem_2_classLit = createForClass('org.fstrf.stanfordAsiInterpreter.resistance.grammar.node', 'PScoreitem', 73);
 function $setLPar_2(this$static, node){
   !!this$static._lPar_ && (this$static._lPar_.parent_0 = null , undefined);
   if (node) {
@@ -8211,8 +8579,8 @@ function AMaxScoreitem(_max_, _lPar_, _scorelist_, _rPar_){
   $setRPar_2(this, _rPar_);
 }
 
-defineClass(134, 71, {134:1, 10:1, 71:1}, AMaxScoreitem);
-_.apply_1 = function apply_16(sw){
+defineClass(140, 73, {140:1, 10:1, 73:1}, AMaxScoreitem);
+_.apply_1 = function apply_18(sw){
   sw.caseAMaxScoreitem(this);
 }
 ;
@@ -8239,7 +8607,7 @@ _.toString_0 = function toString_47(){
   return '' + toString_34(this._max_) + toString_34(this._lPar_) + toString_34(this._scorelist_) + toString_34(this._rPar_);
 }
 ;
-var Lorg_fstrf_stanfordAsiInterpreter_resistance_grammar_node_AMaxScoreitem_2_classLit = createForClass('org.fstrf.stanfordAsiInterpreter.resistance.grammar.node', 'AMaxScoreitem', 134);
+var Lorg_fstrf_stanfordAsiInterpreter_resistance_grammar_node_AMaxScoreitem_2_classLit = createForClass('org.fstrf.stanfordAsiInterpreter.resistance.grammar.node', 'AMaxScoreitem', 140);
 function $setFrom_2(this$static, node){
   !!this$static._from_ && (this$static._from_.parent_0 = null , undefined);
   if (node) {
@@ -8303,8 +8671,8 @@ function ANotmorethanSelectstatement2(_notmorethan_, _integer_, _from_, _lPar_, 
   $setRPar_3(this, _rPar_);
 }
 
-defineClass(244, 68, $intern_19, ANotmorethanSelectstatement2);
-_.apply_1 = function apply_17(sw){
+defineClass(256, 70, $intern_21, ANotmorethanSelectstatement2);
+_.apply_1 = function apply_19(sw){
   sw.caseANotmorethanSelectstatement2(this);
 }
 ;
@@ -8339,7 +8707,7 @@ _.toString_0 = function toString_48(){
   return '' + toString_34(this._notmorethan_) + toString_34(this._integer_) + toString_34(this._from_) + toString_34(this._lPar_) + toString_34(this._selectlist_) + toString_34(this._rPar_);
 }
 ;
-var Lorg_fstrf_stanfordAsiInterpreter_resistance_grammar_node_ANotmorethanSelectstatement2_2_classLit = createForClass('org.fstrf.stanfordAsiInterpreter.resistance.grammar.node', 'ANotmorethanSelectstatement2', 244);
+var Lorg_fstrf_stanfordAsiInterpreter_resistance_grammar_node_ANotmorethanSelectstatement2_2_classLit = createForClass('org.fstrf.stanfordAsiInterpreter.resistance.grammar.node', 'ANotmorethanSelectstatement2', 256);
 function $setOr(this$static, node){
   !!this$static._or_ && (this$static._or_.parent_0 = null , undefined);
   if (node) {
@@ -8353,8 +8721,8 @@ function AOrLogicsymbol(_or_){
   $setOr(this, _or_);
 }
 
-defineClass(107, 84, {107:1, 10:1, 84:1}, AOrLogicsymbol);
-_.apply_1 = function apply_18(sw){
+defineClass(109, 86, {109:1, 10:1, 86:1}, AOrLogicsymbol);
+_.apply_1 = function apply_20(sw){
   sw.caseAOrLogicsymbol(this);
 }
 ;
@@ -8369,7 +8737,7 @@ _.toString_0 = function toString_49(){
   return '' + toString_34(this._or_);
 }
 ;
-var Lorg_fstrf_stanfordAsiInterpreter_resistance_grammar_node_AOrLogicsymbol_2_classLit = createForClass('org.fstrf.stanfordAsiInterpreter.resistance.grammar.node', 'AOrLogicsymbol', 107);
+var Lorg_fstrf_stanfordAsiInterpreter_resistance_grammar_node_AOrLogicsymbol_2_classLit = createForClass('org.fstrf.stanfordAsiInterpreter.resistance.grammar.node', 'AOrLogicsymbol', 109);
 function $setResidue_1(this$static, node){
   !!this$static._residue_ && (this$static._residue_.parent_0 = null , undefined);
   if (node) {
@@ -8383,8 +8751,8 @@ function AResidueCondition(_residue_){
   $setResidue_1(this, _residue_);
 }
 
-defineClass(233, 52, $intern_22, AResidueCondition);
-_.apply_1 = function apply_19(sw){
+defineClass(245, 53, $intern_24, AResidueCondition);
+_.apply_1 = function apply_21(sw){
   sw.caseAResidueCondition(this);
 }
 ;
@@ -8399,9 +8767,9 @@ _.toString_0 = function toString_50(){
   return '' + toString_34(this._residue_);
 }
 ;
-var Lorg_fstrf_stanfordAsiInterpreter_resistance_grammar_node_AResidueCondition_2_classLit = createForClass('org.fstrf.stanfordAsiInterpreter.resistance.grammar.node', 'AResidueCondition', 233);
-defineClass(49, 10, $intern_28);
-var Lorg_fstrf_stanfordAsiInterpreter_resistance_grammar_node_PResidue_2_classLit = createForClass('org.fstrf.stanfordAsiInterpreter.resistance.grammar.node', 'PResidue', 49);
+var Lorg_fstrf_stanfordAsiInterpreter_resistance_grammar_node_AResidueCondition_2_classLit = createForClass('org.fstrf.stanfordAsiInterpreter.resistance.grammar.node', 'AResidueCondition', 245);
+defineClass(50, 10, $intern_30);
+var Lorg_fstrf_stanfordAsiInterpreter_resistance_grammar_node_PResidue_2_classLit = createForClass('org.fstrf.stanfordAsiInterpreter.resistance.grammar.node', 'PResidue', 50);
 function $setInteger_3(this$static, node){
   !!this$static._integer_ && (this$static._integer_.parent_0 = null , undefined);
   if (node) {
@@ -8428,8 +8796,8 @@ function AResidueResidue(_originalaminoacid_, _integer_, _mutatedaminoacid_){
   $addAll_2(this._mutatedaminoacid_, _mutatedaminoacid_);
 }
 
-defineClass(161, 49, $intern_28, AResidueResidue);
-_.apply_1 = function apply_20(sw){
+defineClass(165, 50, $intern_30, AResidueResidue);
+_.apply_1 = function apply_22(sw){
   sw.caseAResidueResidue(this);
 }
 ;
@@ -8451,18 +8819,18 @@ _.toString_0 = function toString_51(){
   return '' + toString_34(this._originalaminoacid_) + toString_34(this._integer_) + toString_33(this._mutatedaminoacid_);
 }
 ;
-var Lorg_fstrf_stanfordAsiInterpreter_resistance_grammar_node_AResidueResidue_2_classLit = createForClass('org.fstrf.stanfordAsiInterpreter.resistance.grammar.node', 'AResidueResidue', 161);
+var Lorg_fstrf_stanfordAsiInterpreter_resistance_grammar_node_AResidueResidue_2_classLit = createForClass('org.fstrf.stanfordAsiInterpreter.resistance.grammar.node', 'AResidueResidue', 165);
 function AResidueResidue$Mutatedaminoacid_Cast(this$0){
   this.this$01 = this$0;
 }
 
-defineClass(237, 1, {}, AResidueResidue$Mutatedaminoacid_Cast);
+defineClass(249, 1, {}, AResidueResidue$Mutatedaminoacid_Cast);
 _.cast_0 = function cast_1(o){
   var node;
   return node = castTo(o, 33) , !!node.parent_0 && node.parent_0 != this.this$01 && node.parent_0.removeChild_0(node) , (!node.parent_0 || node.parent_0 != this.this$01) && $parent(node, this.this$01) , node;
 }
 ;
-var Lorg_fstrf_stanfordAsiInterpreter_resistance_grammar_node_AResidueResidue$Mutatedaminoacid_1Cast_2_classLit = createForClass('org.fstrf.stanfordAsiInterpreter.resistance.grammar.node', 'AResidueResidue/Mutatedaminoacid_Cast', 237);
+var Lorg_fstrf_stanfordAsiInterpreter_resistance_grammar_node_AResidueResidue$Mutatedaminoacid_1Cast_2_classLit = createForClass('org.fstrf.stanfordAsiInterpreter.resistance.grammar.node', 'AResidueResidue/Mutatedaminoacid_Cast', 249);
 function $setInteger_4(this$static, node){
   !!this$static._integer_ && (this$static._integer_.parent_0 = null , undefined);
   if (node) {
@@ -8519,8 +8887,8 @@ function AResidueinvertResidue(_originalaminoacid_, _integer_, _lPar_, _not_, _m
   $setRPar_4(this, _rPar_);
 }
 
-defineClass(163, 49, $intern_28, AResidueinvertResidue);
-_.apply_1 = function apply_21(sw){
+defineClass(167, 50, $intern_30, AResidueinvertResidue);
+_.apply_1 = function apply_23(sw){
   sw.caseAResidueinvertResidue(this);
 }
 ;
@@ -8554,18 +8922,18 @@ _.toString_0 = function toString_52(){
   return '' + toString_34(this._originalaminoacid_) + toString_34(this._integer_) + toString_34(this._lPar_) + toString_34(this._not_) + toString_33(this._mutatedaminoacid_) + toString_34(this._rPar_);
 }
 ;
-var Lorg_fstrf_stanfordAsiInterpreter_resistance_grammar_node_AResidueinvertResidue_2_classLit = createForClass('org.fstrf.stanfordAsiInterpreter.resistance.grammar.node', 'AResidueinvertResidue', 163);
+var Lorg_fstrf_stanfordAsiInterpreter_resistance_grammar_node_AResidueinvertResidue_2_classLit = createForClass('org.fstrf.stanfordAsiInterpreter.resistance.grammar.node', 'AResidueinvertResidue', 167);
 function AResidueinvertResidue$Mutatedaminoacid_Cast(this$0){
   this.this$01 = this$0;
 }
 
-defineClass(239, 1, {}, AResidueinvertResidue$Mutatedaminoacid_Cast);
+defineClass(251, 1, {}, AResidueinvertResidue$Mutatedaminoacid_Cast);
 _.cast_0 = function cast_2(o){
   var node;
   return node = castTo(o, 33) , !!node.parent_0 && node.parent_0 != this.this$01 && node.parent_0.removeChild_0(node) , (!node.parent_0 || node.parent_0 != this.this$01) && $parent(node, this.this$01) , node;
 }
 ;
-var Lorg_fstrf_stanfordAsiInterpreter_resistance_grammar_node_AResidueinvertResidue$Mutatedaminoacid_1Cast_2_classLit = createForClass('org.fstrf.stanfordAsiInterpreter.resistance.grammar.node', 'AResidueinvertResidue/Mutatedaminoacid_Cast', 239);
+var Lorg_fstrf_stanfordAsiInterpreter_resistance_grammar_node_AResidueinvertResidue$Mutatedaminoacid_1Cast_2_classLit = createForClass('org.fstrf.stanfordAsiInterpreter.resistance.grammar.node', 'AResidueinvertResidue/Mutatedaminoacid_Cast', 251);
 function $setInteger_5(this$static, node){
   !!this$static._integer_ && (this$static._integer_.parent_0 = null , undefined);
   if (node) {
@@ -8602,8 +8970,8 @@ function AResiduenotResidue(_not_, _originalaminoacid_, _integer_, _mutatedamino
   $addAll_2(this._mutatedaminoacid_, _mutatedaminoacid_);
 }
 
-defineClass(162, 49, $intern_28, AResiduenotResidue);
-_.apply_1 = function apply_22(sw){
+defineClass(166, 50, $intern_30, AResiduenotResidue);
+_.apply_1 = function apply_24(sw){
   sw.caseAResiduenotResidue(this);
 }
 ;
@@ -8629,18 +8997,18 @@ _.toString_0 = function toString_53(){
   return '' + toString_34(this._not_) + toString_34(this._originalaminoacid_) + toString_34(this._integer_) + toString_33(this._mutatedaminoacid_);
 }
 ;
-var Lorg_fstrf_stanfordAsiInterpreter_resistance_grammar_node_AResiduenotResidue_2_classLit = createForClass('org.fstrf.stanfordAsiInterpreter.resistance.grammar.node', 'AResiduenotResidue', 162);
+var Lorg_fstrf_stanfordAsiInterpreter_resistance_grammar_node_AResiduenotResidue_2_classLit = createForClass('org.fstrf.stanfordAsiInterpreter.resistance.grammar.node', 'AResiduenotResidue', 166);
 function AResiduenotResidue$Mutatedaminoacid_Cast(this$0){
   this.this$01 = this$0;
 }
 
-defineClass(238, 1, {}, AResiduenotResidue$Mutatedaminoacid_Cast);
+defineClass(250, 1, {}, AResiduenotResidue$Mutatedaminoacid_Cast);
 _.cast_0 = function cast_3(o){
   var node;
   return node = castTo(o, 33) , !!node.parent_0 && node.parent_0 != this.this$01 && node.parent_0.removeChild_0(node) , (!node.parent_0 || node.parent_0 != this.this$01) && $parent(node, this.this$01) , node;
 }
 ;
-var Lorg_fstrf_stanfordAsiInterpreter_resistance_grammar_node_AResiduenotResidue$Mutatedaminoacid_1Cast_2_classLit = createForClass('org.fstrf.stanfordAsiInterpreter.resistance.grammar.node', 'AResiduenotResidue/Mutatedaminoacid_Cast', 238);
+var Lorg_fstrf_stanfordAsiInterpreter_resistance_grammar_node_AResiduenotResidue$Mutatedaminoacid_1Cast_2_classLit = createForClass('org.fstrf.stanfordAsiInterpreter.resistance.grammar.node', 'AResiduenotResidue/Mutatedaminoacid_Cast', 250);
 function $setScorecondition(this$static, node){
   !!this$static._scorecondition_ && (this$static._scorecondition_.parent_0 = null , undefined);
   if (node) {
@@ -8654,8 +9022,8 @@ function AScoreStatement(_scorecondition_){
   $setScorecondition(this, _scorecondition_);
 }
 
-defineClass(230, 105, $intern_26, AScoreStatement);
-_.apply_1 = function apply_23(sw){
+defineClass(242, 107, $intern_28, AScoreStatement);
+_.apply_1 = function apply_25(sw){
   sw.caseAScoreStatement(this);
 }
 ;
@@ -8670,10 +9038,10 @@ _.toString_0 = function toString_54(){
   return '' + toString_34(this._scorecondition_);
 }
 ;
-var Lorg_fstrf_stanfordAsiInterpreter_resistance_grammar_node_AScoreStatement_2_classLit = createForClass('org.fstrf.stanfordAsiInterpreter.resistance.grammar.node', 'AScoreStatement', 230);
-defineClass(131, 10, $intern_29);
-var Lorg_fstrf_stanfordAsiInterpreter_resistance_grammar_node_PScorecondition_2_classLit = createForClass('org.fstrf.stanfordAsiInterpreter.resistance.grammar.node', 'PScorecondition', 131);
-function $apply_1(this$static, sw){
+var Lorg_fstrf_stanfordAsiInterpreter_resistance_grammar_node_AScoreStatement_2_classLit = createForClass('org.fstrf.stanfordAsiInterpreter.resistance.grammar.node', 'AScoreStatement', 242);
+defineClass(137, 10, $intern_31);
+var Lorg_fstrf_stanfordAsiInterpreter_resistance_grammar_node_PScorecondition_2_classLit = createForClass('org.fstrf.stanfordAsiInterpreter.resistance.grammar.node', 'PScorecondition', 137);
+function $apply_2(this$static, sw){
   sw.caseAScorecondition(this$static);
 }
 
@@ -8730,9 +9098,9 @@ function AScorecondition(_score_, _from_, _lPar_, _scorelist_, _rPar_){
   $setRPar_5(this, _rPar_);
 }
 
-defineClass(248, 131, $intern_29, AScorecondition);
-_.apply_1 = function apply_24(sw){
-  $apply_1(this, sw);
+defineClass(260, 137, $intern_31, AScorecondition);
+_.apply_1 = function apply_26(sw){
+  $apply_2(this, sw);
 }
 ;
 _.removeChild_0 = function removeChild_19(child){
@@ -8762,9 +9130,9 @@ _.toString_0 = function toString_55(){
   return '' + toString_34(this._score_) + toString_34(this._from_) + toString_34(this._lPar_) + toString_34(this._scorelist_) + toString_34(this._rPar_);
 }
 ;
-var Lorg_fstrf_stanfordAsiInterpreter_resistance_grammar_node_AScorecondition_2_classLit = createForClass('org.fstrf.stanfordAsiInterpreter.resistance.grammar.node', 'AScorecondition', 248);
-defineClass(72, 10, $intern_30);
-var Lorg_fstrf_stanfordAsiInterpreter_resistance_grammar_node_PScoreitems_2_classLit = createForClass('org.fstrf.stanfordAsiInterpreter.resistance.grammar.node', 'PScoreitems', 72);
+var Lorg_fstrf_stanfordAsiInterpreter_resistance_grammar_node_AScorecondition_2_classLit = createForClass('org.fstrf.stanfordAsiInterpreter.resistance.grammar.node', 'AScorecondition', 260);
+defineClass(74, 10, $intern_32);
+var Lorg_fstrf_stanfordAsiInterpreter_resistance_grammar_node_PScoreitems_2_classLit = createForClass('org.fstrf.stanfordAsiInterpreter.resistance.grammar.node', 'PScoreitems', 74);
 function $setComma_0(this$static, node){
   !!this$static._comma_ && (this$static._comma_.parent_0 = null , undefined);
   if (node) {
@@ -8788,8 +9156,8 @@ function AScoreitems(_comma_, _scoreitem_){
   $setScoreitem(this, _scoreitem_);
 }
 
-defineClass(250, 72, $intern_30, AScoreitems);
-_.apply_1 = function apply_25(sw){
+defineClass(262, 74, $intern_32, AScoreitems);
+_.apply_1 = function apply_27(sw){
   sw.caseAScoreitems(this);
 }
 ;
@@ -8808,10 +9176,10 @@ _.toString_0 = function toString_56(){
   return '' + toString_34(this._comma_) + toString_34(this._scoreitem_);
 }
 ;
-var Lorg_fstrf_stanfordAsiInterpreter_resistance_grammar_node_AScoreitems_2_classLit = createForClass('org.fstrf.stanfordAsiInterpreter.resistance.grammar.node', 'AScoreitems', 250);
-defineClass(111, 10, $intern_31);
-var Lorg_fstrf_stanfordAsiInterpreter_resistance_grammar_node_PScorelist_2_classLit = createForClass('org.fstrf.stanfordAsiInterpreter.resistance.grammar.node', 'PScorelist', 111);
-function $apply_2(this$static, sw){
+var Lorg_fstrf_stanfordAsiInterpreter_resistance_grammar_node_AScoreitems_2_classLit = createForClass('org.fstrf.stanfordAsiInterpreter.resistance.grammar.node', 'AScoreitems', 262);
+defineClass(113, 10, $intern_33);
+var Lorg_fstrf_stanfordAsiInterpreter_resistance_grammar_node_PScorelist_2_classLit = createForClass('org.fstrf.stanfordAsiInterpreter.resistance.grammar.node', 'PScorelist', 113);
+function $apply_3(this$static, sw){
   sw.caseAScorelist(this$static);
 }
 
@@ -8831,9 +9199,9 @@ function AScorelist(_scoreitem_, _scoreitems_){
   $addAll_2(this._scoreitems_, _scoreitems_);
 }
 
-defineClass(165, 111, $intern_31, AScorelist);
-_.apply_1 = function apply_26(sw){
-  $apply_2(this, sw);
+defineClass(169, 113, $intern_33, AScorelist);
+_.apply_1 = function apply_28(sw){
+  $apply_3(this, sw);
 }
 ;
 _.removeChild_0 = function removeChild_21(child){
@@ -8850,18 +9218,18 @@ _.toString_0 = function toString_57(){
   return '' + toString_34(this._scoreitem_) + toString_33(this._scoreitems_);
 }
 ;
-var Lorg_fstrf_stanfordAsiInterpreter_resistance_grammar_node_AScorelist_2_classLit = createForClass('org.fstrf.stanfordAsiInterpreter.resistance.grammar.node', 'AScorelist', 165);
+var Lorg_fstrf_stanfordAsiInterpreter_resistance_grammar_node_AScorelist_2_classLit = createForClass('org.fstrf.stanfordAsiInterpreter.resistance.grammar.node', 'AScorelist', 169);
 function AScorelist$Scoreitems_Cast(this$0){
   this.this$01 = this$0;
 }
 
-defineClass(249, 1, {}, AScorelist$Scoreitems_Cast);
+defineClass(261, 1, {}, AScorelist$Scoreitems_Cast);
 _.cast_0 = function cast_4(o){
   var node;
-  return node = castTo(o, 72) , !!node.parent_0 && node.parent_0 != this.this$01 && node.parent_0.removeChild_0(node) , (!node.parent_0 || node.parent_0 != this.this$01) && $parent(node, this.this$01) , node;
+  return node = castTo(o, 74) , !!node.parent_0 && node.parent_0 != this.this$01 && node.parent_0.removeChild_0(node) , (!node.parent_0 || node.parent_0 != this.this$01) && $parent(node, this.this$01) , node;
 }
 ;
-var Lorg_fstrf_stanfordAsiInterpreter_resistance_grammar_node_AScorelist$Scoreitems_1Cast_2_classLit = createForClass('org.fstrf.stanfordAsiInterpreter.resistance.grammar.node', 'AScorelist/Scoreitems_Cast', 249);
+var Lorg_fstrf_stanfordAsiInterpreter_resistance_grammar_node_AScorelist$Scoreitems_1Cast_2_classLit = createForClass('org.fstrf.stanfordAsiInterpreter.resistance.grammar.node', 'AScorelist/Scoreitems_Cast', 261);
 function $setSelectstatement(this$static, node){
   !!this$static._selectstatement_ && (this$static._selectstatement_.parent_0 = null , undefined);
   if (node) {
@@ -8875,8 +9243,8 @@ function ASelectCondition(_selectstatement_){
   $setSelectstatement(this, _selectstatement_);
 }
 
-defineClass(235, 52, $intern_22, ASelectCondition);
-_.apply_1 = function apply_27(sw){
+defineClass(247, 53, $intern_24, ASelectCondition);
+_.apply_1 = function apply_29(sw){
   sw.caseASelectCondition(this);
 }
 ;
@@ -8891,10 +9259,10 @@ _.toString_0 = function toString_58(){
   return '' + toString_34(this._selectstatement_);
 }
 ;
-var Lorg_fstrf_stanfordAsiInterpreter_resistance_grammar_node_ASelectCondition_2_classLit = createForClass('org.fstrf.stanfordAsiInterpreter.resistance.grammar.node', 'ASelectCondition', 235);
-defineClass(69, 10, $intern_32);
-var Lorg_fstrf_stanfordAsiInterpreter_resistance_grammar_node_PSelectlist_2_classLit = createForClass('org.fstrf.stanfordAsiInterpreter.resistance.grammar.node', 'PSelectlist', 69);
-function $apply_3(this$static, sw){
+var Lorg_fstrf_stanfordAsiInterpreter_resistance_grammar_node_ASelectCondition_2_classLit = createForClass('org.fstrf.stanfordAsiInterpreter.resistance.grammar.node', 'ASelectCondition', 247);
+defineClass(71, 10, $intern_34);
+var Lorg_fstrf_stanfordAsiInterpreter_resistance_grammar_node_PSelectlist_2_classLit = createForClass('org.fstrf.stanfordAsiInterpreter.resistance.grammar.node', 'PSelectlist', 71);
+function $apply_4(this$static, sw){
   sw.caseASelectlist(this$static);
 }
 
@@ -8914,9 +9282,9 @@ function ASelectlist(_residue_, _listitems_){
   $addAll_2(this._listitems_, _listitems_);
 }
 
-defineClass(164, 69, $intern_32, ASelectlist);
-_.apply_1 = function apply_28(sw){
-  $apply_3(this, sw);
+defineClass(168, 71, $intern_34, ASelectlist);
+_.apply_1 = function apply_30(sw){
+  $apply_4(this, sw);
 }
 ;
 _.removeChild_0 = function removeChild_23(child){
@@ -8933,21 +9301,21 @@ _.toString_0 = function toString_59(){
   return '' + toString_34(this._residue_) + toString_33(this._listitems_);
 }
 ;
-var Lorg_fstrf_stanfordAsiInterpreter_resistance_grammar_node_ASelectlist_2_classLit = createForClass('org.fstrf.stanfordAsiInterpreter.resistance.grammar.node', 'ASelectlist', 164);
+var Lorg_fstrf_stanfordAsiInterpreter_resistance_grammar_node_ASelectlist_2_classLit = createForClass('org.fstrf.stanfordAsiInterpreter.resistance.grammar.node', 'ASelectlist', 168);
 function ASelectlist$Listitems_Cast(this$0){
   this.this$01 = this$0;
 }
 
-defineClass(246, 1, {}, ASelectlist$Listitems_Cast);
+defineClass(258, 1, {}, ASelectlist$Listitems_Cast);
 _.cast_0 = function cast_5(o){
   var node;
-  return node = castTo(o, 70) , !!node.parent_0 && node.parent_0 != this.this$01 && node.parent_0.removeChild_0(node) , (!node.parent_0 || node.parent_0 != this.this$01) && $parent(node, this.this$01) , node;
+  return node = castTo(o, 72) , !!node.parent_0 && node.parent_0 != this.this$01 && node.parent_0.removeChild_0(node) , (!node.parent_0 || node.parent_0 != this.this$01) && $parent(node, this.this$01) , node;
 }
 ;
-var Lorg_fstrf_stanfordAsiInterpreter_resistance_grammar_node_ASelectlist$Listitems_1Cast_2_classLit = createForClass('org.fstrf.stanfordAsiInterpreter.resistance.grammar.node', 'ASelectlist/Listitems_Cast', 246);
-defineClass(128, 10, $intern_33);
-var Lorg_fstrf_stanfordAsiInterpreter_resistance_grammar_node_PSelectstatement_2_classLit = createForClass('org.fstrf.stanfordAsiInterpreter.resistance.grammar.node', 'PSelectstatement', 128);
-function $apply_4(this$static, sw){
+var Lorg_fstrf_stanfordAsiInterpreter_resistance_grammar_node_ASelectlist$Listitems_1Cast_2_classLit = createForClass('org.fstrf.stanfordAsiInterpreter.resistance.grammar.node', 'ASelectlist/Listitems_Cast', 258);
+defineClass(134, 10, $intern_35);
+var Lorg_fstrf_stanfordAsiInterpreter_resistance_grammar_node_PSelectstatement_2_classLit = createForClass('org.fstrf.stanfordAsiInterpreter.resistance.grammar.node', 'PSelectstatement', 134);
+function $apply_5(this$static, sw){
   sw.caseASelectstatement(this$static);
 }
 
@@ -8974,9 +9342,9 @@ function ASelectstatement(_select_, _selectstatement2_){
   $setSelectstatement2(this, _selectstatement2_);
 }
 
-defineClass(241, 128, $intern_33, ASelectstatement);
-_.apply_1 = function apply_29(sw){
-  $apply_4(this, sw);
+defineClass(253, 134, $intern_35, ASelectstatement);
+_.apply_1 = function apply_31(sw){
+  $apply_5(this, sw);
 }
 ;
 _.removeChild_0 = function removeChild_24(child){
@@ -8994,7 +9362,7 @@ _.toString_0 = function toString_60(){
   return '' + toString_34(this._select_) + toString_34(this._selectstatement2_);
 }
 ;
-var Lorg_fstrf_stanfordAsiInterpreter_resistance_grammar_node_ASelectstatement_2_classLit = createForClass('org.fstrf.stanfordAsiInterpreter.resistance.grammar.node', 'ASelectstatement', 241);
+var Lorg_fstrf_stanfordAsiInterpreter_resistance_grammar_node_ASelectstatement_2_classLit = createForClass('org.fstrf.stanfordAsiInterpreter.resistance.grammar.node', 'ASelectstatement', 253);
 function $setBooleancondition_0(this$static, node){
   !!this$static._booleancondition_ && (this$static._booleancondition_.parent_0 = null , undefined);
   if (node) {
@@ -9028,8 +9396,8 @@ function AStatementCondition(_lPar_, _booleancondition_, _rPar_){
   $setRPar_6(this, _rPar_);
 }
 
-defineClass(232, 52, $intern_22, AStatementCondition);
-_.apply_1 = function apply_30(sw){
+defineClass(244, 53, $intern_24, AStatementCondition);
+_.apply_1 = function apply_32(sw){
   sw.caseAStatementCondition(this);
 }
 ;
@@ -9052,7 +9420,7 @@ _.toString_0 = function toString_61(){
   return '' + toString_34(this._lPar_) + toString_34(this._booleancondition_) + toString_34(this._rPar_);
 }
 ;
-var Lorg_fstrf_stanfordAsiInterpreter_resistance_grammar_node_AStatementCondition_2_classLit = createForClass('org.fstrf.stanfordAsiInterpreter.resistance.grammar.node', 'AStatementCondition', 232);
+var Lorg_fstrf_stanfordAsiInterpreter_resistance_grammar_node_AStatementCondition_2_classLit = createForClass('org.fstrf.stanfordAsiInterpreter.resistance.grammar.node', 'AStatementCondition', 244);
 function $setBooleancondition_1(this$static, node){
   !!this$static._booleancondition_ && (this$static._booleancondition_.parent_0 = null , undefined);
   if (node) {
@@ -9096,8 +9464,8 @@ function AStatementScoreitem(_booleancondition_, _mapper_, _min_, _number_){
   $setNumber(this, _number_);
 }
 
-defineClass(166, 71, $intern_27, AStatementScoreitem);
-_.apply_1 = function apply_31(sw){
+defineClass(170, 73, $intern_29, AStatementScoreitem);
+_.apply_1 = function apply_33(sw){
   sw.caseAStatementScoreitem(this);
 }
 ;
@@ -9124,8 +9492,8 @@ _.toString_0 = function toString_62(){
   return '' + toString_34(this._booleancondition_) + toString_34(this._mapper_) + toString_34(this._min_) + toString_34(this._number_);
 }
 ;
-var Lorg_fstrf_stanfordAsiInterpreter_resistance_grammar_node_AStatementScoreitem_2_classLit = createForClass('org.fstrf.stanfordAsiInterpreter.resistance.grammar.node', 'AStatementScoreitem', 166);
-defineClass(286, 10, $intern_18);
+var Lorg_fstrf_stanfordAsiInterpreter_resistance_grammar_node_AStatementScoreitem_2_classLit = createForClass('org.fstrf.stanfordAsiInterpreter.resistance.grammar.node', 'AStatementScoreitem', 170);
+defineClass(298, 10, $intern_20);
 _.removeChild_0 = function removeChild_27(child){
 }
 ;
@@ -9135,8 +9503,8 @@ _.toString_0 = function toString_63(){
 ;
 _.line = 0;
 _.pos = 0;
-var Lorg_fstrf_stanfordAsiInterpreter_resistance_grammar_node_Token_2_classLit = createForClass('org.fstrf.stanfordAsiInterpreter.resistance.grammar.node', 'Token', 286);
-function $apply_5(this$static, sw){
+var Lorg_fstrf_stanfordAsiInterpreter_resistance_grammar_node_Token_2_classLit = createForClass('org.fstrf.stanfordAsiInterpreter.resistance.grammar.node', 'Token', 298);
+function $apply_6(this$static, sw){
   sw.caseEOF(this$static);
 }
 
@@ -9146,22 +9514,22 @@ function EOF(line, pos){
   this.pos = pos;
 }
 
-defineClass(121, 286, {121:1, 10:1}, EOF);
-_.apply_1 = function apply_32(sw){
-  $apply_5(this, sw);
+defineClass(127, 298, {127:1, 10:1}, EOF);
+_.apply_1 = function apply_34(sw){
+  $apply_6(this, sw);
 }
 ;
-var Lorg_fstrf_stanfordAsiInterpreter_resistance_grammar_node_EOF_2_classLit = createForClass('org.fstrf.stanfordAsiInterpreter.resistance.grammar.node', 'EOF', 121);
+var Lorg_fstrf_stanfordAsiInterpreter_resistance_grammar_node_EOF_2_classLit = createForClass('org.fstrf.stanfordAsiInterpreter.resistance.grammar.node', 'EOF', 127);
 function NoCast(){
 }
 
-defineClass(158, 1, {}, NoCast);
+defineClass(161, 1, {}, NoCast);
 _.cast_0 = function cast_6(o){
   return o;
 }
 ;
-var Lorg_fstrf_stanfordAsiInterpreter_resistance_grammar_node_NoCast_2_classLit = createForClass('org.fstrf.stanfordAsiInterpreter.resistance.grammar.node', 'NoCast', 158);
-function $apply_6(this$static, sw){
+var Lorg_fstrf_stanfordAsiInterpreter_resistance_grammar_node_NoCast_2_classLit = createForClass('org.fstrf.stanfordAsiInterpreter.resistance.grammar.node', 'NoCast', 161);
+function $apply_7(this$static, sw){
   sw.caseStart(this$static);
 }
 
@@ -9188,9 +9556,9 @@ function Start(_pStatement_, _eof_){
   $setEOF(this, _eof_);
 }
 
-defineClass(202, 10, $intern_18, Start);
-_.apply_1 = function apply_33(sw){
-  $apply_6(this, sw);
+defineClass(220, 10, $intern_20, Start);
+_.apply_1 = function apply_35(sw){
+  $apply_7(this, sw);
 }
 ;
 _.removeChild_0 = function removeChild_28(child){
@@ -9208,8 +9576,8 @@ _.toString_0 = function toString_64(){
   return '' + toString_34(this._pStatement_) + toString_34(this._eof_);
 }
 ;
-var Lorg_fstrf_stanfordAsiInterpreter_resistance_grammar_node_Start_2_classLit = createForClass('org.fstrf.stanfordAsiInterpreter.resistance.grammar.node', 'Start', 202);
-function $apply_7(this$static, sw){
+var Lorg_fstrf_stanfordAsiInterpreter_resistance_grammar_node_Start_2_classLit = createForClass('org.fstrf.stanfordAsiInterpreter.resistance.grammar.node', 'Start', 220);
+function $apply_8(this$static, sw){
   sw.caseTAminoAcid(this$static);
 }
 
@@ -9219,13 +9587,13 @@ function TAminoAcid(text_0, line, pos){
   this.pos = pos;
 }
 
-defineClass(33, 286, {10:1, 33:1}, TAminoAcid);
-_.apply_1 = function apply_34(sw){
-  $apply_7(this, sw);
+defineClass(33, 298, {10:1, 33:1}, TAminoAcid);
+_.apply_1 = function apply_36(sw){
+  $apply_8(this, sw);
 }
 ;
 var Lorg_fstrf_stanfordAsiInterpreter_resistance_grammar_node_TAminoAcid_2_classLit = createForClass('org.fstrf.stanfordAsiInterpreter.resistance.grammar.node', 'TAminoAcid', 33);
-function $apply_8(this$static, sw){
+function $apply_9(this$static, sw){
   sw.caseTAnd(this$static);
 }
 
@@ -9235,13 +9603,13 @@ function TAnd(line, pos){
   this.pos = pos;
 }
 
-defineClass(124, 286, {10:1, 124:1}, TAnd);
-_.apply_1 = function apply_35(sw){
-  $apply_8(this, sw);
+defineClass(130, 298, {10:1, 130:1}, TAnd);
+_.apply_1 = function apply_37(sw){
+  $apply_9(this, sw);
 }
 ;
-var Lorg_fstrf_stanfordAsiInterpreter_resistance_grammar_node_TAnd_2_classLit = createForClass('org.fstrf.stanfordAsiInterpreter.resistance.grammar.node', 'TAnd', 124);
-function $apply_9(this$static, sw){
+var Lorg_fstrf_stanfordAsiInterpreter_resistance_grammar_node_TAnd_2_classLit = createForClass('org.fstrf.stanfordAsiInterpreter.resistance.grammar.node', 'TAnd', 130);
+function $apply_10(this$static, sw){
   sw.caseTAtleast(this$static);
 }
 
@@ -9251,24 +9619,24 @@ function TAtleast(line, pos){
   this.pos = pos;
 }
 
-defineClass(108, 286, {10:1, 108:1}, TAtleast);
-_.apply_1 = function apply_36(sw){
-  $apply_9(this, sw);
+defineClass(110, 298, {10:1, 110:1}, TAtleast);
+_.apply_1 = function apply_38(sw){
+  $apply_10(this, sw);
 }
 ;
-var Lorg_fstrf_stanfordAsiInterpreter_resistance_grammar_node_TAtleast_2_classLit = createForClass('org.fstrf.stanfordAsiInterpreter.resistance.grammar.node', 'TAtleast', 108);
+var Lorg_fstrf_stanfordAsiInterpreter_resistance_grammar_node_TAtleast_2_classLit = createForClass('org.fstrf.stanfordAsiInterpreter.resistance.grammar.node', 'TAtleast', 110);
 function TBlank(text_0, line, pos){
   this.text_0 = text_0;
   this.line = line;
   this.pos = pos;
 }
 
-defineClass(253, 286, $intern_18, TBlank);
-_.apply_1 = function apply_37(sw){
+defineClass(265, 298, $intern_20, TBlank);
+_.apply_1 = function apply_39(sw){
 }
 ;
-var Lorg_fstrf_stanfordAsiInterpreter_resistance_grammar_node_TBlank_2_classLit = createForClass('org.fstrf.stanfordAsiInterpreter.resistance.grammar.node', 'TBlank', 253);
-function $apply_10(this$static, sw){
+var Lorg_fstrf_stanfordAsiInterpreter_resistance_grammar_node_TBlank_2_classLit = createForClass('org.fstrf.stanfordAsiInterpreter.resistance.grammar.node', 'TBlank', 265);
+function $apply_11(this$static, sw){
   sw.caseTComma(this$static);
 }
 
@@ -9278,13 +9646,13 @@ function TComma(line, pos){
   this.pos = pos;
 }
 
-defineClass(110, 286, {10:1, 110:1}, TComma);
-_.apply_1 = function apply_38(sw){
-  $apply_10(this, sw);
+defineClass(112, 298, {10:1, 112:1}, TComma);
+_.apply_1 = function apply_40(sw){
+  $apply_11(this, sw);
 }
 ;
-var Lorg_fstrf_stanfordAsiInterpreter_resistance_grammar_node_TComma_2_classLit = createForClass('org.fstrf.stanfordAsiInterpreter.resistance.grammar.node', 'TComma', 110);
-function $apply_11(this$static, sw){
+var Lorg_fstrf_stanfordAsiInterpreter_resistance_grammar_node_TComma_2_classLit = createForClass('org.fstrf.stanfordAsiInterpreter.resistance.grammar.node', 'TComma', 112);
+function $apply_12(this$static, sw){
   sw.caseTExactly(this$static);
 }
 
@@ -9294,13 +9662,13 @@ function TExactly(line, pos){
   this.pos = pos;
 }
 
-defineClass(130, 286, {10:1, 130:1}, TExactly);
-_.apply_1 = function apply_39(sw){
-  $apply_11(this, sw);
+defineClass(136, 298, {10:1, 136:1}, TExactly);
+_.apply_1 = function apply_41(sw){
+  $apply_12(this, sw);
 }
 ;
-var Lorg_fstrf_stanfordAsiInterpreter_resistance_grammar_node_TExactly_2_classLit = createForClass('org.fstrf.stanfordAsiInterpreter.resistance.grammar.node', 'TExactly', 130);
-function $apply_12(this$static, sw){
+var Lorg_fstrf_stanfordAsiInterpreter_resistance_grammar_node_TExactly_2_classLit = createForClass('org.fstrf.stanfordAsiInterpreter.resistance.grammar.node', 'TExactly', 136);
+function $apply_13(this$static, sw){
   sw.caseTExclude(this$static);
 }
 
@@ -9310,13 +9678,13 @@ function TExclude(line, pos){
   this.pos = pos;
 }
 
-defineClass(127, 286, {10:1, 127:1}, TExclude);
-_.apply_1 = function apply_40(sw){
-  $apply_12(this, sw);
+defineClass(133, 298, {10:1, 133:1}, TExclude);
+_.apply_1 = function apply_42(sw){
+  $apply_13(this, sw);
 }
 ;
-var Lorg_fstrf_stanfordAsiInterpreter_resistance_grammar_node_TExclude_2_classLit = createForClass('org.fstrf.stanfordAsiInterpreter.resistance.grammar.node', 'TExclude', 127);
-function $apply_13(this$static, sw){
+var Lorg_fstrf_stanfordAsiInterpreter_resistance_grammar_node_TExclude_2_classLit = createForClass('org.fstrf.stanfordAsiInterpreter.resistance.grammar.node', 'TExclude', 133);
+function $apply_14(this$static, sw){
   sw.caseTFloat(this$static);
 }
 
@@ -9326,13 +9694,13 @@ function TFloat(text_0, line, pos){
   this.pos = pos;
 }
 
-defineClass(136, 286, {10:1, 136:1}, TFloat);
-_.apply_1 = function apply_41(sw){
-  $apply_13(this, sw);
+defineClass(142, 298, {10:1, 142:1}, TFloat);
+_.apply_1 = function apply_43(sw){
+  $apply_14(this, sw);
 }
 ;
-var Lorg_fstrf_stanfordAsiInterpreter_resistance_grammar_node_TFloat_2_classLit = createForClass('org.fstrf.stanfordAsiInterpreter.resistance.grammar.node', 'TFloat', 136);
-function $apply_14(this$static, sw){
+var Lorg_fstrf_stanfordAsiInterpreter_resistance_grammar_node_TFloat_2_classLit = createForClass('org.fstrf.stanfordAsiInterpreter.resistance.grammar.node', 'TFloat', 142);
+function $apply_15(this$static, sw){
   sw.caseTFrom(this$static);
 }
 
@@ -9342,13 +9710,13 @@ function TFrom(line, pos){
   this.pos = pos;
 }
 
-defineClass(56, 286, {10:1, 56:1}, TFrom);
-_.apply_1 = function apply_42(sw){
-  $apply_14(this, sw);
+defineClass(59, 298, {10:1, 59:1}, TFrom);
+_.apply_1 = function apply_44(sw){
+  $apply_15(this, sw);
 }
 ;
-var Lorg_fstrf_stanfordAsiInterpreter_resistance_grammar_node_TFrom_2_classLit = createForClass('org.fstrf.stanfordAsiInterpreter.resistance.grammar.node', 'TFrom', 56);
-function $apply_15(this$static, sw){
+var Lorg_fstrf_stanfordAsiInterpreter_resistance_grammar_node_TFrom_2_classLit = createForClass('org.fstrf.stanfordAsiInterpreter.resistance.grammar.node', 'TFrom', 59);
+function $apply_16(this$static, sw){
   sw.caseTInteger(this$static);
 }
 
@@ -9358,13 +9726,13 @@ function TInteger(text_0, line, pos){
   this.pos = pos;
 }
 
-defineClass(32, 286, {10:1, 32:1}, TInteger);
-_.apply_1 = function apply_43(sw){
-  $apply_15(this, sw);
+defineClass(32, 298, {10:1, 32:1}, TInteger);
+_.apply_1 = function apply_45(sw){
+  $apply_16(this, sw);
 }
 ;
 var Lorg_fstrf_stanfordAsiInterpreter_resistance_grammar_node_TInteger_2_classLit = createForClass('org.fstrf.stanfordAsiInterpreter.resistance.grammar.node', 'TInteger', 32);
-function $apply_16(this$static, sw){
+function $apply_17(this$static, sw){
   sw.caseTLPar(this$static);
 }
 
@@ -9374,13 +9742,13 @@ function TLPar(line, pos){
   this.pos = pos;
 }
 
-defineClass(41, 286, {10:1, 41:1}, TLPar);
-_.apply_1 = function apply_44(sw){
-  $apply_16(this, sw);
+defineClass(41, 298, {10:1, 41:1}, TLPar);
+_.apply_1 = function apply_46(sw){
+  $apply_17(this, sw);
 }
 ;
 var Lorg_fstrf_stanfordAsiInterpreter_resistance_grammar_node_TLPar_2_classLit = createForClass('org.fstrf.stanfordAsiInterpreter.resistance.grammar.node', 'TLPar', 41);
-function $apply_17(this$static, sw){
+function $apply_18(this$static, sw){
   sw.caseTMapper(this$static);
 }
 
@@ -9390,13 +9758,13 @@ function TMapper(line, pos){
   this.pos = pos;
 }
 
-defineClass(112, 286, {10:1, 112:1}, TMapper);
-_.apply_1 = function apply_45(sw){
-  $apply_17(this, sw);
+defineClass(114, 298, {10:1, 114:1}, TMapper);
+_.apply_1 = function apply_47(sw){
+  $apply_18(this, sw);
 }
 ;
-var Lorg_fstrf_stanfordAsiInterpreter_resistance_grammar_node_TMapper_2_classLit = createForClass('org.fstrf.stanfordAsiInterpreter.resistance.grammar.node', 'TMapper', 112);
-function $apply_18(this$static, sw){
+var Lorg_fstrf_stanfordAsiInterpreter_resistance_grammar_node_TMapper_2_classLit = createForClass('org.fstrf.stanfordAsiInterpreter.resistance.grammar.node', 'TMapper', 114);
+function $apply_19(this$static, sw){
   sw.caseTMax(this$static);
 }
 
@@ -9406,13 +9774,13 @@ function TMax(line, pos){
   this.pos = pos;
 }
 
-defineClass(135, 286, {10:1, 135:1}, TMax);
-_.apply_1 = function apply_46(sw){
-  $apply_18(this, sw);
+defineClass(141, 298, {10:1, 141:1}, TMax);
+_.apply_1 = function apply_48(sw){
+  $apply_19(this, sw);
 }
 ;
-var Lorg_fstrf_stanfordAsiInterpreter_resistance_grammar_node_TMax_2_classLit = createForClass('org.fstrf.stanfordAsiInterpreter.resistance.grammar.node', 'TMax', 135);
-function $apply_19(this$static, sw){
+var Lorg_fstrf_stanfordAsiInterpreter_resistance_grammar_node_TMax_2_classLit = createForClass('org.fstrf.stanfordAsiInterpreter.resistance.grammar.node', 'TMax', 141);
+function $apply_20(this$static, sw){
   sw.caseTMin(this$static);
 }
 
@@ -9422,13 +9790,13 @@ function TMin(line, pos){
   this.pos = pos;
 }
 
-defineClass(133, 286, {10:1, 133:1}, TMin);
-_.apply_1 = function apply_47(sw){
-  $apply_19(this, sw);
+defineClass(139, 298, {10:1, 139:1}, TMin);
+_.apply_1 = function apply_49(sw){
+  $apply_20(this, sw);
 }
 ;
-var Lorg_fstrf_stanfordAsiInterpreter_resistance_grammar_node_TMin_2_classLit = createForClass('org.fstrf.stanfordAsiInterpreter.resistance.grammar.node', 'TMin', 133);
-function $apply_20(this$static, sw){
+var Lorg_fstrf_stanfordAsiInterpreter_resistance_grammar_node_TMin_2_classLit = createForClass('org.fstrf.stanfordAsiInterpreter.resistance.grammar.node', 'TMin', 139);
+function $apply_21(this$static, sw){
   sw.caseTNot(this$static);
 }
 
@@ -9438,13 +9806,13 @@ function TNot(line, pos){
   this.pos = pos;
 }
 
-defineClass(67, 286, {10:1, 67:1}, TNot);
-_.apply_1 = function apply_48(sw){
-  $apply_20(this, sw);
+defineClass(69, 298, {10:1, 69:1}, TNot);
+_.apply_1 = function apply_50(sw){
+  $apply_21(this, sw);
 }
 ;
-var Lorg_fstrf_stanfordAsiInterpreter_resistance_grammar_node_TNot_2_classLit = createForClass('org.fstrf.stanfordAsiInterpreter.resistance.grammar.node', 'TNot', 67);
-function $apply_21(this$static, sw){
+var Lorg_fstrf_stanfordAsiInterpreter_resistance_grammar_node_TNot_2_classLit = createForClass('org.fstrf.stanfordAsiInterpreter.resistance.grammar.node', 'TNot', 69);
+function $apply_22(this$static, sw){
   sw.caseTNotmorethan(this$static);
 }
 
@@ -9454,13 +9822,13 @@ function TNotmorethan(line, pos){
   this.pos = pos;
 }
 
-defineClass(109, 286, {10:1, 109:1}, TNotmorethan);
-_.apply_1 = function apply_49(sw){
-  $apply_21(this, sw);
+defineClass(111, 298, {10:1, 111:1}, TNotmorethan);
+_.apply_1 = function apply_51(sw){
+  $apply_22(this, sw);
 }
 ;
-var Lorg_fstrf_stanfordAsiInterpreter_resistance_grammar_node_TNotmorethan_2_classLit = createForClass('org.fstrf.stanfordAsiInterpreter.resistance.grammar.node', 'TNotmorethan', 109);
-function $apply_22(this$static, sw){
+var Lorg_fstrf_stanfordAsiInterpreter_resistance_grammar_node_TNotmorethan_2_classLit = createForClass('org.fstrf.stanfordAsiInterpreter.resistance.grammar.node', 'TNotmorethan', 111);
+function $apply_23(this$static, sw){
   sw.caseTOr(this$static);
 }
 
@@ -9470,13 +9838,13 @@ function TOr(line, pos){
   this.pos = pos;
 }
 
-defineClass(125, 286, {10:1, 125:1}, TOr);
-_.apply_1 = function apply_50(sw){
-  $apply_22(this, sw);
+defineClass(131, 298, {10:1, 131:1}, TOr);
+_.apply_1 = function apply_52(sw){
+  $apply_23(this, sw);
 }
 ;
-var Lorg_fstrf_stanfordAsiInterpreter_resistance_grammar_node_TOr_2_classLit = createForClass('org.fstrf.stanfordAsiInterpreter.resistance.grammar.node', 'TOr', 125);
-function $apply_23(this$static, sw){
+var Lorg_fstrf_stanfordAsiInterpreter_resistance_grammar_node_TOr_2_classLit = createForClass('org.fstrf.stanfordAsiInterpreter.resistance.grammar.node', 'TOr', 131);
+function $apply_24(this$static, sw){
   sw.caseTRPar(this$static);
 }
 
@@ -9486,13 +9854,13 @@ function TRPar(line, pos){
   this.pos = pos;
 }
 
-defineClass(42, 286, {10:1, 42:1}, TRPar);
-_.apply_1 = function apply_51(sw){
-  $apply_23(this, sw);
+defineClass(42, 298, {10:1, 42:1}, TRPar);
+_.apply_1 = function apply_53(sw){
+  $apply_24(this, sw);
 }
 ;
 var Lorg_fstrf_stanfordAsiInterpreter_resistance_grammar_node_TRPar_2_classLit = createForClass('org.fstrf.stanfordAsiInterpreter.resistance.grammar.node', 'TRPar', 42);
-function $apply_24(this$static, sw){
+function $apply_25(this$static, sw){
   sw.caseTScore(this$static);
 }
 
@@ -9502,13 +9870,13 @@ function TScore(line, pos){
   this.pos = pos;
 }
 
-defineClass(132, 286, {10:1, 132:1}, TScore);
-_.apply_1 = function apply_52(sw){
-  $apply_24(this, sw);
+defineClass(138, 298, {10:1, 138:1}, TScore);
+_.apply_1 = function apply_54(sw){
+  $apply_25(this, sw);
 }
 ;
-var Lorg_fstrf_stanfordAsiInterpreter_resistance_grammar_node_TScore_2_classLit = createForClass('org.fstrf.stanfordAsiInterpreter.resistance.grammar.node', 'TScore', 132);
-function $apply_25(this$static, sw){
+var Lorg_fstrf_stanfordAsiInterpreter_resistance_grammar_node_TScore_2_classLit = createForClass('org.fstrf.stanfordAsiInterpreter.resistance.grammar.node', 'TScore', 138);
+function $apply_26(this$static, sw){
   sw.caseTSelect(this$static);
 }
 
@@ -9518,12 +9886,12 @@ function TSelect(line, pos){
   this.pos = pos;
 }
 
-defineClass(129, 286, {10:1, 129:1}, TSelect);
-_.apply_1 = function apply_53(sw){
-  $apply_25(this, sw);
+defineClass(135, 298, {10:1, 135:1}, TSelect);
+_.apply_1 = function apply_55(sw){
+  $apply_26(this, sw);
 }
 ;
-var Lorg_fstrf_stanfordAsiInterpreter_resistance_grammar_node_TSelect_2_classLit = createForClass('org.fstrf.stanfordAsiInterpreter.resistance.grammar.node', 'TSelect', 129);
+var Lorg_fstrf_stanfordAsiInterpreter_resistance_grammar_node_TSelect_2_classLit = createForClass('org.fstrf.stanfordAsiInterpreter.resistance.grammar.node', 'TSelect', 135);
 function $add_6(this$static, o){
   return $addLast_0(this$static, this$static.cast.cast_0(o)) , true;
 }
@@ -9555,7 +9923,7 @@ function TypedLinkedList_0(cast){
   this.cast = cast;
 }
 
-defineClass(12, 122, {3:1, 18:1, 19:1, 12:1}, TypedLinkedList, TypedLinkedList_0);
+defineClass(12, 128, {3:1, 19:1, 18:1, 12:1}, TypedLinkedList, TypedLinkedList_0);
 _.addAtIndex = function add_15(index_0, element){
   $add(this, index_0, this.cast.cast_0(element));
 }
@@ -9592,8 +9960,8 @@ function TypedLinkedList$TypedLinkedListIterator(this$0, iterator){
   this.iterator = iterator;
 }
 
-defineClass(157, 1, {}, TypedLinkedList$TypedLinkedListIterator);
-_.forEachRemaining = function forEachRemaining_12(consumer){
+defineClass(160, 1, {}, TypedLinkedList$TypedLinkedListIterator);
+_.forEachRemaining = function forEachRemaining_13(consumer){
   $forEachRemaining(this, consumer);
 }
 ;
@@ -9601,29 +9969,29 @@ _.add_0 = function add_17(o){
   $add_3(this.iterator, this.this$01.cast.cast_0(o));
 }
 ;
-_.hasNext_0 = function hasNext_10(){
+_.hasNext_0 = function hasNext_11(){
   return $hasNext_1(this.iterator);
 }
 ;
-_.next_1 = function next_11(){
+_.next_1 = function next_12(){
   return $next_2(this.iterator);
 }
 ;
-_.remove_0 = function remove_29(){
-  $remove_5(this.iterator);
+_.remove_0 = function remove_32(){
+  $remove_7(this.iterator);
 }
 ;
 _.set_0 = function set_9(o){
   $set_0(this.iterator, this.this$01.cast.cast_0(o));
 }
 ;
-var Lorg_fstrf_stanfordAsiInterpreter_resistance_grammar_node_TypedLinkedList$TypedLinkedListIterator_2_classLit = createForClass('org.fstrf.stanfordAsiInterpreter.resistance.grammar.node', 'TypedLinkedList/TypedLinkedListIterator', 157);
+var Lorg_fstrf_stanfordAsiInterpreter_resistance_grammar_node_TypedLinkedList$TypedLinkedListIterator_2_classLit = createForClass('org.fstrf.stanfordAsiInterpreter.resistance.grammar.node', 'TypedLinkedList/TypedLinkedListIterator', 160);
 function $clinit_Parser(){
   $clinit_Parser = emptyMethod;
-  actionTable = stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 3), $intern_15, 7, 0, [stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 2), $intern_16, 4, 0, [stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_17, 5, 15, [-1, 3, 0]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_17, 5, 15, [3, 0, 1]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_17, 5, 15, [4, 0, 2]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_17, 5, 15, [5, 0, 3]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_17, 5, 15, [10, 0, 4]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_17, 5, 15, [12, 0, 5]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_17, 5, 15, [16, 0, 6]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_17, 5, 15, [18, 0, 7])]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 2), $intern_16, 4, 0, [stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_17, 5, 15, [-1, 3, 1]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_17, 5, 15, [16, 0, 15]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_17, 5, 15, [18, 0, 16])]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 2), $intern_16, 4, 0, [stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_17, 5, 15, [-1, 3, 2]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_17, 5, 15, [3, 0, 1]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_17, 5, 15, [16, 0, 6]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_17, 5, 15, [18, 0, 7])]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 2), $intern_16, 4, 0, [stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_17, 5, 15, [-1, 3, 3]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_17, 5, 15, [7, 0, 18]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_17, 5, 15, [8, 0, 19]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_17, 5, 15, [9, 0, 20])]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 2), $intern_16, 4, 0, [stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_17, 5, 15, [-1, 3, 4]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_17, 5, 15, [6, 0, 22])]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 2), $intern_16, 4, 0, [stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_17, 5, 15, [-1, 3, 5]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_17, 5, 15, [3, 0, 1]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_17, 5, 15, [4, 0, 2]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_17, 5, 15, [5, 0, 3]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_17, 5, 15, [12, 0, 5]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_17, 5, 15, [16, 0, 6]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_17, 5, 15, [18, 0, 7])]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 2), $intern_16, 4, 0, [stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_17, 5, 15, [-1, 3, 6]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_17, 5, 15, [12, 0, 24]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_17, 5, 15, [18, 0, 25])]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 2), $intern_16, 4, 0, [stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_17, 5, 15, [-1, 3, 7]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_17, 5, 15, [16, 0, 27])]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 2), $intern_16, 4, 0, [stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_17, 5, 15, [-1, 3, 8]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_17, 5, 15, [19, 2, -1])]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 2), $intern_16, 4, 0, [stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_17, 5, 15, [-1, 1, 0])]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 2), $intern_16, 4, 0, [stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_17, 5, 15, [-1, 1, 2]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_17, 5, 15, [1, 0, 28]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_17, 5, 15, [2, 0, 29])]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 2), $intern_16, 4, 0, [stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_17, 5, 15, [-1, 1, 5])]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 2), $intern_16, 4, 0, [stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_17, 5, 15, [-1, 1, 6])]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 2), $intern_16, 4, 0, [stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_17, 5, 15, [-1, 1, 7])]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 2), $intern_16, 4, 0, [stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_17, 5, 15, [-1, 1, 1])]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 2), $intern_16, 4, 0, [stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_17, 5, 15, [-1, 3, 15]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_17, 5, 15, [18, 0, 25])]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 2), $intern_16, 4, 0, [stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_17, 5, 15, [-1, 3, 16]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_17, 5, 15, [16, 0, 34])]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 2), $intern_16, 4, 0, [stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_17, 5, 15, [-1, 1, 17])]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 2), $intern_16, 4, 0, [stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_17, 5, 15, [-1, 3, 18]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_17, 5, 15, [16, 0, 35])]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 2), $intern_16, 4, 0, [stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_17, 5, 15, [-1, 3, 19]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_17, 5, 15, [16, 0, 36])]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 2), $intern_16, 4, 0, [stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_17, 5, 15, [-1, 3, 20]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_17, 5, 15, [16, 0, 37])]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 2), $intern_16, 4, 0, [stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_17, 5, 15, [-1, 1, 18])]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 2), $intern_16, 4, 0, [stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_17, 5, 15, [-1, 3, 22]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_17, 5, 15, [12, 0, 38])]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 2), $intern_16, 4, 0, [stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_17, 5, 15, [-1, 3, 23]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_17, 5, 15, [13, 0, 39])]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 2), $intern_16, 4, 0, [stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_17, 5, 15, [-1, 3, 24]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_17, 5, 15, [3, 0, 40])]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 2), $intern_16, 4, 0, [stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_17, 5, 15, [-1, 1, 37])]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 2), $intern_16, 4, 0, [stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_17, 5, 15, [-1, 1, 11]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_17, 5, 15, [18, 0, 41])]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 2), $intern_16, 4, 0, [stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_17, 5, 15, [-1, 3, 27]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_17, 5, 15, [12, 0, 42]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_17, 5, 15, [18, 0, 25])]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 2), $intern_16, 4, 0, [stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_17, 5, 15, [-1, 1, 9])]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 2), $intern_16, 4, 0, [stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_17, 5, 15, [-1, 1, 10])]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 2), $intern_16, 4, 0, [stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_17, 5, 15, [-1, 1, 35])]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 2), $intern_16, 4, 0, [stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_17, 5, 15, [-1, 3, 31]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_17, 5, 15, [3, 0, 1]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_17, 5, 15, [4, 0, 2]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_17, 5, 15, [5, 0, 3]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_17, 5, 15, [12, 0, 5]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_17, 5, 15, [16, 0, 6]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_17, 5, 15, [18, 0, 7])]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 2), $intern_16, 4, 0, [stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_17, 5, 15, [-1, 1, 3]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_17, 5, 15, [1, 0, 28]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_17, 5, 15, [2, 0, 29])]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 2), $intern_16, 4, 0, [stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_17, 5, 15, [-1, 1, 13]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_17, 5, 15, [18, 0, 41])]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 2), $intern_16, 4, 0, [stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_17, 5, 15, [-1, 3, 34]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_17, 5, 15, [18, 0, 25])]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 2), $intern_16, 4, 0, [stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_17, 5, 15, [-1, 3, 35]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_17, 5, 15, [1, 0, 28]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_17, 5, 15, [2, 0, 29]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_17, 5, 15, [6, 0, 47])]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 2), $intern_16, 4, 0, [stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_17, 5, 15, [-1, 3, 36]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_17, 5, 15, [6, 0, 49])]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 2), $intern_16, 4, 0, [stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_17, 5, 15, [-1, 3, 37]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_17, 5, 15, [6, 0, 50])]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 2), $intern_16, 4, 0, [stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_17, 5, 15, [-1, 3, 38]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_17, 5, 15, [3, 0, 1]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_17, 5, 15, [4, 0, 2]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_17, 5, 15, [5, 0, 3]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_17, 5, 15, [11, 0, 51]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_17, 5, 15, [12, 0, 5]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_17, 5, 15, [16, 0, 6]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_17, 5, 15, [18, 0, 7])]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 2), $intern_16, 4, 0, [stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_17, 5, 15, [-1, 1, 4])]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 2), $intern_16, 4, 0, [stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_17, 5, 15, [-1, 3, 40]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_17, 5, 15, [18, 0, 25])]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 2), $intern_16, 4, 0, [stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_17, 5, 15, [-1, 1, 38])]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 2), $intern_16, 4, 0, [stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_17, 5, 15, [-1, 3, 42]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_17, 5, 15, [3, 0, 56])]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 2), $intern_16, 4, 0, [stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_17, 5, 15, [-1, 1, 12]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_17, 5, 15, [18, 0, 41])]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 2), $intern_16, 4, 0, [stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_17, 5, 15, [-1, 1, 8])]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 2), $intern_16, 4, 0, [stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_17, 5, 15, [-1, 1, 36])]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 2), $intern_16, 4, 0, [stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_17, 5, 15, [-1, 1, 14]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_17, 5, 15, [18, 0, 41])]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 2), $intern_16, 4, 0, [stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_17, 5, 15, [-1, 3, 47]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_17, 5, 15, [12, 0, 57])]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 2), $intern_16, 4, 0, [stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_17, 5, 15, [-1, 3, 48]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_17, 5, 15, [9, 0, 58])]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 2), $intern_16, 4, 0, [stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_17, 5, 15, [-1, 3, 49]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_17, 5, 15, [12, 0, 59])]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 2), $intern_16, 4, 0, [stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_17, 5, 15, [-1, 3, 50]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_17, 5, 15, [12, 0, 60])]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 2), $intern_16, 4, 0, [stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_17, 5, 15, [-1, 3, 51]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_17, 5, 15, [12, 0, 61])]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 2), $intern_16, 4, 0, [stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_17, 5, 15, [-1, 3, 52]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_17, 5, 15, [14, 0, 62])]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 2), $intern_16, 4, 0, [stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_17, 5, 15, [-1, 3, 53]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_17, 5, 15, [13, 0, 63])]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 2), $intern_16, 4, 0, [stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_17, 5, 15, [-1, 1, 27]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_17, 5, 15, [15, 0, 64])]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 2), $intern_16, 4, 0, [stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_17, 5, 15, [-1, 3, 55]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_17, 5, 15, [13, 0, 67]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_17, 5, 15, [18, 0, 41])]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 2), $intern_16, 4, 0, [stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_17, 5, 15, [-1, 3, 56]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_17, 5, 15, [18, 0, 25])]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 2), $intern_16, 4, 0, [stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_17, 5, 15, [-1, 3, 57]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_17, 5, 15, [3, 0, 1]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_17, 5, 15, [16, 0, 6]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_17, 5, 15, [18, 0, 7])]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 2), $intern_16, 4, 0, [stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_17, 5, 15, [-1, 3, 58]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_17, 5, 15, [16, 0, 71])]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 2), $intern_16, 4, 0, [stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_17, 5, 15, [-1, 3, 59]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_17, 5, 15, [3, 0, 1]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_17, 5, 15, [16, 0, 6]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_17, 5, 15, [18, 0, 7])]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 2), $intern_16, 4, 0, [stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_17, 5, 15, [-1, 3, 60]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_17, 5, 15, [3, 0, 1]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_17, 5, 15, [16, 0, 6]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_17, 5, 15, [18, 0, 7])]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 2), $intern_16, 4, 0, [stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_17, 5, 15, [-1, 3, 61]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_17, 5, 15, [3, 0, 1]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_17, 5, 15, [4, 0, 2]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_17, 5, 15, [5, 0, 3]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_17, 5, 15, [11, 0, 51]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_17, 5, 15, [12, 0, 5]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_17, 5, 15, [16, 0, 6]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_17, 5, 15, [18, 0, 7])]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 2), $intern_16, 4, 0, [stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_17, 5, 15, [-1, 3, 62]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_17, 5, 15, [0, 0, 75]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_17, 5, 15, [16, 0, 76]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_17, 5, 15, [17, 0, 77])]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 2), $intern_16, 4, 0, [stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_17, 5, 15, [-1, 1, 26])]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 2), $intern_16, 4, 0, [stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_17, 5, 15, [-1, 3, 64]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_17, 5, 15, [3, 0, 1]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_17, 5, 15, [4, 0, 2]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_17, 5, 15, [5, 0, 3]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_17, 5, 15, [11, 0, 51]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_17, 5, 15, [12, 0, 5]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_17, 5, 15, [16, 0, 6]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_17, 5, 15, [18, 0, 7])]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 2), $intern_16, 4, 0, [stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_17, 5, 15, [-1, 1, 41])]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 2), $intern_16, 4, 0, [stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_17, 5, 15, [-1, 1, 28]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_17, 5, 15, [15, 0, 64])]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 2), $intern_16, 4, 0, [stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_17, 5, 15, [-1, 1, 15])]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 2), $intern_16, 4, 0, [stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_17, 5, 15, [-1, 3, 68]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_17, 5, 15, [13, 0, 81]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_17, 5, 15, [18, 0, 41])]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 2), $intern_16, 4, 0, [stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_17, 5, 15, [-1, 1, 23]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_17, 5, 15, [15, 0, 82])]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 2), $intern_16, 4, 0, [stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_17, 5, 15, [-1, 3, 70]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_17, 5, 15, [13, 0, 85])]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 2), $intern_16, 4, 0, [stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_17, 5, 15, [-1, 3, 71]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_17, 5, 15, [6, 0, 86])]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 2), $intern_16, 4, 0, [stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_17, 5, 15, [-1, 3, 72]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_17, 5, 15, [13, 0, 87])]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 2), $intern_16, 4, 0, [stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_17, 5, 15, [-1, 3, 73]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_17, 5, 15, [13, 0, 88])]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 2), $intern_16, 4, 0, [stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_17, 5, 15, [-1, 3, 74]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_17, 5, 15, [13, 0, 89])]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 2), $intern_16, 4, 0, [stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_17, 5, 15, [-1, 3, 75]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_17, 5, 15, [16, 0, 76]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_17, 5, 15, [17, 0, 77])]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 2), $intern_16, 4, 0, [stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_17, 5, 15, [-1, 1, 33])]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 2), $intern_16, 4, 0, [stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_17, 5, 15, [-1, 1, 34])]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 2), $intern_16, 4, 0, [stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_17, 5, 15, [-1, 1, 29])]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 2), $intern_16, 4, 0, [stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_17, 5, 15, [-1, 1, 32])]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 2), $intern_16, 4, 0, [stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_17, 5, 15, [-1, 1, 42])]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 2), $intern_16, 4, 0, [stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_17, 5, 15, [-1, 1, 16])]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 2), $intern_16, 4, 0, [stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_17, 5, 15, [-1, 3, 82]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_17, 5, 15, [3, 0, 1]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_17, 5, 15, [16, 0, 6]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_17, 5, 15, [18, 0, 7])]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 2), $intern_16, 4, 0, [stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_17, 5, 15, [-1, 1, 39])]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 2), $intern_16, 4, 0, [stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_17, 5, 15, [-1, 1, 24]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_17, 5, 15, [15, 0, 82])]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 2), $intern_16, 4, 0, [stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_17, 5, 15, [-1, 1, 20])]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 2), $intern_16, 4, 0, [stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_17, 5, 15, [-1, 3, 86]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_17, 5, 15, [12, 0, 93])]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 2), $intern_16, 4, 0, [stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_17, 5, 15, [-1, 1, 19])]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 2), $intern_16, 4, 0, [stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_17, 5, 15, [-1, 1, 21])]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 2), $intern_16, 4, 0, [stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_17, 5, 15, [-1, 1, 31])]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 2), $intern_16, 4, 0, [stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_17, 5, 15, [-1, 1, 30])]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 2), $intern_16, 4, 0, [stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_17, 5, 15, [-1, 1, 25])]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 2), $intern_16, 4, 0, [stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_17, 5, 15, [-1, 1, 40])]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 2), $intern_16, 4, 0, [stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_17, 5, 15, [-1, 3, 93]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_17, 5, 15, [3, 0, 1]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_17, 5, 15, [16, 0, 6]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_17, 5, 15, [18, 0, 7])]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 2), $intern_16, 4, 0, [stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_17, 5, 15, [-1, 3, 94]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_17, 5, 15, [13, 0, 95])]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 2), $intern_16, 4, 0, [stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_17, 5, 15, [-1, 1, 22])])]);
-  gotoTable_1 = stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 3), $intern_15, 7, 0, [stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 2), $intern_16, 4, 0, [stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_17, 5, 15, [-1, 8])]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 2), $intern_16, 4, 0, [stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_17, 5, 15, [-1, 52]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_17, 5, 15, [0, 9]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_17, 5, 15, [5, 23])]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 2), $intern_16, 4, 0, [stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_17, 5, 15, [-1, 10]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_17, 5, 15, [31, 44])]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 2), $intern_16, 4, 0, [stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_17, 5, 15, [-1, 30]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_17, 5, 15, [32, 45])]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 2), $intern_16, 4, 0, [stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_17, 5, 15, [-1, 31]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_17, 5, 15, [35, 48])]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 2), $intern_16, 4, 0, [stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_17, 5, 15, [-1, 11]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_17, 5, 15, [2, 17]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_17, 5, 15, [57, 69]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_17, 5, 15, [59, 69]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_17, 5, 15, [60, 69]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_17, 5, 15, [82, 91]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_17, 5, 15, [93, 69])]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 2), $intern_16, 4, 0, [stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_17, 5, 15, [-1, 12])]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 2), $intern_16, 4, 0, [stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_17, 5, 15, [-1, 13])]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 2), $intern_16, 4, 0, [stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_17, 5, 15, [-1, 21])]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 2), $intern_16, 4, 0, [stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_17, 5, 15, [-1, 70]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_17, 5, 15, [59, 72]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_17, 5, 15, [60, 73]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_17, 5, 15, [93, 94])]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 2), $intern_16, 4, 0, [stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_17, 5, 15, [-1, 83]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_17, 5, 15, [84, 92])]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 2), $intern_16, 4, 0, [stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_17, 5, 15, [-1, 14])]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 2), $intern_16, 4, 0, [stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_17, 5, 15, [-1, 53]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_17, 5, 15, [61, 74])]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 2), $intern_16, 4, 0, [stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_17, 5, 15, [-1, 54]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_17, 5, 15, [64, 79])]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 2), $intern_16, 4, 0, [stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_17, 5, 15, [-1, 65]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_17, 5, 15, [66, 80])]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 2), $intern_16, 4, 0, [stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_17, 5, 15, [-1, 78]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_17, 5, 15, [75, 90])]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 2), $intern_16, 4, 0, [stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_17, 5, 15, [-1, 32])]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 2), $intern_16, 4, 0, [stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_17, 5, 15, [-1, 26]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_17, 5, 15, [15, 33]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_17, 5, 15, [27, 43]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_17, 5, 15, [34, 46]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_17, 5, 15, [40, 55]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_17, 5, 15, [56, 68])]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 2), $intern_16, 4, 0, [stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_17, 5, 15, [-1, 84])]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 2), $intern_16, 4, 0, [stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_17, 5, 15, [-1, 66])])]);
-  errorMessages = stampJavaTypeInfo(getClassLiteralForArray(Ljava_lang_String_2_classLit, 1), $intern_0, 2, 6, ["expecting: 'NOT', 'EXCLUDE', 'SELECT', 'SCORE', '(', integer, amino acid", 'expecting: integer, amino acid', "expecting: 'NOT', integer, amino acid", "expecting: 'ATLEAST', 'EXACTLY', 'NOTMORETHAN'", "expecting: 'FROM'", "expecting: 'NOT', 'EXCLUDE', 'SELECT', '(', integer, amino acid", "expecting: '(', amino acid", 'expecting: integer', 'expecting: EOF', "expecting: 'AND', 'OR', ')', '=>', EOF", 'expecting: amino acid', "expecting: '('", "expecting: ')'", "expecting: 'NOT'", "expecting: 'AND', 'OR', ')', '=>', ',', amino acid, EOF", "expecting: 'NOT', 'EXCLUDE', 'SELECT', 'NOTMORETHAN', '(', integer, amino acid", "expecting: 'AND', 'OR', 'FROM'", "expecting: 'NOT', 'EXCLUDE', 'SELECT', 'MAX', '(', integer, amino acid", "expecting: 'NOTMORETHAN'", "expecting: '=>'", "expecting: ')', ','", "expecting: ')', amino acid", "expecting: '-', integer, float", "expecting: 'AND', 'OR', ')', '=>', ',', EOF", 'expecting: integer, float']);
-  errors = stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_17, 5, 15, [0, 1, 2, 3, 4, 5, 6, 7, 8, 8, 9, 9, 9, 9, 8, 10, 7, 9, 7, 7, 7, 9, 11, 12, 13, 14, 14, 6, 15, 15, 9, 5, 9, 14, 10, 16, 4, 4, 17, 9, 10, 14, 13, 14, 9, 9, 14, 11, 18, 11, 11, 11, 19, 12, 20, 21, 10, 2, 7, 2, 2, 17, 22, 8, 17, 20, 20, 23, 21, 20, 12, 4, 12, 12, 12, 24, 20, 20, 20, 20, 20, 23, 2, 20, 20, 9, 11, 9, 9, 20, 20, 20, 20, 2, 12, 9]);
+  actionTable = stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 3), $intern_17, 7, 0, [stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 2), $intern_18, 4, 0, [stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_19, 5, 15, [-1, 3, 0]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_19, 5, 15, [3, 0, 1]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_19, 5, 15, [4, 0, 2]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_19, 5, 15, [5, 0, 3]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_19, 5, 15, [10, 0, 4]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_19, 5, 15, [12, 0, 5]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_19, 5, 15, [16, 0, 6]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_19, 5, 15, [18, 0, 7])]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 2), $intern_18, 4, 0, [stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_19, 5, 15, [-1, 3, 1]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_19, 5, 15, [16, 0, 15]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_19, 5, 15, [18, 0, 16])]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 2), $intern_18, 4, 0, [stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_19, 5, 15, [-1, 3, 2]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_19, 5, 15, [3, 0, 1]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_19, 5, 15, [16, 0, 6]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_19, 5, 15, [18, 0, 7])]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 2), $intern_18, 4, 0, [stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_19, 5, 15, [-1, 3, 3]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_19, 5, 15, [7, 0, 18]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_19, 5, 15, [8, 0, 19]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_19, 5, 15, [9, 0, 20])]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 2), $intern_18, 4, 0, [stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_19, 5, 15, [-1, 3, 4]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_19, 5, 15, [6, 0, 22])]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 2), $intern_18, 4, 0, [stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_19, 5, 15, [-1, 3, 5]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_19, 5, 15, [3, 0, 1]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_19, 5, 15, [4, 0, 2]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_19, 5, 15, [5, 0, 3]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_19, 5, 15, [12, 0, 5]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_19, 5, 15, [16, 0, 6]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_19, 5, 15, [18, 0, 7])]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 2), $intern_18, 4, 0, [stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_19, 5, 15, [-1, 3, 6]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_19, 5, 15, [12, 0, 24]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_19, 5, 15, [18, 0, 25])]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 2), $intern_18, 4, 0, [stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_19, 5, 15, [-1, 3, 7]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_19, 5, 15, [16, 0, 27])]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 2), $intern_18, 4, 0, [stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_19, 5, 15, [-1, 3, 8]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_19, 5, 15, [19, 2, -1])]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 2), $intern_18, 4, 0, [stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_19, 5, 15, [-1, 1, 0])]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 2), $intern_18, 4, 0, [stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_19, 5, 15, [-1, 1, 2]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_19, 5, 15, [1, 0, 28]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_19, 5, 15, [2, 0, 29])]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 2), $intern_18, 4, 0, [stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_19, 5, 15, [-1, 1, 5])]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 2), $intern_18, 4, 0, [stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_19, 5, 15, [-1, 1, 6])]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 2), $intern_18, 4, 0, [stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_19, 5, 15, [-1, 1, 7])]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 2), $intern_18, 4, 0, [stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_19, 5, 15, [-1, 1, 1])]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 2), $intern_18, 4, 0, [stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_19, 5, 15, [-1, 3, 15]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_19, 5, 15, [18, 0, 25])]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 2), $intern_18, 4, 0, [stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_19, 5, 15, [-1, 3, 16]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_19, 5, 15, [16, 0, 34])]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 2), $intern_18, 4, 0, [stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_19, 5, 15, [-1, 1, 17])]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 2), $intern_18, 4, 0, [stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_19, 5, 15, [-1, 3, 18]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_19, 5, 15, [16, 0, 35])]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 2), $intern_18, 4, 0, [stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_19, 5, 15, [-1, 3, 19]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_19, 5, 15, [16, 0, 36])]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 2), $intern_18, 4, 0, [stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_19, 5, 15, [-1, 3, 20]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_19, 5, 15, [16, 0, 37])]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 2), $intern_18, 4, 0, [stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_19, 5, 15, [-1, 1, 18])]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 2), $intern_18, 4, 0, [stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_19, 5, 15, [-1, 3, 22]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_19, 5, 15, [12, 0, 38])]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 2), $intern_18, 4, 0, [stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_19, 5, 15, [-1, 3, 23]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_19, 5, 15, [13, 0, 39])]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 2), $intern_18, 4, 0, [stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_19, 5, 15, [-1, 3, 24]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_19, 5, 15, [3, 0, 40])]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 2), $intern_18, 4, 0, [stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_19, 5, 15, [-1, 1, 37])]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 2), $intern_18, 4, 0, [stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_19, 5, 15, [-1, 1, 11]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_19, 5, 15, [18, 0, 41])]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 2), $intern_18, 4, 0, [stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_19, 5, 15, [-1, 3, 27]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_19, 5, 15, [12, 0, 42]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_19, 5, 15, [18, 0, 25])]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 2), $intern_18, 4, 0, [stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_19, 5, 15, [-1, 1, 9])]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 2), $intern_18, 4, 0, [stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_19, 5, 15, [-1, 1, 10])]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 2), $intern_18, 4, 0, [stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_19, 5, 15, [-1, 1, 35])]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 2), $intern_18, 4, 0, [stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_19, 5, 15, [-1, 3, 31]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_19, 5, 15, [3, 0, 1]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_19, 5, 15, [4, 0, 2]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_19, 5, 15, [5, 0, 3]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_19, 5, 15, [12, 0, 5]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_19, 5, 15, [16, 0, 6]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_19, 5, 15, [18, 0, 7])]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 2), $intern_18, 4, 0, [stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_19, 5, 15, [-1, 1, 3]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_19, 5, 15, [1, 0, 28]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_19, 5, 15, [2, 0, 29])]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 2), $intern_18, 4, 0, [stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_19, 5, 15, [-1, 1, 13]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_19, 5, 15, [18, 0, 41])]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 2), $intern_18, 4, 0, [stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_19, 5, 15, [-1, 3, 34]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_19, 5, 15, [18, 0, 25])]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 2), $intern_18, 4, 0, [stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_19, 5, 15, [-1, 3, 35]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_19, 5, 15, [1, 0, 28]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_19, 5, 15, [2, 0, 29]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_19, 5, 15, [6, 0, 47])]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 2), $intern_18, 4, 0, [stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_19, 5, 15, [-1, 3, 36]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_19, 5, 15, [6, 0, 49])]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 2), $intern_18, 4, 0, [stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_19, 5, 15, [-1, 3, 37]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_19, 5, 15, [6, 0, 50])]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 2), $intern_18, 4, 0, [stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_19, 5, 15, [-1, 3, 38]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_19, 5, 15, [3, 0, 1]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_19, 5, 15, [4, 0, 2]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_19, 5, 15, [5, 0, 3]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_19, 5, 15, [11, 0, 51]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_19, 5, 15, [12, 0, 5]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_19, 5, 15, [16, 0, 6]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_19, 5, 15, [18, 0, 7])]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 2), $intern_18, 4, 0, [stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_19, 5, 15, [-1, 1, 4])]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 2), $intern_18, 4, 0, [stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_19, 5, 15, [-1, 3, 40]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_19, 5, 15, [18, 0, 25])]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 2), $intern_18, 4, 0, [stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_19, 5, 15, [-1, 1, 38])]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 2), $intern_18, 4, 0, [stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_19, 5, 15, [-1, 3, 42]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_19, 5, 15, [3, 0, 56])]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 2), $intern_18, 4, 0, [stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_19, 5, 15, [-1, 1, 12]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_19, 5, 15, [18, 0, 41])]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 2), $intern_18, 4, 0, [stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_19, 5, 15, [-1, 1, 8])]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 2), $intern_18, 4, 0, [stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_19, 5, 15, [-1, 1, 36])]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 2), $intern_18, 4, 0, [stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_19, 5, 15, [-1, 1, 14]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_19, 5, 15, [18, 0, 41])]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 2), $intern_18, 4, 0, [stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_19, 5, 15, [-1, 3, 47]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_19, 5, 15, [12, 0, 57])]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 2), $intern_18, 4, 0, [stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_19, 5, 15, [-1, 3, 48]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_19, 5, 15, [9, 0, 58])]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 2), $intern_18, 4, 0, [stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_19, 5, 15, [-1, 3, 49]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_19, 5, 15, [12, 0, 59])]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 2), $intern_18, 4, 0, [stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_19, 5, 15, [-1, 3, 50]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_19, 5, 15, [12, 0, 60])]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 2), $intern_18, 4, 0, [stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_19, 5, 15, [-1, 3, 51]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_19, 5, 15, [12, 0, 61])]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 2), $intern_18, 4, 0, [stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_19, 5, 15, [-1, 3, 52]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_19, 5, 15, [14, 0, 62])]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 2), $intern_18, 4, 0, [stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_19, 5, 15, [-1, 3, 53]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_19, 5, 15, [13, 0, 63])]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 2), $intern_18, 4, 0, [stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_19, 5, 15, [-1, 1, 27]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_19, 5, 15, [15, 0, 64])]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 2), $intern_18, 4, 0, [stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_19, 5, 15, [-1, 3, 55]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_19, 5, 15, [13, 0, 67]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_19, 5, 15, [18, 0, 41])]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 2), $intern_18, 4, 0, [stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_19, 5, 15, [-1, 3, 56]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_19, 5, 15, [18, 0, 25])]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 2), $intern_18, 4, 0, [stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_19, 5, 15, [-1, 3, 57]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_19, 5, 15, [3, 0, 1]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_19, 5, 15, [16, 0, 6]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_19, 5, 15, [18, 0, 7])]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 2), $intern_18, 4, 0, [stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_19, 5, 15, [-1, 3, 58]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_19, 5, 15, [16, 0, 71])]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 2), $intern_18, 4, 0, [stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_19, 5, 15, [-1, 3, 59]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_19, 5, 15, [3, 0, 1]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_19, 5, 15, [16, 0, 6]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_19, 5, 15, [18, 0, 7])]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 2), $intern_18, 4, 0, [stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_19, 5, 15, [-1, 3, 60]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_19, 5, 15, [3, 0, 1]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_19, 5, 15, [16, 0, 6]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_19, 5, 15, [18, 0, 7])]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 2), $intern_18, 4, 0, [stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_19, 5, 15, [-1, 3, 61]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_19, 5, 15, [3, 0, 1]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_19, 5, 15, [4, 0, 2]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_19, 5, 15, [5, 0, 3]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_19, 5, 15, [11, 0, 51]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_19, 5, 15, [12, 0, 5]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_19, 5, 15, [16, 0, 6]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_19, 5, 15, [18, 0, 7])]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 2), $intern_18, 4, 0, [stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_19, 5, 15, [-1, 3, 62]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_19, 5, 15, [0, 0, 75]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_19, 5, 15, [16, 0, 76]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_19, 5, 15, [17, 0, 77])]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 2), $intern_18, 4, 0, [stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_19, 5, 15, [-1, 1, 26])]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 2), $intern_18, 4, 0, [stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_19, 5, 15, [-1, 3, 64]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_19, 5, 15, [3, 0, 1]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_19, 5, 15, [4, 0, 2]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_19, 5, 15, [5, 0, 3]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_19, 5, 15, [11, 0, 51]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_19, 5, 15, [12, 0, 5]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_19, 5, 15, [16, 0, 6]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_19, 5, 15, [18, 0, 7])]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 2), $intern_18, 4, 0, [stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_19, 5, 15, [-1, 1, 41])]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 2), $intern_18, 4, 0, [stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_19, 5, 15, [-1, 1, 28]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_19, 5, 15, [15, 0, 64])]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 2), $intern_18, 4, 0, [stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_19, 5, 15, [-1, 1, 15])]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 2), $intern_18, 4, 0, [stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_19, 5, 15, [-1, 3, 68]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_19, 5, 15, [13, 0, 81]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_19, 5, 15, [18, 0, 41])]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 2), $intern_18, 4, 0, [stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_19, 5, 15, [-1, 1, 23]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_19, 5, 15, [15, 0, 82])]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 2), $intern_18, 4, 0, [stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_19, 5, 15, [-1, 3, 70]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_19, 5, 15, [13, 0, 85])]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 2), $intern_18, 4, 0, [stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_19, 5, 15, [-1, 3, 71]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_19, 5, 15, [6, 0, 86])]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 2), $intern_18, 4, 0, [stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_19, 5, 15, [-1, 3, 72]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_19, 5, 15, [13, 0, 87])]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 2), $intern_18, 4, 0, [stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_19, 5, 15, [-1, 3, 73]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_19, 5, 15, [13, 0, 88])]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 2), $intern_18, 4, 0, [stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_19, 5, 15, [-1, 3, 74]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_19, 5, 15, [13, 0, 89])]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 2), $intern_18, 4, 0, [stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_19, 5, 15, [-1, 3, 75]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_19, 5, 15, [16, 0, 76]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_19, 5, 15, [17, 0, 77])]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 2), $intern_18, 4, 0, [stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_19, 5, 15, [-1, 1, 33])]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 2), $intern_18, 4, 0, [stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_19, 5, 15, [-1, 1, 34])]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 2), $intern_18, 4, 0, [stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_19, 5, 15, [-1, 1, 29])]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 2), $intern_18, 4, 0, [stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_19, 5, 15, [-1, 1, 32])]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 2), $intern_18, 4, 0, [stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_19, 5, 15, [-1, 1, 42])]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 2), $intern_18, 4, 0, [stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_19, 5, 15, [-1, 1, 16])]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 2), $intern_18, 4, 0, [stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_19, 5, 15, [-1, 3, 82]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_19, 5, 15, [3, 0, 1]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_19, 5, 15, [16, 0, 6]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_19, 5, 15, [18, 0, 7])]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 2), $intern_18, 4, 0, [stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_19, 5, 15, [-1, 1, 39])]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 2), $intern_18, 4, 0, [stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_19, 5, 15, [-1, 1, 24]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_19, 5, 15, [15, 0, 82])]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 2), $intern_18, 4, 0, [stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_19, 5, 15, [-1, 1, 20])]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 2), $intern_18, 4, 0, [stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_19, 5, 15, [-1, 3, 86]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_19, 5, 15, [12, 0, 93])]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 2), $intern_18, 4, 0, [stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_19, 5, 15, [-1, 1, 19])]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 2), $intern_18, 4, 0, [stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_19, 5, 15, [-1, 1, 21])]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 2), $intern_18, 4, 0, [stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_19, 5, 15, [-1, 1, 31])]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 2), $intern_18, 4, 0, [stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_19, 5, 15, [-1, 1, 30])]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 2), $intern_18, 4, 0, [stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_19, 5, 15, [-1, 1, 25])]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 2), $intern_18, 4, 0, [stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_19, 5, 15, [-1, 1, 40])]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 2), $intern_18, 4, 0, [stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_19, 5, 15, [-1, 3, 93]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_19, 5, 15, [3, 0, 1]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_19, 5, 15, [16, 0, 6]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_19, 5, 15, [18, 0, 7])]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 2), $intern_18, 4, 0, [stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_19, 5, 15, [-1, 3, 94]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_19, 5, 15, [13, 0, 95])]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 2), $intern_18, 4, 0, [stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_19, 5, 15, [-1, 1, 22])])]);
+  gotoTable_1 = stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 3), $intern_17, 7, 0, [stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 2), $intern_18, 4, 0, [stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_19, 5, 15, [-1, 8])]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 2), $intern_18, 4, 0, [stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_19, 5, 15, [-1, 52]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_19, 5, 15, [0, 9]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_19, 5, 15, [5, 23])]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 2), $intern_18, 4, 0, [stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_19, 5, 15, [-1, 10]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_19, 5, 15, [31, 44])]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 2), $intern_18, 4, 0, [stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_19, 5, 15, [-1, 30]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_19, 5, 15, [32, 45])]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 2), $intern_18, 4, 0, [stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_19, 5, 15, [-1, 31]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_19, 5, 15, [35, 48])]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 2), $intern_18, 4, 0, [stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_19, 5, 15, [-1, 11]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_19, 5, 15, [2, 17]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_19, 5, 15, [57, 69]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_19, 5, 15, [59, 69]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_19, 5, 15, [60, 69]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_19, 5, 15, [82, 91]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_19, 5, 15, [93, 69])]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 2), $intern_18, 4, 0, [stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_19, 5, 15, [-1, 12])]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 2), $intern_18, 4, 0, [stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_19, 5, 15, [-1, 13])]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 2), $intern_18, 4, 0, [stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_19, 5, 15, [-1, 21])]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 2), $intern_18, 4, 0, [stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_19, 5, 15, [-1, 70]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_19, 5, 15, [59, 72]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_19, 5, 15, [60, 73]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_19, 5, 15, [93, 94])]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 2), $intern_18, 4, 0, [stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_19, 5, 15, [-1, 83]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_19, 5, 15, [84, 92])]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 2), $intern_18, 4, 0, [stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_19, 5, 15, [-1, 14])]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 2), $intern_18, 4, 0, [stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_19, 5, 15, [-1, 53]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_19, 5, 15, [61, 74])]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 2), $intern_18, 4, 0, [stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_19, 5, 15, [-1, 54]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_19, 5, 15, [64, 79])]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 2), $intern_18, 4, 0, [stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_19, 5, 15, [-1, 65]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_19, 5, 15, [66, 80])]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 2), $intern_18, 4, 0, [stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_19, 5, 15, [-1, 78]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_19, 5, 15, [75, 90])]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 2), $intern_18, 4, 0, [stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_19, 5, 15, [-1, 32])]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 2), $intern_18, 4, 0, [stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_19, 5, 15, [-1, 26]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_19, 5, 15, [15, 33]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_19, 5, 15, [27, 43]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_19, 5, 15, [34, 46]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_19, 5, 15, [40, 55]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_19, 5, 15, [56, 68])]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 2), $intern_18, 4, 0, [stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_19, 5, 15, [-1, 84])]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 2), $intern_18, 4, 0, [stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_19, 5, 15, [-1, 66])])]);
+  errorMessages = stampJavaTypeInfo(getClassLiteralForArray(Ljava_lang_String_2_classLit, 1), $intern_3, 2, 6, ["expecting: 'NOT', 'EXCLUDE', 'SELECT', 'SCORE', '(', integer, amino acid", 'expecting: integer, amino acid', "expecting: 'NOT', integer, amino acid", "expecting: 'ATLEAST', 'EXACTLY', 'NOTMORETHAN'", "expecting: 'FROM'", "expecting: 'NOT', 'EXCLUDE', 'SELECT', '(', integer, amino acid", "expecting: '(', amino acid", 'expecting: integer', 'expecting: EOF', "expecting: 'AND', 'OR', ')', '=>', EOF", 'expecting: amino acid', "expecting: '('", "expecting: ')'", "expecting: 'NOT'", "expecting: 'AND', 'OR', ')', '=>', ',', amino acid, EOF", "expecting: 'NOT', 'EXCLUDE', 'SELECT', 'NOTMORETHAN', '(', integer, amino acid", "expecting: 'AND', 'OR', 'FROM'", "expecting: 'NOT', 'EXCLUDE', 'SELECT', 'MAX', '(', integer, amino acid", "expecting: 'NOTMORETHAN'", "expecting: '=>'", "expecting: ')', ','", "expecting: ')', amino acid", "expecting: '-', integer, float", "expecting: 'AND', 'OR', ')', '=>', ',', EOF", 'expecting: integer, float']);
+  errors = stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_19, 5, 15, [0, 1, 2, 3, 4, 5, 6, 7, 8, 8, 9, 9, 9, 9, 8, 10, 7, 9, 7, 7, 7, 9, 11, 12, 13, 14, 14, 6, 15, 15, 9, 5, 9, 14, 10, 16, 4, 4, 17, 9, 10, 14, 13, 14, 9, 9, 14, 11, 18, 11, 11, 11, 19, 12, 20, 21, 10, 2, 7, 2, 2, 17, 22, 8, 17, 20, 20, 23, 21, 20, 12, 4, 12, 12, 12, 24, 20, 20, 20, 20, 20, 23, 2, 20, 20, 9, 11, 9, 9, 20, 20, 20, 20, 2, 12, 9]);
 }
 
 function $goTo(this$static, index_0){
@@ -9702,77 +10070,77 @@ function $parse(this$static){
         switch (this$static.action_0[1]) {
           case 0:
             {
-              list = (nodeList = new ArrayList , nodeArrayList1 = castTo($previous(this$static.stack_0), 8).nodes , pbooleanconditionNode2 = (checkCriticalElementIndex(0, nodeArrayList1.array.length) , castTo(nodeArrayList1.array[0], 65)) , pstatementNode1 = new ALogicstatementStatement(pbooleanconditionNode2) , push_1(nodeList.array, pstatementNode1) , nodeList);
+              list = (nodeList = new ArrayList , nodeArrayList1 = castTo($previous(this$static.stack_0), 8).nodes , pbooleanconditionNode2 = (checkCriticalElementIndex(0, nodeArrayList1.array.length) , castTo(nodeArrayList1.array[0], 67)) , pstatementNode1 = new ALogicstatementStatement(pbooleanconditionNode2) , push_1(nodeList.array, pstatementNode1) , nodeList);
               $push_0(this$static, $goTo(this$static, 0), list);
             }
 
             break;
           case 1:
             {
-              list = (nodeList_0 = new ArrayList , nodeArrayList1_0 = castTo($previous(this$static.stack_0), 8).nodes , pscoreconditionNode2 = (checkCriticalElementIndex(0, nodeArrayList1_0.array.length) , castTo(nodeArrayList1_0.array[0], 131)) , pstatementNode1_0 = new AScoreStatement(pscoreconditionNode2) , push_1(nodeList_0.array, pstatementNode1_0) , nodeList_0);
+              list = (nodeList_0 = new ArrayList , nodeArrayList1_0 = castTo($previous(this$static.stack_0), 8).nodes , pscoreconditionNode2 = (checkCriticalElementIndex(0, nodeArrayList1_0.array.length) , castTo(nodeArrayList1_0.array[0], 137)) , pstatementNode1_0 = new AScoreStatement(pscoreconditionNode2) , push_1(nodeList_0.array, pstatementNode1_0) , nodeList_0);
               $push_0(this$static, $goTo(this$static, 0), list);
             }
 
             break;
           case 2:
             {
-              list = (nodeList_1 = new ArrayList , nodeArrayList1_1 = castTo($previous(this$static.stack_0), 8).nodes , listNode3 = new TypedLinkedList , pconditionNode2 = (checkCriticalElementIndex(0, nodeArrayList1_1.array.length) , castTo(nodeArrayList1_1.array[0], 52)) , pbooleanconditionNode1 = new ABooleancondition(pconditionNode2, listNode3) , push_1(nodeList_1.array, pbooleanconditionNode1) , nodeList_1);
+              list = (nodeList_1 = new ArrayList , nodeArrayList1_1 = castTo($previous(this$static.stack_0), 8).nodes , listNode3 = new TypedLinkedList , pconditionNode2 = (checkCriticalElementIndex(0, nodeArrayList1_1.array.length) , castTo(nodeArrayList1_1.array[0], 53)) , pbooleanconditionNode1 = new ABooleancondition(pconditionNode2, listNode3) , push_1(nodeList_1.array, pbooleanconditionNode1) , nodeList_1);
               $push_0(this$static, $goTo(this$static, 1), list);
             }
 
             break;
           case 3:
             {
-              list = (nodeList_2 = new ArrayList , nodeArrayList2 = castTo($previous(this$static.stack_0), 8).nodes , nodeArrayList1_2 = castTo($previous(this$static.stack_0), 8).nodes , listNode4 = new TypedLinkedList , pconditionNode2_0 = (checkCriticalElementIndex(0, nodeArrayList1_2.array.length) , castTo(nodeArrayList1_2.array[0], 52)) , listNode3_0 = (checkCriticalElementIndex(0, nodeArrayList2.array.length) , castTo(nodeArrayList2.array[0], 12)) , !!listNode3_0 && $addAll_2(listNode4, listNode3_0) , pbooleanconditionNode1_0 = new ABooleancondition(pconditionNode2_0, listNode4) , push_1(nodeList_2.array, pbooleanconditionNode1_0) , nodeList_2);
+              list = (nodeList_2 = new ArrayList , nodeArrayList2 = castTo($previous(this$static.stack_0), 8).nodes , nodeArrayList1_2 = castTo($previous(this$static.stack_0), 8).nodes , listNode4 = new TypedLinkedList , pconditionNode2_0 = (checkCriticalElementIndex(0, nodeArrayList1_2.array.length) , castTo(nodeArrayList1_2.array[0], 53)) , listNode3_0 = (checkCriticalElementIndex(0, nodeArrayList2.array.length) , castTo(nodeArrayList2.array[0], 12)) , !!listNode3_0 && $addAll_2(listNode4, listNode3_0) , pbooleanconditionNode1_0 = new ABooleancondition(pconditionNode2_0, listNode4) , push_1(nodeList_2.array, pbooleanconditionNode1_0) , nodeList_2);
               $push_0(this$static, $goTo(this$static, 1), list);
             }
 
             break;
           case 4:
             {
-              list = (nodeList_3 = new ArrayList , nodeArrayList3 = castTo($previous(this$static.stack_0), 8).nodes , nodeArrayList2_0 = castTo($previous(this$static.stack_0), 8).nodes , nodeArrayList1_3 = castTo($previous(this$static.stack_0), 8).nodes , tlparNode2 = (checkCriticalElementIndex(0, nodeArrayList1_3.array.length) , castTo(nodeArrayList1_3.array[0], 41)) , pbooleanconditionNode3 = (checkCriticalElementIndex(0, nodeArrayList2_0.array.length) , castTo(nodeArrayList2_0.array[0], 65)) , trparNode4 = (checkCriticalElementIndex(0, nodeArrayList3.array.length) , castTo(nodeArrayList3.array[0], 42)) , pconditionNode1 = new AStatementCondition(tlparNode2, pbooleanconditionNode3, trparNode4) , push_1(nodeList_3.array, pconditionNode1) , nodeList_3);
+              list = (nodeList_3 = new ArrayList , nodeArrayList3 = castTo($previous(this$static.stack_0), 8).nodes , nodeArrayList2_0 = castTo($previous(this$static.stack_0), 8).nodes , nodeArrayList1_3 = castTo($previous(this$static.stack_0), 8).nodes , tlparNode2 = (checkCriticalElementIndex(0, nodeArrayList1_3.array.length) , castTo(nodeArrayList1_3.array[0], 41)) , pbooleanconditionNode3 = (checkCriticalElementIndex(0, nodeArrayList2_0.array.length) , castTo(nodeArrayList2_0.array[0], 67)) , trparNode4 = (checkCriticalElementIndex(0, nodeArrayList3.array.length) , castTo(nodeArrayList3.array[0], 42)) , pconditionNode1 = new AStatementCondition(tlparNode2, pbooleanconditionNode3, trparNode4) , push_1(nodeList_3.array, pconditionNode1) , nodeList_3);
               $push_0(this$static, $goTo(this$static, 2), list);
             }
 
             break;
           case 5:
             {
-              list = (nodeList_4 = new ArrayList , nodeArrayList1_4 = castTo($previous(this$static.stack_0), 8).nodes , presidueNode2 = (checkCriticalElementIndex(0, nodeArrayList1_4.array.length) , castTo(nodeArrayList1_4.array[0], 49)) , pconditionNode1_0 = new AResidueCondition(presidueNode2) , push_1(nodeList_4.array, pconditionNode1_0) , nodeList_4);
+              list = (nodeList_4 = new ArrayList , nodeArrayList1_4 = castTo($previous(this$static.stack_0), 8).nodes , presidueNode2 = (checkCriticalElementIndex(0, nodeArrayList1_4.array.length) , castTo(nodeArrayList1_4.array[0], 50)) , pconditionNode1_0 = new AResidueCondition(presidueNode2) , push_1(nodeList_4.array, pconditionNode1_0) , nodeList_4);
               $push_0(this$static, $goTo(this$static, 2), list);
             }
 
             break;
           case 6:
             {
-              list = (nodeList_5 = new ArrayList , nodeArrayList1_5 = castTo($previous(this$static.stack_0), 8).nodes , pexcludestatementNode2 = (checkCriticalElementIndex(0, nodeArrayList1_5.array.length) , castTo(nodeArrayList1_5.array[0], 126)) , pconditionNode1_1 = new AExcludeCondition(pexcludestatementNode2) , push_1(nodeList_5.array, pconditionNode1_1) , nodeList_5);
+              list = (nodeList_5 = new ArrayList , nodeArrayList1_5 = castTo($previous(this$static.stack_0), 8).nodes , pexcludestatementNode2 = (checkCriticalElementIndex(0, nodeArrayList1_5.array.length) , castTo(nodeArrayList1_5.array[0], 132)) , pconditionNode1_1 = new AExcludeCondition(pexcludestatementNode2) , push_1(nodeList_5.array, pconditionNode1_1) , nodeList_5);
               $push_0(this$static, $goTo(this$static, 2), list);
             }
 
             break;
           case 7:
             {
-              list = (nodeList_6 = new ArrayList , nodeArrayList1_6 = castTo($previous(this$static.stack_0), 8).nodes , pselectstatementNode2 = (checkCriticalElementIndex(0, nodeArrayList1_6.array.length) , castTo(nodeArrayList1_6.array[0], 128)) , pconditionNode1_2 = new ASelectCondition(pselectstatementNode2) , push_1(nodeList_6.array, pconditionNode1_2) , nodeList_6);
+              list = (nodeList_6 = new ArrayList , nodeArrayList1_6 = castTo($previous(this$static.stack_0), 8).nodes , pselectstatementNode2 = (checkCriticalElementIndex(0, nodeArrayList1_6.array.length) , castTo(nodeArrayList1_6.array[0], 134)) , pconditionNode1_2 = new ASelectCondition(pselectstatementNode2) , push_1(nodeList_6.array, pconditionNode1_2) , nodeList_6);
               $push_0(this$static, $goTo(this$static, 2), list);
             }
 
             break;
           case 8:
             {
-              list = (nodeList_7 = new ArrayList , nodeArrayList2_1 = castTo($previous(this$static.stack_0), 8).nodes , nodeArrayList1_7 = castTo($previous(this$static.stack_0), 8).nodes , plogicsymbolNode2 = (checkCriticalElementIndex(0, nodeArrayList1_7.array.length) , castTo(nodeArrayList1_7.array[0], 84)) , pconditionNode3 = (checkCriticalElementIndex(0, nodeArrayList2_1.array.length) , castTo(nodeArrayList2_1.array[0], 52)) , pcondition2Node1 = new ACondition2(plogicsymbolNode2, pconditionNode3) , push_1(nodeList_7.array, pcondition2Node1) , nodeList_7);
+              list = (nodeList_7 = new ArrayList , nodeArrayList2_1 = castTo($previous(this$static.stack_0), 8).nodes , nodeArrayList1_7 = castTo($previous(this$static.stack_0), 8).nodes , plogicsymbolNode2 = (checkCriticalElementIndex(0, nodeArrayList1_7.array.length) , castTo(nodeArrayList1_7.array[0], 86)) , pconditionNode3 = (checkCriticalElementIndex(0, nodeArrayList2_1.array.length) , castTo(nodeArrayList2_1.array[0], 53)) , pcondition2Node1 = new ACondition2(plogicsymbolNode2, pconditionNode3) , push_1(nodeList_7.array, pcondition2Node1) , nodeList_7);
               $push_0(this$static, $goTo(this$static, 3), list);
             }
 
             break;
           case 9:
             {
-              list = (nodeList_8 = new ArrayList , nodeArrayList1_8 = castTo($previous(this$static.stack_0), 8).nodes , tandNode2 = (checkCriticalElementIndex(0, nodeArrayList1_8.array.length) , castTo(nodeArrayList1_8.array[0], 124)) , plogicsymbolNode1 = new AAndLogicsymbol(tandNode2) , push_1(nodeList_8.array, plogicsymbolNode1) , nodeList_8);
+              list = (nodeList_8 = new ArrayList , nodeArrayList1_8 = castTo($previous(this$static.stack_0), 8).nodes , tandNode2 = (checkCriticalElementIndex(0, nodeArrayList1_8.array.length) , castTo(nodeArrayList1_8.array[0], 130)) , plogicsymbolNode1 = new AAndLogicsymbol(tandNode2) , push_1(nodeList_8.array, plogicsymbolNode1) , nodeList_8);
               $push_0(this$static, $goTo(this$static, 4), list);
             }
 
             break;
           case 10:
             {
-              list = (nodeList_9 = new ArrayList , nodeArrayList1_9 = castTo($previous(this$static.stack_0), 8).nodes , torNode2 = (checkCriticalElementIndex(0, nodeArrayList1_9.array.length) , castTo(nodeArrayList1_9.array[0], 125)) , plogicsymbolNode1_0 = new AOrLogicsymbol(torNode2) , push_1(nodeList_9.array, plogicsymbolNode1_0) , nodeList_9);
+              list = (nodeList_9 = new ArrayList , nodeArrayList1_9 = castTo($previous(this$static.stack_0), 8).nodes , torNode2 = (checkCriticalElementIndex(0, nodeArrayList1_9.array.length) , castTo(nodeArrayList1_9.array[0], 131)) , plogicsymbolNode1_0 = new AOrLogicsymbol(torNode2) , push_1(nodeList_9.array, plogicsymbolNode1_0) , nodeList_9);
               $push_0(this$static, $goTo(this$static, 4), list);
             }
 
@@ -9793,140 +10161,140 @@ function $parse(this$static){
             break;
           case 13:
             {
-              list = (nodeList_12 = new ArrayList , nodeArrayList3_1 = castTo($previous(this$static.stack_0), 8).nodes , nodeArrayList2_4 = castTo($previous(this$static.stack_0), 8).nodes , nodeArrayList1_12 = castTo($previous(this$static.stack_0), 8).nodes , listNode6 = new TypedLinkedList , tnotNode2 = (checkCriticalElementIndex(0, nodeArrayList1_12.array.length) , castTo(nodeArrayList1_12.array[0], 67)) , tintegerNode4 = (checkCriticalElementIndex(0, nodeArrayList2_4.array.length) , castTo(nodeArrayList2_4.array[0], 32)) , listNode5_1 = (checkCriticalElementIndex(0, nodeArrayList3_1.array.length) , castTo(nodeArrayList3_1.array[0], 12)) , !!listNode5_1 && $addAll_2(listNode6, listNode5_1) , presidueNode1_1 = new AResiduenotResidue(tnotNode2, null, tintegerNode4, listNode6) , push_1(nodeList_12.array, presidueNode1_1) , nodeList_12);
+              list = (nodeList_12 = new ArrayList , nodeArrayList3_1 = castTo($previous(this$static.stack_0), 8).nodes , nodeArrayList2_4 = castTo($previous(this$static.stack_0), 8).nodes , nodeArrayList1_12 = castTo($previous(this$static.stack_0), 8).nodes , listNode6 = new TypedLinkedList , tnotNode2 = (checkCriticalElementIndex(0, nodeArrayList1_12.array.length) , castTo(nodeArrayList1_12.array[0], 69)) , tintegerNode4 = (checkCriticalElementIndex(0, nodeArrayList2_4.array.length) , castTo(nodeArrayList2_4.array[0], 32)) , listNode5_1 = (checkCriticalElementIndex(0, nodeArrayList3_1.array.length) , castTo(nodeArrayList3_1.array[0], 12)) , !!listNode5_1 && $addAll_2(listNode6, listNode5_1) , presidueNode1_1 = new AResiduenotResidue(tnotNode2, null, tintegerNode4, listNode6) , push_1(nodeList_12.array, presidueNode1_1) , nodeList_12);
               $push_0(this$static, $goTo(this$static, 5), list);
             }
 
             break;
           case 14:
             {
-              list = (nodeList_13 = new ArrayList , nodeArrayList4 = castTo($previous(this$static.stack_0), 8).nodes , nodeArrayList3_2 = castTo($previous(this$static.stack_0), 8).nodes , nodeArrayList2_5 = castTo($previous(this$static.stack_0), 8).nodes , nodeArrayList1_13 = castTo($previous(this$static.stack_0), 8).nodes , listNode6_0 = new TypedLinkedList , tnotNode2_0 = (checkCriticalElementIndex(0, nodeArrayList1_13.array.length) , castTo(nodeArrayList1_13.array[0], 67)) , taminoacidNode3 = (checkCriticalElementIndex(0, nodeArrayList2_5.array.length) , castTo(nodeArrayList2_5.array[0], 33)) , tintegerNode4_0 = (checkCriticalElementIndex(0, nodeArrayList3_2.array.length) , castTo(nodeArrayList3_2.array[0], 32)) , listNode5_2 = (checkCriticalElementIndex(0, nodeArrayList4.array.length) , castTo(nodeArrayList4.array[0], 12)) , !!listNode5_2 && $addAll_2(listNode6_0, listNode5_2) , presidueNode1_2 = new AResiduenotResidue(tnotNode2_0, taminoacidNode3, tintegerNode4_0, listNode6_0) , push_1(nodeList_13.array, presidueNode1_2) , nodeList_13);
+              list = (nodeList_13 = new ArrayList , nodeArrayList4 = castTo($previous(this$static.stack_0), 8).nodes , nodeArrayList3_2 = castTo($previous(this$static.stack_0), 8).nodes , nodeArrayList2_5 = castTo($previous(this$static.stack_0), 8).nodes , nodeArrayList1_13 = castTo($previous(this$static.stack_0), 8).nodes , listNode6_0 = new TypedLinkedList , tnotNode2_0 = (checkCriticalElementIndex(0, nodeArrayList1_13.array.length) , castTo(nodeArrayList1_13.array[0], 69)) , taminoacidNode3 = (checkCriticalElementIndex(0, nodeArrayList2_5.array.length) , castTo(nodeArrayList2_5.array[0], 33)) , tintegerNode4_0 = (checkCriticalElementIndex(0, nodeArrayList3_2.array.length) , castTo(nodeArrayList3_2.array[0], 32)) , listNode5_2 = (checkCriticalElementIndex(0, nodeArrayList4.array.length) , castTo(nodeArrayList4.array[0], 12)) , !!listNode5_2 && $addAll_2(listNode6_0, listNode5_2) , presidueNode1_2 = new AResiduenotResidue(tnotNode2_0, taminoacidNode3, tintegerNode4_0, listNode6_0) , push_1(nodeList_13.array, presidueNode1_2) , nodeList_13);
               $push_0(this$static, $goTo(this$static, 5), list);
             }
 
             break;
           case 15:
             {
-              list = (nodeList_14 = new ArrayList , nodeArrayList5 = castTo($previous(this$static.stack_0), 8).nodes , nodeArrayList4_0 = castTo($previous(this$static.stack_0), 8).nodes , nodeArrayList3_3 = castTo($previous(this$static.stack_0), 8).nodes , nodeArrayList2_6 = castTo($previous(this$static.stack_0), 8).nodes , nodeArrayList1_14 = castTo($previous(this$static.stack_0), 8).nodes , listNode7 = new TypedLinkedList , tintegerNode3_1 = (checkCriticalElementIndex(0, nodeArrayList1_14.array.length) , castTo(nodeArrayList1_14.array[0], 32)) , tlparNode4 = (checkCriticalElementIndex(0, nodeArrayList2_6.array.length) , castTo(nodeArrayList2_6.array[0], 41)) , tnotNode5 = (checkCriticalElementIndex(0, nodeArrayList3_3.array.length) , castTo(nodeArrayList3_3.array[0], 67)) , listNode6_1 = (checkCriticalElementIndex(0, nodeArrayList4_0.array.length) , castTo(nodeArrayList4_0.array[0], 12)) , !!listNode6_1 && $addAll_2(listNode7, listNode6_1) , trparNode8 = (checkCriticalElementIndex(0, nodeArrayList5.array.length) , castTo(nodeArrayList5.array[0], 42)) , presidueNode1_3 = new AResidueinvertResidue(null, tintegerNode3_1, tlparNode4, tnotNode5, listNode7, trparNode8) , push_1(nodeList_14.array, presidueNode1_3) , nodeList_14);
+              list = (nodeList_14 = new ArrayList , nodeArrayList5 = castTo($previous(this$static.stack_0), 8).nodes , nodeArrayList4_0 = castTo($previous(this$static.stack_0), 8).nodes , nodeArrayList3_3 = castTo($previous(this$static.stack_0), 8).nodes , nodeArrayList2_6 = castTo($previous(this$static.stack_0), 8).nodes , nodeArrayList1_14 = castTo($previous(this$static.stack_0), 8).nodes , listNode7 = new TypedLinkedList , tintegerNode3_1 = (checkCriticalElementIndex(0, nodeArrayList1_14.array.length) , castTo(nodeArrayList1_14.array[0], 32)) , tlparNode4 = (checkCriticalElementIndex(0, nodeArrayList2_6.array.length) , castTo(nodeArrayList2_6.array[0], 41)) , tnotNode5 = (checkCriticalElementIndex(0, nodeArrayList3_3.array.length) , castTo(nodeArrayList3_3.array[0], 69)) , listNode6_1 = (checkCriticalElementIndex(0, nodeArrayList4_0.array.length) , castTo(nodeArrayList4_0.array[0], 12)) , !!listNode6_1 && $addAll_2(listNode7, listNode6_1) , trparNode8 = (checkCriticalElementIndex(0, nodeArrayList5.array.length) , castTo(nodeArrayList5.array[0], 42)) , presidueNode1_3 = new AResidueinvertResidue(null, tintegerNode3_1, tlparNode4, tnotNode5, listNode7, trparNode8) , push_1(nodeList_14.array, presidueNode1_3) , nodeList_14);
               $push_0(this$static, $goTo(this$static, 5), list);
             }
 
             break;
           case 16:
             {
-              list = (nodeList_15 = new ArrayList , nodeArrayList6 = castTo($previous(this$static.stack_0), 8).nodes , nodeArrayList5_0 = castTo($previous(this$static.stack_0), 8).nodes , nodeArrayList4_1 = castTo($previous(this$static.stack_0), 8).nodes , nodeArrayList3_4 = castTo($previous(this$static.stack_0), 8).nodes , nodeArrayList2_7 = castTo($previous(this$static.stack_0), 8).nodes , nodeArrayList1_15 = castTo($previous(this$static.stack_0), 8).nodes , listNode7_0 = new TypedLinkedList , taminoacidNode2_0 = (checkCriticalElementIndex(0, nodeArrayList1_15.array.length) , castTo(nodeArrayList1_15.array[0], 33)) , tintegerNode3_2 = (checkCriticalElementIndex(0, nodeArrayList2_7.array.length) , castTo(nodeArrayList2_7.array[0], 32)) , tlparNode4_0 = (checkCriticalElementIndex(0, nodeArrayList3_4.array.length) , castTo(nodeArrayList3_4.array[0], 41)) , tnotNode5_0 = (checkCriticalElementIndex(0, nodeArrayList4_1.array.length) , castTo(nodeArrayList4_1.array[0], 67)) , listNode6_2 = (checkCriticalElementIndex(0, nodeArrayList5_0.array.length) , castTo(nodeArrayList5_0.array[0], 12)) , !!listNode6_2 && $addAll_2(listNode7_0, listNode6_2) , trparNode8_0 = (checkCriticalElementIndex(0, nodeArrayList6.array.length) , castTo(nodeArrayList6.array[0], 42)) , presidueNode1_4 = new AResidueinvertResidue(taminoacidNode2_0, tintegerNode3_2, tlparNode4_0, tnotNode5_0, listNode7_0, trparNode8_0) , push_1(nodeList_15.array, presidueNode1_4) , nodeList_15);
+              list = (nodeList_15 = new ArrayList , nodeArrayList6 = castTo($previous(this$static.stack_0), 8).nodes , nodeArrayList5_0 = castTo($previous(this$static.stack_0), 8).nodes , nodeArrayList4_1 = castTo($previous(this$static.stack_0), 8).nodes , nodeArrayList3_4 = castTo($previous(this$static.stack_0), 8).nodes , nodeArrayList2_7 = castTo($previous(this$static.stack_0), 8).nodes , nodeArrayList1_15 = castTo($previous(this$static.stack_0), 8).nodes , listNode7_0 = new TypedLinkedList , taminoacidNode2_0 = (checkCriticalElementIndex(0, nodeArrayList1_15.array.length) , castTo(nodeArrayList1_15.array[0], 33)) , tintegerNode3_2 = (checkCriticalElementIndex(0, nodeArrayList2_7.array.length) , castTo(nodeArrayList2_7.array[0], 32)) , tlparNode4_0 = (checkCriticalElementIndex(0, nodeArrayList3_4.array.length) , castTo(nodeArrayList3_4.array[0], 41)) , tnotNode5_0 = (checkCriticalElementIndex(0, nodeArrayList4_1.array.length) , castTo(nodeArrayList4_1.array[0], 69)) , listNode6_2 = (checkCriticalElementIndex(0, nodeArrayList5_0.array.length) , castTo(nodeArrayList5_0.array[0], 12)) , !!listNode6_2 && $addAll_2(listNode7_0, listNode6_2) , trparNode8_0 = (checkCriticalElementIndex(0, nodeArrayList6.array.length) , castTo(nodeArrayList6.array[0], 42)) , presidueNode1_4 = new AResidueinvertResidue(taminoacidNode2_0, tintegerNode3_2, tlparNode4_0, tnotNode5_0, listNode7_0, trparNode8_0) , push_1(nodeList_15.array, presidueNode1_4) , nodeList_15);
               $push_0(this$static, $goTo(this$static, 5), list);
             }
 
             break;
           case 17:
             {
-              list = (nodeList_16 = new ArrayList , nodeArrayList2_8 = castTo($previous(this$static.stack_0), 8).nodes , nodeArrayList1_16 = castTo($previous(this$static.stack_0), 8).nodes , texcludeNode2 = (checkCriticalElementIndex(0, nodeArrayList1_16.array.length) , castTo(nodeArrayList1_16.array[0], 127)) , presidueNode3 = (checkCriticalElementIndex(0, nodeArrayList2_8.array.length) , castTo(nodeArrayList2_8.array[0], 49)) , pexcludestatementNode1 = new AExcludestatement(texcludeNode2, presidueNode3) , push_1(nodeList_16.array, pexcludestatementNode1) , nodeList_16);
+              list = (nodeList_16 = new ArrayList , nodeArrayList2_8 = castTo($previous(this$static.stack_0), 8).nodes , nodeArrayList1_16 = castTo($previous(this$static.stack_0), 8).nodes , texcludeNode2 = (checkCriticalElementIndex(0, nodeArrayList1_16.array.length) , castTo(nodeArrayList1_16.array[0], 133)) , presidueNode3 = (checkCriticalElementIndex(0, nodeArrayList2_8.array.length) , castTo(nodeArrayList2_8.array[0], 50)) , pexcludestatementNode1 = new AExcludestatement(texcludeNode2, presidueNode3) , push_1(nodeList_16.array, pexcludestatementNode1) , nodeList_16);
               $push_0(this$static, $goTo(this$static, 6), list);
             }
 
             break;
           case 18:
             {
-              list = (nodeList_17 = new ArrayList , nodeArrayList2_9 = castTo($previous(this$static.stack_0), 8).nodes , nodeArrayList1_17 = castTo($previous(this$static.stack_0), 8).nodes , tselectNode2 = (checkCriticalElementIndex(0, nodeArrayList1_17.array.length) , castTo(nodeArrayList1_17.array[0], 129)) , pselectstatement2Node3 = (checkCriticalElementIndex(0, nodeArrayList2_9.array.length) , castTo(nodeArrayList2_9.array[0], 68)) , pselectstatementNode1 = new ASelectstatement(tselectNode2, pselectstatement2Node3) , push_1(nodeList_17.array, pselectstatementNode1) , nodeList_17);
+              list = (nodeList_17 = new ArrayList , nodeArrayList2_9 = castTo($previous(this$static.stack_0), 8).nodes , nodeArrayList1_17 = castTo($previous(this$static.stack_0), 8).nodes , tselectNode2 = (checkCriticalElementIndex(0, nodeArrayList1_17.array.length) , castTo(nodeArrayList1_17.array[0], 135)) , pselectstatement2Node3 = (checkCriticalElementIndex(0, nodeArrayList2_9.array.length) , castTo(nodeArrayList2_9.array[0], 70)) , pselectstatementNode1 = new ASelectstatement(tselectNode2, pselectstatement2Node3) , push_1(nodeList_17.array, pselectstatementNode1) , nodeList_17);
               $push_0(this$static, $goTo(this$static, 7), list);
             }
 
             break;
           case 19:
             {
-              list = (nodeList_18 = new ArrayList , nodeArrayList6_0 = castTo($previous(this$static.stack_0), 8).nodes , nodeArrayList5_1 = castTo($previous(this$static.stack_0), 8).nodes , nodeArrayList4_2 = castTo($previous(this$static.stack_0), 8).nodes , nodeArrayList3_5 = castTo($previous(this$static.stack_0), 8).nodes , nodeArrayList2_10 = castTo($previous(this$static.stack_0), 8).nodes , nodeArrayList1_18 = castTo($previous(this$static.stack_0), 8).nodes , texactlyNode2 = (checkCriticalElementIndex(0, nodeArrayList1_18.array.length) , castTo(nodeArrayList1_18.array[0], 130)) , tintegerNode3_3 = (checkCriticalElementIndex(0, nodeArrayList2_10.array.length) , castTo(nodeArrayList2_10.array[0], 32)) , tfromNode4 = (checkCriticalElementIndex(0, nodeArrayList3_5.array.length) , castTo(nodeArrayList3_5.array[0], 56)) , tlparNode5 = (checkCriticalElementIndex(0, nodeArrayList4_2.array.length) , castTo(nodeArrayList4_2.array[0], 41)) , pselectlistNode6 = (checkCriticalElementIndex(0, nodeArrayList5_1.array.length) , castTo(nodeArrayList5_1.array[0], 69)) , trparNode7 = (checkCriticalElementIndex(0, nodeArrayList6_0.array.length) , castTo(nodeArrayList6_0.array[0], 42)) , pselectstatement2Node1 = new AExactlySelectstatement2(texactlyNode2, tintegerNode3_3, tfromNode4, tlparNode5, pselectlistNode6, trparNode7) , push_1(nodeList_18.array, pselectstatement2Node1) , nodeList_18);
+              list = (nodeList_18 = new ArrayList , nodeArrayList6_0 = castTo($previous(this$static.stack_0), 8).nodes , nodeArrayList5_1 = castTo($previous(this$static.stack_0), 8).nodes , nodeArrayList4_2 = castTo($previous(this$static.stack_0), 8).nodes , nodeArrayList3_5 = castTo($previous(this$static.stack_0), 8).nodes , nodeArrayList2_10 = castTo($previous(this$static.stack_0), 8).nodes , nodeArrayList1_18 = castTo($previous(this$static.stack_0), 8).nodes , texactlyNode2 = (checkCriticalElementIndex(0, nodeArrayList1_18.array.length) , castTo(nodeArrayList1_18.array[0], 136)) , tintegerNode3_3 = (checkCriticalElementIndex(0, nodeArrayList2_10.array.length) , castTo(nodeArrayList2_10.array[0], 32)) , tfromNode4 = (checkCriticalElementIndex(0, nodeArrayList3_5.array.length) , castTo(nodeArrayList3_5.array[0], 59)) , tlparNode5 = (checkCriticalElementIndex(0, nodeArrayList4_2.array.length) , castTo(nodeArrayList4_2.array[0], 41)) , pselectlistNode6 = (checkCriticalElementIndex(0, nodeArrayList5_1.array.length) , castTo(nodeArrayList5_1.array[0], 71)) , trparNode7 = (checkCriticalElementIndex(0, nodeArrayList6_0.array.length) , castTo(nodeArrayList6_0.array[0], 42)) , pselectstatement2Node1 = new AExactlySelectstatement2(texactlyNode2, tintegerNode3_3, tfromNode4, tlparNode5, pselectlistNode6, trparNode7) , push_1(nodeList_18.array, pselectstatement2Node1) , nodeList_18);
               $push_0(this$static, $goTo(this$static, 8), list);
             }
 
             break;
           case 20:
             {
-              list = (nodeList_19 = new ArrayList , nodeArrayList6_1 = castTo($previous(this$static.stack_0), 8).nodes , nodeArrayList5_2 = castTo($previous(this$static.stack_0), 8).nodes , nodeArrayList4_3 = castTo($previous(this$static.stack_0), 8).nodes , nodeArrayList3_6 = castTo($previous(this$static.stack_0), 8).nodes , nodeArrayList2_11 = castTo($previous(this$static.stack_0), 8).nodes , nodeArrayList1_19 = castTo($previous(this$static.stack_0), 8).nodes , tatleastNode2 = (checkCriticalElementIndex(0, nodeArrayList1_19.array.length) , castTo(nodeArrayList1_19.array[0], 108)) , tintegerNode3_4 = (checkCriticalElementIndex(0, nodeArrayList2_11.array.length) , castTo(nodeArrayList2_11.array[0], 32)) , tfromNode4_0 = (checkCriticalElementIndex(0, nodeArrayList3_6.array.length) , castTo(nodeArrayList3_6.array[0], 56)) , tlparNode5_0 = (checkCriticalElementIndex(0, nodeArrayList4_3.array.length) , castTo(nodeArrayList4_3.array[0], 41)) , pselectlistNode6_0 = (checkCriticalElementIndex(0, nodeArrayList5_2.array.length) , castTo(nodeArrayList5_2.array[0], 69)) , trparNode7_0 = (checkCriticalElementIndex(0, nodeArrayList6_1.array.length) , castTo(nodeArrayList6_1.array[0], 42)) , pselectstatement2Node1_0 = new AAtleastSelectstatement2(tatleastNode2, tintegerNode3_4, tfromNode4_0, tlparNode5_0, pselectlistNode6_0, trparNode7_0) , push_1(nodeList_19.array, pselectstatement2Node1_0) , nodeList_19);
+              list = (nodeList_19 = new ArrayList , nodeArrayList6_1 = castTo($previous(this$static.stack_0), 8).nodes , nodeArrayList5_2 = castTo($previous(this$static.stack_0), 8).nodes , nodeArrayList4_3 = castTo($previous(this$static.stack_0), 8).nodes , nodeArrayList3_6 = castTo($previous(this$static.stack_0), 8).nodes , nodeArrayList2_11 = castTo($previous(this$static.stack_0), 8).nodes , nodeArrayList1_19 = castTo($previous(this$static.stack_0), 8).nodes , tatleastNode2 = (checkCriticalElementIndex(0, nodeArrayList1_19.array.length) , castTo(nodeArrayList1_19.array[0], 110)) , tintegerNode3_4 = (checkCriticalElementIndex(0, nodeArrayList2_11.array.length) , castTo(nodeArrayList2_11.array[0], 32)) , tfromNode4_0 = (checkCriticalElementIndex(0, nodeArrayList3_6.array.length) , castTo(nodeArrayList3_6.array[0], 59)) , tlparNode5_0 = (checkCriticalElementIndex(0, nodeArrayList4_3.array.length) , castTo(nodeArrayList4_3.array[0], 41)) , pselectlistNode6_0 = (checkCriticalElementIndex(0, nodeArrayList5_2.array.length) , castTo(nodeArrayList5_2.array[0], 71)) , trparNode7_0 = (checkCriticalElementIndex(0, nodeArrayList6_1.array.length) , castTo(nodeArrayList6_1.array[0], 42)) , pselectstatement2Node1_0 = new AAtleastSelectstatement2(tatleastNode2, tintegerNode3_4, tfromNode4_0, tlparNode5_0, pselectlistNode6_0, trparNode7_0) , push_1(nodeList_19.array, pselectstatement2Node1_0) , nodeList_19);
               $push_0(this$static, $goTo(this$static, 8), list);
             }
 
             break;
           case 21:
             {
-              list = (nodeList_20 = new ArrayList , nodeArrayList6_2 = castTo($previous(this$static.stack_0), 8).nodes , nodeArrayList5_3 = castTo($previous(this$static.stack_0), 8).nodes , nodeArrayList4_4 = castTo($previous(this$static.stack_0), 8).nodes , nodeArrayList3_7 = castTo($previous(this$static.stack_0), 8).nodes , nodeArrayList2_12 = castTo($previous(this$static.stack_0), 8).nodes , nodeArrayList1_20 = castTo($previous(this$static.stack_0), 8).nodes , tnotmorethanNode2 = (checkCriticalElementIndex(0, nodeArrayList1_20.array.length) , castTo(nodeArrayList1_20.array[0], 109)) , tintegerNode3_5 = (checkCriticalElementIndex(0, nodeArrayList2_12.array.length) , castTo(nodeArrayList2_12.array[0], 32)) , tfromNode4_1 = (checkCriticalElementIndex(0, nodeArrayList3_7.array.length) , castTo(nodeArrayList3_7.array[0], 56)) , tlparNode5_1 = (checkCriticalElementIndex(0, nodeArrayList4_4.array.length) , castTo(nodeArrayList4_4.array[0], 41)) , pselectlistNode6_1 = (checkCriticalElementIndex(0, nodeArrayList5_3.array.length) , castTo(nodeArrayList5_3.array[0], 69)) , trparNode7_1 = (checkCriticalElementIndex(0, nodeArrayList6_2.array.length) , castTo(nodeArrayList6_2.array[0], 42)) , pselectstatement2Node1_1 = new ANotmorethanSelectstatement2(tnotmorethanNode2, tintegerNode3_5, tfromNode4_1, tlparNode5_1, pselectlistNode6_1, trparNode7_1) , push_1(nodeList_20.array, pselectstatement2Node1_1) , nodeList_20);
+              list = (nodeList_20 = new ArrayList , nodeArrayList6_2 = castTo($previous(this$static.stack_0), 8).nodes , nodeArrayList5_3 = castTo($previous(this$static.stack_0), 8).nodes , nodeArrayList4_4 = castTo($previous(this$static.stack_0), 8).nodes , nodeArrayList3_7 = castTo($previous(this$static.stack_0), 8).nodes , nodeArrayList2_12 = castTo($previous(this$static.stack_0), 8).nodes , nodeArrayList1_20 = castTo($previous(this$static.stack_0), 8).nodes , tnotmorethanNode2 = (checkCriticalElementIndex(0, nodeArrayList1_20.array.length) , castTo(nodeArrayList1_20.array[0], 111)) , tintegerNode3_5 = (checkCriticalElementIndex(0, nodeArrayList2_12.array.length) , castTo(nodeArrayList2_12.array[0], 32)) , tfromNode4_1 = (checkCriticalElementIndex(0, nodeArrayList3_7.array.length) , castTo(nodeArrayList3_7.array[0], 59)) , tlparNode5_1 = (checkCriticalElementIndex(0, nodeArrayList4_4.array.length) , castTo(nodeArrayList4_4.array[0], 41)) , pselectlistNode6_1 = (checkCriticalElementIndex(0, nodeArrayList5_3.array.length) , castTo(nodeArrayList5_3.array[0], 71)) , trparNode7_1 = (checkCriticalElementIndex(0, nodeArrayList6_2.array.length) , castTo(nodeArrayList6_2.array[0], 42)) , pselectstatement2Node1_1 = new ANotmorethanSelectstatement2(tnotmorethanNode2, tintegerNode3_5, tfromNode4_1, tlparNode5_1, pselectlistNode6_1, trparNode7_1) , push_1(nodeList_20.array, pselectstatement2Node1_1) , nodeList_20);
               $push_0(this$static, $goTo(this$static, 8), list);
             }
 
             break;
           case 22:
             {
-              list = (nodeList_21 = new ArrayList , nodeArrayList9 = castTo($previous(this$static.stack_0), 8).nodes , nodeArrayList8 = castTo($previous(this$static.stack_0), 8).nodes , nodeArrayList7 = castTo($previous(this$static.stack_0), 8).nodes , nodeArrayList6_3 = castTo($previous(this$static.stack_0), 8).nodes , nodeArrayList5_4 = castTo($previous(this$static.stack_0), 8).nodes , nodeArrayList4_5 = castTo($previous(this$static.stack_0), 8).nodes , nodeArrayList3_8 = castTo($previous(this$static.stack_0), 8).nodes , nodeArrayList2_13 = castTo($previous(this$static.stack_0), 8).nodes , nodeArrayList1_21 = castTo($previous(this$static.stack_0), 8).nodes , tatleastNode2_0 = (checkCriticalElementIndex(0, nodeArrayList1_21.array.length) , castTo(nodeArrayList1_21.array[0], 108)) , tintegerNode3_6 = (checkCriticalElementIndex(0, nodeArrayList2_13.array.length) , castTo(nodeArrayList2_13.array[0], 32)) , plogicsymbolNode4 = (checkCriticalElementIndex(0, nodeArrayList3_8.array.length) , castTo(nodeArrayList3_8.array[0], 84)) , tnotmorethanNode5 = (checkCriticalElementIndex(0, nodeArrayList4_5.array.length) , castTo(nodeArrayList4_5.array[0], 109)) , tintegerNode6 = (checkCriticalElementIndex(0, nodeArrayList5_4.array.length) , castTo(nodeArrayList5_4.array[0], 32)) , tfromNode7 = (checkCriticalElementIndex(0, nodeArrayList6_3.array.length) , castTo(nodeArrayList6_3.array[0], 56)) , tlparNode8 = (checkCriticalElementIndex(0, nodeArrayList7.array.length) , castTo(nodeArrayList7.array[0], 41)) , pselectlistNode9 = (checkCriticalElementIndex(0, nodeArrayList8.array.length) , castTo(nodeArrayList8.array[0], 69)) , trparNode10 = (checkCriticalElementIndex(0, nodeArrayList9.array.length) , castTo(nodeArrayList9.array[0], 42)) , pselectstatement2Node1_2 = new AAtleastnotmorethanSelectstatement2(tatleastNode2_0, tintegerNode3_6, plogicsymbolNode4, tnotmorethanNode5, tintegerNode6, tfromNode7, tlparNode8, pselectlistNode9, trparNode10) , push_1(nodeList_21.array, pselectstatement2Node1_2) , nodeList_21);
+              list = (nodeList_21 = new ArrayList , nodeArrayList9 = castTo($previous(this$static.stack_0), 8).nodes , nodeArrayList8 = castTo($previous(this$static.stack_0), 8).nodes , nodeArrayList7 = castTo($previous(this$static.stack_0), 8).nodes , nodeArrayList6_3 = castTo($previous(this$static.stack_0), 8).nodes , nodeArrayList5_4 = castTo($previous(this$static.stack_0), 8).nodes , nodeArrayList4_5 = castTo($previous(this$static.stack_0), 8).nodes , nodeArrayList3_8 = castTo($previous(this$static.stack_0), 8).nodes , nodeArrayList2_13 = castTo($previous(this$static.stack_0), 8).nodes , nodeArrayList1_21 = castTo($previous(this$static.stack_0), 8).nodes , tatleastNode2_0 = (checkCriticalElementIndex(0, nodeArrayList1_21.array.length) , castTo(nodeArrayList1_21.array[0], 110)) , tintegerNode3_6 = (checkCriticalElementIndex(0, nodeArrayList2_13.array.length) , castTo(nodeArrayList2_13.array[0], 32)) , plogicsymbolNode4 = (checkCriticalElementIndex(0, nodeArrayList3_8.array.length) , castTo(nodeArrayList3_8.array[0], 86)) , tnotmorethanNode5 = (checkCriticalElementIndex(0, nodeArrayList4_5.array.length) , castTo(nodeArrayList4_5.array[0], 111)) , tintegerNode6 = (checkCriticalElementIndex(0, nodeArrayList5_4.array.length) , castTo(nodeArrayList5_4.array[0], 32)) , tfromNode7 = (checkCriticalElementIndex(0, nodeArrayList6_3.array.length) , castTo(nodeArrayList6_3.array[0], 59)) , tlparNode8 = (checkCriticalElementIndex(0, nodeArrayList7.array.length) , castTo(nodeArrayList7.array[0], 41)) , pselectlistNode9 = (checkCriticalElementIndex(0, nodeArrayList8.array.length) , castTo(nodeArrayList8.array[0], 71)) , trparNode10 = (checkCriticalElementIndex(0, nodeArrayList9.array.length) , castTo(nodeArrayList9.array[0], 42)) , pselectstatement2Node1_2 = new AAtleastnotmorethanSelectstatement2(tatleastNode2_0, tintegerNode3_6, plogicsymbolNode4, tnotmorethanNode5, tintegerNode6, tfromNode7, tlparNode8, pselectlistNode9, trparNode10) , push_1(nodeList_21.array, pselectstatement2Node1_2) , nodeList_21);
               $push_0(this$static, $goTo(this$static, 8), list);
             }
 
             break;
           case 23:
             {
-              list = (nodeList_22 = new ArrayList , nodeArrayList1_22 = castTo($previous(this$static.stack_0), 8).nodes , listNode3_1 = new TypedLinkedList , presidueNode2_0 = (checkCriticalElementIndex(0, nodeArrayList1_22.array.length) , castTo(nodeArrayList1_22.array[0], 49)) , pselectlistNode1 = new ASelectlist(presidueNode2_0, listNode3_1) , push_1(nodeList_22.array, pselectlistNode1) , nodeList_22);
+              list = (nodeList_22 = new ArrayList , nodeArrayList1_22 = castTo($previous(this$static.stack_0), 8).nodes , listNode3_1 = new TypedLinkedList , presidueNode2_0 = (checkCriticalElementIndex(0, nodeArrayList1_22.array.length) , castTo(nodeArrayList1_22.array[0], 50)) , pselectlistNode1 = new ASelectlist(presidueNode2_0, listNode3_1) , push_1(nodeList_22.array, pselectlistNode1) , nodeList_22);
               $push_0(this$static, $goTo(this$static, 9), list);
             }
 
             break;
           case 24:
             {
-              list = (nodeList_23 = new ArrayList , nodeArrayList2_14 = castTo($previous(this$static.stack_0), 8).nodes , nodeArrayList1_23 = castTo($previous(this$static.stack_0), 8).nodes , listNode4_2 = new TypedLinkedList , presidueNode2_1 = (checkCriticalElementIndex(0, nodeArrayList1_23.array.length) , castTo(nodeArrayList1_23.array[0], 49)) , listNode3_2 = (checkCriticalElementIndex(0, nodeArrayList2_14.array.length) , castTo(nodeArrayList2_14.array[0], 12)) , !!listNode3_2 && $addAll_2(listNode4_2, listNode3_2) , pselectlistNode1_0 = new ASelectlist(presidueNode2_1, listNode4_2) , push_1(nodeList_23.array, pselectlistNode1_0) , nodeList_23);
+              list = (nodeList_23 = new ArrayList , nodeArrayList2_14 = castTo($previous(this$static.stack_0), 8).nodes , nodeArrayList1_23 = castTo($previous(this$static.stack_0), 8).nodes , listNode4_2 = new TypedLinkedList , presidueNode2_1 = (checkCriticalElementIndex(0, nodeArrayList1_23.array.length) , castTo(nodeArrayList1_23.array[0], 50)) , listNode3_2 = (checkCriticalElementIndex(0, nodeArrayList2_14.array.length) , castTo(nodeArrayList2_14.array[0], 12)) , !!listNode3_2 && $addAll_2(listNode4_2, listNode3_2) , pselectlistNode1_0 = new ASelectlist(presidueNode2_1, listNode4_2) , push_1(nodeList_23.array, pselectlistNode1_0) , nodeList_23);
               $push_0(this$static, $goTo(this$static, 9), list);
             }
 
             break;
           case 25:
             {
-              list = (nodeList_24 = new ArrayList , nodeArrayList2_15 = castTo($previous(this$static.stack_0), 8).nodes , nodeArrayList1_24 = castTo($previous(this$static.stack_0), 8).nodes , tcommaNode2 = (checkCriticalElementIndex(0, nodeArrayList1_24.array.length) , castTo(nodeArrayList1_24.array[0], 110)) , presidueNode3_0 = (checkCriticalElementIndex(0, nodeArrayList2_15.array.length) , castTo(nodeArrayList2_15.array[0], 49)) , plistitemsNode1 = new AListitems(tcommaNode2, presidueNode3_0) , push_1(nodeList_24.array, plistitemsNode1) , nodeList_24);
+              list = (nodeList_24 = new ArrayList , nodeArrayList2_15 = castTo($previous(this$static.stack_0), 8).nodes , nodeArrayList1_24 = castTo($previous(this$static.stack_0), 8).nodes , tcommaNode2 = (checkCriticalElementIndex(0, nodeArrayList1_24.array.length) , castTo(nodeArrayList1_24.array[0], 112)) , presidueNode3_0 = (checkCriticalElementIndex(0, nodeArrayList2_15.array.length) , castTo(nodeArrayList2_15.array[0], 50)) , plistitemsNode1 = new AListitems(tcommaNode2, presidueNode3_0) , push_1(nodeList_24.array, plistitemsNode1) , nodeList_24);
               $push_0(this$static, $goTo(this$static, 10), list);
             }
 
             break;
           case 26:
             {
-              list = (nodeList_25 = new ArrayList , nodeArrayList5_5 = castTo($previous(this$static.stack_0), 8).nodes , nodeArrayList4_6 = castTo($previous(this$static.stack_0), 8).nodes , nodeArrayList3_9 = castTo($previous(this$static.stack_0), 8).nodes , nodeArrayList2_16 = castTo($previous(this$static.stack_0), 8).nodes , nodeArrayList1_25 = castTo($previous(this$static.stack_0), 8).nodes , tscoreNode2 = (checkCriticalElementIndex(0, nodeArrayList1_25.array.length) , castTo(nodeArrayList1_25.array[0], 132)) , tfromNode3 = (checkCriticalElementIndex(0, nodeArrayList2_16.array.length) , castTo(nodeArrayList2_16.array[0], 56)) , tlparNode4_1 = (checkCriticalElementIndex(0, nodeArrayList3_9.array.length) , castTo(nodeArrayList3_9.array[0], 41)) , pscorelistNode5 = (checkCriticalElementIndex(0, nodeArrayList4_6.array.length) , castTo(nodeArrayList4_6.array[0], 111)) , trparNode6 = (checkCriticalElementIndex(0, nodeArrayList5_5.array.length) , castTo(nodeArrayList5_5.array[0], 42)) , pscoreconditionNode1 = new AScorecondition(tscoreNode2, tfromNode3, tlparNode4_1, pscorelistNode5, trparNode6) , push_1(nodeList_25.array, pscoreconditionNode1) , nodeList_25);
+              list = (nodeList_25 = new ArrayList , nodeArrayList5_5 = castTo($previous(this$static.stack_0), 8).nodes , nodeArrayList4_6 = castTo($previous(this$static.stack_0), 8).nodes , nodeArrayList3_9 = castTo($previous(this$static.stack_0), 8).nodes , nodeArrayList2_16 = castTo($previous(this$static.stack_0), 8).nodes , nodeArrayList1_25 = castTo($previous(this$static.stack_0), 8).nodes , tscoreNode2 = (checkCriticalElementIndex(0, nodeArrayList1_25.array.length) , castTo(nodeArrayList1_25.array[0], 138)) , tfromNode3 = (checkCriticalElementIndex(0, nodeArrayList2_16.array.length) , castTo(nodeArrayList2_16.array[0], 59)) , tlparNode4_1 = (checkCriticalElementIndex(0, nodeArrayList3_9.array.length) , castTo(nodeArrayList3_9.array[0], 41)) , pscorelistNode5 = (checkCriticalElementIndex(0, nodeArrayList4_6.array.length) , castTo(nodeArrayList4_6.array[0], 113)) , trparNode6 = (checkCriticalElementIndex(0, nodeArrayList5_5.array.length) , castTo(nodeArrayList5_5.array[0], 42)) , pscoreconditionNode1 = new AScorecondition(tscoreNode2, tfromNode3, tlparNode4_1, pscorelistNode5, trparNode6) , push_1(nodeList_25.array, pscoreconditionNode1) , nodeList_25);
               $push_0(this$static, $goTo(this$static, 11), list);
             }
 
             break;
           case 27:
             {
-              list = (nodeList_26 = new ArrayList , nodeArrayList1_26 = castTo($previous(this$static.stack_0), 8).nodes , listNode3_3 = new TypedLinkedList , pscoreitemNode2 = (checkCriticalElementIndex(0, nodeArrayList1_26.array.length) , castTo(nodeArrayList1_26.array[0], 71)) , pscorelistNode1 = new AScorelist(pscoreitemNode2, listNode3_3) , push_1(nodeList_26.array, pscorelistNode1) , nodeList_26);
+              list = (nodeList_26 = new ArrayList , nodeArrayList1_26 = castTo($previous(this$static.stack_0), 8).nodes , listNode3_3 = new TypedLinkedList , pscoreitemNode2 = (checkCriticalElementIndex(0, nodeArrayList1_26.array.length) , castTo(nodeArrayList1_26.array[0], 73)) , pscorelistNode1 = new AScorelist(pscoreitemNode2, listNode3_3) , push_1(nodeList_26.array, pscorelistNode1) , nodeList_26);
               $push_0(this$static, $goTo(this$static, 12), list);
             }
 
             break;
           case 28:
             {
-              list = (nodeList_27 = new ArrayList , nodeArrayList2_17 = castTo($previous(this$static.stack_0), 8).nodes , nodeArrayList1_27 = castTo($previous(this$static.stack_0), 8).nodes , listNode4_3 = new TypedLinkedList , pscoreitemNode2_0 = (checkCriticalElementIndex(0, nodeArrayList1_27.array.length) , castTo(nodeArrayList1_27.array[0], 71)) , listNode3_4 = (checkCriticalElementIndex(0, nodeArrayList2_17.array.length) , castTo(nodeArrayList2_17.array[0], 12)) , !!listNode3_4 && $addAll_2(listNode4_3, listNode3_4) , pscorelistNode1_0 = new AScorelist(pscoreitemNode2_0, listNode4_3) , push_1(nodeList_27.array, pscorelistNode1_0) , nodeList_27);
+              list = (nodeList_27 = new ArrayList , nodeArrayList2_17 = castTo($previous(this$static.stack_0), 8).nodes , nodeArrayList1_27 = castTo($previous(this$static.stack_0), 8).nodes , listNode4_3 = new TypedLinkedList , pscoreitemNode2_0 = (checkCriticalElementIndex(0, nodeArrayList1_27.array.length) , castTo(nodeArrayList1_27.array[0], 73)) , listNode3_4 = (checkCriticalElementIndex(0, nodeArrayList2_17.array.length) , castTo(nodeArrayList2_17.array[0], 12)) , !!listNode3_4 && $addAll_2(listNode4_3, listNode3_4) , pscorelistNode1_0 = new AScorelist(pscoreitemNode2_0, listNode4_3) , push_1(nodeList_27.array, pscorelistNode1_0) , nodeList_27);
               $push_0(this$static, $goTo(this$static, 12), list);
             }
 
             break;
           case 29:
             {
-              list = (nodeList_28 = new ArrayList , nodeArrayList3_10 = castTo($previous(this$static.stack_0), 8).nodes , nodeArrayList2_18 = castTo($previous(this$static.stack_0), 8).nodes , nodeArrayList1_28 = castTo($previous(this$static.stack_0), 8).nodes , pbooleanconditionNode2_0 = (checkCriticalElementIndex(0, nodeArrayList1_28.array.length) , castTo(nodeArrayList1_28.array[0], 65)) , tmapperNode3 = (checkCriticalElementIndex(0, nodeArrayList2_18.array.length) , castTo(nodeArrayList2_18.array[0], 112)) , pnumberNode5 = (checkCriticalElementIndex(0, nodeArrayList3_10.array.length) , castTo(nodeArrayList3_10.array[0], 85)) , pscoreitemNode1 = new AStatementScoreitem(pbooleanconditionNode2_0, tmapperNode3, null, pnumberNode5) , push_1(nodeList_28.array, pscoreitemNode1) , nodeList_28);
+              list = (nodeList_28 = new ArrayList , nodeArrayList3_10 = castTo($previous(this$static.stack_0), 8).nodes , nodeArrayList2_18 = castTo($previous(this$static.stack_0), 8).nodes , nodeArrayList1_28 = castTo($previous(this$static.stack_0), 8).nodes , pbooleanconditionNode2_0 = (checkCriticalElementIndex(0, nodeArrayList1_28.array.length) , castTo(nodeArrayList1_28.array[0], 67)) , tmapperNode3 = (checkCriticalElementIndex(0, nodeArrayList2_18.array.length) , castTo(nodeArrayList2_18.array[0], 114)) , pnumberNode5 = (checkCriticalElementIndex(0, nodeArrayList3_10.array.length) , castTo(nodeArrayList3_10.array[0], 87)) , pscoreitemNode1 = new AStatementScoreitem(pbooleanconditionNode2_0, tmapperNode3, null, pnumberNode5) , push_1(nodeList_28.array, pscoreitemNode1) , nodeList_28);
               $push_0(this$static, $goTo(this$static, 13), list);
             }
 
             break;
           case 30:
             {
-              list = (nodeList_29 = new ArrayList , nodeArrayList4_7 = castTo($previous(this$static.stack_0), 8).nodes , nodeArrayList3_11 = castTo($previous(this$static.stack_0), 8).nodes , nodeArrayList2_19 = castTo($previous(this$static.stack_0), 8).nodes , nodeArrayList1_29 = castTo($previous(this$static.stack_0), 8).nodes , pbooleanconditionNode2_1 = (checkCriticalElementIndex(0, nodeArrayList1_29.array.length) , castTo(nodeArrayList1_29.array[0], 65)) , tmapperNode3_0 = (checkCriticalElementIndex(0, nodeArrayList2_19.array.length) , castTo(nodeArrayList2_19.array[0], 112)) , tminNode4 = (checkCriticalElementIndex(0, nodeArrayList3_11.array.length) , castTo(nodeArrayList3_11.array[0], 133)) , pnumberNode5_0 = (checkCriticalElementIndex(0, nodeArrayList4_7.array.length) , castTo(nodeArrayList4_7.array[0], 85)) , pscoreitemNode1_0 = new AStatementScoreitem(pbooleanconditionNode2_1, tmapperNode3_0, tminNode4, pnumberNode5_0) , push_1(nodeList_29.array, pscoreitemNode1_0) , nodeList_29);
+              list = (nodeList_29 = new ArrayList , nodeArrayList4_7 = castTo($previous(this$static.stack_0), 8).nodes , nodeArrayList3_11 = castTo($previous(this$static.stack_0), 8).nodes , nodeArrayList2_19 = castTo($previous(this$static.stack_0), 8).nodes , nodeArrayList1_29 = castTo($previous(this$static.stack_0), 8).nodes , pbooleanconditionNode2_1 = (checkCriticalElementIndex(0, nodeArrayList1_29.array.length) , castTo(nodeArrayList1_29.array[0], 67)) , tmapperNode3_0 = (checkCriticalElementIndex(0, nodeArrayList2_19.array.length) , castTo(nodeArrayList2_19.array[0], 114)) , tminNode4 = (checkCriticalElementIndex(0, nodeArrayList3_11.array.length) , castTo(nodeArrayList3_11.array[0], 139)) , pnumberNode5_0 = (checkCriticalElementIndex(0, nodeArrayList4_7.array.length) , castTo(nodeArrayList4_7.array[0], 87)) , pscoreitemNode1_0 = new AStatementScoreitem(pbooleanconditionNode2_1, tmapperNode3_0, tminNode4, pnumberNode5_0) , push_1(nodeList_29.array, pscoreitemNode1_0) , nodeList_29);
               $push_0(this$static, $goTo(this$static, 13), list);
             }
 
             break;
           case 31:
             {
-              list = (nodeList_30 = new ArrayList , nodeArrayList4_8 = castTo($previous(this$static.stack_0), 8).nodes , nodeArrayList3_12 = castTo($previous(this$static.stack_0), 8).nodes , nodeArrayList2_20 = castTo($previous(this$static.stack_0), 8).nodes , nodeArrayList1_30 = castTo($previous(this$static.stack_0), 8).nodes , tmaxNode2 = (checkCriticalElementIndex(0, nodeArrayList1_30.array.length) , castTo(nodeArrayList1_30.array[0], 135)) , tlparNode3 = (checkCriticalElementIndex(0, nodeArrayList2_20.array.length) , castTo(nodeArrayList2_20.array[0], 41)) , pscorelistNode4 = (checkCriticalElementIndex(0, nodeArrayList3_12.array.length) , castTo(nodeArrayList3_12.array[0], 111)) , trparNode5 = (checkCriticalElementIndex(0, nodeArrayList4_8.array.length) , castTo(nodeArrayList4_8.array[0], 42)) , pscoreitemNode1_1 = new AMaxScoreitem(tmaxNode2, tlparNode3, pscorelistNode4, trparNode5) , push_1(nodeList_30.array, pscoreitemNode1_1) , nodeList_30);
+              list = (nodeList_30 = new ArrayList , nodeArrayList4_8 = castTo($previous(this$static.stack_0), 8).nodes , nodeArrayList3_12 = castTo($previous(this$static.stack_0), 8).nodes , nodeArrayList2_20 = castTo($previous(this$static.stack_0), 8).nodes , nodeArrayList1_30 = castTo($previous(this$static.stack_0), 8).nodes , tmaxNode2 = (checkCriticalElementIndex(0, nodeArrayList1_30.array.length) , castTo(nodeArrayList1_30.array[0], 141)) , tlparNode3 = (checkCriticalElementIndex(0, nodeArrayList2_20.array.length) , castTo(nodeArrayList2_20.array[0], 41)) , pscorelistNode4 = (checkCriticalElementIndex(0, nodeArrayList3_12.array.length) , castTo(nodeArrayList3_12.array[0], 113)) , trparNode5 = (checkCriticalElementIndex(0, nodeArrayList4_8.array.length) , castTo(nodeArrayList4_8.array[0], 42)) , pscoreitemNode1_1 = new AMaxScoreitem(tmaxNode2, tlparNode3, pscorelistNode4, trparNode5) , push_1(nodeList_30.array, pscoreitemNode1_1) , nodeList_30);
               $push_0(this$static, $goTo(this$static, 13), list);
             }
 
             break;
           case 32:
             {
-              list = (nodeList_31 = new ArrayList , nodeArrayList2_21 = castTo($previous(this$static.stack_0), 8).nodes , nodeArrayList1_31 = castTo($previous(this$static.stack_0), 8).nodes , tcommaNode2_0 = (checkCriticalElementIndex(0, nodeArrayList1_31.array.length) , castTo(nodeArrayList1_31.array[0], 110)) , pscoreitemNode3 = (checkCriticalElementIndex(0, nodeArrayList2_21.array.length) , castTo(nodeArrayList2_21.array[0], 71)) , pscoreitemsNode1 = new AScoreitems(tcommaNode2_0, pscoreitemNode3) , push_1(nodeList_31.array, pscoreitemsNode1) , nodeList_31);
+              list = (nodeList_31 = new ArrayList , nodeArrayList2_21 = castTo($previous(this$static.stack_0), 8).nodes , nodeArrayList1_31 = castTo($previous(this$static.stack_0), 8).nodes , tcommaNode2_0 = (checkCriticalElementIndex(0, nodeArrayList1_31.array.length) , castTo(nodeArrayList1_31.array[0], 112)) , pscoreitemNode3 = (checkCriticalElementIndex(0, nodeArrayList2_21.array.length) , castTo(nodeArrayList2_21.array[0], 73)) , pscoreitemsNode1 = new AScoreitems(tcommaNode2_0, pscoreitemNode3) , push_1(nodeList_31.array, pscoreitemsNode1) , nodeList_31);
               $push_0(this$static, $goTo(this$static, 14), list);
             }
 
@@ -9940,21 +10308,21 @@ function $parse(this$static){
             break;
           case 34:
             {
-              list = (nodeList_33 = new ArrayList , nodeArrayList1_33 = castTo($previous(this$static.stack_0), 8).nodes , tfloatNode2 = (checkCriticalElementIndex(0, nodeArrayList1_33.array.length) , castTo(nodeArrayList1_33.array[0], 136)) , pnumberNode1_0 = new AFloatNumber(tfloatNode2) , push_1(nodeList_33.array, pnumberNode1_0) , nodeList_33);
+              list = (nodeList_33 = new ArrayList , nodeArrayList1_33 = castTo($previous(this$static.stack_0), 8).nodes , tfloatNode2 = (checkCriticalElementIndex(0, nodeArrayList1_33.array.length) , castTo(nodeArrayList1_33.array[0], 142)) , pnumberNode1_0 = new AFloatNumber(tfloatNode2) , push_1(nodeList_33.array, pnumberNode1_0) , nodeList_33);
               $push_0(this$static, $goTo(this$static, 15), list);
             }
 
             break;
           case 35:
             {
-              list = (nodeList_34 = new ArrayList , nodeArrayList1_34 = castTo($previous(this$static.stack_0), 8).nodes , listNode2 = new TypedLinkedList , pcondition2Node1_0 = (checkCriticalElementIndex(0, nodeArrayList1_34.array.length) , castTo(nodeArrayList1_34.array[0], 66)) , !!pcondition2Node1_0 && ($addLast_0(listNode2, listNode2.cast.cast_0(pcondition2Node1_0)) , true) , push_1(nodeList_34.array, listNode2) , nodeList_34);
+              list = (nodeList_34 = new ArrayList , nodeArrayList1_34 = castTo($previous(this$static.stack_0), 8).nodes , listNode2 = new TypedLinkedList , pcondition2Node1_0 = (checkCriticalElementIndex(0, nodeArrayList1_34.array.length) , castTo(nodeArrayList1_34.array[0], 68)) , !!pcondition2Node1_0 && ($addLast_0(listNode2, listNode2.cast.cast_0(pcondition2Node1_0)) , true) , push_1(nodeList_34.array, listNode2) , nodeList_34);
               $push_0(this$static, $goTo(this$static, 16), list);
             }
 
             break;
           case 36:
             {
-              list = (nodeList_35 = new ArrayList , nodeArrayList2_22 = castTo($previous(this$static.stack_0), 8).nodes , nodeArrayList1_35 = castTo($previous(this$static.stack_0), 8).nodes , listNode3_5 = new TypedLinkedList , listNode1 = (checkCriticalElementIndex(0, nodeArrayList1_35.array.length) , castTo(nodeArrayList1_35.array[0], 12)) , pcondition2Node2 = (checkCriticalElementIndex(0, nodeArrayList2_22.array.length) , castTo(nodeArrayList2_22.array[0], 66)) , !!listNode1 && $addAll_2(listNode3_5, listNode1) , !!pcondition2Node2 && ($addLast_0(listNode3_5, listNode3_5.cast.cast_0(pcondition2Node2)) , true) , push_1(nodeList_35.array, listNode3_5) , nodeList_35);
+              list = (nodeList_35 = new ArrayList , nodeArrayList2_22 = castTo($previous(this$static.stack_0), 8).nodes , nodeArrayList1_35 = castTo($previous(this$static.stack_0), 8).nodes , listNode3_5 = new TypedLinkedList , listNode1 = (checkCriticalElementIndex(0, nodeArrayList1_35.array.length) , castTo(nodeArrayList1_35.array[0], 12)) , pcondition2Node2 = (checkCriticalElementIndex(0, nodeArrayList2_22.array.length) , castTo(nodeArrayList2_22.array[0], 68)) , !!listNode1 && $addAll_2(listNode3_5, listNode1) , !!pcondition2Node2 && ($addLast_0(listNode3_5, listNode3_5.cast.cast_0(pcondition2Node2)) , true) , push_1(nodeList_35.array, listNode3_5) , nodeList_35);
               $push_0(this$static, $goTo(this$static, 16), list);
             }
 
@@ -9975,28 +10343,28 @@ function $parse(this$static){
             break;
           case 39:
             {
-              list = (nodeList_38 = new ArrayList , nodeArrayList1_38 = castTo($previous(this$static.stack_0), 8).nodes , listNode2_1 = new TypedLinkedList , plistitemsNode1_0 = (checkCriticalElementIndex(0, nodeArrayList1_38.array.length) , castTo(nodeArrayList1_38.array[0], 70)) , !!plistitemsNode1_0 && ($addLast_0(listNode2_1, listNode2_1.cast.cast_0(plistitemsNode1_0)) , true) , push_1(nodeList_38.array, listNode2_1) , nodeList_38);
+              list = (nodeList_38 = new ArrayList , nodeArrayList1_38 = castTo($previous(this$static.stack_0), 8).nodes , listNode2_1 = new TypedLinkedList , plistitemsNode1_0 = (checkCriticalElementIndex(0, nodeArrayList1_38.array.length) , castTo(nodeArrayList1_38.array[0], 72)) , !!plistitemsNode1_0 && ($addLast_0(listNode2_1, listNode2_1.cast.cast_0(plistitemsNode1_0)) , true) , push_1(nodeList_38.array, listNode2_1) , nodeList_38);
               $push_0(this$static, $goTo(this$static, 18), list);
             }
 
             break;
           case 40:
             {
-              list = (nodeList_39 = new ArrayList , nodeArrayList2_24 = castTo($previous(this$static.stack_0), 8).nodes , nodeArrayList1_39 = castTo($previous(this$static.stack_0), 8).nodes , listNode3_7 = new TypedLinkedList , listNode1_1 = (checkCriticalElementIndex(0, nodeArrayList1_39.array.length) , castTo(nodeArrayList1_39.array[0], 12)) , plistitemsNode2 = (checkCriticalElementIndex(0, nodeArrayList2_24.array.length) , castTo(nodeArrayList2_24.array[0], 70)) , !!listNode1_1 && $addAll_2(listNode3_7, listNode1_1) , !!plistitemsNode2 && ($addLast_0(listNode3_7, listNode3_7.cast.cast_0(plistitemsNode2)) , true) , push_1(nodeList_39.array, listNode3_7) , nodeList_39);
+              list = (nodeList_39 = new ArrayList , nodeArrayList2_24 = castTo($previous(this$static.stack_0), 8).nodes , nodeArrayList1_39 = castTo($previous(this$static.stack_0), 8).nodes , listNode3_7 = new TypedLinkedList , listNode1_1 = (checkCriticalElementIndex(0, nodeArrayList1_39.array.length) , castTo(nodeArrayList1_39.array[0], 12)) , plistitemsNode2 = (checkCriticalElementIndex(0, nodeArrayList2_24.array.length) , castTo(nodeArrayList2_24.array[0], 72)) , !!listNode1_1 && $addAll_2(listNode3_7, listNode1_1) , !!plistitemsNode2 && ($addLast_0(listNode3_7, listNode3_7.cast.cast_0(plistitemsNode2)) , true) , push_1(nodeList_39.array, listNode3_7) , nodeList_39);
               $push_0(this$static, $goTo(this$static, 18), list);
             }
 
             break;
           case 41:
             {
-              list = (nodeList_40 = new ArrayList , nodeArrayList1_40 = castTo($previous(this$static.stack_0), 8).nodes , listNode2_2 = new TypedLinkedList , pscoreitemsNode1_0 = (checkCriticalElementIndex(0, nodeArrayList1_40.array.length) , castTo(nodeArrayList1_40.array[0], 72)) , !!pscoreitemsNode1_0 && ($addLast_0(listNode2_2, listNode2_2.cast.cast_0(pscoreitemsNode1_0)) , true) , push_1(nodeList_40.array, listNode2_2) , nodeList_40);
+              list = (nodeList_40 = new ArrayList , nodeArrayList1_40 = castTo($previous(this$static.stack_0), 8).nodes , listNode2_2 = new TypedLinkedList , pscoreitemsNode1_0 = (checkCriticalElementIndex(0, nodeArrayList1_40.array.length) , castTo(nodeArrayList1_40.array[0], 74)) , !!pscoreitemsNode1_0 && ($addLast_0(listNode2_2, listNode2_2.cast.cast_0(pscoreitemsNode1_0)) , true) , push_1(nodeList_40.array, listNode2_2) , nodeList_40);
               $push_0(this$static, $goTo(this$static, 19), list);
             }
 
             break;
           case 42:
             {
-              list = (nodeList_41 = new ArrayList , nodeArrayList2_25 = castTo($previous(this$static.stack_0), 8).nodes , nodeArrayList1_41 = castTo($previous(this$static.stack_0), 8).nodes , listNode3_8 = new TypedLinkedList , listNode1_2 = (checkCriticalElementIndex(0, nodeArrayList1_41.array.length) , castTo(nodeArrayList1_41.array[0], 12)) , pscoreitemsNode2 = (checkCriticalElementIndex(0, nodeArrayList2_25.array.length) , castTo(nodeArrayList2_25.array[0], 72)) , !!listNode1_2 && $addAll_2(listNode3_8, listNode1_2) , !!pscoreitemsNode2 && ($addLast_0(listNode3_8, listNode3_8.cast.cast_0(pscoreitemsNode2)) , true) , push_1(nodeList_41.array, listNode3_8) , nodeList_41);
+              list = (nodeList_41 = new ArrayList , nodeArrayList2_25 = castTo($previous(this$static.stack_0), 8).nodes , nodeArrayList1_41 = castTo($previous(this$static.stack_0), 8).nodes , listNode3_8 = new TypedLinkedList , listNode1_2 = (checkCriticalElementIndex(0, nodeArrayList1_41.array.length) , castTo(nodeArrayList1_41.array[0], 12)) , pscoreitemsNode2 = (checkCriticalElementIndex(0, nodeArrayList2_25.array.length) , castTo(nodeArrayList2_25.array[0], 74)) , !!listNode1_2 && $addAll_2(listNode3_8, listNode1_2) , !!pscoreitemsNode2 && ($addLast_0(listNode3_8, listNode3_8.cast.cast_0(pscoreitemsNode2)) , true) , push_1(nodeList_41.array, listNode3_8) , nodeList_41);
               $push_0(this$static, $goTo(this$static, 19), list);
             }
 
@@ -10005,8 +10373,8 @@ function $parse(this$static){
         break;
       case 2:
         {
-          node2 = castTo($next_4(this$static.lexer), 121);
-          node1 = castTo($get(castTo($previous(this$static.stack_0), 8).nodes, 0), 105);
+          node2 = castTo($next_4(this$static.lexer), 127);
+          node1 = castTo($get_0(castTo($previous(this$static.stack_0), 8).nodes, 0), 107);
           node = new Start(node1, node2);
           return node;
         }
@@ -10041,21 +10409,21 @@ function Parser(lexer){
   this.ignoredTokens = new AnalysisAdapter;
   this.stack_0 = $listIterator(new LinkedList, 0);
   this.converter = new TokenIndex;
-  this.action_0 = initUnidimensionalArray(I_classLit, $intern_17, 5, 2, 15, 1);
+  this.action_0 = initUnidimensionalArray(I_classLit, $intern_19, 5, 2, 15, 1);
   this.lexer = lexer;
 }
 
-defineClass(215, 1, {}, Parser);
+defineClass(226, 1, {}, Parser);
 _.last_line = 0;
 _.last_pos = 0;
 var actionTable, errorMessages, errors, gotoTable_1;
-var Lorg_fstrf_stanfordAsiInterpreter_resistance_grammar_parser_Parser_2_classLit = createForClass('org.fstrf.stanfordAsiInterpreter.resistance.grammar.parser', 'Parser', 215);
+var Lorg_fstrf_stanfordAsiInterpreter_resistance_grammar_parser_Parser_2_classLit = createForClass('org.fstrf.stanfordAsiInterpreter.resistance.grammar.parser', 'Parser', 226);
 function ParserException(message){
   Exception.call(this, message);
 }
 
-defineClass(218, 17, $intern_1, ParserException);
-var Lorg_fstrf_stanfordAsiInterpreter_resistance_grammar_parser_ParserException_2_classLit = createForClass('org.fstrf.stanfordAsiInterpreter.resistance.grammar.parser', 'ParserException', 218);
+defineClass(229, 17, $intern_1, ParserException);
+var Lorg_fstrf_stanfordAsiInterpreter_resistance_grammar_parser_ParserException_2_classLit = createForClass('org.fstrf.stanfordAsiInterpreter.resistance.grammar.parser', 'ParserException', 229);
 function State(state, nodes){
   this.state = state;
   this.nodes = nodes;
@@ -10067,7 +10435,7 @@ var Lorg_fstrf_stanfordAsiInterpreter_resistance_grammar_parser_State_2_classLit
 function TokenIndex(){
 }
 
-defineClass(228, 189, {}, TokenIndex);
+defineClass(240, 199, {}, TokenIndex);
 _.caseEOF = function caseEOF_0(node){
   this.index_0 = 19;
 }
@@ -10149,10 +10517,10 @@ _.caseTSelect = function caseTSelect_0(node){
 }
 ;
 _.index_0 = 0;
-var Lorg_fstrf_stanfordAsiInterpreter_resistance_grammar_parser_TokenIndex_2_classLit = createForClass('org.fstrf.stanfordAsiInterpreter.resistance.grammar.parser', 'TokenIndex', 228);
+var Lorg_fstrf_stanfordAsiInterpreter_resistance_grammar_parser_TokenIndex_2_classLit = createForClass('org.fstrf.stanfordAsiInterpreter.resistance.grammar.parser', 'TokenIndex', 240);
 function $matches(this$static){
   this$static.result = $exec(this$static.pattern, this$static.input_0);
-  return $clinit_Boolean() , this$static.result.index == 0 && this$static.pattern.lastIndex == this$static.input_0.length?true:false;
+  return $clinit_Boolean() , !!this$static.result && this$static.result.index == 0 && this$static.pattern.lastIndex == this$static.input_0.length?true:false;
 }
 
 function Matcher(regex, input_0){
@@ -10160,8 +10528,8 @@ function Matcher(regex, input_0){
   this.input_0 = input_0;
 }
 
-defineClass(191, 1, {}, Matcher);
-var Lorg_fstrf_stanfordAsiInterpreter_resistance_regex_Matcher_2_classLit = createForClass('org.fstrf.stanfordAsiInterpreter.resistance.regex', 'Matcher', 191);
+defineClass(201, 1, {}, Matcher);
+var Lorg_fstrf_stanfordAsiInterpreter_resistance_regex_Matcher_2_classLit = createForClass('org.fstrf.stanfordAsiInterpreter.resistance.regex', 'Matcher', 201);
 function $matcher(this$static, input_0){
   return new Matcher(this$static.regex, input_0);
 }
@@ -10170,8 +10538,8 @@ function Pattern(regex){
   this.regex = regex;
 }
 
-defineClass(118, 1, {}, Pattern);
-var Lorg_fstrf_stanfordAsiInterpreter_resistance_regex_Pattern_2_classLit = createForClass('org.fstrf.stanfordAsiInterpreter.resistance.regex', 'Pattern', 118);
+defineClass(124, 1, {}, Pattern);
+var Lorg_fstrf_stanfordAsiInterpreter_resistance_regex_Pattern_2_classLit = createForClass('org.fstrf.stanfordAsiInterpreter.resistance.regex', 'Pattern', 124);
 function $clinit_XmlAsiTransformer(){
   $clinit_XmlAsiTransformer = emptyMethod;
   SCORE_RANGE_PATTERN = new Pattern('(-INF|\\d+(?:\\.\\d+)?)\\s*TO\\s*(INF|\\d+(?:\\.\\d+)?)\\s*=>\\s*(\\d+)');
@@ -10207,7 +10575,7 @@ function $createLevelMap(root){
 
 function $getRequiredDefinition(definitions, key){
   var obj;
-  obj = castTo($getStringValue(definitions, $trim(key.textContent)), 86);
+  obj = castTo($getStringValue(definitions, $trim(key.textContent)), 88);
   if (!obj) {
     throw toJs(new ASIParsingException('required definition: ' + key.textContent + ' does not exist.'));
   }
@@ -10221,7 +10589,7 @@ function $getValidatedLevelFromString(levelString, levels){
   }
    catch ($e0) {
     $e0 = toJava($e0);
-    if (instanceOf($e0, 55)) {
+    if (instanceOf($e0, 56)) {
       throw toJs(new ASIParsingException('specified level order "' + levelString + '" is not an integer'));
     }
      else 
@@ -10236,10 +10604,10 @@ function $getValidatedLevelFromString(levelString, levels){
 function $isUniqueDefinedDrug(drugName, drugClasses){
   var drug, drug$iterator, drugClass, drugClass$iterator, drugList, entry, entry0, outerIter, outerIter0;
   for (drugClass$iterator = (outerIter0 = (new AbstractMap$2(drugClasses)).this$01.entrySet().iterator_0() , new AbstractMap$2$1(outerIter0)); drugClass$iterator.val$outerIter2.hasNext_0();) {
-    drugClass = (entry0 = castTo(drugClass$iterator.val$outerIter2.next_1(), 15) , castTo(entry0.getValue(), 80));
+    drugClass = (entry0 = castTo(drugClass$iterator.val$outerIter2.next_1(), 13) , castTo(entry0.getValue(), 82));
     drugList = drugClass.drugs;
     for (drug$iterator = (outerIter = (new AbstractMap$1(drugList.map_0)).this$01.entrySet().iterator_0() , new AbstractMap$1$1(outerIter)); drug$iterator.val$outerIter2.hasNext_0();) {
-      drug = (entry = castTo(drug$iterator.val$outerIter2.next_1(), 15) , castTo(entry.getKey(), 81));
+      drug = (entry = castTo(drug$iterator.val$outerIter2.next_1(), 13) , castTo(entry.getKey(), 83));
       if ($equals_1(drugName, drug.name_0)) {
         return false;
       }
@@ -10251,8 +10619,8 @@ function $isUniqueDefinedDrug(drugName, drugClasses){
 function $isUniqueDefinedDrug2(inDrugName, drugClasses){
   var className, className$iterator, drugList, entry, outerIter;
   for (className$iterator = (outerIter = (new AbstractMap$1(drugClasses)).this$01.entrySet().iterator_0() , new AbstractMap$1$1(outerIter)); className$iterator.val$outerIter2.hasNext_0();) {
-    className = (entry = castTo(className$iterator.val$outerIter2.next_1(), 15) , castToString(entry.getKey()));
-    drugList = castTo(className == null?getEntryValueOrNull($getEntry(drugClasses.hashCodeMap, null)):$get_0(drugClasses.stringMap, className), 38);
+    className = (entry = castTo(className$iterator.val$outerIter2.next_1(), 13) , castToString(entry.getKey()));
+    drugList = castTo(className == null?getEntryValueOrNull($getEntry(drugClasses.hashCodeMap, null)):$get_1(drugClasses.stringMap, className), 37);
     if (drugList.contains(inDrugName))
       return false;
   }
@@ -10269,12 +10637,12 @@ function $parseDrugClasses(root, drugs){
     drugClassNode = castToNative($next_1(drugClassNode$iterator), $wnd.Node);
     className = $trim($queryUniqueSingleNode(drugClassNode, 'NAME').textContent);
     drugListStr = $trim($queryUniqueSingleNode(drugClassNode, 'DRUGLIST').textContent);
-    drugNames = $split(drugListStr, ',');
+    drugNames = $split(drugListStr, ',', 0);
     drugList = new HashSet;
     for (drugName$array = drugNames , drugName$index = 0 , drugName$max = drugName$array.length; drugName$index < drugName$max; ++drugName$index) {
       drugName = drugName$array[drugName$index];
       drugName = $trim(drugName);
-      drug = castTo(drugName == null?getEntryValueOrNull($getEntry(drugs.hashCodeMap, null)):$get_0(drugs.stringMap, drugName), 81);
+      drug = castTo(drugName == null?getEntryValueOrNull($getEntry(drugs.hashCodeMap, null)):$get_1(drugs.stringMap, drugName), 83);
       if (!drug) {
         throw toJs(new ASIParsingException(drugName + ' has not been defined as a drug.'));
       }
@@ -10363,7 +10731,7 @@ function $parseDrugs(root, levels, comments, globalRange){
     }
      catch ($e0) {
       $e0 = toJava($e0);
-      if (!instanceOf($e0, 58))
+      if (!instanceOf($e0, 60))
         throw toJs($e0);
     }
     fullNameNode = (nodes2 = $queryNodes(drug, 'FULLNAME') , nodes2.array.length == 0?null:(checkCriticalElementIndex(0, nodes2.array.length) , castToNative(nodes2.array[0], $wnd.Node)));
@@ -10374,7 +10742,7 @@ function $parseDrugs(root, levels, comments, globalRange){
       node = castToNative($next_1(node$iterator), $wnd.Node);
       typeName = $trim((nodes1 = $queryNodes(node, 'TYPE_NAME') , nodes1.array.length == 0?null:(checkCriticalElementIndex(0, nodes1.array.length) , castToNative(nodes1.array[0], $wnd.Node))).textContent);
       drugListStr = $trim((nodes = $queryNodes(node, 'MUTATIONS') , nodes.array.length == 0?null:(checkCriticalElementIndex(0, nodes.array.length) , castToNative(nodes.array[0], $wnd.Node))).textContent);
-      drugNames = $split(drugListStr, ',');
+      drugNames = $split(drugListStr, ',', 0);
       $add_1(drugMutationTypes, new MutationType(typeName, new Arrays$ArrayList(drugNames)));
     }
     ruleNodes = $queryNodes(drug, 'RULE');
@@ -10409,7 +10777,7 @@ function $parseForDrugClassesAndDrugs(root, drugs){
     drugClassNode = castToNative($next_1(drugClassNode$iterator), $wnd.Node);
     className = $trim($queryUniqueSingleNode(drugClassNode, 'NAME').textContent);
     drugListStr = $trim($queryUniqueSingleNode(drugClassNode, 'DRUGLIST').textContent);
-    drugNames = $split(drugListStr, ',');
+    drugNames = $split(drugListStr, ',', 0);
     drugList = new HashSet;
     for (drugName$array = drugNames , drugName$index = 0 , drugName$max = drugName$array.length; drugName$index < drugName$max; ++drugName$index) {
       drugName = drugName$array[drugName$index];
@@ -10451,7 +10819,7 @@ function $parseForGeneAndDrugClasses(root, drugClasses){
       if ($equals_1($trim(drugClassListStr), '')) {
         throw toJs(new ASIParsingException('drug class list missing for gene ' + geneName));
       }
-      drugClassNames = $split(drugClassListStr, ',');
+      drugClassNames = $split(drugClassListStr, ',', 0);
       for (drugClassName$array = drugClassNames , drugClassName$index = 0 , drugClassName$max = drugClassName$array.length; drugClassName$index < drugClassName$max; ++drugClassName$index) {
         drugClassName = drugClassName$array[drugClassName$index];
         drugClassName = $trim(drugClassName);
@@ -10505,7 +10873,7 @@ function $parseGenes(root, drugClasses){
     indelRangeNode = (nodes = $queryNodes(node, 'INDEL_RANGE_DEFINITION') , nodes.array.length == 0?null:(checkCriticalElementIndex(0, nodes.array.length) , castToNative(nodes.array[0], $wnd.Node)));
     if (indelRangeNode != null) {
       inputListStr = $trim($queryUniqueSingleNode(indelRangeNode, 'INPUT').textContent);
-      indelInputs = $split(inputListStr, ' ');
+      indelInputs = $split(inputListStr, ' ', 0);
       indelOutput = $trim($queryUniqueSingleNode(indelRangeNode, 'OUTPUT').textContent);
       indelRange = new IndelRangeDefinition(new Arrays$ArrayList(indelInputs), indelOutput);
     }
@@ -10515,10 +10883,10 @@ function $parseGenes(root, drugClasses){
       if ($equals_1($trim(drugClassListStr), '')) {
         throw toJs(new ASIParsingException('drug class list missing for gene ' + geneName));
       }
-      drugClassNames = $split(drugClassListStr, ',');
+      drugClassNames = $split(drugClassListStr, ',', 0);
       for (drugClassName$array = drugClassNames , drugClassName$index = 0 , drugClassName$max = drugClassName$array.length; drugClassName$index < drugClassName$max; ++drugClassName$index) {
         drugClassName = drugClassName$array[drugClassName$index];
-        $add_2(drugClassSet, castTo($getStringValue(drugClasses, $trim(drugClassName)), 80));
+        $add_2(drugClassSet, castTo($getStringValue(drugClasses, $trim(drugClassName)), 82));
       }
     }
     $putStringValue(genes, geneName, new Gene_4(geneName, drugClassSet, indelRange));
@@ -10579,7 +10947,7 @@ function $parseRules(ruleNodes, levels, comments, globalRange){
       $add_1(ruleActions, new CommentAction(definition));
     }
     if (levelNode != null) {
-      definition = castTo($getRequiredDefinition(levels, levelNode), 22);
+      definition = castTo($getRequiredDefinition(levels, levelNode), 25);
       $add_1(ruleActions, new LevelAction(definition));
     }
     if (scoreRangeNode != null) {
@@ -10607,23 +10975,23 @@ function $parseScoreRange(scoreRange, levels){
   rangeValues = new ArrayList;
   matcher = $matcher(SCORE_RANGE_PATTERN, scoreRange);
   while (matcher.result = $exec(matcher.pattern, matcher.input_0) , !!matcher.result) {
-    min_0 = $equals_1($trim(matcher.result[1]), '-INF')?$intern_14:__parseAndValidateDouble($trim(matcher.result[1]));
+    min_0 = $equals_1($trim(matcher.result[1]), '-INF')?$intern_16:__parseAndValidateDouble($trim(matcher.result[1]));
     max_0 = $equals_1($trim(matcher.result[2]), 'INF')?Infinity:__parseAndValidateDouble($trim(matcher.result[2]));
     level = $trim(matcher.result[3]);
-    if ((level == null?getEntryValueOrNull($getEntry(levels.hashCodeMap, null)):$get_0(levels.stringMap, level)) == null) {
+    if ((level == null?getEntryValueOrNull($getEntry(levels.hashCodeMap, null)):$get_1(levels.stringMap, level)) == null) {
       throw toJs(new ASIParsingException('undefined level: ' + level));
     }
-    rangeValue = new RangeValue(min_0, max_0, castTo(level == null?getEntryValueOrNull($getEntry(levels.hashCodeMap, null)):$get_0(levels.stringMap, level), 22));
+    rangeValue = new RangeValue(min_0, max_0, castTo(level == null?getEntryValueOrNull($getEntry(levels.hashCodeMap, null)):$get_1(levels.stringMap, level), 25));
     push_1(rangeValues.array, rangeValue);
   }
   matcher = $matcher(SINGLE_SCORE_PATTERN, scoreRange);
   while (matcher.result = $exec(matcher.pattern, matcher.input_0) , !!matcher.result) {
     val = __parseAndValidateDouble($trim($substring(matcher.result[1])));
     level = $trim(matcher.result[2]);
-    if ((level == null?getEntryValueOrNull($getEntry(levels.hashCodeMap, null)):$get_0(levels.stringMap, level)) == null) {
+    if ((level == null?getEntryValueOrNull($getEntry(levels.hashCodeMap, null)):$get_1(levels.stringMap, level)) == null) {
       throw toJs(new ASIParsingException('undefined level: ' + level));
     }
-    rangeValue = new RangeValue(val, val, castTo(level == null?getEntryValueOrNull($getEntry(levels.hashCodeMap, null)):$get_0(levels.stringMap, level), 22));
+    rangeValue = new RangeValue(val, val, castTo(level == null?getEntryValueOrNull($getEntry(levels.hashCodeMap, null)):$get_1(levels.stringMap, level), 25));
     push_1(rangeValues.array, rangeValue);
   }
   return rangeValues;
@@ -10687,9 +11055,9 @@ function $transform(messageXml){
   $addAll(geneNames, geneNamesComments);
   genes = new HashMap;
   for (geneName$iterator = (outerIter = (new AbstractMap$1(geneNames.map_0)).this$01.entrySet().iterator_0() , new AbstractMap$1$1(outerIter)); geneName$iterator.val$outerIter2.hasNext_0();) {
-    geneName = (entry = castTo(geneName$iterator.val$outerIter2.next_1(), 15) , castToString(entry.getKey()));
-    geneDrugClass = castTo(geneName == null?getEntryValueOrNull($getEntry(geneEvaluatedDrugs.hashCodeMap, null)):$get_0(geneEvaluatedDrugs.stringMap, geneName), 35);
-    geneMutationComments = castTo(geneName == null?getEntryValueOrNull($getEntry(geneEvaluatedMutationComments.hashCodeMap, null)):$get_0(geneEvaluatedMutationComments.stringMap, geneName), 35);
+    geneName = (entry = castTo(geneName$iterator.val$outerIter2.next_1(), 13) , castToString(entry.getKey()));
+    geneDrugClass = castTo(geneName == null?getEntryValueOrNull($getEntry(geneEvaluatedDrugs.hashCodeMap, null)):$get_1(geneEvaluatedDrugs.stringMap, geneName), 35);
+    geneMutationComments = castTo(geneName == null?getEntryValueOrNull($getEntry(geneEvaluatedMutationComments.hashCodeMap, null)):$get_1(geneEvaluatedMutationComments.stringMap, geneName), 35);
     !geneMutationComments?$putStringValue(genes, geneName, new Gene_3(geneName, geneDrugClass.drugClasses, new ArrayList, resultCommentRules, geneDrugClass.indelRange, geneDrugClass.defaultLevel)):$putStringValue(genes, geneName, new Gene_3(geneName, geneDrugClass.drugClasses, geneMutationComments.geneRules, resultCommentRules, geneDrugClass.indelRange, geneDrugClass.defaultLevel));
   }
   return genes;

@@ -1,7 +1,10 @@
 package edu.stanford.hivdb.asijs;
 
+import java.util.ArrayList;
+import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.Map;
+import java.util.stream.Collectors;
 
 import org.fstrf.stanfordAsiInterpreter.resistance.ASIEvaluationException;
 import org.fstrf.stanfordAsiInterpreter.resistance.ASIParsingException;
@@ -46,18 +49,38 @@ public class ASIJs {
         return JsObjectify.of(algorithmInfo);
     }
     
-    public Object evaluateGene(String geneName, JsArray<String> mutations) throws ASIEvaluationException {
+    public Object evaluate(JsArray<String> mutations) throws ASIEvaluationException {
         List<String> mutList = mutations.asList();
-        Gene gene = genes.get(geneName);
-
+        Map<String, List<String>> mutsByGene = mutList.stream()
+            .map(mut -> mut.split(":", 2))
+            .collect(Collectors.groupingBy(
+                mut -> mut[0],
+                LinkedHashMap::new,
+                Collectors.mapping(mut -> mut.length > 1 ? mut[1] : "", Collectors.toList())
+            ));
+        List<EvaluatedGene> geneResults = new ArrayList<>();
+        List<String> invalidMutations = new ArrayList<>();
         MutationComparator<String> mutationComparator = new StringMutationComparator(false);
-        if (!mutationComparator.areMutationsValid(mutList)) {
-            throw new RuntimeException(
-                Strings.lenientFormat("Invalid list of mutations: %s",
-                    mutations.toString()));
+        
+        for (Map.Entry<String, List<String>> entry : mutsByGene.entrySet()) {
+            String geneName = entry.getKey();
+            List<String> geneMuts = entry.getValue();
+            Gene gene = genes.get(geneName);
+            for (String mut : geneMuts) {
+                if (gene == null || !mutationComparator.isMutationValid(mut)) {
+                    invalidMutations.add("'" + geneName + (mut == "" ? "" : ":" + mut) + "'");
+                }
+            }
+            if (gene != null && invalidMutations.isEmpty()) {
+                geneResults.add(gene.evaluate(geneMuts, mutationComparator));
+            }
         }
-        EvaluatedGene evalGene = gene.evaluate(mutList, mutationComparator);
-        return JsObjectify.of(evalGene);
+        if (!invalidMutations.isEmpty()) {
+            throw new ASIEvaluationException(
+                Strings.lenientFormat("Invalid mutations: %s", String.join(", ", invalidMutations))
+            );
+        }
+        return JsObjectify.of(geneResults);
     }
 
 }

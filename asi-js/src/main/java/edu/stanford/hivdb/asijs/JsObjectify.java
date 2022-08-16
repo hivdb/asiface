@@ -95,6 +95,9 @@ public class JsObjectify {
     }
 
     private final static JsPropertyMap<Object> toJsPropertyMap(LevelDefinition level) {
+        if (level == null) {
+            return null;
+        }
         JsPropertyMap<Object> levelResult = JsPropertyMap.of();
         levelResult.set("order", level.getOrder().doubleValue());
         levelResult.set("SIR", level.getSir());
@@ -103,6 +106,9 @@ public class JsObjectify {
     }
 
     private final static JsPropertyMap< Object> toJsPropertyMap(CommentDefinition cmt) {
+        if (cmt == null) {
+            return null;
+        }
         JsPropertyMap<Object> cmtResult = JsPropertyMap.of();
         cmtResult.set("id", cmt.getId());
         cmtResult.set("sort", cmt.getSort().doubleValue());
@@ -111,6 +117,9 @@ public class JsObjectify {
     }
     
     private final static JsPropertyMap<Object> toJsPropertyMap(Definition def) {
+        if (def == null) {
+            return null;
+        }
         JsPropertyMap<Object> defResult;
         if (def instanceof LevelDefinition) {
             defResult = toJsPropertyMap((LevelDefinition) def);
@@ -125,6 +134,9 @@ public class JsObjectify {
     }
     
     private final static JsPropertyMap<Object> toJsPropertyMap(EvaluatedResultCommentRule resultComment) {
+        if (resultComment == null) {
+            return null;
+        }
         JsPropertyMap<Object> cmtResult = JsPropertyMap.of();
         cmtResult.set("result", resultComment.getResult());
         cmtResult.set("definitions", toJsArray(resultComment.getDefinitions()));
@@ -138,6 +150,9 @@ public class JsObjectify {
     }
     
     private final static JsPropertyMap<Object> toJsPropertyMap(EvaluatedDrug evalDrug) {
+        if (evalDrug == null) {
+            return null;
+        }
         JsPropertyMap<Object> drugResult = JsPropertyMap.of();
         Drug drug = evalDrug.getDrug();
 
@@ -150,6 +165,9 @@ public class JsObjectify {
     }
     
     private final static JsPropertyMap<Object> toJsPropertyMap(EvaluatedDrugClass evalDC) {
+        if (evalDC == null) {
+            return null;
+        }
         JsPropertyMap<Object> dcResult = JsPropertyMap.of();
         dcResult.set("drugClassName", evalDC.getDrugClass().getClassName());
         dcResult.set("drugs", toJsArray(evalDC.getEvaluatedDrugs()));
@@ -157,6 +175,9 @@ public class JsObjectify {
     }
     
     private final static JsPropertyMap<Object> toJsPropertyMap(ScoredItem item) {
+        if (item == null) {
+            return null;
+        }
         JsPropertyMap<Object> itemResult = JsPropertyMap.of();
         itemResult.set("mutations", toJsArray(item.getMutations()));
         itemResult.set("value", item.getValue());
@@ -165,6 +186,9 @@ public class JsObjectify {
     }
     
     private final static JsPropertyMap<Object> toJsPropertyMap(EvaluatedCondition evalCond) {
+        if (evalCond == null) {
+            return null;
+        }
         JsPropertyMap<Object> condResult = JsPropertyMap.of();
         AsiGrammarEvaluator evaluator = evalCond.getEvaluator();
         condResult.set("result", evaluator.getResult());
@@ -176,6 +200,9 @@ public class JsObjectify {
     }
 
     private final static JsPropertyMap<Object> toJsPropertyMap(EvaluatedGene evalGene) {
+        if (evalGene == null) {
+            return null;
+        }
         JsPropertyMap<Object> geneResult = JsPropertyMap.of();
         geneResult.set("geneName", evalGene.getGene().getName());
         geneResult.set("drugClasses", toJsArray(evalGene.getEvaluatedDrugClasses()));

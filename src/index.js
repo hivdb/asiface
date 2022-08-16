@@ -1,14 +1,41 @@
 import React from 'react';
+import {
+  BrowserProtocol,
+  queryMiddleware
+} from 'farce';
+import {
+  createFarceRouter,
+  createRender,
+  makeRouteConfig,
+  resolver,
+  Route
+} from 'found';
+
 import ReactDOM from 'react-dom/client';
 import './index.module.scss';
 import ASIFace from './asiface';
 import config from './testingConfig';
 import reportWebVitals from './reportWebVitals';
 
+const routes = (
+  <Route
+   path="/"
+   render={
+     (props) => <ASIFace {...props} config={config} />
+   } />
+);
+
+const Router = createFarceRouter({
+  historyProtocol: new BrowserProtocol(),
+  historyMiddlewares: [queryMiddleware],
+  routeConfig: makeRouteConfig(routes),
+  render: createRender({})
+});
+
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <ASIFace config={config} />
+    <Router resolver={resolver} />
   </React.StrictMode>
 );
 
