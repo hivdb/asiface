@@ -145,11 +145,11 @@ function asijs(){
     }
   }
 
-  __gwt_isKnownPropertyValue = function(propName, propValue){
+  var __gwt_isKnownPropertyValue = function(propName, propValue){
     return propValue in values[propName];
   }
   ;
-  __gwt_getMetaProperty = function(name_0){
+  var __gwt_getMetaProperty = function(name_0){
     var value_0 = metaProps[name_0];
     return value_0 == null?null:value_0;
   }

@@ -85,6 +85,8 @@ task afterCompileGwt(type: Copy) {
     rename { String fileName -> 'asi-js.js' }
     filter { line -> line.replaceAll('function provide\\(', 'function dontprovide(') }
     filter { line -> line.replaceAll('\\bcomputeScriptBase\\(\\);', '// $0') }
+    filter { line -> line.replaceAll('__gwt_isKnownPropertyValue =', 'var $0') }
+    filter { line -> line.replaceAll('__gwt_getMetaProperty =', 'var $0') }
     filter(ConcatFilter, prepend: file('src/main/resources/provide.js'))
     filter(ConcatFilter, append: file('src/main/resources/exports.js'))
 }
