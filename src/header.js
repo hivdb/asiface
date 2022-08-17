@@ -1,6 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import Select from 'icosa/components/select';
+import readFile from 'icosa/utils/read-file';
+import FileInput from 'icosa/components/file-input';
 
 import {ReactComponent as Logo} from './logo.svg';
 import style from './style.module.scss';
@@ -41,6 +43,8 @@ PreloadSelector.propTypes = {
 
 export default function PreloadSelector({preloads, onChange}) {
 
+  const mounted = React.useRef();
+
   const options = React.useMemo(
     () => preloads ? preloads.map(
       ({family, version, date, url}) => ({
@@ -76,9 +80,31 @@ export default function PreloadSelector({preloads, onChange}) {
     [fetchAndSet]
   );
 
+  const handleFileSelect = React.useCallback(
+    ([file]) => {
+      if (
+        !file ||
+        !(/^text\/.+$|^application\/(xml|x-gzip)$|^$/.test(file.type))
+      ) {
+        return;
+      }
+      readFile(file)
+        .then(xml => mounted.current && onChange(xml));
+    },
+    [onChange]
+  );
+
+  React.useEffect(
+    () => {
+      mounted.current = true;
+      return () => mounted.current = false;
+    },
+    []
+  );
+
   return (
     <div className={style['asiface-cell-preload-selector']}>
-      <Logo />
+      <h1><Logo /></h1>
       <Select
        isSearchable
        options={grouppedOptions}
@@ -87,6 +113,13 @@ export default function PreloadSelector({preloads, onChange}) {
        classNamePrefix="asi-preload-dropdown"
        placeholder="Select a preloaded XML"
        onChange={handleChange} />
+      <span className={style.or}>or</span>
+      <FileInput
+       name="asi-custom"
+       accept={
+         "application/x-gzip,text/xml,application/xml,.xml,.xml.gz"
+       }
+       onChange={handleFileSelect} />
     </div>
   );
 }

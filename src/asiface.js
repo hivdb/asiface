@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import createLocationState from 'icosa/utils/use-location-state';
 
-import PreloadSelector, {useFetchAndSet} from './preload-selector';
+import Header, {useFetchAndSet} from './header';
 import XMLEditor from './xml-editor';
 import MutationEditor from './mutation-editor';
 import Evaluator from './evaluator';
@@ -27,7 +27,7 @@ export default function ASIFace({height, config}) {
   const [asiXml, setAsiXml] = React.useState(null);
   const [mutations, setMutations] = React.useState(config.mutations);
   const [verticalPcnt, setVerticalPcnt] = useVerticalPcnt(0.3);
-  const [horizontalPcnt, setHorizontalPcnt] = useHorizontalPcnt(0.7);
+  const [horizontalPcnt, setHorizontalPcnt] = useHorizontalPcnt(0.618);
 
   const fetchAndSet = useFetchAndSet(setAsiXml);
 
@@ -44,7 +44,7 @@ export default function ASIFace({height, config}) {
        '--vertical-pcnt': `${verticalPcnt * 100}%`,
        '--horizontal-pcnt': `${horizontalPcnt * 100}%`
      }}>
-      <PreloadSelector preloads={config.preloads} onChange={setAsiXml} />
+      <Header preloads={config.preloads} onChange={setAsiXml} />
       <XMLEditor onChange={setAsiXml}>{asiXml}</XMLEditor>
       <MutationEditor onChange={setMutations}>{mutations}</MutationEditor>
       <Evaluator asiXml={asiXml} mutations={mutations} />

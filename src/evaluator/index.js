@@ -2,8 +2,11 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import Button from 'icosa/components/button';
 
-import ASIJs from './asi-js';
-import style from './style.module.scss';
+import ASIJs from '../asi-js';
+import style from '../style.module.scss';
+
+import AlgorithmInfo from './algorithm-info';
+import EvaluatedGene from './evaluated-gene';
 
 
 function splitMutations(mutations) {
@@ -19,6 +22,7 @@ ASIEvaluator.propTypes = {
 export default function ASIEvaluator({mutations, asiXml}) {
 
   const evaluatorRef = React.useRef();
+  const [algorithmInfo, setAlgorithmInfo] = React.useState(null);
   const [geneResults, setGeneResults] = React.useState(null);
   const [error, setError] = React.useState(null);
 
@@ -36,11 +40,15 @@ export default function ASIEvaluator({mutations, asiXml}) {
       try {
         const asi = new ASIJs(asiXml);
         setError(null);
-        setGeneResults(asi.evaluate(mutList));
+        const geneResults = asi.evaluate(mutList);
+        const algInfo = asi.getAlgorithmInfo();
+        setGeneResults(geneResults);
+        setAlgorithmInfo(algInfo);
       }
       catch (err) {
         setError(err.message);
         setGeneResults(null);
+        setAlgorithmInfo(null);
         if (process.env.NODE_ENV !== 'production') {
           console.error(err.stack);
         }
@@ -54,10 +62,18 @@ export default function ASIEvaluator({mutations, asiXml}) {
     {error ? <div className={style['evaluator-error']}>
       {error}
     </div> : null}
+    {algorithmInfo ?
+      <AlgorithmInfo {...algorithmInfo} /> : null}
     {geneResults ?
-      <pre>
-        {JSON.stringify(geneResults, null, 2)}
-      </pre> : null}
+      geneResults.map(
+        geneResult => (
+          <EvaluatedGene
+           key={geneResult.geneName}
+           algorithmInfo={algorithmInfo}
+           {...geneResult} />
+        )
+      ) : null}
+    <div className={style['ending']} />
     <Button
      className={style['evaluate-button']}
      btnStyle="primary"
