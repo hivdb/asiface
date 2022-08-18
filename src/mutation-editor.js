@@ -16,6 +16,7 @@ export default function MutationEditor({children, onChange}) {
 
   return (
     <div className={style['asiface-cell-mutation-editor']}>
+      <strong>Enter mutations:</strong>
       <textarea
        onChange={handleChange}
        value={children || ''}

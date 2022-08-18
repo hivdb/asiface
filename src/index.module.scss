@@ -1,11 +1,11 @@
 @import "icosa/styles/default-colors";
+@import "icosa/styles/constants";
 
 body {
   @include default-color();
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-size: 14px;
+  font-family: $base-font-family;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }

@@ -3,6 +3,8 @@ import PropTypes from 'prop-types';
 import Select from 'icosa/components/select';
 import readFile from 'icosa/utils/read-file';
 import FileInput from 'icosa/components/file-input';
+import Button from 'icosa/components/button';
+import {makeDownload} from 'icosa/utils/download';
 
 import {ReactComponent as Logo} from './logo.svg';
 import style from './style.module.scss';
@@ -29,7 +31,13 @@ export function useFetchAndSet(setValue) {
 
 }
 
-PreloadSelector.propTypes = {
+function getFileName(url) {
+  return url.split('/').slice(-1)[0];
+}
+
+
+Header.propTypes = {
+  asiXml: PropTypes.string,
   preloads: PropTypes.arrayOf(
     PropTypes.shape({
       family: PropTypes.string.isRequired,
@@ -41,9 +49,13 @@ PreloadSelector.propTypes = {
   onChange: PropTypes.func.isRequired
 };
 
-export default function PreloadSelector({preloads, onChange}) {
+export default function Header({asiXml, preloads, onChange}) {
 
   const mounted = React.useRef();
+  const [defaultPreload] = preloads;
+  const [lastSelected, setLastSelected] = React.useState(
+    getFileName(defaultPreload.url)
+  );
 
   const options = React.useMemo(
     () => preloads ? preloads.map(
@@ -76,7 +88,10 @@ export default function PreloadSelector({preloads, onChange}) {
   const fetchAndSet = useFetchAndSet(onChange);
 
   const handleChange = React.useCallback(
-    opt => fetchAndSet(opt.url),
+    opt => {
+      fetchAndSet(opt.url);
+      setLastSelected(opt.url);
+    },
     [fetchAndSet]
   );
 
@@ -89,9 +104,19 @@ export default function PreloadSelector({preloads, onChange}) {
         return;
       }
       readFile(file)
-        .then(xml => mounted.current && onChange(xml));
+        .then(xml => {
+          if (mounted.current) {
+            onChange(xml);
+            setLastSelected(file.name);
+          }
+        });
     },
     [onChange]
+  );
+
+  const handleSave = React.useCallback(
+    () => makeDownload(lastSelected, 'application/xml', asiXml),
+    [lastSelected, asiXml]
   );
 
   React.useEffect(
@@ -103,7 +128,7 @@ export default function PreloadSelector({preloads, onChange}) {
   );
 
   return (
-    <div className={style['asiface-cell-preload-selector']}>
+    <header className={style['asiface-header']}>
       <h1><Logo /></h1>
       <Select
        isSearchable
@@ -120,6 +145,12 @@ export default function PreloadSelector({preloads, onChange}) {
          "application/x-gzip,text/xml,application/xml,.xml,.xml.gz"
        }
        onChange={handleFileSelect} />
-    </div>
+      {asiXml ? <Button
+       name="asi-save"
+       onClick={handleSave}
+       className={style['asi-save']}>
+        Save XML
+      </Button> : null}
+    </header>
   );
 }

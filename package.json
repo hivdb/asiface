@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "devDependencies": {
-    "icosa": "hivdb/icosa#694c2cc040af873fd8ca3aa96cc79904398a01cc"
+    "icosa": "hivdb/icosa#2c15b25ae39a82019cc90aab52d65d68f089d6a6"
   },
   "dependencies": {
     "@babel/cli": "^7.17.10",
@@ -15,8 +15,9 @@
     "@babel/runtime": "^7.17.9"
   },
   "peerDependencies": {
-    "icosa": "hivdb/icosa#694c2cc040af873fd8ca3aa96cc79904398a01cc"
+    "icosa": "hivdb/icosa#2c15b25ae39a82019cc90aab52d65d68f089d6a6"
   },
+  "main": "./dist/asiface.js",
   "exports": {
     "./": "./dist/"
   },

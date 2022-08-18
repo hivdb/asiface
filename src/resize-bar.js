@@ -4,11 +4,12 @@ import PropTypes from 'prop-types';
 import style from './style.module.scss';
 
 ResizeBar.propTypes = {
+  name: PropTypes.string.isRequired,
   onChange: PropTypes.func.isRequired,
   direction: PropTypes.oneOf(['horizontal', 'vertical']).isRequired
 };
 
-export default function ResizeBar({onChange, direction}) {
+export default function ResizeBar({name, onChange, direction}) {
 
   const barRef = React.useRef();
   const [isDragging, setIsDragging] = React.useState(false);
@@ -29,9 +30,12 @@ export default function ResizeBar({onChange, direction}) {
         const clientX = evt[attrClientX];
         const containerOffsetWidth = parent[attrOffsetWidth];
         const containerOffsetLeft = parent[attrOffsetLeft];
-        onChange(Math.min(
-          1,
-          (clientX - containerOffsetLeft) / containerOffsetWidth
+        onChange(Math.max(
+          0,
+          Math.min(
+            1,
+            (clientX - containerOffsetLeft) / containerOffsetWidth
+          )
         ));
         evt.preventDefault() && evt.stopPropagation();
       }
@@ -55,6 +59,7 @@ export default function ResizeBar({onChange, direction}) {
   return (
     <div
      ref={barRef}
+     data-name={name}
      onMouseDown={handleMouseDown}
      data-direction={direction}
      className={style['asiface-resize-bar']} />

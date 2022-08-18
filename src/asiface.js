@@ -28,6 +28,8 @@ export default function ASIFace({height, config}) {
   const [mutations, setMutations] = React.useState(config.mutations);
   const [verticalPcnt, setVerticalPcnt] = useVerticalPcnt(0.3);
   const [horizontalPcnt, setHorizontalPcnt] = useHorizontalPcnt(0.618);
+  const [mobilePcnt1, setMobilePcnt1] = useVerticalPcnt(0.3);
+  const [mobilePcnt2, setMobilePcnt2] = useHorizontalPcnt(0.5);
 
   const fetchAndSet = useFetchAndSet(setAsiXml);
 
@@ -42,20 +44,33 @@ export default function ASIFace({height, config}) {
      style={{
        '--height': height,
        '--vertical-pcnt': `${verticalPcnt * 100}%`,
-       '--horizontal-pcnt': `${horizontalPcnt * 100}%`
+       '--horizontal-pcnt': `${horizontalPcnt * 100}%`,
+       '--mobile-pcnt-1': `${mobilePcnt1 * 100}%`,
+       '--mobile-pcnt-2': `${mobilePcnt2 * 100}%`
      }}>
-      <Header preloads={config.preloads} onChange={setAsiXml} />
+      <Header
+       asiXml={asiXml}
+       preloads={config.preloads}
+       onChange={setAsiXml} />
       <XMLEditor onChange={setAsiXml}>{asiXml}</XMLEditor>
       <MutationEditor onChange={setMutations}>{mutations}</MutationEditor>
       <Evaluator asiXml={asiXml} mutations={mutations} />
       <ResizeBar
-       percent={verticalPcnt}
+       name="row-divider"
        onChange={setVerticalPcnt}
        direction="vertical" />
       <ResizeBar
-       percent={horizontalPcnt}
+       name="col-divider"
        onChange={setHorizontalPcnt}
        direction="horizontal" />
+      <ResizeBar
+       name="mobile-divider-1"
+       onChange={setMobilePcnt1}
+       direction="vertical" />
+      <ResizeBar
+       name="mobile-divider-2"
+       onChange={setMobilePcnt2}
+       direction="vertical" />
     </div>
   );
 }
