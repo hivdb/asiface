@@ -3090,6 +3090,10 @@ asap@~2.0.3, asap@~2.0.6:
   resolved "https://registry.yarnpkg.com/asap/-/asap-2.0.6.tgz#e50347611d7e690943208bbdafebcbc2fb866d46"
   integrity sha512-BSHWgDSAiKs50o2Re8ppvp3seVHXSRM44cdSsT9FfNEUUZLOGWVCsiWaRPWM1Znn+mqZ1OfVZ3z3DWEzSp7hRA==
 
+asi_interpreter@hivdb/asi_interpreter#1e2c7115c4ea11bd31d5dccaff3593d587dc20e8:
+  version "1.6.1"
+  resolved "https://codeload.github.com/hivdb/asi_interpreter/tar.gz/1e2c7115c4ea11bd31d5dccaff3593d587dc20e8"
+
 ast-types-flow@^0.0.7:
   version "0.0.7"
   resolved "https://registry.yarnpkg.com/ast-types-flow/-/ast-types-flow-0.0.7.tgz#f70b735c6bca1a5c9c22d982c3e39e7feba3bdad"
@@ -5917,9 +5921,9 @@ iconv-lite@^0.6.2, iconv-lite@^0.6.3:
   dependencies:
     safer-buffer ">= 2.1.2 < 3.0.0"
 
-icosa@hivdb/icosa#2c15b25ae39a82019cc90aab52d65d68f089d6a6:
+icosa@hivdb/icosa#7ab9acac0b167496c5e9c61423062d3023bac9dd:
   version "0.2.0"
-  resolved "https://codeload.github.com/hivdb/icosa/tar.gz/2c15b25ae39a82019cc90aab52d65d68f089d6a6"
+  resolved "https://codeload.github.com/hivdb/icosa/tar.gz/7ab9acac0b167496c5e9c61423062d3023bac9dd"
   dependencies:
     "@apollo/client" "^3.6.2"
     "@babel/cli" "^7.17.10"
@@ -5965,6 +5969,7 @@ icosa@hivdb/icosa#2c15b25ae39a82019cc90aab52d65d68f089d6a6:
     pako "^2.0.4"
     pdfobject "^2.2.8"
     pluralize "^8.0.0"
+    prop-types "^15.8.1"
     query-string "^7.1.1"
     raw-loader "^4.0.2"
     react "^18.2.0"
@@ -5979,7 +5984,7 @@ icosa@hivdb/icosa#2c15b25ae39a82019cc90aab52d65d68f089d6a6:
     react-loader "^2.4.7"
     react-markdown "^4.3.1"
     react-progressbar "^15.4.1"
-    react-scripts "5.0.1"
+    react-scripts "^5.0.1"
     react-select "^5.3.2"
     react-slick "^0.29.0"
     react-tabs "^5.1.0"
@@ -6003,6 +6008,7 @@ icosa@hivdb/icosa#2c15b25ae39a82019cc90aab52d65d68f089d6a6:
     uuid "^8.3.2"
     web-vitals "^2.1.4"
     webpack "^5.72.0"
+    worker-loader "^3.0.8"
     xlsx "^0.18.5"
     xmlbuilder2 "^3.0.2"
     youtube-url "^0.5.0"
@@ -8966,7 +8972,7 @@ react-refresh@^0.11.0:
   resolved "https://registry.yarnpkg.com/react-refresh/-/react-refresh-0.11.0.tgz#77198b944733f0f1f1a90e791de4541f9f074046"
   integrity sha512-F27qZr8uUqwhWZboondsPx8tnC3Ct3SxZA3V5WyEvujRyyNv0VYPhoBg1gZ8/MV5tubQp76Trw8lTv9hzRBa+A==
 
-react-scripts@5.0.1:
+react-scripts@^5.0.1:
   version "5.0.1"
   resolved "https://registry.yarnpkg.com/react-scripts/-/react-scripts-5.0.1.tgz#6285dbd65a8ba6e49ca8d651ce30645a6d980003"
   integrity sha512-8VAmEm/ZAwQzJ+GOMLbBsTdDKOpuZh7RPs0UymvBR2vRk4iZWCskjbFnxqjrzoIvlNNRZ3QJFx6/qDSi6zSnaQ==
@@ -11153,6 +11159,14 @@ workbox-window@6.5.4:
   dependencies:
     "@types/trusted-types" "^2.0.2"
     workbox-core "6.5.4"
+
+worker-loader@^3.0.8:
+  version "3.0.8"
+  resolved "https://registry.yarnpkg.com/worker-loader/-/worker-loader-3.0.8.tgz#5fc5cda4a3d3163d9c274a4e3a811ce8b60dbb37"
+  integrity sha512-XQyQkIFeRVC7f7uRhFdNMe/iJOdO6zxAaR3EWbDp45v3mDhrTi+++oswKNxShUNjPC/1xUp5DB29YKLhFo129g==
+  dependencies:
+    loader-utils "^2.0.0"
+    schema-utils "^3.0.0"
 
 wrap-ansi@^7.0.0:
   version "7.0.0"

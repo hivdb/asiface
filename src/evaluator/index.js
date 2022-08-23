@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import Button from 'icosa/components/button';
 
-import ASIJs from '../asi-js';
+import ASIJs from 'asi_interpreter';
 import style from '../style.module.scss';
 
 import AlgorithmInfo from './algorithm-info';
