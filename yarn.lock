@@ -3090,9 +3090,9 @@ asap@~2.0.3, asap@~2.0.6:
   resolved "https://registry.yarnpkg.com/asap/-/asap-2.0.6.tgz#e50347611d7e690943208bbdafebcbc2fb866d46"
   integrity sha512-BSHWgDSAiKs50o2Re8ppvp3seVHXSRM44cdSsT9FfNEUUZLOGWVCsiWaRPWM1Znn+mqZ1OfVZ3z3DWEzSp7hRA==
 
-asi_interpreter@hivdb/asi_interpreter#1e2c7115c4ea11bd31d5dccaff3593d587dc20e8:
+asi_interpreter@hivdb/asi_interpreter#58381cd5f13d68dc8f38a060533ee80ddac68bb5:
   version "1.6.1"
-  resolved "https://codeload.github.com/hivdb/asi_interpreter/tar.gz/1e2c7115c4ea11bd31d5dccaff3593d587dc20e8"
+  resolved "https://codeload.github.com/hivdb/asi_interpreter/tar.gz/58381cd5f13d68dc8f38a060533ee80ddac68bb5"
 
 ast-types-flow@^0.0.7:
   version "0.0.7"
@@ -5921,9 +5921,9 @@ iconv-lite@^0.6.2, iconv-lite@^0.6.3:
   dependencies:
     safer-buffer ">= 2.1.2 < 3.0.0"
 
-icosa@hivdb/icosa#7ab9acac0b167496c5e9c61423062d3023bac9dd:
+icosa@hivdb/icosa#8b48fb04be6059a5e6755fb390c92d2506fe97ee:
   version "0.2.0"
-  resolved "https://codeload.github.com/hivdb/icosa/tar.gz/7ab9acac0b167496c5e9c61423062d3023bac9dd"
+  resolved "https://codeload.github.com/hivdb/icosa/tar.gz/8b48fb04be6059a5e6755fb390c92d2506fe97ee"
   dependencies:
     "@apollo/client" "^3.6.2"
     "@babel/cli" "^7.17.10"
