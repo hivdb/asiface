@@ -14,15 +14,24 @@ import {
 import ReactDOM from 'react-dom/client';
 import './index.module.scss';
 import ASIFace from './asiface';
+import JSONExtender from './json-extender';
 import config from './testingConfig';
 import reportWebVitals from './reportWebVitals';
 
 const routes = (
-  <Route
-   path="/"
-   render={
-     (props) => <ASIFace {...props} config={config} />
-   } />
+  <Route>
+    <Route
+     path="/"
+     render={
+       (props) => <ASIFace {...props} config={config} />
+     } />
+    <Route
+     path="json-extender/"
+     render={
+       (props) => <JSONExtender {...props} config={config} />
+     } />
+
+  </Route>
 );
 
 const Router = createFarceRouter({
