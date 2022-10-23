@@ -116,6 +116,13 @@ $grid-gap: .5rem;
     margin: 0 1rem 0 0;
   }
 
+  > .asi-auto-save-checkbox {
+    float: right;
+    margin-right: 1rem;
+    display: inline-block;
+    vertical-align: middle;
+  }
+
   > .asi-save {
     float: right;
     margin-right: 1rem;
