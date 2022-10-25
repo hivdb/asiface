@@ -3,7 +3,7 @@
   "version": "0.2.3",
   "private": true,
   "devDependencies": {
-    "icosa": "hivdb/icosa#5eb7c14f40f023ab59e3baa08efcb0d8374d2645"
+    "icosa": "hivdb/icosa#20ffea3"
   },
   "dependencies": {
     "@babel/cli": "^7.17.10",
@@ -13,10 +13,11 @@
     "@babel/plugin-transform-react-jsx": "^7.14.9",
     "@babel/preset-env": "^7.18.2",
     "@babel/runtime": "^7.17.9",
-    "asi_interpreter": "hivdb/asi_interpreter#958334cadfa11e992f8214f1700f07b05df37af4"
+    "asi_interpreter": "hivdb/asi_interpreter#958334cadfa11e992f8214f1700f07b05df37af4",
+    "xml-formatter": "^2.6.1"
   },
   "peerDependencies": {
-    "icosa": "^0.3.4"
+    "icosa": "^0.3.8"
   },
   "main": "./dist/asiface.js",
   "exports": {

@@ -1,0 +1,16 @@
+@import "icosa/styles/colors";
+
+.asi-visual-editor {
+
+  .comments-input, .comments-output {
+    margin-left: .4rem;
+  }
+
+  .errors {
+    color: color(type-error);
+    overflow-y: auto;
+    max-height: 10rem;
+    border: 1px solid color(type-error);
+  }
+
+}

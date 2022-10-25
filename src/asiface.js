@@ -111,7 +111,7 @@ export default function ASIFace({height, config}) {
        asiFileName={asiFileName}
        preloads={config.preloads}
        onChange={handleChange} />
-      <XMLEditor onChange={setAsiXml}>
+      <XMLEditor fileName={asiFileName} onChange={setAsiXml}>
         {asiXml}
       </XMLEditor>
       <MutationEditor onChange={setMutations}>{mutations}</MutationEditor>
