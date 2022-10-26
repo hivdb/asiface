@@ -107,7 +107,7 @@ export default function Header({
         .then(xml => {
           if (mounted.current) {
             onChange({
-              xml,
+              asiXml: xml,
               asiFileName: file.name
             });
           }
