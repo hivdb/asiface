@@ -179,13 +179,14 @@ export default function CommentsEditor({fileNamePrefix, comments, onChange}) {
           Download
         </Button>
       </div>
-      <ul className={style['errors']}>
-        {errors.map(
-          (text, idx) => <li key={idx}>
-            {text}
-          </li>
-        )}
-      </ul>
+      {errors && errors.length > 0 ?
+        <ul className={style['errors']}>
+          {errors.map(
+            (text, idx) => <li key={idx}>
+              {text}
+            </li>
+          )}
+        </ul> : null}
     </div>
   );
 }

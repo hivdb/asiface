@@ -1,6 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
+import {H2} from 'icosa/components/heading-tags';
+
 import CommentsEditor from './comments-editor';
 import {commentsFromASI, updateASI} from './asi-parser';
 import style from './style.module.scss';
@@ -29,10 +31,14 @@ export default function VisualEditor({fileName, value, onChange}) {
 
   return (
     <div className={style['asi-visual-editor']}>
+      <H2 disableAnchor>
+        Editing {fileName}
+      </H2>
       <CommentsEditor
        fileNamePrefix={fileNamePrefix}
        comments={comments}
        onChange={handleCommentsChange} />
+      <hr />
     </div>
   );
 }
