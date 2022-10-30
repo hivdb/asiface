@@ -49,6 +49,7 @@ export function csvToRules(csvRules) {
 
 
 RulesEditor.propTypes = {
+  drugClass: PropTypes.string.isRequired,
   fileNamePrefix: PropTypes.string.isRequired,
   rules: PropTypes.arrayOf(
     PropTypes.shape({
@@ -58,7 +59,10 @@ RulesEditor.propTypes = {
   onChange: PropTypes.func.isRequired
 };
 
-export default function RulesEditor({fileNamePrefix, rules, onChange}) {
+export default function RulesEditor({
+  drugClass, fileNamePrefix, rules,
+  onChange
+}) {
 
   const isMounted = useMounted();
 
@@ -74,24 +78,28 @@ export default function RulesEditor({fileNamePrefix, rules, onChange}) {
       }
       const csvRules = await readFile(file);
       if (isMounted()) {
-        onChange(csvToRules(csvRules));
+        onChange(drugClass, csvToRules(csvRules));
       }
     },
-    [onChange, isMounted]
+    [onChange, drugClass, isMounted]
   );
 
   const handleDownload = React.useCallback(
     () => {
       const csvRules = rulesToCSV(sanitizedRules);
-      makeDownload(`${fileNamePrefix}-rules.csv`, 'text/csv', csvRules);
+      makeDownload(
+        `${fileNamePrefix}-${drugClass}-rules.csv`,
+        'text/csv',
+        csvRules
+      );
     },
-    [fileNamePrefix, sanitizedRules]
+    [drugClass, fileNamePrefix, sanitizedRules]
   );
 
   return (
     <div className={style['rules-editor']}>
       <div className={style['option-row']}>
-        <label htmlFor="rules-input">Rules CSV:</label>
+        <label htmlFor="rules-input">{drugClass} Rules:</label>
         <FileInput
          hideSelected
          btnSize="small"

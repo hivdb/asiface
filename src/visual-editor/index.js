@@ -5,7 +5,12 @@ import {H2} from 'icosa/components/heading-tags';
 
 import CommentsEditor from './comments-editor';
 import RulesEditor from './rules-editor';
-import {commentsFromASI, rulesFromASI, updateASI} from './asi-parser';
+import {
+  commentsFromASI,
+  rulesFromASI,
+  updateASIComments,
+  updateASIRules
+} from './asi-parser';
 import style from './style.module.scss';
 
 VisualEditor.propTypes = {
@@ -24,18 +29,18 @@ export default function VisualEditor({fileName, value, onChange}) {
     () => commentsFromASI(value),
     [value]
   );
-  const rules = React.useMemo(
+  const dcRules = React.useMemo(
     () => rulesFromASI(value),
     [value]
   );
 
   const handleCommentsChange = React.useCallback(
-    comments => onChange(updateASI(value, {comments})),
+    comments => onChange(updateASIComments(value, comments)),
     [value, onChange]
   );
 
   const handleRulesChange = React.useCallback(
-    rules => onChange(updateASI(value, {rules})),
+    (drugClass, rules) => onChange(updateASIRules(value, drugClass, rules)),
     [value, onChange]
   );
 
@@ -48,11 +53,14 @@ export default function VisualEditor({fileName, value, onChange}) {
        fileNamePrefix={fileNamePrefix}
        comments={comments}
        onChange={handleCommentsChange} />
-      <hr />
-      <RulesEditor
-       fileNamePrefix={fileNamePrefix}
-       rules={rules}
-       onChange={handleRulesChange} />
+      {dcRules.map(({drugClass, rules}) => <React.Fragment key={drugClass}>
+        <hr />
+        <RulesEditor
+         drugClass={drugClass}
+         fileNamePrefix={fileNamePrefix}
+         rules={rules}
+         onChange={handleRulesChange} />
+      </React.Fragment>)}
     </div>
   );
 }

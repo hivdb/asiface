@@ -57,6 +57,17 @@ function getOrCreateNode(parent, tagNames, doc) {
 }
 
 
+function createNode(parent, tagNames, doc) {
+  let curNode = parent;
+  for (const tagName of tagNames) {
+    const childNode = doc.createElement(tagName);
+    curNode.appendChild(childNode);
+    curNode = childNode;
+  }
+  return curNode;
+}
+
+
 function querySingleNodeText(parent, xpath) {
   const nodes = queryNodes(parent, xpath);
   return nodes.length === 0 ? undefined : nodes[0].textContent.trim();
@@ -138,9 +149,9 @@ function stringifyRule(rule, depth = 0) {
         stringifyRule(rule.cond, depth + 1)
       } => ${rule.score}`;
     case 'MAX_MAP':
-      return `${indent}MAX(\n${
-        rule.scores.map(r => stringifyRule(r, depth + 1)).join(',\n')
-      }\n${indent})`;
+      return `${indent}MAX(${
+        rule.scores.map(r => stringifyRule(r, 0)).join(', ')
+      })`;
     default:
       return null;
   }
@@ -166,10 +177,16 @@ function getScoreMap(scores) {
 
 export function rulesFromASI(asiXml) {
   const doc = parseXML(asiXml);
+  const drugLookup = makeDrugLookup(doc);
   const drugs = queryNodes(doc, 'ALGORITHM/DRUG');
-  const rows = {};
+  const allRows = {};
   for (const drugNode of drugs) {
     const drugName = querySingleNodeText(drugNode, 'NAME');
+    const {drugClass} = drugLookup[drugName];
+    if (!(drugClass in allRows)) {
+      allRows[drugClass] = {};
+    }
+    const rows = allRows[drugClass];
     const rules = queryNodes(drugNode, 'RULE');
     for (const ruleNode of rules) {
       const ruleText = querySingleNodeText(ruleNode, 'CONDITION');
@@ -192,7 +209,10 @@ export function rulesFromASI(asiXml) {
       }
     }
   }
-  return Object.values(rows);
+  return Object.entries(allRows).map(([drugClass, rows]) => ({
+    drugClass,
+    rules: Object.values(rows)
+  }));
 }
 
 
@@ -298,11 +318,145 @@ export function commentsFromASI(asiXml) {
   return Object.values(comments);
 }
 
-export function updateASI(
-  asiXmlRef,
-  {
-    comments
+
+function getPosKey(cond) {
+  switch (cond.op) {
+    case 'RESIDUE_MATCH':
+    case 'RESIDUE_NOT':
+    case 'RESIDUE_INVERT':
+      return `${cond.op} ${cond.pos}`;
+    case 'AND':
+    case 'OR': {
+      const children = [
+        getPosKey(cond.leftCond),
+        getPosKey(cond.rightCond)
+      ].sort();
+      return `${cond.op} ${children.join(',')}`;
+    }
+    case 'EXCLUDE':
+      return `EXCLUDE ${getPosKey(cond)}`;
+    case 'SELECT': {
+      const children = cond.from.map(getPosKey).sort();
+      return `SELECT ${stringifyRule(cond.cond)} ${children.join(',')}`;
+    }
+    default:
+      return null;
   }
+}
+
+
+function updateDrugRules(
+  drugName,
+  drugNode,
+  rules,
+  doc
+) {
+  if (`${drugName} Score` in rules[0]) {
+    const scoreMap = {};
+    for (const rule of rules) {
+      const ruleText = rule.rule;
+      const score = Number.parseFloat(rule[`${drugName} Score`]);
+      const ruleCond = parseRule(ruleText);
+      if (isNaN(score)) {
+        continue;
+      }
+      const mapCond = {op: 'MAP', cond: ruleCond, score};
+      const posKey = getPosKey(ruleCond);
+      if (posKey in scoreMap) {
+        if (scoreMap[posKey].op === 'MAP') {
+          scoreMap[posKey] = {
+            op: 'MAX_MAP',
+            scores: [scoreMap[posKey]]
+          };
+        }
+        scoreMap[posKey].scores.push(mapCond);
+      }
+      else {
+        scoreMap[posKey] = mapCond;
+      }
+    }
+    const ruleText = stringifyRule({
+      op: 'SCORE',
+      scores: Object.values(scoreMap)
+    });
+    let ruleNode = queryNodes(drugNode, 'RULE');
+    if (ruleNode.length === 1) {
+      ruleNode = ruleNode[0];
+    }
+    else {
+      drugNode.replaceChildren();
+      ruleNode = createNode(drugNode, ['RULE'], doc);
+    }
+    const condNode = getOrCreateNode(ruleNode, ['CONDITION'], doc);
+    condNode.replaceChildren();
+    condNode.appendChild(doc.createCDATASection(ruleText));
+    if (queryNodes(ruleNode, 'ACTIONS').length === 0) {
+      createNode(ruleNode, ['ACTIONS', 'SCORERANGE', 'USE_GLOBALRANGE'], doc);
+    }
+  }
+  else if (`${drugName} Level` in rules[0]) {
+    drugNode.replaceChildren();
+    for (const rule of rules) {
+      const level = Number.parseInt(rule[`${drugName} Level`]);
+      if (isNaN(level)) {
+        continue;
+      }
+      const ruleNode = createNode(drugNode, ['RULE'], doc);
+      const condNode = createNode(ruleNode, ['CONDITION'], doc);
+      condNode.appendChild(doc.createCDATASection(rule.rule));
+      const levelNode = createNode(ruleNode, ['ACTIONS', 'LEVEL'], doc);
+      levelNode.textContent = level;
+    }
+  }
+
+}
+
+
+export function updateASIRules(
+  asiXmlRef,
+  drugClass,
+  rules
+) {
+  const doc = parseXML(asiXmlRef);
+  const drugLookup = makeDrugLookup(doc);
+  const pendingDrugs = {};
+  for (const drugCol of Object.keys(rules[0])) {
+    if (/ (Score|Level)$/.test(drugCol)) {
+      pendingDrugs[drugCol.replace(/ (Score|Level)$/, '')] = true;
+    }
+  }
+
+  const algNode = getOrCreateNode(doc, ['ALGORITHM'], doc);
+  const drugs = queryNodes(algNode, 'DRUG');
+
+  for (const drugNode of drugs) {
+    const drugName = querySingleNodeText(drugNode, 'NAME');
+    if (drugName in pendingDrugs) {
+      updateDrugRules(drugName, drugNode, rules, doc);
+      pendingDrugs[drugName] = false;
+    }
+    else if (drugLookup[drugName].drugClass === drugClass) {
+      drugNode.remove();
+    }
+  }
+
+  for (const drugName in pendingDrugs) {
+    if (pendingDrugs[drugName]) {
+      const drugNode = createNode(algNode, ['DRUG'], doc);
+      const nameNode = createNode(drugNode, ['NAME'], doc);
+      nameNode.textContent = drugName;
+      updateDrugRules(drugName, drugNode, rules, doc);
+      pendingDrugs[drugName] = false;
+    }
+  }
+
+  return serializeXML(doc);
+}
+
+
+export function updateASIComments(
+  asiXmlRef,
+  comments
 ) {
   const doc = parseXML(asiXmlRef);
 
@@ -313,11 +467,13 @@ export function updateASI(
   );
   const mutCommentsNode = getOrCreateNode(
     doc,
-    ['ALGORITHM', 'MUTATION_COMMENTS']
+    ['ALGORITHM', 'MUTATION_COMMENTS'],
+    doc
   );
   const resultCommentsNode = getOrCreateNode(
     doc,
-    ['ALGORITHM', 'RESULT_COMMENTS']
+    ['ALGORITHM', 'RESULT_COMMENTS'],
+    doc
   );
 
   // clear children
