@@ -28,3 +28,6 @@ yarn-error.log*
 
 # dist folder
 dist/
+
+# built asi-rules
+src/visual-editor/asi-rules.js

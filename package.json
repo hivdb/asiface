@@ -25,9 +25,9 @@
     "./": "./dist/"
   },
   "scripts": {
-    "build-asijs": "cd asi-js && ./gradlew compileGwt",
+    "build-asi-rules-parser": "npx nearleyc src/visual-editor/asi-rules.ne -o src/visual-editor/asi-rules.js",
     "start": "PORT=3013 react-scripts start",
-    "dist": "rm -rf dist/ && NODE_ENV=production npx babel src --out-dir dist --copy-files",
+    "dist": "yarn build-asi-rules-parser && rm -rf dist/ && NODE_ENV=production npx babel src --out-dir dist --copy-files",
     "build": "yarn dist",
     "postinstall": "yarn dist",
     "test": "react-scripts test",

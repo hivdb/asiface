@@ -11,7 +11,7 @@ import useMounted from 'icosa/utils/use-mounted';
 import style from './style.module.scss';
 
 
-export function commentsToCSV(comments) {
+function commentsToCSV(comments) {
   const header = [
     'id',
     'gene',
@@ -45,7 +45,7 @@ function normDate(date) {
 }
 
 
-export function validateComments(comments) {
+function validateComments(comments) {
   const allErrors = [];
   const uniqCmtIds = {};
   for (let rowId = 0; rowId < comments.length; rowId ++) {

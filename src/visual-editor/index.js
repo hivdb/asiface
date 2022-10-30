@@ -4,7 +4,8 @@ import PropTypes from 'prop-types';
 import {H2} from 'icosa/components/heading-tags';
 
 import CommentsEditor from './comments-editor';
-import {commentsFromASI, updateASI} from './asi-parser';
+import RulesEditor from './rules-editor';
+import {commentsFromASI, rulesFromASI, updateASI} from './asi-parser';
 import style from './style.module.scss';
 
 VisualEditor.propTypes = {
@@ -23,9 +24,18 @@ export default function VisualEditor({fileName, value, onChange}) {
     () => commentsFromASI(value),
     [value]
   );
+  const rules = React.useMemo(
+    () => rulesFromASI(value),
+    [value]
+  );
 
   const handleCommentsChange = React.useCallback(
     comments => onChange(updateASI(value, {comments})),
+    [value, onChange]
+  );
+
+  const handleRulesChange = React.useCallback(
+    rules => onChange(updateASI(value, {rules})),
     [value, onChange]
   );
 
@@ -39,6 +49,10 @@ export default function VisualEditor({fileName, value, onChange}) {
        comments={comments}
        onChange={handleCommentsChange} />
       <hr />
+      <RulesEditor
+       fileNamePrefix={fileNamePrefix}
+       rules={rules}
+       onChange={handleRulesChange} />
     </div>
   );
 }

@@ -1,4 +1,7 @@
+import nearley from 'nearley';
 import formatXML from 'xml-formatter';
+
+import asiRules from './asi-rules';
 
 const XPATH_EVALUATOR = new XPathEvaluator();
 
@@ -91,6 +94,105 @@ function makeDrugLookup(doc) {
     }
   }
   return drugLookup;
+}
+
+
+export function parseRule(ruleText) {
+  const parser = new nearley.Parser(nearley.Grammar.fromCompiled(asiRules));
+  parser.feed(ruleText);
+  return parser.results[0];
+}
+
+
+function stringifyRule(rule, depth = 0) {
+  const indent = '  '.repeat(depth);
+  switch (rule.op) {
+    case 'RESIDUE_MATCH':
+      return `${rule.ref ? rule.ref : ''}${rule.pos}${rule.aas}`;
+    case 'RESIDUE_NOT':
+      return `NOT ${rule.ref ? rule.ref : ''}${rule.pos}${rule.aas}`;
+    case 'RESIDUE_INVERT':
+      return `${rule.ref ? rule.ref : ''}${rule.pos} (NOT ${rule.aas})`;
+    case 'AND':
+    case 'OR': {
+      const leftText = stringifyRule(rule.leftCond, depth + 1);
+      let rightText = stringifyRule(rule.rightCond, depth + 1);
+      const rightOp = rule.rightCond.op;
+      if (rightOp === 'AND' || rightOp === 'OR') {
+        rightText = `(${rightText})`;
+      }
+      return `${leftText} ${rule.op} ${rightText}`;
+    }
+    case 'EXCLUDE':
+      return `EXCLUDE ${stringifyRule(rule.cond, depth + 1)}`;
+    case 'SELECT':
+      return `SELECT ${
+        stringifyRule(rule.cond)
+      } FROM (${rule.from.map(r => stringifyRule(r, depth + 1)).join(', ')})`;
+    case 'SCORE':
+      return `SCORE FROM (\n${
+        rule.scores.map(r => stringifyRule(r, depth + 1)).join(',\n')
+      }\n)`;
+    case 'MAP':
+      return `${indent}${
+        stringifyRule(rule.cond, depth + 1)
+      } => ${rule.score}`;
+    case 'MAX_MAP':
+      return `${indent}MAX(\n${
+        rule.scores.map(r => stringifyRule(r, depth + 1)).join(',\n')
+      }\n${indent})`;
+    default:
+      return null;
+  }
+}
+
+
+function getScoreMap(scores) {
+  const map = [];
+  for (const score of scores) {
+    if (score.op === 'MAP') {
+      map.push({
+        ruleText: stringifyRule(score.cond),
+        score: score.score
+      });
+    }
+    else { // score.op === 'MAX_MAP'
+      map.push(...getScoreMap(score.scores));
+    }
+  }
+  return map;
+}
+
+
+export function rulesFromASI(asiXml) {
+  const doc = parseXML(asiXml);
+  const drugs = queryNodes(doc, 'ALGORITHM/DRUG');
+  const rows = {};
+  for (const drugNode of drugs) {
+    const drugName = querySingleNodeText(drugNode, 'NAME');
+    const rules = queryNodes(drugNode, 'RULE');
+    for (const ruleNode of rules) {
+      const ruleText = querySingleNodeText(ruleNode, 'CONDITION');
+      const rule = parseRule(ruleText);
+
+      if (rule.op === 'SCORE') {
+        for (const {ruleText, score} of getScoreMap(rule.scores)) {
+          if (!(ruleText in rows)) {
+            rows[ruleText] = {rule: ruleText};
+          }
+          rows[ruleText][`${drugName} Score`] = score;
+        }
+      }
+      else {
+        const level = querySingleNodeText(ruleNode, 'ACTIONS/LEVEL');
+        if (!(ruleText in rows)) {
+          rows[ruleText] = {rule: ruleText};
+        }
+        rows[ruleText][`${drugName} Level`] = level;
+      }
+    }
+  }
+  return Object.values(rows);
 }
 
 
