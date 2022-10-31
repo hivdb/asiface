@@ -1,6 +1,6 @@
 {
   "name": "asiface",
-  "version": "0.2.3",
+  "version": "0.3.0",
   "private": true,
   "devDependencies": {
     "icosa": "hivdb/icosa#e2c377b104374dd1a0ae608484d803359bebd49f"
