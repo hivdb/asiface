@@ -1,7 +1,12 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import {Tab, Tabs, TabList, TabPanel} from 'react-tabs';
 
+import CheckboxInput from 'icosa/components/checkbox-input';
+import RadioInput from 'icosa/components/radio-input';
 import SimpleTable, {ColumnDef} from 'icosa/components/simple-table';
+
+import style from './style.module.scss';
 
 
 NA.propTypes = {
@@ -38,7 +43,39 @@ function DrugScoreCell({drug}) {
   return scoreChanged ?
     <strong>
       <NA>{oldScore}</NA> => <NA>{newScore}</NA>
-    </strong> : <NA>{newScore}</NA>;
+    </strong> : <span className={style.gray}>
+      <NA>{newScore}</NA>
+    </span>;
+}
+
+
+DrugSIRCell.propTypes = {
+  drug: drugShape.isRequired
+};
+
+function DrugSIRCell({drug}) {
+  const {oldSIR, newSIR, sirChanged} = drug;
+  return sirChanged ?
+    <strong>
+      <NA>{oldSIR}</NA> => <NA>{newSIR}</NA>
+    </strong> : <span className={style.gray}>
+      <NA>{newSIR}</NA>
+    </span>;
+}
+
+
+DrugLevelCell.propTypes = {
+  drug: drugShape.isRequired
+};
+
+function DrugLevelCell({drug}) {
+  const {oldLevel, newLevel, levelChanged} = drug;
+  return levelChanged ?
+    <strong>
+      <NA>{oldLevel}</NA> => <NA>{newLevel}</NA>
+    </strong> : <span className={style.gray}>
+      <NA>{newLevel}</NA>
+    </span>;
 }
 
 
@@ -58,15 +95,20 @@ ASIComparison.propTypes = {
   cacheKey: PropTypes.string.isRequired,
   comparisonResults: PropTypes.arrayOf(
     PropTypes.shape({
-      mutations: PropTypes.arrayOf(
+      pattern: PropTypes.arrayOf(
         PropTypes.string.isRequired
       ).isRequired,
+      count: PropTypes.number.isRequired,
       genes: PropTypes.arrayOf(geneShape.isRequired).isRequired
     }).isRequired
   ).isRequired
 };
 
 export default function ASIComparison({cacheKey, comparisonResults}) {
+
+  const [selectedIndex, setSelectedIndex] = React.useState(0);
+  const [onlyDiffs, toggleOnlyDiffs] = React.useReducer(f => !f, true);
+  const [cmpCol, setCmpCol] = React.useState('score');
 
   const colDefsByDrugClass = React.useMemo(
     () => {
@@ -76,7 +118,8 @@ export default function ASIComparison({cacheKey, comparisonResults}) {
           for (const {drugClassName, drugs} of drugClasses) {
             if (!(drugClassName in colDefsByDrugClass)) {
               colDefsByDrugClass[drugClassName] = {
-                $pattern: new ColumnDef({name: 'pattern', label: 'Pattern'})
+                $pattern: new ColumnDef({name: 'pattern', label: 'Pattern'}),
+                $count: new ColumnDef({name: 'count', label: '#'})
               };
             }
             const colDefMap = colDefsByDrugClass[drugClassName];
@@ -85,7 +128,15 @@ export default function ASIComparison({cacheKey, comparisonResults}) {
                 colDefMap[`$${drugName}`] = new ColumnDef({
                   name: drugName,
                   label: drugName,
-                  render: drug => <DrugScoreCell drug={drug} />,
+                  ...(
+                    cmpCol === 'score' ? {
+                      render: drug => <DrugScoreCell drug={drug} />
+                    } : cmpCol === 'SIR' ? {
+                      render: drug => <DrugSIRCell drug={drug} />
+                    } : {
+                      render: drug => <DrugLevelCell drug={drug} />
+                    }
+                  ),
                   sortable: false
                 });
               }
@@ -99,47 +150,102 @@ export default function ASIComparison({cacheKey, comparisonResults}) {
           return acc;
         }, {});
     },
-    [comparisonResults]
+    [comparisonResults, cmpCol]
   );
 
   const dataByDrugClass = React.useMemo(
     () => {
       const dataByDrugClass = {};
-      for (const {mutations, genes} of comparisonResults) {
-        for (const {geneName, drugClasses} of genes) {
-          const genePrefix = geneName + ':';
-          const geneMuts = mutations
-            .filter(mut => mut.startsWith(genePrefix))
-            .map(mut => mut.replace(/^[^:]+:/, ''))
-            .join(' + ');
+      for (const {pattern, count, genes} of comparisonResults) {
+        for (const {drugClasses} of genes) {
           for (const {drugClassName, drugs} of drugClasses) {
             if (!(drugClassName in dataByDrugClass)) {
               dataByDrugClass[drugClassName] = [];
             }
             const rows = dataByDrugClass[drugClassName];
-            const row = {pattern: geneMuts};
+            const row = {pattern: pattern.join(' + '), count};
+            let everChanged = false;
             for (const dr of drugs) {
               row[dr.drugName] = dr;
+              if (cmpCol === 'score' && dr.scoreChanged) {
+                everChanged = true;
+              }
+              else if (cmpCol === 'SIR' && dr.sirChanged) {
+                everChanged = true;
+              }
+              else if (cmpCol === 'level' && dr.levelChanged) {
+                everChanged = true;
+              }
             }
-            rows.push(row);
+            if (everChanged || !onlyDiffs) {
+              rows.push(row);
+            }
           }
         }
       }
       return dataByDrugClass;
     },
-    [comparisonResults]
+    [comparisonResults, cmpCol, onlyDiffs]
   );
 
-  return <>
-    {Object.entries(dataByDrugClass).map(
-      ([dcName, data]) => <section>
-        <h2>{dcName}</h2>
-        <SimpleTable
-         key={`${dcName}-${cacheKey}`}
-         cacheKey={`${dcName}-${cacheKey}`}
-         columnDefs={colDefsByDrugClass[dcName]}
-         data={data} />
-      </section>
-    )}
-  </>;
+  return <div className={style['asi-comparison']}>
+    <p>
+      <CheckboxInput
+       id="only-changes-toggler"
+       name="only-changes-toggler"
+       onChange={toggleOnlyDiffs}
+       checked={onlyDiffs}>
+        Shows only patterns with changed results
+      </CheckboxInput>
+    </p>
+    <p>
+      <label>Compare: </label>
+      <RadioInput
+       id="cmp-col-score"
+       name="cmp-col"
+       onChange={() => setCmpCol('score')}
+       checked={cmpCol === 'score'}>
+        score
+      </RadioInput>
+      <RadioInput
+       id="cmp-col-sir"
+       name="cmp-col"
+       onChange={() => setCmpCol('SIR')}
+       checked={cmpCol === 'SIR'}>
+        SIR
+      </RadioInput>
+      <RadioInput
+       id="cmp-col-level"
+       name="cmp-col"
+       onChange={() => setCmpCol('level')}
+       checked={cmpCol === 'level'}>
+        level
+      </RadioInput>
+    </p>
+    <Tabs
+     onSelect={setSelectedIndex}
+     selectedIndex={selectedIndex}>
+      <TabList>
+        {Object.keys(dataByDrugClass).map(
+          dcName => <Tab key={dcName}>{dcName}</Tab>
+        )}
+      </TabList>
+      {Object.entries(dataByDrugClass).map(
+        ([dcName, data]) => <TabPanel key={dcName}>
+          {data.length === 0 ?
+            <em>
+              No {onlyDiffs ?
+              'changes were found for this drug class' :
+              'patterns were available for this drug class'}
+            </em> :
+            <SimpleTable
+             noHeaderOverlapping
+             key={`${dcName}-${onlyDiffs}-${cacheKey}`}
+             cacheKey={`${dcName}-${cacheKey}`}
+             columnDefs={colDefsByDrugClass[dcName]}
+             data={data} />}
+        </TabPanel>
+      )}
+    </Tabs>
+  </div>;
 }

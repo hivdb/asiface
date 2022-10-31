@@ -6,8 +6,8 @@ import createPersistedState from 'use-persisted-state/src';
 
 import Header from './header';
 import XMLEditor from './xml-editor';
-import MutationEditor from './mutation-editor';
-import Evaluator from './evaluator';
+import usePatternsLoader from './patterns-loader';
+// import Evaluator from './evaluator';
 import ScoreComparator from './score-comparator';
 import ResizeBar from './resize-bar';
 
@@ -36,8 +36,11 @@ ASIFace.defaultProps = {
 
 export default function ASIFace({height, config}) {
   const [defaultPreload] = config.preloads;
-  const [mutations, setMutations] = React.useState(config.mutations);
-  const [verticalPcnt, setVerticalPcnt] = useVerticalPcnt(0.3);
+  const [
+    patterns,
+    patternsLoader
+  ] = usePatternsLoader(config.defaultPatternsURL);
+  const [verticalPcnt, setVerticalPcnt] = useVerticalPcnt(0.05);
   const [horizontalPcnt, setHorizontalPcnt] = useHorizontalPcnt(0.618);
   const [mobilePcnt1, setMobilePcnt1] = useVerticalPcnt(0.3);
   const [mobilePcnt2, setMobilePcnt2] = useHorizontalPcnt(0.5);
@@ -108,7 +111,7 @@ export default function ASIFace({height, config}) {
       <XMLEditor fileName={asiFileName} onChange={setAsiXml}>
         {asiXml}
       </XMLEditor>
-      <MutationEditor onChange={setMutations}>{mutations}</MutationEditor>
+      {patternsLoader}
       {/*<Evaluator
        preloads={config.preloads}
        asiXml={asiXml}
@@ -116,7 +119,7 @@ export default function ASIFace({height, config}) {
       <ScoreComparator
        preloads={config.preloads}
        asiXml={asiXml}
-       patterns={mutations} />
+       patterns={patterns} />
       <ResizeBar
        name="row-divider"
        onChange={setVerticalPcnt}

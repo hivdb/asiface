@@ -77,7 +77,7 @@ function compareGeneResult(oldGR, newGR, geneName) {
 }
 
 
-function compareGeneResults(oldGeneResults, geneResults, muts) {
+function compareGeneResults(oldGeneResults, geneResults, pattern, count) {
   const geneLookup = {};
   for (const gr of oldGeneResults) {
     geneLookup[gr.geneName] = [gr, null];
@@ -91,7 +91,8 @@ function compareGeneResults(oldGeneResults, geneResults, muts) {
     }
   }
   return {
-    mutations: muts,
+    pattern,
+    count,
     genes: Object.entries(geneLookup)
       .map(([geneName, [oldGR, newGR]]) => (
         compareGeneResult(oldGR, newGR, geneName)
@@ -100,12 +101,15 @@ function compareGeneResults(oldGeneResults, geneResults, muts) {
 }
 
 
-export default function compareASIs(oldAsi, asi, patternList) {
+export default function compareASIs(oldAsi, asi, patterns) {
   const results = [];
-  for (const mutations of patternList) {
-    const oldGeneResults = oldAsi.evaluate(mutations);
-    const geneResults = asi.evaluate(mutations);
-    results.push(compareGeneResults(oldGeneResults, geneResults, mutations));
+  for (const {gene, pattern, count} of patterns) {
+    const muts = pattern.map(mut => `${gene}:${mut}`);
+    const oldGeneResults = oldAsi.evaluate(muts);
+    const geneResults = asi.evaluate(muts);
+    results.push(
+      compareGeneResults(oldGeneResults, geneResults, pattern, count)
+    );
   }
   return results;
 }

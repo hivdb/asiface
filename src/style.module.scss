@@ -9,7 +9,7 @@ $grid-gap: .5rem;
   $min-editor-width: 60rem;
   display: grid;
   height: var(--height);
-  grid-template-rows: var(--header-height) $grid-gap min(80%, max(7rem, calc(var(--vertical-pcnt) - var(--header-height) - $grid-gap))) $grid-gap 1fr;
+  grid-template-rows: var(--header-height) $grid-gap min(80%, max(2rem, calc(var(--vertical-pcnt) - var(--header-height) - $grid-gap))) $grid-gap 1fr;
   grid-template-columns: min(80%, max($min-editor-width, var(--horizontal-pcnt)) ) .5rem 1fr;
 
   @media only screen and (max-width: 1150px) {
@@ -23,7 +23,7 @@ $grid-gap: .5rem;
       grid-row-end: 4;
     }
 
-    .asiface-cell-mutation-editor {
+    .asiface-cell-patterns-loader {
       grid-column-start: 1;
       grid-column-end: 2;
       grid-row-start: 5;
@@ -179,20 +179,15 @@ $grid-gap: .5rem;
 
 }
 
-.asiface-cell-mutation-editor {
+.asiface-cell-patterns-loader {
   grid-column-start: 3;
   grid-column-end: 4;
   grid-row-start: 1;
   grid-row-end: 4;
   margin: 1rem;
 
-  > textarea {
-    margin: 0;
-    padding: .5rem;
-    resize: none;
-    width: 100%;
-    height: calc(100% - 1em);
-    box-sizing: border-box;
+  .patterns-input, .patterns-output {
+    margin-left: .5rem;
   }
 }
 

@@ -28,10 +28,9 @@ const config = {
       )
     }
   ],
-  mutations: (
-    'PR:M46MI, PR:G48V, PR:I54T, PR:V82A, PR:K43T, ' +
-    'RT:M41L, RT:E44D, RT:D67N, RT:T69i, RT:M184V, RT:L210W, RT:T215Y, ' +
-    'RT:K219KN, RT:A98G, RT:K103N, RT:Y181C, IN:E92Q, IN:N155H, IN:R263K'
+  defaultPatternsURL: (
+    'https://raw.githubusercontent.com/' +
+    'hivdb/hivfacts/main/data/patterns_hiv1.csv'
   )
 };
 

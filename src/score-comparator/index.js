@@ -14,14 +14,16 @@ import compareASIs from './compare-asis';
 import ASIComparison from './asi-comparison';
 
 
-function splitMutations(mutations) {
-  return mutations.split(/[,;+ \t]+/g).filter(mut => mut);
-}
-
-
 ScoreComparator.propTypes = {
   preloads: PropTypes.array.isRequired,
-  patterns: PropTypes.string,
+  patterns: PropTypes.arrayOf(
+    PropTypes.shape({
+      gene: PropTypes.string.isRequired,
+      drugClass: PropTypes.string.isRequired,
+      pattern: PropTypes.arrayOf(PropTypes.string.isRequired).isRequired,
+      count: PropTypes.number.isRequired
+    }).isRequired
+  ).isRequired,
   asiXml: PropTypes.string
 };
 
@@ -34,14 +36,6 @@ export default function ScoreComparator({preloads, patterns, asiXml}) {
   const [oldAlgorithmInfo, setOldAlgorithmInfo] = React.useState(null);
   const [comparisonResults, setComparisonResults] = React.useState(null);
   const [error, setError] = React.useState(null);
-
-  const patternList = React.useMemo(
-    () => patterns ? patterns
-      .split(/[\r\n]+/g)
-      .map(splitMutations)
-      .filter(muts => muts.length > 0) : [],
-    [patterns]
-  );
 
   const handleOldAsiChange = React.useCallback(
     async ({asiXml, url}) => {
@@ -77,7 +71,7 @@ export default function ScoreComparator({preloads, patterns, asiXml}) {
         const oldAsi = new ASIJs(oldAsiXml);
         setOldAlgorithmInfo(oldAsi.getAlgorithmInfo());
         errorTitle = 'Comparsion';
-        setComparisonResults(compareASIs(oldAsi, asi, patternList));
+        setComparisonResults(compareASIs(oldAsi, asi, patterns));
         setError(null);
       }
       catch (err) {
@@ -87,12 +81,12 @@ export default function ScoreComparator({preloads, patterns, asiXml}) {
         return;
       }
     },
-    [asiXml, oldAsiXml, patternList]
+    [asiXml, oldAsiXml, patterns]
   );
 
   const cacheKey = React.useMemo(
     () => `${
-      sha256(patterns).toString(encHex)
+      sha256(JSON.stringify(patterns)).toString(encHex)
     }-${
       sha256(oldAsiXml || '').toString(encHex)
     }-${
@@ -106,7 +100,7 @@ export default function ScoreComparator({preloads, patterns, asiXml}) {
       {error}
     </div> : null}
     <div className={style['old-asi-loader']}>
-      <label>Compare to:</label>
+      <label>Original ASI:</label>
       <ASILoader allowClear preloads={preloads} onChange={handleOldAsiChange} />
       <Button
        btnStyle="primary"

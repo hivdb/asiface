@@ -1,39 +1,20 @@
 @import "icosa/styles/colors";
+@import "icosa/styles/tabs";
 
-.evaluated-gene {
-  margin: 3rem 0;
-  padding: 1rem;
-  position: relative;
-  border: 1px solid color(dividing-line-light);
-  > h2 {
-    position: absolute;
-    margin: -3rem -1rem 0;
-  }
+.asi-comparison {
+  @extend %react-tabs-container;
 
-  > section {
-    margin-bottom: 2rem;
-
-    &:last-child {
-      margin-bottom: 0;
-    }
-
-    h3 {
-      margin-top: 0;
-      border-bottom: 2px solid color(type-main);
+  > p {
+    > label {
+      display: inline-block;
+      vertical-align: top;
+      margin-top: .5em;
+      margin-bottom: .5em;
+      margin-right: 1em;
     }
   }
 
-  table {
-    tbody > tr > td em {
-      color: color(name-dustygray);
-    }
+  .gray {
+    color: rgba(0, 0, 0, .4);
   }
-
-  .comments ul {
-    padding: 0 1rem;
-    > li {
-      margin: 1rem 0;
-    }
-  }
-
 }
