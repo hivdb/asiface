@@ -84,6 +84,18 @@ $grid-gap: .5rem;
 
 }
 
+.asi-preload-dropdown {
+  @include select('asi-preload-dropdown');
+
+  display: inline-block;
+  margin: 0 1rem;
+  max-width: 20rem;
+}
+
+.or {
+  margin: 0 1rem 0 0;
+}
+
 .asiface-header {
   grid-column-start: 1;
   grid-column-end: 2;
@@ -103,18 +115,6 @@ $grid-gap: .5rem;
       color: color(type-main);
       vertical-align: middle;
     }
-  }
-
-  > .asi-preload-dropdown {
-    @include select('asi-preload-dropdown');
-  
-    display: inline-block;
-    margin: 0 1rem;
-    max-width: 20rem;
-  }
-
-  > .or {
-    margin: 0 1rem 0 0;
   }
 
   > .asi-auto-save-checkbox {
@@ -209,6 +209,11 @@ $grid-gap: .5rem;
   .evaluator-error {
     color: color(type-error);
     font-family: monospace;
+  }
+
+  .old-asi-loader {
+    white-space: nowrap;
+    margin-top: .5rem;
   }
 
   .ending {

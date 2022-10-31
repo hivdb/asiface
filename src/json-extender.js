@@ -5,9 +5,34 @@ import readFile from 'icosa/utils/read-file';
 import FileInput from 'icosa/components/file-input';
 import Button from 'icosa/components/button';
 import {makeDownload} from 'icosa/utils/download';
+import useMounted from 'icosa/utils/use-mounted';
 import ASIJs from 'asi_interpreter';
 
-import Header, {useFetchAndSet} from './header';
+import Header from './header';
+
+
+function getFileName(url) {
+  return url.split('/').slice(-1)[0];
+}
+
+
+export function useFetchAndSet(setAsiPayload) {
+  const isMounted = useMounted();
+
+  return React.useCallback(
+    url => {
+      fetch(url)
+        .then(resp => resp.text()
+          .then(xml => isMounted() && setAsiPayload({
+            xml,
+            fileName: getFileName(url)
+          })));
+    },
+    [setAsiPayload, isMounted]
+  );
+
+}
+
 
 JSONExtender.propTypes = {
   config: PropTypes.object.isRequired

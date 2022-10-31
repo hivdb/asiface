@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import useMounted from 'icosa/utils/use-mounted';
 import createLocationState from 'icosa/utils/use-location-state';
 import createPersistedState from 'use-persisted-state/src';
 
@@ -44,26 +45,18 @@ export default function ASIFace({height, config}) {
   const [asiXml, setAsiXml] = useAsiXml(null);
   const [asiFileName, setAsiFileName] = useAsiFileName(null);
 
-  const mounted = React.useRef();
-
-  React.useEffect(
-    () => {
-      mounted.current = true;
-      return () => mounted.current = false;
-    },
-    []
-  );
+  const isMounted = useMounted();
 
   const fetchAndSet = React.useCallback(
     async (url) => {
       const resp = await fetch(url);
       const xml = await resp.text();
-      if (mounted.current) {
+      if (isMounted()) {
         setAsiXml(xml);
         setAsiFileName(getFileName(url));
       }
     },
-    [setAsiXml, setAsiFileName]
+    [isMounted, setAsiXml, setAsiFileName]
   );
 
   React.useEffect(
@@ -115,7 +108,10 @@ export default function ASIFace({height, config}) {
         {asiXml}
       </XMLEditor>
       <MutationEditor onChange={setMutations}>{mutations}</MutationEditor>
-      <Evaluator asiXml={asiXml} mutations={mutations} />
+      <Evaluator
+       preloads={config.preloads}
+       asiXml={asiXml}
+       mutations={mutations} />
       <ResizeBar
        name="row-divider"
        onChange={setVerticalPcnt}

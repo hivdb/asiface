@@ -2,7 +2,13 @@
 
 .asi-visual-editor {
 
-  .comments-input, .comments-output {
+  .option-row > label {
+    display: inline-block;
+    width: 7rem;
+  }
+
+  .comments-input, .comments-output,
+  .rules-input, .rules-output {
     margin-left: .4rem;
   }
 
