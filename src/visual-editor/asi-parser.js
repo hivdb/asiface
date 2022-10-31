@@ -182,7 +182,10 @@ export function rulesFromASI(asiXml) {
   const allRows = {};
   for (const drugNode of drugs) {
     const drugName = querySingleNodeText(drugNode, 'NAME');
-    const {drugClass} = drugLookup[drugName];
+    const drugClass = drugLookup[drugName]?.drugClass;
+    if (!drugClass) {
+      continue;
+    }
     if (!(drugClass in allRows)) {
       allRows[drugClass] = {};
     }
@@ -384,7 +387,7 @@ function updateDrugRules(
       ruleNode = ruleNode[0];
     }
     else {
-      drugNode.replaceChildren();
+      ruleNode.forEach(child => drugNode.removeChild(child));
       ruleNode = createNode(drugNode, ['RULE'], doc);
     }
     const condNode = getOrCreateNode(ruleNode, ['CONDITION'], doc);
@@ -435,7 +438,7 @@ export function updateASIRules(
       updateDrugRules(drugName, drugNode, rules, doc);
       pendingDrugs[drugName] = false;
     }
-    else if (drugLookup[drugName].drugClass === drugClass) {
+    else if (drugLookup[drugName]?.drugClass === drugClass) {
       drugNode.remove();
     }
   }
