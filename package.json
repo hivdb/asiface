@@ -14,6 +14,7 @@
     "@babel/preset-env": "^7.18.2",
     "@babel/runtime": "^7.17.9",
     "asi_interpreter": "hivdb/asi_interpreter#958334cadfa11e992f8214f1700f07b05df37af4",
+    "crypto-js": "^4.1.1",
     "nearley": "^2.20.1",
     "xml-formatter": "^2.6.1"
   },

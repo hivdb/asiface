@@ -8,6 +8,7 @@ import Header from './header';
 import XMLEditor from './xml-editor';
 import MutationEditor from './mutation-editor';
 import Evaluator from './evaluator';
+import ScoreComparator from './score-comparator';
 import ResizeBar from './resize-bar';
 
 import style from './style.module.scss';
@@ -108,10 +109,14 @@ export default function ASIFace({height, config}) {
         {asiXml}
       </XMLEditor>
       <MutationEditor onChange={setMutations}>{mutations}</MutationEditor>
-      <Evaluator
+      {/*<Evaluator
        preloads={config.preloads}
        asiXml={asiXml}
-       mutations={mutations} />
+       mutations={mutations} />*/}
+      <ScoreComparator
+       preloads={config.preloads}
+       asiXml={asiXml}
+       patterns={mutations} />
       <ResizeBar
        name="row-divider"
        onChange={setVerticalPcnt}
